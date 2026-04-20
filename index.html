@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oathbound Tour</title>
+    <meta name="description" content="Upcoming Oathbound tour dates, tickets, venues, and show details.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-page="upcoming" data-root=".">
+    <video class="background-video" autoplay muted loop playsinline preload="metadata" poster="assets/oathbound-video-poster.png" aria-hidden="true" tabindex="-1">
+      <source src="assets/oathbound-background-compressed.mp4" type="video/mp4">
+    </video>
+    <div class="background-overlay" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Oathbound tour home">
+        <img src="assets/oathbound-logo-white.png" alt="Oathbound">
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/" data-nav="upcoming">Tour</a>
+        <a href="/past-shows/" data-nav="past">Past Shows</a>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Live Dates</p>
+        <h1 id="page-title">Upcoming Shows</h1>
+        <p id="page-copy">Find Oathbound on the road. New dates will appear here as soon as they are announced.</p>
+      </section>
+
+      <section class="shows-shell" aria-labelledby="shows-heading">
+        <div class="section-heading">
+          <h2 id="shows-heading">Shows</h2>
+          <p id="show-count" aria-live="polite"></p>
+        </div>
+        <div id="shows-list" class="shows-list" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <template id="show-card-template">
+      <article class="show-card">
+        <time class="show-date">
+          <span class="show-month"></span>
+          <span class="show-day"></span>
+          <span class="show-year"></span>
+        </time>
+        <div class="show-details">
+          <div class="show-title-row">
+            <div>
+              <p class="show-location"></p>
+              <h3 class="show-venue"></h3>
+            </div>
+            <div class="show-age"></div>
+          </div>
+          <p class="show-time"></p>
+          <p class="show-lineup"></p>
+          <p class="show-notes"></p>
+        </div>
+        <div class="show-actions"></div>
+      </article>
+    </template>
+
+    <footer class="site-footer">
+      <p class="footer-copy">Copyright © 2026 Oathbound - All Rights Reserved</p>
+      <nav class="footer-nav" aria-label="Oathbound links">
+        <a href="https://oathboundband.com">Home</a>
+        <a href="https://oathboundband.com/media">Media</a>
+        <a href="https://oathboundband.com/music">Music</a>
+      </nav>
+      <div class="footer-rule" aria-hidden="true"></div>
+      <p class="footer-tagline">Forged in sound. Bound by oath.</p>
+    </footer>
+
+    <script src="site-ui.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
