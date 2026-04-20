@@ -1,5 +1,8 @@
 const pageMode = document.body.dataset.page === "past" ? "past" : "upcoming";
 const rootPath = document.body.dataset.root || ".";
+const rawShowLimit = Number(document.body.dataset.showLimit || 0);
+const showLimit = Number.isFinite(rawShowLimit) && rawShowLimit > 0 ? rawShowLimit : 0;
+const showDirections = document.body.dataset.showDirections !== "false";
 const showsList = document.querySelector("#shows-list");
 const showCount = document.querySelector("#show-count");
 const template = document.querySelector("#show-card-template");
@@ -55,19 +58,74 @@ function filterShows(shows, mode) {
 
 function renderShows(shows) {
   showsList.innerHTML = "";
-  showCount.textContent = copy[pageMode].countLabel(shows.length);
+  const displayedShows = showLimit && pageMode === "upcoming" ? shows.slice(0, showLimit) : shows;
 
-  if (!shows.length) {
+  if (showCount) {
+    showCount.textContent = showLimit && shows.length > displayedShows.length
+      ? `Next ${displayedShows.length} of ${shows.length} upcoming shows`
+      : copy[pageMode].countLabel(displayedShows.length);
+  }
+
+  if (!displayedShows.length) {
     renderMessage("empty-state", copy[pageMode].emptyTitle, copy[pageMode].emptyText);
     return;
   }
 
+  if (pageMode === "past") {
+    renderPastShowsByYear(displayedShows);
+    return;
+  }
+
   const fragment = document.createDocumentFragment();
-  shows.forEach((show) => fragment.appendChild(createShowCard(show)));
+  displayedShows.forEach((show, index) => fragment.appendChild(createShowCard(show, index)));
   showsList.appendChild(fragment);
 }
 
-function createShowCard(show) {
+function renderPastShowsByYear(shows) {
+  const currentYear = new Date().getFullYear();
+  const groups = groupShowsByYear(shows);
+  const fragment = document.createDocumentFragment();
+
+  groups.forEach(([year, yearShows]) => {
+    const details = document.createElement("details");
+    details.className = "year-accordion";
+
+    if (Number(year) === currentYear) {
+      details.open = true;
+    }
+
+    const summary = document.createElement("summary");
+    summary.className = "year-summary";
+    summary.innerHTML = `
+      <span>${year}</span>
+      <span>${yearShows.length} ${yearShows.length === 1 ? "show" : "shows"}</span>
+    `;
+
+    const list = document.createElement("div");
+    list.className = "year-shows";
+    yearShows.forEach((show) => list.appendChild(createShowCard(show, -1)));
+
+    details.append(summary, list);
+    fragment.appendChild(details);
+  });
+
+  showsList.appendChild(fragment);
+}
+
+function groupShowsByYear(shows) {
+  const groups = new Map();
+
+  shows.forEach((show) => {
+    const year = formatYear(parseLocalDate(show.date));
+    const yearShows = groups.get(year) || [];
+    yearShows.push(show);
+    groups.set(year, yearShows);
+  });
+
+  return Array.from(groups.entries());
+}
+
+function createShowCard(show, index) {
   const card = template.content.firstElementChild.cloneNode(true);
   const showDate = parseLocalDate(show.date);
   const location = [show.city, show.region].filter(Boolean).join(", ") || show.country || "Location TBA";
@@ -83,18 +141,19 @@ function createShowCard(show) {
   card.querySelector(".show-lineup").textContent = show.lineup || "";
   card.querySelector(".show-notes").textContent = show.notes || "";
 
+  renderShowStatus(card, showDate, index);
   renderAgeBadge(card.querySelector(".show-age"), show.ageRestriction);
 
   const actions = card.querySelector(".show-actions");
   if (show.ticketUrl) {
-    actions.appendChild(createButton(show.ticketUrl, show.ticketLabel || "Tickets"));
+    actions.appendChild(createButton(show.ticketUrl, show.ticketLabel || "Tickets", true));
   }
 
   if (show.infoUrl) {
     actions.appendChild(createButton(show.infoUrl, show.infoLabel || "Details"));
   }
 
-  const directionsUrl = createDirectionsUrl(show);
+  const directionsUrl = pageMode === "past" || !showDirections ? "" : createDirectionsUrl(show);
   if (directionsUrl) {
     actions.appendChild(createButton(directionsUrl, "Directions"));
   }
@@ -102,9 +161,22 @@ function createShowCard(show) {
   return card;
 }
 
-function createButton(url, label) {
+function renderShowStatus(card, showDate, index) {
+  const status = card.querySelector(".show-status");
+
+  if (pageMode !== "upcoming" || index !== 0) {
+    status.remove();
+    return;
+  }
+
+  card.classList.add("show-card--next");
+  const detail = formatNextShowDetail(showDate);
+  status.textContent = detail ? `Next Show • ${detail}` : "Next Show";
+}
+
+function createButton(url, label, isPrimary = false) {
   const button = document.createElement("a");
-  button.className = "button";
+  button.className = isPrimary ? "button button--primary" : "button";
   button.href = url;
   button.textContent = label;
 
@@ -197,6 +269,79 @@ function renderMessage(className, title, text) {
 function parseLocalDate(dateString) {
   const [year, month, day] = dateString.split("-").map(Number);
   return new Date(year, month - 1, day);
+}
+
+function isToday(date) {
+  const today = new Date();
+
+  return date.getFullYear() === today.getFullYear()
+    && date.getMonth() === today.getMonth()
+    && date.getDate() === today.getDate();
+}
+
+function formatNextShowDetail(showDate) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const target = new Date(showDate);
+  target.setHours(0, 0, 0, 0);
+
+  const dayDifference = Math.round((target.getTime() - today.getTime()) / 86400000);
+
+  if (dayDifference < 0) {
+    return "";
+  }
+
+  if (dayDifference === 0) {
+    return "Tonight";
+  }
+
+  if (dayDifference === 1) {
+    return "Tomorrow";
+  }
+
+  if (dayDifference === 2) {
+    return "In 2 days";
+  }
+
+  if (dayDifference <= 7) {
+    return `This ${formatWeekday(target)}`;
+  }
+
+  if (dayDifference <= 13) {
+    return `Next ${formatWeekday(target)}`;
+  }
+
+  if (dayDifference < 28) {
+    const weekDifference = Math.round(dayDifference / 7);
+    return `In ${weekDifference} weeks`;
+  }
+
+  const monthDifference = getMonthDifference(today, target);
+
+  if (monthDifference === 1) {
+    return "Next month";
+  }
+
+  if (monthDifference > 1 && monthDifference <= 11) {
+    return `In ${monthDifference} months`;
+  }
+
+  return target.toLocaleDateString("en-US", { month: "short", year: "numeric" });
+}
+
+function formatWeekday(date) {
+  return date.toLocaleDateString("en-US", { weekday: "long" });
+}
+
+function getMonthDifference(start, end) {
+  const monthDifference = (end.getFullYear() - start.getFullYear()) * 12 + end.getMonth() - start.getMonth();
+
+  if (end.getDate() < start.getDate()) {
+    return Math.max(0, monthDifference);
+  }
+
+  return monthDifference || 1;
 }
 
 function formatMonth(date) {

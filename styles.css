@@ -642,6 +642,88 @@ body[data-page="admin"] .intro {
   font-size: clamp(0.95rem, 2vw, 1.05rem);
 }
 
+body[data-widget="compact"] {
+  min-height: auto;
+  background: transparent;
+}
+
+body[data-widget="compact"]::before {
+  display: none;
+}
+
+body[data-widget="compact"] .widget-main {
+  width: 100%;
+  margin: 0;
+  padding: clamp(12px, 2.8vw, 24px);
+}
+
+body[data-widget="compact"] .widget-shell {
+  margin: 0;
+}
+
+body[data-widget="compact"] .widget-heading {
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 12px;
+}
+
+body[data-widget="compact"] .widget-heading .eyebrow {
+  margin-bottom: 5px;
+}
+
+body[data-widget="compact"] .widget-heading h2 {
+  font-size: clamp(1.25rem, 4vw, 2rem);
+  line-height: 1;
+}
+
+body[data-widget="compact"] .widget-count {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+body[data-widget="compact"] .show-card {
+  grid-template-columns: minmax(74px, max-content) minmax(260px, 680px) auto;
+  justify-content: start;
+  min-height: 112px;
+  padding: clamp(15px, 2.4vw, 22px);
+  gap: clamp(14px, 3vw, 26px);
+}
+
+body[data-widget="compact"] .show-day {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+body[data-widget="compact"] .show-venue {
+  font-size: clamp(1rem, 2.1vw, 1.35rem);
+}
+
+body[data-widget="compact"] .show-location {
+  font-size: clamp(0.86rem, 1.7vw, 1.05rem);
+}
+
+body[data-widget="compact"] .button {
+  min-width: 104px;
+}
+
+body[data-widget="compact"] .show-actions {
+  grid-column: 3;
+  align-self: center;
+  justify-content: flex-start;
+  margin-top: 0;
+}
+
+body[data-widget="compact"] .widget-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+  padding-top: 6px;
+}
+
+body[data-widget="compact"] .widget-all-link {
+  min-width: min(100%, 220px);
+}
+
 @media (max-width: 760px) {
   .site-header {
     align-items: flex-start;
@@ -793,6 +875,26 @@ body[data-page="admin"] .intro {
 
   .footer-rule {
     margin: 32px auto 18px;
+  }
+
+  body[data-widget="compact"] .widget-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  body[data-widget="compact"] .show-card {
+    grid-template-columns: auto minmax(0, 1fr);
+    min-height: 0;
+    padding: 16px;
+  }
+
+  body[data-widget="compact"] .show-actions {
+    grid-column: 1 / -1;
+    margin-top: 4px;
+  }
+
+  body[data-widget="compact"] .widget-all-link {
+    width: 100%;
   }
 }
 

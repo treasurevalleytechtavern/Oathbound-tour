@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oathbound Show CSV Upload</title>
+    <meta name="description" content="Convert an Oathbound show CSV export into the site shows.json file.">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-page="admin" data-root="..">
+    <video class="background-video" autoplay muted loop playsinline preload="metadata" poster="../assets/oathbound-video-poster.png" aria-hidden="true" tabindex="-1">
+      <source src="../assets/oathbound-background-compressed.mp4" type="video/mp4">
+    </video>
+    <div class="background-overlay" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="https://oathboundband.com" aria-label="Oathbound home">
+        <img src="../assets/oathbound-logo-white.png" alt="Oathbound">
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/" data-nav="upcoming">Tour</a>
+        <a href="/past-shows/" data-nav="past">Past Shows</a>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Show Data</p>
+        <h1 id="page-title">CSV Upload</h1>
+        <p>Upload a spreadsheet CSV export, review the converted data, then download the updated JSON file for the site.</p>
+      </section>
+
+      <section class="tool-shell" aria-labelledby="upload-heading">
+        <div class="section-heading">
+          <h2 id="upload-heading">Converter</h2>
+          <p id="upload-status" aria-live="polite">Waiting for CSV</p>
+        </div>
+
+        <div class="upload-grid">
+          <form class="upload-panel" id="csv-form">
+            <label class="upload-drop" for="csv-file">
+              <span>Choose CSV File</span>
+              <small>Use the template columns, then export from your spreadsheet as CSV.</small>
+            </label>
+            <input id="csv-file" name="csv-file" type="file" accept=".csv,text/csv">
+            <div class="tool-actions">
+              <a class="button" href="../data/shows-template.csv" download>Download Template</a>
+              <button class="button" id="download-json" type="button" disabled>Download JSON</button>
+            </div>
+          </form>
+
+          <div class="field-guide">
+            <h3>CSV Columns</h3>
+            <p>Required: date. Optional fields can stay blank.</p>
+            <code>date,doorsTime,showTime,venue,address,city,region,country,lineup,ageRestriction,ticketUrl,ticketLabel,infoUrl,infoLabel,notes</code>
+          </div>
+        </div>
+
+        <div id="csv-errors" class="message-list" aria-live="polite"></div>
+
+        <label class="preview-label" for="json-preview">Generated JSON</label>
+        <textarea id="json-preview" class="json-preview" spellcheck="false" readonly></textarea>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="footer-copy">Copyright © 2026 Oathbound - All Rights Reserved</p>
+      <nav class="footer-nav" aria-label="Oathbound links">
+        <a href="https://oathboundband.com">Home</a>
+        <a href="https://oathboundband.com/media">Media</a>
+        <a href="https://oathboundband.com/music">Music</a>
+      </nav>
+      <div class="footer-rule" aria-hidden="true"></div>
+      <p class="footer-tagline">Forged in sound. Bound by oath.</p>
+    </footer>
+
+    <script src="../site-ui.js" defer></script>
+    <script src="../csv-upload.js?v=2" defer></script>
+  </body>
+</html>
