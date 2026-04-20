@@ -661,23 +661,8 @@ body[data-widget="compact"] .widget-shell {
   margin: 0;
 }
 
-body[data-widget="compact"] .widget-heading {
-  align-items: center;
-  margin-bottom: 10px;
-  padding-bottom: 12px;
-}
-
-body[data-widget="compact"] .widget-heading .eyebrow {
-  margin-bottom: 5px;
-}
-
-body[data-widget="compact"] .widget-heading h2 {
-  font-size: clamp(1.25rem, 4vw, 2rem);
-  line-height: 1;
-}
-
 body[data-widget="compact"] .widget-count {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   color: var(--muted);
   font-size: 0.9rem;
 }
@@ -879,11 +864,6 @@ body[data-widget="compact"] .widget-all-link {
 
   .footer-rule {
     margin: 32px auto 18px;
-  }
-
-  body[data-widget="compact"] .widget-heading {
-    align-items: stretch;
-    flex-direction: column;
   }
 
   body[data-widget="compact"] .show-card {
