@@ -135,15 +135,15 @@ video {
 .site-main {
   width: min(calc(100% - 32px), var(--max));
   margin: 0 auto;
-  padding: clamp(22px, 4vw, 40px) 0 70px;
+  padding: clamp(8px, 2vw, 22px) 0 70px;
 }
 
 .intro {
   display: grid;
-  min-height: clamp(340px, 52vh, 560px);
+  min-height: clamp(180px, 27vh, 300px);
   max-width: 860px;
   align-content: center;
-  padding: clamp(22px, 4vw, 48px) 0 clamp(24px, 4vw, 48px);
+  padding: clamp(8px, 2vw, 20px) 0 clamp(10px, 2vw, 22px);
 }
 
 .eyebrow {
@@ -164,7 +164,7 @@ p {
 
 h1 {
   margin-bottom: 18px;
-  font-size: clamp(2.45rem, 7vw, 5.6rem);
+  font-size: clamp(2.2rem, 5.8vw, 4.7rem);
   line-height: 0.92;
   text-transform: uppercase;
   text-shadow: 0 18px 42px rgba(0, 0, 0, 0.68);
@@ -197,7 +197,7 @@ body[data-page="admin"] .intro {
 }
 
 .shows-shell {
-  margin-top: clamp(20px, 4vw, 42px);
+  margin-top: clamp(10px, 2vw, 24px);
 }
 
 .section-heading {
@@ -228,7 +228,58 @@ body[data-page="admin"] .intro {
   gap: 12px;
 }
 
+.year-accordion {
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.38);
+}
+
+.year-accordion[open] {
+  border-color: var(--line-strong);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.year-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 54px;
+  padding: 0 18px;
+  color: var(--text);
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.year-summary::-webkit-details-marker {
+  display: none;
+}
+
+.year-summary::after {
+  content: "+";
+  color: var(--muted);
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.year-accordion[open] .year-summary::after {
+  content: "-";
+}
+
+.year-summary span:last-child {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.year-shows {
+  display: grid;
+  gap: 12px;
+  padding: 0 12px 12px;
+}
+
 .show-card {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(82px, 0.14fr) minmax(0, 1fr) auto;
   align-items: center;
@@ -244,6 +295,25 @@ body[data-page="admin"] .intro {
 .show-card:hover {
   border-color: var(--line-strong);
   background: var(--surface-strong);
+}
+
+.show-card--next {
+  border-color: rgba(255, 255, 255, 0.52);
+  background: rgba(13, 14, 16, 0.84);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 0 34px rgba(255, 255, 255, 0.1),
+    0 24px 78px rgba(0, 0, 0, 0.36);
+}
+
+.show-status {
+  margin: 0 0 8px;
+  color: var(--soft);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .show-date {
@@ -278,15 +348,19 @@ body[data-page="admin"] .intro {
 }
 
 .show-title-row {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  display: flex;
   align-items: center;
-  gap: clamp(16px, 3vw, 28px);
+  justify-content: flex-start;
+  gap: clamp(10px, 2vw, 16px);
+}
+
+.show-title-row > div:first-child {
+  min-width: 0;
 }
 
 .show-location {
-  color: var(--text);
-  font-size: clamp(1.15rem, 2.5vw, 1.8rem);
+  color: var(--muted);
+  font-size: clamp(0.95rem, 1.9vw, 1.3rem);
   font-weight: 800;
   line-height: 1;
   letter-spacing: 0;
@@ -294,8 +368,9 @@ body[data-page="admin"] .intro {
 }
 
 .show-venue {
-  margin: 8px 0 8px;
-  font-size: clamp(1rem, 2.2vw, 1.55rem);
+  margin: 0 0 8px;
+  color: var(--text);
+  font-size: clamp(1.15rem, 2.4vw, 1.7rem);
   line-height: 1;
   text-transform: uppercase;
 }
@@ -376,6 +451,18 @@ body[data-page="admin"] .intro {
 .button:hover {
   color: #050505;
   background: var(--accent);
+}
+
+.button--primary {
+  border-color: var(--accent);
+  color: #050505;
+  background: var(--accent);
+  box-shadow: 0 0 22px rgba(255, 255, 255, 0.12);
+}
+
+.button--primary:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .button:disabled,
@@ -580,8 +667,8 @@ body[data-page="admin"] .intro {
   }
 
   .intro {
-    min-height: clamp(250px, 38vh, 360px);
-    padding: 18px 0 24px;
+    min-height: clamp(150px, 24vh, 230px);
+    padding: 8px 0 12px;
   }
 
   .show-card {
@@ -590,6 +677,16 @@ body[data-page="admin"] .intro {
     gap: 12px 14px;
     min-height: 0;
     padding: 16px;
+  }
+
+  .year-summary {
+    min-height: 46px;
+    padding: 0 12px;
+  }
+
+  .year-shows {
+    gap: 8px;
+    padding: 0 8px 8px;
   }
 
   .show-date {
@@ -617,18 +714,17 @@ body[data-page="admin"] .intro {
   }
 
   .show-title-row {
-    grid-template-columns: minmax(0, 1fr) auto;
     align-items: start;
-    gap: 10px;
+    gap: 8px;
   }
 
   .show-location {
-    font-size: 1rem;
+    font-size: 0.86rem;
   }
 
   .show-venue {
-    margin: 4px 0 6px;
-    font-size: 0.92rem;
+    margin: 0 0 5px;
+    font-size: 1rem;
   }
 
   .show-time,
@@ -662,6 +758,10 @@ body[data-page="admin"] .intro {
     font-size: 0.68rem;
   }
 
+  .button--primary {
+    flex-basis: 100%;
+  }
+
   .age-image-badge {
     width: 52px;
   }
@@ -671,6 +771,11 @@ body[data-page="admin"] .intro {
     min-height: 32px;
     padding: 0 8px;
     font-size: 0.76rem;
+  }
+
+  .show-status {
+    margin-bottom: 6px;
+    font-size: 0.66rem;
   }
 
   .upload-grid {
