@@ -691,7 +691,7 @@ body[data-page="admin"] .intro {
   }
 }
 
-@media (max-width: 760px), (prefers-reduced-data: reduce) {
+@media (prefers-reduced-data: reduce) {
   .background-video {
     display: none;
   }
