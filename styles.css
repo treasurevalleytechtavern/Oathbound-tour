@@ -720,6 +720,10 @@ body[data-widget="compact"] .widget-footer {
   padding-top: 6px;
 }
 
+body[data-widget="compact"] .widget-footer[hidden] {
+  display: none;
+}
+
 body[data-widget="compact"] .widget-all-link {
   min-width: min(100%, 220px);
 }
