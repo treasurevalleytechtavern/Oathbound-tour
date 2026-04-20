@@ -6,6 +6,7 @@ const showDirections = document.body.dataset.showDirections !== "false";
 const showsList = document.querySelector("#shows-list");
 const showCount = document.querySelector("#show-count");
 const template = document.querySelector("#show-card-template");
+const widgetFooter = document.querySelector(".widget-footer");
 
 const copy = {
   upcoming: {
@@ -59,11 +60,16 @@ function filterShows(shows, mode) {
 function renderShows(shows) {
   showsList.innerHTML = "";
   const displayedShows = showLimit && pageMode === "upcoming" ? shows.slice(0, showLimit) : shows;
+  const hasMoreShows = showLimit && pageMode === "upcoming" && shows.length > displayedShows.length;
 
   if (showCount) {
-    showCount.textContent = showLimit && shows.length > displayedShows.length
+    showCount.textContent = hasMoreShows
       ? `Next ${displayedShows.length} of ${shows.length} upcoming shows`
       : copy[pageMode].countLabel(displayedShows.length);
+  }
+
+  if (widgetFooter) {
+    widgetFooter.hidden = !hasMoreShows;
   }
 
   if (!displayedShows.length) {
