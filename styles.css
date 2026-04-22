@@ -810,6 +810,7 @@ body[data-widget="compact"] .widget-all-link {
   }
 
   .show-age {
+    margin-left: auto;
     justify-content: flex-end;
   }
 
