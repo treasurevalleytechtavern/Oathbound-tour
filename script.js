@@ -137,21 +137,29 @@ function createShowCard(show, index) {
   const location = [show.city, show.region].filter(Boolean).join(", ") || show.country || "Location TBA";
   const timeText = formatTimes(show);
 
-  card.querySelector(".show-date").setAttribute("datetime", show.date);
-  card.querySelector(".show-month").textContent = formatMonth(showDate);
-  card.querySelector(".show-day").textContent = formatDay(showDate);
-  card.querySelector(".show-year").textContent = formatYear(showDate);
-  card.querySelector(".show-location").textContent = location;
-  card.querySelector(".show-venue").textContent = show.venue || "Venue TBA";
-  card.querySelector(".show-time").textContent = [formatLongDate(showDate), timeText].filter(Boolean).join(" / ");
-  card.querySelector(".show-lineup").textContent = show.lineup || "";
-  card.querySelector(".show-notes").textContent = show.notes || "";
+  const dateElement = card.querySelector(".show-date");
+  if (dateElement) {
+    dateElement.setAttribute("datetime", show.date);
+  }
+
+  setText(card, ".show-month", formatMonth(showDate));
+  setText(card, ".show-day", formatDay(showDate));
+  setText(card, ".show-year", formatYear(showDate));
+  setText(card, ".show-location", location);
+  setText(card, ".show-venue", show.venue || "Venue TBA");
+  setText(card, ".show-time", [formatLongDate(showDate), timeText].filter(Boolean).join(" / "));
+  setText(card, ".show-lineup", show.lineup || "");
+  setText(card, ".show-notes", show.notes || "");
 
   renderShowStatus(card, showDate, index);
   renderStatusChip(card.querySelector(".show-flags"), show.status);
   renderAgeBadge(card.querySelector(".show-age"), show.ageRestriction);
 
   const actions = card.querySelector(".show-actions");
+  if (!actions) {
+    return card;
+  }
+
   if (pageMode !== "past" && show.ticketUrl) {
     actions.appendChild(createButton(show.ticketUrl, show.ticketLabel || "Tickets", true));
   }
@@ -171,6 +179,10 @@ function createShowCard(show, index) {
 function renderShowStatus(card, showDate, index) {
   const status = card.querySelector(".show-status");
 
+  if (!status) {
+    return;
+  }
+
   if (pageMode !== "upcoming" || index !== 0) {
     status.remove();
     return;
@@ -182,6 +194,10 @@ function renderShowStatus(card, showDate, index) {
 }
 
 function renderStatusChip(container, rawStatus = "") {
+  if (!container) {
+    return;
+  }
+
   const normalized = normalizeShowStatus(rawStatus);
 
   if (!normalized) {
@@ -210,6 +226,10 @@ function createButton(url, label, isPrimary = false) {
 }
 
 function renderAgeBadge(container, ageRestriction) {
+  if (!container) {
+    return;
+  }
+
   const normalized = normalizeAgeRestriction(ageRestriction);
 
   if (!normalized) {
@@ -303,6 +323,14 @@ function renderMessage(className, title, text) {
       <p>${text}</p>
     </div>
   `;
+}
+
+function setText(container, selector, value) {
+  const element = container.querySelector(selector);
+
+  if (element) {
+    element.textContent = value;
+  }
 }
 
 function parseLocalDate(dateString) {
