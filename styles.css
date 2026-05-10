@@ -359,25 +359,28 @@ body[data-page="admin"] .intro {
   min-height: 28px;
   align-items: center;
   justify-content: center;
-  padding: 0 10px;
-  border: 1px solid var(--line-strong);
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
   color: var(--text);
-  font-size: 0.72rem;
+  font-size: 0.76rem;
   font-weight: 800;
   text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.05);
 }
 
 .status-chip--cancelled {
-  border-color: rgba(210, 72, 72, 0.72);
-  color: #ffd8d8;
-  background: rgba(130, 20, 20, 0.34);
+  border-color: rgba(255, 109, 109, 0.9);
+  color: #fff2f2;
+  background: rgba(156, 20, 20, 0.56);
+  box-shadow: 0 0 22px rgba(255, 77, 77, 0.16);
 }
 
 .status-chip--relocated {
-  border-color: rgba(191, 191, 191, 0.68);
+  border-color: rgba(255, 201, 122, 0.88);
   color: #f4f6f7;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(123, 78, 11, 0.42);
+  box-shadow: 0 0 20px rgba(255, 186, 82, 0.12);
 }
 
 .show-title-row {
@@ -846,8 +849,8 @@ body[data-widget="compact"] .widget-all-link {
 
   .status-chip {
     min-height: 24px;
-    padding: 0 8px;
-    font-size: 0.62rem;
+    padding: 0 9px;
+    font-size: 0.66rem;
   }
 
   .show-lineup,
