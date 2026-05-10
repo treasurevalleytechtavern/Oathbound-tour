@@ -152,7 +152,7 @@ function createShowCard(show, index) {
   renderAgeBadge(card.querySelector(".show-age"), show.ageRestriction);
 
   const actions = card.querySelector(".show-actions");
-  if (show.ticketUrl) {
+  if (pageMode !== "past" && show.ticketUrl) {
     actions.appendChild(createButton(show.ticketUrl, show.ticketLabel || "Tickets", true));
   }
 
