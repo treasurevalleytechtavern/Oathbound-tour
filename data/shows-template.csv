@@ -1,5 +1,5 @@
-date,doorsTime,showTime,venue,address,city,region,country,lineup,ageRestriction,ticketUrl,ticketLabel,infoUrl,infoLabel,notes
-4/30/2026,6:30 PM,7:00 PM,Venue TBA,,Boise,ID,USA,With guests TBA,All Ages,,Tickets,,Details,
-5/15/2026,6:30 PM,7:30 PM,The Loading Dock,,Salt Lake City,UT,USA,Summer run,21+,,Tickets,,Details,
-5/16/2026,,,,,,,,,,,,,,
-5/17/2026,,,,,,,,,,,,,,
+date,doorsTime,showTime,venue,address,city,region,country,lineup,status,ageRestriction,ticketUrl,ticketLabel,infoUrl,infoLabel,notes
+4/30/2026,6:30 PM,7:00 PM,Venue TBA,,Boise,ID,USA,With guests TBA,,All Ages,,Tickets,,Details,
+5/15/2026,6:30 PM,7:30 PM,The Loading Dock,,Salt Lake City,UT,USA,Summer run,,21+,,Tickets,,Details,
+5/16/2026,,,,,,,,,,,,,,,
+5/17/2026,,,,,,,,,,,,,,,

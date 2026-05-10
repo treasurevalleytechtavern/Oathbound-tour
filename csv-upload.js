@@ -14,6 +14,7 @@ const fields = [
   "region",
   "country",
   "lineup",
+  "status",
   "ageRestriction",
   "ticketUrl",
   "ticketLabel",
@@ -190,6 +191,8 @@ function normalizeHeader(header) {
     state: "region",
     province: "region",
     support: "lineup",
+    showstatus: "status",
+    statustext: "status",
   };
 
   return aliases[normalized] || fields.find((field) => field.toLowerCase() === normalized) || normalized;

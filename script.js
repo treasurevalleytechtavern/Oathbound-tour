@@ -148,6 +148,7 @@ function createShowCard(show, index) {
   card.querySelector(".show-notes").textContent = show.notes || "";
 
   renderShowStatus(card, showDate, index);
+  renderStatusChip(card.querySelector(".show-flags"), show.status);
   renderAgeBadge(card.querySelector(".show-age"), show.ageRestriction);
 
   const actions = card.querySelector(".show-actions");
@@ -178,6 +179,20 @@ function renderShowStatus(card, showDate, index) {
   card.classList.add("show-card--next");
   const detail = formatNextShowDetail(showDate);
   status.textContent = detail ? `Next Show • ${detail}` : "Next Show";
+}
+
+function renderStatusChip(container, rawStatus = "") {
+  const normalized = normalizeShowStatus(rawStatus);
+
+  if (!normalized) {
+    container.remove();
+    return;
+  }
+
+  const chip = document.createElement("span");
+  chip.className = `status-chip status-chip--${normalized.key}`;
+  chip.textContent = normalized.label;
+  container.appendChild(chip);
 }
 
 function createButton(url, label, isPrimary = false) {
@@ -249,6 +264,24 @@ function normalizeAgeRestriction(ageRestriction = "") {
   return ageRestriction.trim();
 }
 
+function normalizeShowStatus(status = "") {
+  const normalized = status.trim().toLowerCase();
+
+  if (!normalized) {
+    return null;
+  }
+
+  if (normalized.includes("cancel")) {
+    return { key: "cancelled", label: "Cancelled" };
+  }
+
+  if (normalized.includes("relocat") || normalized.includes("moved")) {
+    return { key: "relocated", label: "Relocated" };
+  }
+
+  return { key: "default", label: status.trim() };
+}
+
 function createDirectionsUrl(show) {
   const venue = show.venue && !/tba/i.test(show.venue) ? show.venue : "";
   const location = [show.city, show.region, show.country].filter(Boolean).join(", ");
@@ -310,7 +343,7 @@ function formatNextShowDetail(showDate) {
     return "In 2 days";
   }
 
-  if (dayDifference <= 7) {
+  if (dayDifference < 7) {
     return `This ${formatWeekday(target)}`;
   }
 

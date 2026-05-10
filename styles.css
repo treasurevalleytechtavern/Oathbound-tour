@@ -347,6 +347,39 @@ body[data-page="admin"] .intro {
   color: var(--muted);
 }
 
+.show-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 8px;
+}
+
+.status-chip {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  border: 1px solid var(--line-strong);
+  color: var(--text);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.status-chip--cancelled {
+  border-color: rgba(210, 72, 72, 0.72);
+  color: #ffd8d8;
+  background: rgba(130, 20, 20, 0.34);
+}
+
+.status-chip--relocated {
+  border-color: rgba(191, 191, 191, 0.68);
+  color: #f4f6f7;
+  background: rgba(255, 255, 255, 0.12);
+}
+
 .show-title-row {
   display: flex;
   align-items: center;
@@ -403,7 +436,9 @@ body[data-page="admin"] .intro {
 
 .age-image-badge {
   width: clamp(68px, 8vw, 98px);
-  height: auto;
+  height: clamp(68px, 8vw, 98px);
+  object-fit: contain;
+  object-position: center;
   filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.12));
 }
 
@@ -804,6 +839,17 @@ body[data-widget="compact"] .widget-all-link {
     font-size: 0.84rem;
   }
 
+  .show-flags {
+    margin-bottom: 6px;
+    gap: 6px;
+  }
+
+  .status-chip {
+    min-height: 24px;
+    padding: 0 8px;
+    font-size: 0.62rem;
+  }
+
   .show-lineup,
   .show-notes {
     margin-top: 4px;
@@ -836,6 +882,7 @@ body[data-widget="compact"] .widget-all-link {
 
   .age-image-badge {
     width: 52px;
+    height: 52px;
   }
 
   .age-text-badge {
