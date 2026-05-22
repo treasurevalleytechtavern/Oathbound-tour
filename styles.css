@@ -736,47 +736,6 @@ body[data-widget="compact"] .button {
   min-width: 104px;
 }
 
-body[data-widget="compact"] .widget-details {
-  margin-top: 6px;
-}
-
-body[data-widget="compact"] .widget-details-summary {
-  display: inline-flex;
-  align-items: center;
-  min-height: 28px;
-  padding: 0;
-  color: var(--soft);
-  font-size: 0.8rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  cursor: pointer;
-  list-style: none;
-}
-
-body[data-widget="compact"] .widget-details-summary::-webkit-details-marker {
-  display: none;
-}
-
-body[data-widget="compact"] .widget-details-summary::after {
-  margin-left: 8px;
-  content: "+";
-  color: var(--muted);
-  font-size: 1rem;
-  line-height: 1;
-}
-
-body[data-widget="compact"] .widget-details[open] .widget-details-summary::after {
-  content: "-";
-}
-
-body[data-widget="compact"] .widget-details-body {
-  margin-top: 8px;
-}
-
-body[data-widget="compact"] .widget-details .show-lineup {
-  margin-top: 0;
-}
-
 body[data-widget="compact"] .show-actions {
   grid-column: 3;
   align-self: center;
