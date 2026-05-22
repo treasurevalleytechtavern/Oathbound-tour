@@ -154,6 +154,7 @@ function createShowCard(show, index) {
   renderShowStatus(card, showDate, index);
   renderStatusChip(card.querySelector(".show-flags"), show.status);
   renderAgeBadge(card.querySelector(".show-age"), show.ageRestriction);
+  renderWidgetDetails(card, show);
 
   const actions = card.querySelector(".show-actions");
   if (!actions) {
@@ -253,6 +254,24 @@ function renderAgeBadge(container, ageRestriction) {
   container.appendChild(fallback);
 }
 
+function renderWidgetDetails(card, show) {
+  const details = card.querySelector(".widget-details");
+
+  if (!details) {
+    return;
+  }
+
+  const hasLineup = Boolean(show.lineup && show.lineup.trim());
+  const hasNotes = Boolean(show.notes && show.notes.trim());
+
+  toggleElement(card.querySelector(".show-lineup"), hasLineup);
+  toggleElement(card.querySelector(".show-notes"), hasNotes);
+
+  if (!hasLineup && !hasNotes) {
+    details.remove();
+  }
+}
+
 function createImageBadge(src, label) {
   const image = document.createElement("img");
   image.className = "age-image-badge";
@@ -331,6 +350,19 @@ function setText(container, selector, value) {
   if (element) {
     element.textContent = value;
   }
+}
+
+function toggleElement(element, shouldShow) {
+  if (!element) {
+    return;
+  }
+
+  if (shouldShow) {
+    element.hidden = false;
+    return;
+  }
+
+  element.hidden = true;
 }
 
 function parseLocalDate(dateString) {

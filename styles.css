@@ -712,7 +712,7 @@ body[data-widget="compact"] .show-card {
   grid-template-columns: minmax(74px, max-content) minmax(260px, 680px) auto;
   justify-content: start;
   min-height: 112px;
-  padding: clamp(15px, 2.4vw, 22px);
+  padding: clamp(12px, 2vw, 18px);
   gap: clamp(14px, 3vw, 26px);
 }
 
@@ -728,8 +728,53 @@ body[data-widget="compact"] .show-location {
   font-size: clamp(0.86rem, 1.7vw, 1.05rem);
 }
 
+body[data-widget="compact"] .show-age {
+  padding-bottom: 2px;
+}
+
 body[data-widget="compact"] .button {
   min-width: 104px;
+}
+
+body[data-widget="compact"] .widget-details {
+  margin-top: 6px;
+}
+
+body[data-widget="compact"] .widget-details-summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0;
+  color: var(--soft);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+  list-style: none;
+}
+
+body[data-widget="compact"] .widget-details-summary::-webkit-details-marker {
+  display: none;
+}
+
+body[data-widget="compact"] .widget-details-summary::after {
+  margin-left: 8px;
+  content: "+";
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+body[data-widget="compact"] .widget-details[open] .widget-details-summary::after {
+  content: "-";
+}
+
+body[data-widget="compact"] .widget-details-body {
+  margin-top: 8px;
+}
+
+body[data-widget="compact"] .widget-details .show-lineup {
+  margin-top: 0;
 }
 
 body[data-widget="compact"] .show-actions {
@@ -928,7 +973,11 @@ body[data-widget="compact"] .widget-all-link {
   body[data-widget="compact"] .show-card {
     grid-template-columns: auto minmax(0, 1fr);
     min-height: 0;
-    padding: 16px;
+    padding: 12px;
+  }
+
+  body[data-widget="compact"] .show-age {
+    padding: 0 0 2px;
   }
 
   body[data-widget="compact"] .show-actions {
