@@ -387,10 +387,11 @@ body[data-page="admin"] .intro {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: clamp(10px, 2vw, 16px);
+  gap: clamp(34px, 6vw, 78px);
 }
 
 .show-title-row > div:first-child {
+  flex: 0 1 clamp(220px, 28vw, 340px);
   min-width: 0;
 }
 
@@ -436,7 +437,7 @@ body[data-page="admin"] .intro {
   align-items: center;
   justify-content: flex-end;
   flex: 0 0 auto;
-  padding: 0 0 10px clamp(16px, 3vw, 30px);
+  padding: 0 0 18px;
 }
 
 .age-image-badge {
@@ -827,6 +828,10 @@ body[data-widget="compact"] .widget-all-link {
   .show-title-row {
     align-items: start;
     gap: 8px;
+  }
+
+  .show-title-row > div:first-child {
+    flex-basis: auto;
   }
 
   .show-location {
