@@ -435,6 +435,8 @@ body[data-page="admin"] .intro {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex: 0 0 auto;
+  padding: 0 0 10px clamp(16px, 3vw, 30px);
 }
 
 .age-image-badge {
@@ -861,6 +863,7 @@ body[data-widget="compact"] .widget-all-link {
   .show-age {
     margin-left: auto;
     justify-content: flex-end;
+    padding: 0 0 6px 10px;
   }
 
   .show-actions {
