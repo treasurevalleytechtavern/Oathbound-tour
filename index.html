@@ -6,7 +6,22 @@
     <title>Oathbound Tour</title>
     <meta name="description" content="Upcoming Oathbound tour dates, tickets, venues, and show details.">
     <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+      (() => {
+        const themeStartsAt = new Date("2026-05-22T00:00:00-06:00");
+        const themeEndsAt = new Date("2026-06-29T00:00:00-06:00");
+        const now = new Date();
+
+        if (now >= themeStartsAt && now < themeEndsAt) {
+          document.documentElement.dataset.tourTheme = "myspace";
+          document.documentElement.classList.add("myspace-theme");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=20260522-contact-links">
   </head>
   <body data-page="upcoming" data-root=".">
     <video class="background-video" autoplay muted loop playsinline preload="metadata" poster="assets/oathbound-video-poster.png" aria-hidden="true" tabindex="-1">
@@ -15,6 +30,7 @@
     <div class="background-overlay" aria-hidden="true"></div>
 
     <header class="site-header">
+      <p class="tour-window-title" aria-hidden="true">xX PrettySuspect x Oathbound Xx</p>
       <a class="brand" href="https://oathboundband.com" aria-label="Oathbound home">
         <img src="assets/oathbound-logo-white.png" alt="Oathbound">
       </a>
@@ -76,8 +92,8 @@
       <p class="footer-tagline">Forged in sound. Bound by oath.</p>
     </footer>
 
-    <script src="site-ui.js" defer></script>
-    <script src="script.js" defer></script>
+    <script src="site-ui.js?v=20260522-nav-link-tuneup" defer></script>
+    <script src="script.js?v=20260522-top8-revelry-fixed" defer></script>
   </body>
 </html>
 
