@@ -7,6 +7,8 @@ const showsList = document.querySelector("#shows-list");
 const showCount = document.querySelector("#show-count");
 const template = document.querySelector("#show-card-template");
 const widgetFooter = document.querySelector(".widget-footer");
+const isMyspaceTheme = document.documentElement.classList.contains("myspace-theme")
+  && document.body.dataset.page === "upcoming";
 
 const copy = {
   upcoming: {
@@ -20,6 +22,10 @@ const copy = {
     countLabel: (count) => `${count} past ${count === 1 ? "show" : "shows"}`,
   },
 };
+
+if (isMyspaceTheme) {
+  renderTourFriends();
+}
 
 loadShows();
 
@@ -35,6 +41,10 @@ async function loadShows() {
     const filteredShows = filterShows(shows, pageMode);
     renderShows(filteredShows);
   } catch (error) {
+    if (isMyspaceTheme) {
+      renderTourFriends();
+    }
+
     renderMessage("error-state", "Show data unavailable", "The show list could not be loaded. Check data/shows.json and try again.");
     console.error(error);
   }
@@ -63,9 +73,11 @@ function renderShows(shows) {
   const hasMoreShows = showLimit && pageMode === "upcoming" && shows.length > displayedShows.length;
 
   if (showCount) {
-    showCount.textContent = hasMoreShows
-      ? `Next ${displayedShows.length} of ${shows.length} upcoming shows`
-      : copy[pageMode].countLabel(displayedShows.length);
+    showCount.textContent = isMyspaceTheme
+      ? `${displayedShows.length} bulletins`
+      : hasMoreShows
+        ? `Next ${displayedShows.length} of ${shows.length} upcoming shows`
+        : copy[pageMode].countLabel(displayedShows.length);
   }
 
   if (widgetFooter) {
@@ -82,9 +94,166 @@ function renderShows(shows) {
     return;
   }
 
+  if (isMyspaceTheme) {
+    renderMyspaceTourWall(displayedShows);
+    renderTourFriends(displayedShows);
+    return;
+  }
+
   const fragment = document.createDocumentFragment();
   displayedShows.forEach((show, index) => fragment.appendChild(createShowCard(show, index)));
   showsList.appendChild(fragment);
+}
+
+function renderMyspaceTourWall(shows) {
+  const fragment = document.createDocumentFragment();
+  shows.forEach((show, index) => fragment.appendChild(createMyspacePost(show, index)));
+  showsList.appendChild(fragment);
+}
+
+function createMyspacePost(show, index) {
+  const post = document.createElement("article");
+  const showDate = parseLocalDate(show.date);
+  const location = [show.city, show.region].filter(Boolean).join(", ") || show.country || "Location TBA";
+  const timeText = formatTimes(show);
+
+  post.className = index === 0 ? "myspace-post myspace-post--next" : "myspace-post";
+
+  const avatarColumn = document.createElement("div");
+  avatarColumn.className = "myspace-post-avatar";
+
+  const avatar = document.createElement("img");
+  avatar.src = `${rootPath}/assets/oathbound-profile-dsc03045-web.jpg`;
+  avatar.alt = "";
+  avatar.loading = "lazy";
+  avatarColumn.appendChild(avatar);
+
+  const avatarName = document.createElement("span");
+  avatarName.textContent = index % 2 === 0 ? "Oathbound" : "Pretty Suspect";
+  avatarColumn.appendChild(avatarName);
+
+  const body = document.createElement("div");
+  body.className = "myspace-post-body";
+
+  const kicker = document.createElement("p");
+  kicker.className = "myspace-post-kicker";
+  kicker.textContent = index === 0
+    ? "Oathbound posted a bulletin"
+    : index % 2 === 0
+      ? "New show added"
+      : "Pretty Suspect left a comment";
+
+  const title = document.createElement("h3");
+  title.textContent = `${location} / ${show.venue || "Venue TBA"}`;
+
+  const timestamp = document.createElement("p");
+  timestamp.className = "myspace-post-time";
+  timestamp.textContent = `Posted ${formatLongDate(showDate)} at 3:33 PM`;
+
+  const details = document.createElement("div");
+  details.className = "myspace-post-details";
+
+  const dateLine = document.createElement("p");
+  dateLine.innerHTML = `<strong>Date:</strong> ${formatLongDate(showDate)}`;
+  details.appendChild(dateLine);
+
+  if (timeText) {
+    const timeLine = document.createElement("p");
+    timeLine.innerHTML = `<strong>Time:</strong> ${timeText}`;
+    details.appendChild(timeLine);
+  }
+
+  if (show.lineup) {
+    const lineup = document.createElement("p");
+    lineup.innerHTML = `<strong>Lineup:</strong> ${escapeHtml(show.lineup)}`;
+    details.appendChild(lineup);
+  }
+
+  const notes = document.createElement("p");
+  notes.className = "myspace-post-notes";
+  notes.textContent = shortenPostText(show.notes || "Tour stop details are waking up from dial-up sleep. Check the links and pull up loud.");
+
+  const badges = document.createElement("div");
+  badges.className = "myspace-post-badges";
+  const age = normalizeAgeRestriction(show.ageRestriction);
+  if (age) {
+    const ageBadge = document.createElement("span");
+    ageBadge.className = "myspace-age-badge";
+    ageBadge.textContent = age;
+    badges.appendChild(ageBadge);
+  }
+
+  const actions = document.createElement("div");
+  actions.className = "myspace-post-actions";
+
+  if (show.ticketUrl) {
+    actions.appendChild(createButton(show.ticketUrl, show.ticketLabel || "Tickets", true));
+  }
+
+  if (show.infoUrl) {
+    actions.appendChild(createButton(show.infoUrl, show.infoLabel || "Details"));
+  }
+
+  const directionsUrl = createDirectionsUrl(show);
+  if (directionsUrl) {
+    actions.appendChild(createButton(directionsUrl, "Map It"));
+  }
+
+  body.append(kicker, title, timestamp, details, notes);
+  if (badges.children.length) {
+    body.appendChild(badges);
+  }
+  if (actions.children.length) {
+    body.appendChild(actions);
+  }
+
+  post.append(avatarColumn, body);
+  return post;
+}
+
+function renderTourFriends() {
+  const container = document.querySelector("#tour-friends-list");
+
+  if (!container) {
+    return;
+  }
+
+  const friends = [
+    { name: "Pretty Suspect", image: "assets/top8-pretty-suspect.webp" },
+    { name: "Cosmic Waste", image: "assets/top8-cosmic-waste.webp" },
+    { name: "Hide Heaven", image: "assets/top8-hide-heaven.webp" },
+    { name: "Drawn by Knives", image: "assets/top8-drawn-by-knives.webp" },
+    { name: "Dead Nexus", image: "assets/top8-dead-nexus.webp" },
+    { name: "Hallway Scenes", image: "assets/top8-hallway-scenes.webp" },
+    { name: "Revelry", image: "assets/top8-revelry.webp" },
+    { name: "Foghorn", image: "assets/top8-foghorn.webp" },
+  ];
+  container.innerHTML = "";
+
+  friends.forEach((friend) => {
+    const tile = document.createElement("div");
+    tile.className = `tour-friend tour-friend--${createFriendSlug(friend.name)}`;
+    tile.setAttribute("aria-label", friend.name);
+
+    const media = document.createElement("span");
+    media.className = "tour-friend-media";
+
+    if (friend.image) {
+      const image = document.createElement("img");
+      image.src = `${rootPath}/${friend.image}`;
+      image.alt = "";
+      image.loading = "lazy";
+      media.appendChild(image);
+    } else {
+      media.textContent = getFriendTileText(friend.name);
+    }
+
+    const label = document.createElement("p");
+    label.textContent = friend.name;
+
+    tile.append(media, label);
+    container.appendChild(tile);
+  });
 }
 
 function renderPastShowsByYear(shows) {
@@ -346,6 +515,54 @@ function toggleElement(element, shouldShow) {
   }
 
   element.hidden = true;
+}
+
+function shortenPostText(text) {
+  const trimmed = text.trim();
+
+  if (trimmed.length <= 260) {
+    return trimmed;
+  }
+
+  return `${trimmed.slice(0, 257).trim()}...`;
+}
+
+function createFriendInitials(label) {
+  return label
+    .split(/[\s,]+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0].toUpperCase())
+    .join("");
+}
+
+function getFriendTileText(label) {
+  const stylized = {
+    "Pretty Suspect": "Pretty Suspect",
+    "Cosmic Waste": "Cosmic Waste",
+    "Hide Heaven": "Hide Heaven",
+    "Drawn by Knives": "Drawn by Knives",
+    "Dead Nexus": "Dead Nexus",
+    "Revelry": "Revelry",
+    "Hallway Scenes": "Hallway Scenes",
+    "Foghorn": "Foghorn",
+  };
+
+  return stylized[label] || createFriendInitials(label);
+}
+
+function createFriendSlug(label) {
+  return label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+}
+
+function escapeHtml(value) {
+  return value.replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    "\"": "&quot;",
+    "'": "&#39;",
+  }[character]));
 }
 
 function parseLocalDate(dateString) {
