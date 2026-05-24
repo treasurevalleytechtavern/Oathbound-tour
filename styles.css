@@ -2025,6 +2025,7 @@ html.myspace-theme .intro h1 span {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  align-items: center;
   padding: 0 10px;
 }
 
@@ -2039,13 +2040,47 @@ html.myspace-theme .intro h1 span {
 .myspace-player-controls button {
   min-height: 28px;
   padding: 0 12px;
+  text-transform: lowercase;
+}
+
+.myspace-progress-wrap {
+  display: flex;
+  flex: 1 1 260px;
+  min-width: 180px;
+  align-items: center;
+  gap: 8px;
+}
+
+.myspace-progress {
+  flex: 1 1 auto;
+  min-width: 110px;
+  accent-color: #ff4ec8;
+}
+
+.myspace-time {
+  min-width: 78px;
+  color: #111;
+  font: 700 0.72rem/1 "Courier New", monospace;
+  text-align: right;
+}
+
+.myspace-stream-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 10px 0;
+}
+
+.myspace-stream-links span {
+  color: #d900a8;
+  font: 900 0.76rem/1 Verdana, Arial, sans-serif;
 }
 
 .myspace-listen-link {
   display: inline-flex;
   min-height: 30px;
   align-items: center;
-  margin: 10px 10px 0;
   padding: 0 12px;
   color: #003399;
 }

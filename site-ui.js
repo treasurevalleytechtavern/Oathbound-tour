@@ -171,14 +171,22 @@ function prepareMyspaceTourWall() {
     <h2 id="myspace-player-title">Oathbound Music</h2>
     <div class="myspace-player-screen">
       <span>Now Playing:</span>
-      <strong>Oathbound - Myspace Tour 2026</strong>
+      <strong>Set Adrift</strong>
     </div>
-    <div class="myspace-player-controls" aria-hidden="true">
-      <button type="button" tabindex="-1">play</button>
-      <button type="button" tabindex="-1">pause</button>
-      <button type="button" tabindex="-1">skip</button>
+    <audio class="myspace-audio" preload="metadata" src="assets/audio/Oathbound_Set%20Adrift.mp3"></audio>
+    <div class="myspace-player-controls">
+      <button class="myspace-play-toggle" type="button" aria-label="Play Set Adrift">play</button>
+      <div class="myspace-progress-wrap">
+        <input class="myspace-progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Set Adrift playback progress">
+        <span class="myspace-time" aria-live="polite">0:00 / 0:00</span>
+      </div>
     </div>
-    <a class="myspace-listen-link" href="https://oathboundband.com/music">Listen for real</a>
+    <div class="myspace-stream-links" aria-label="Listen to Colors in Grey">
+      <span>Colors in Grey:</span>
+      <a class="myspace-listen-link" href="https://open.spotify.com/album/744KAclbtOvPHRawHOy1C9">Spotify</a>
+      <a class="myspace-listen-link" href="https://music.apple.com/us/album/colors-in-grey/1842170817">Apple Music</a>
+      <a class="myspace-listen-link" href="https://music.youtube.com/playlist?list=OLAK5uy_mX3NtCciEfpWnJQZXiSWDtOgouXR4NCEM">YouTube Music</a>
+    </div>
   `;
 
   const blogTitle = document.createElement("section");
@@ -192,4 +200,70 @@ function prepareMyspaceTourWall() {
   layout.append(sidebar, content);
   content.append(intro, player, blogTitle, showsShell);
   main.append(layout);
+  prepareMyspaceAudioPlayer(player);
+}
+
+function prepareMyspaceAudioPlayer(player) {
+  const audio = player.querySelector(".myspace-audio");
+  const toggle = player.querySelector(".myspace-play-toggle");
+  const progress = player.querySelector(".myspace-progress");
+  const time = player.querySelector(".myspace-time");
+
+  if (!audio || !toggle || !progress || !time) {
+    return;
+  }
+
+  const formatTime = (seconds) => {
+    if (!Number.isFinite(seconds) || seconds < 0) {
+      return "0:00";
+    }
+
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = Math.floor(seconds % 60).toString().padStart(2, "0");
+    return `${minutes}:${remainingSeconds}`;
+  };
+
+  const updateTime = () => {
+    const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
+    const currentTime = Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
+    progress.value = duration ? String((currentTime / duration) * 100) : "0";
+    time.textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+  };
+
+  const setPlayingState = (isPlaying) => {
+    toggle.textContent = isPlaying ? "pause" : "play";
+    toggle.setAttribute("aria-label", `${isPlaying ? "Pause" : "Play"} Set Adrift`);
+  };
+
+  toggle.addEventListener("click", () => {
+    if (audio.paused) {
+      audio.play().catch(() => {
+        setPlayingState(false);
+      });
+      return;
+    }
+
+    audio.pause();
+  });
+
+  progress.addEventListener("input", () => {
+    const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
+    if (!duration) {
+      return;
+    }
+
+    audio.currentTime = (Number(progress.value) / 100) * duration;
+    updateTime();
+  });
+
+  audio.addEventListener("loadedmetadata", updateTime);
+  audio.addEventListener("timeupdate", updateTime);
+  audio.addEventListener("play", () => setPlayingState(true));
+  audio.addEventListener("pause", () => setPlayingState(false));
+  audio.addEventListener("ended", () => {
+    setPlayingState(false);
+    updateTime();
+  });
+
+  updateTime();
 }
