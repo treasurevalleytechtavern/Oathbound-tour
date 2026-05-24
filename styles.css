@@ -1857,8 +1857,11 @@ html[data-tour-theme="myspace"] .footer-nav a {
 }
 
 .tour-friend {
+  display: block;
   min-width: 0;
+  color: inherit;
   text-align: center;
+  text-decoration: none;
 }
 
 .tour-friend-media {
@@ -1875,6 +1878,17 @@ html[data-tour-theme="myspace"] .footer-nav a {
   overflow-wrap: anywhere;
   text-align: center;
   text-transform: uppercase;
+}
+
+.tour-friend:hover .tour-friend-media,
+.tour-friend:focus-visible .tour-friend-media {
+  border-style: inset;
+  box-shadow: 0 0 0 2px #ff4ec8, 0 0 18px rgba(255, 78, 200, 0.75);
+}
+
+.tour-friend:focus-visible {
+  outline: 2px dotted #ffff00;
+  outline-offset: 4px;
 }
 
 .tour-friend-media img {

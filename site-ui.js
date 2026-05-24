@@ -137,7 +137,6 @@ function prepareMyspaceTourWall() {
 
     <section class="myspace-box myspace-url-box" aria-labelledby="myspace-url-title">
       <h2 id="myspace-url-title">Myspace URL</h2>
-      <p>myspace.com/oathboundtour</p>
       <p>tour.oathboundband.com</p>
     </section>
 

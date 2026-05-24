@@ -219,20 +219,21 @@ function renderTourFriends() {
   }
 
   const friends = [
-    { name: "Pretty Suspect", image: "assets/top8-pretty-suspect.webp" },
-    { name: "Cosmic Waste", image: "assets/top8-cosmic-waste.webp" },
-    { name: "Hide Heaven", image: "assets/top8-hide-heaven.webp" },
-    { name: "Drawn by Knives", image: "assets/top8-drawn-by-knives.webp" },
-    { name: "Dead Nexus", image: "assets/top8-dead-nexus.webp" },
-    { name: "Hallway Scenes", image: "assets/top8-hallway-scenes.webp" },
-    { name: "Revelry", image: "assets/top8-revelry.webp" },
-    { name: "Foghorn", image: "assets/top8-foghorn.webp" },
+    { name: "Pretty Suspect", image: "assets/top8-pretty-suspect.webp", url: "https://linktr.ee/prettysuspect" },
+    { name: "Cosmic Waste", image: "assets/top8-cosmic-waste.webp", url: "https://www.cosmicwaste.net/" },
+    { name: "Hide Heaven", image: "assets/top8-hide-heaven.webp", url: "https://www.instagram.com/hideheaven541/" },
+    { name: "Drawn by Knives", image: "assets/top8-drawn-by-knives.webp", url: "https://drawnbyknives.com/" },
+    { name: "Dead Nexus", image: "assets/top8-dead-nexus.webp", url: "https://www.facebook.com/deadnexus/" },
+    { name: "Hallway Scenes", image: "assets/top8-hallway-scenes.webp", url: "https://www.hallwayscenes.com/" },
+    { name: "Revelry", image: "assets/top8-revelry.webp", url: "https://linktr.ee/revelryca" },
+    { name: "Foghorn", image: "assets/top8-foghorn.webp", url: "https://www.instagram.com/officialfoghorn/" },
   ];
   container.innerHTML = "";
 
   friends.forEach((friend) => {
-    const tile = document.createElement("div");
+    const tile = document.createElement("a");
     tile.className = `tour-friend tour-friend--${createFriendSlug(friend.name)}`;
+    tile.href = friend.url;
     tile.setAttribute("aria-label", friend.name);
 
     const media = document.createElement("span");
