@@ -71,6 +71,7 @@ function renderShows(shows) {
   showsList.innerHTML = "";
   const displayedShows = showLimit && pageMode === "upcoming" ? shows.slice(0, showLimit) : shows;
   const hasMoreShows = showLimit && pageMode === "upcoming" && shows.length > displayedShows.length;
+  window.oathboundAnalytics?.trackShowList(displayedShows);
 
   if (showCount) {
     showCount.textContent = isMyspaceTheme
@@ -187,16 +188,16 @@ function createMyspacePost(show, index) {
   actions.className = "myspace-post-actions";
 
   if (show.ticketUrl) {
-    actions.appendChild(createButton(show.ticketUrl, show.ticketLabel || "Tickets", true));
+    actions.appendChild(createButton(show.ticketUrl, show.ticketLabel || "Tickets", true, "ticket", show, index));
   }
 
   if (show.infoUrl) {
-    actions.appendChild(createButton(show.infoUrl, show.infoLabel || "Details"));
+    actions.appendChild(createButton(show.infoUrl, show.infoLabel || "Details", false, "details", show, index));
   }
 
   const directionsUrl = createDirectionsUrl(show);
   if (directionsUrl) {
-    actions.appendChild(createButton(directionsUrl, "Map It"));
+    actions.appendChild(createButton(directionsUrl, "Map It", false, "directions", show, index));
   }
 
   body.append(kicker, title, timestamp, details, notes);
@@ -208,6 +209,7 @@ function createMyspacePost(show, index) {
   }
 
   post.append(avatarColumn, body);
+  window.oathboundAnalytics?.decorateShowCard(post, show, index);
   return post;
 }
 
@@ -269,6 +271,9 @@ function renderPastShowsByYear(shows) {
     if (Number(year) === currentYear) {
       details.open = true;
     }
+    details.addEventListener("toggle", () => {
+      window.oathboundAnalytics?.trackPastYearToggle(year, details.open, yearShows.length);
+    });
 
     const summary = document.createElement("summary");
     summary.className = "year-summary";
@@ -333,18 +338,19 @@ function createShowCard(show, index) {
   }
 
   if (pageMode !== "past" && show.ticketUrl) {
-    actions.appendChild(createButton(show.ticketUrl, show.ticketLabel || "Tickets", true));
+    actions.appendChild(createButton(show.ticketUrl, show.ticketLabel || "Tickets", true, "ticket", show, index));
   }
 
   if (show.infoUrl) {
-    actions.appendChild(createButton(show.infoUrl, show.infoLabel || "Details"));
+    actions.appendChild(createButton(show.infoUrl, show.infoLabel || "Details", false, "details", show, index));
   }
 
   const directionsUrl = pageMode === "past" || !showDirections ? "" : createDirectionsUrl(show);
   if (directionsUrl) {
-    actions.appendChild(createButton(directionsUrl, "Directions"));
+    actions.appendChild(createButton(directionsUrl, "Directions", false, "directions", show, index));
   }
 
+  window.oathboundAnalytics?.decorateShowCard(card, show, index);
   return card;
 }
 
@@ -383,7 +389,7 @@ function renderStatusChip(container, rawStatus = "") {
   container.appendChild(chip);
 }
 
-function createButton(url, label, isPrimary = false) {
+function createButton(url, label, isPrimary = false, actionType = "details", show = null, index = 0) {
   const button = document.createElement("a");
   button.className = isPrimary ? "button button--primary" : "button";
   button.href = url;
@@ -394,6 +400,7 @@ function createButton(url, label, isPrimary = false) {
     button.rel = "noopener noreferrer";
   }
 
+  window.oathboundAnalytics?.decorateShowLink(button, show, actionType, index);
   return button;
 }
 

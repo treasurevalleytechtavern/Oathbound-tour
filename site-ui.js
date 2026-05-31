@@ -199,6 +199,11 @@ function prepareMyspaceTourWall() {
   layout.append(sidebar, content);
   content.append(intro, player, blogTitle, showsShell);
   main.append(layout);
+  topbar.querySelector(".myspace-search")?.addEventListener("submit", () => {
+    window.oathboundAnalytics?.trackEvent("myspace_search_submit", {
+      search_term_entered: Boolean(topbar.querySelector("#myspace-search-input")?.value.trim()),
+    });
+  });
   prepareMyspaceAudioPlayer(player);
 }
 
@@ -207,6 +212,7 @@ function prepareMyspaceAudioPlayer(player) {
   const toggle = player.querySelector(".myspace-play-toggle");
   const progress = player.querySelector(".myspace-progress");
   const time = player.querySelector(".myspace-time");
+  const progressMilestones = new Set();
 
   if (!audio || !toggle || !progress || !time) {
     return;
@@ -253,15 +259,42 @@ function prepareMyspaceAudioPlayer(player) {
 
     audio.currentTime = (Number(progress.value) / 100) * duration;
     updateTime();
+    window.oathboundAnalytics?.trackMyspaceAudio("seek", {
+      audio_percent: Math.round(Number(progress.value)),
+    });
   });
 
   audio.addEventListener("loadedmetadata", updateTime);
-  audio.addEventListener("timeupdate", updateTime);
-  audio.addEventListener("play", () => setPlayingState(true));
-  audio.addEventListener("pause", () => setPlayingState(false));
+  audio.addEventListener("timeupdate", () => {
+    updateTime();
+    const duration = Number.isFinite(audio.duration) ? audio.duration : 0;
+    const percent = duration ? Math.floor((audio.currentTime / duration) * 100) : 0;
+
+    [25, 50, 75].forEach((milestone) => {
+      if (percent >= milestone && !progressMilestones.has(milestone)) {
+        progressMilestones.add(milestone);
+        window.oathboundAnalytics?.trackMyspaceAudio("progress", {
+          audio_percent: milestone,
+        });
+      }
+    });
+  });
+  audio.addEventListener("play", () => {
+    setPlayingState(true);
+    window.oathboundAnalytics?.trackMyspaceAudio("play");
+  });
+  audio.addEventListener("pause", () => {
+    setPlayingState(false);
+    if (!audio.ended) {
+      window.oathboundAnalytics?.trackMyspaceAudio("pause", {
+        audio_seconds: Math.round(audio.currentTime),
+      });
+    }
+  });
   audio.addEventListener("ended", () => {
     setPlayingState(false);
     updateTime();
+    window.oathboundAnalytics?.trackMyspaceAudio("complete");
   });
 
   updateTime();
