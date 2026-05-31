@@ -2286,14 +2286,15 @@ html.myspace-theme .intro h1 span {
 
 .friends-comments {
   display: grid;
-  gap: 8px;
-  padding: 10px;
+  gap: 6px;
+  padding: 8px 10px 10px;
   background: #fff;
 }
 
 .comment-card {
   display: grid;
-  grid-template-columns: 104px minmax(0, 1fr);
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: stretch;
   border: 2px solid #b7c7d6;
   background: #f8f8f8;
 }
@@ -2301,10 +2302,12 @@ html.myspace-theme .intro h1 span {
 .comment-avatar {
   display: grid;
   align-content: start;
-  gap: 5px;
-  padding: 7px;
+  justify-items: center;
+  gap: 4px;
+  width: 96px;
+  padding: 6px;
   color: #111;
-  font: 700 0.72rem/1.1 Verdana, Arial, sans-serif;
+  font: 700 0.7rem/1.05 Verdana, Arial, sans-serif;
   text-align: center;
   background: #bceff8;
 }
@@ -2312,14 +2315,27 @@ html.myspace-theme .intro h1 span {
 .comment-avatar img,
 .comment-avatar span {
   display: grid;
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: 76px;
+  height: 76px;
+  max-width: 76px;
   place-items: center;
   border: 2px solid #111;
   color: #fff;
-  font: 900 1.15rem/1 Verdana, Arial, sans-serif;
+  font: 900 1.05rem/1 Verdana, Arial, sans-serif;
   background: #111;
   object-fit: cover;
+  object-position: center;
+}
+
+.comment-avatar p,
+.comment-avatar strong,
+.comment-avatar a {
+  max-width: 82px;
+  margin: 0;
+  color: #111;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .comment-body {
@@ -2339,6 +2355,7 @@ html.myspace-theme .intro h1 span {
 }
 
 .comment-time {
+  margin-bottom: 5px;
   color: #666;
   font-size: 0.72rem;
 }
@@ -2431,3 +2448,216 @@ html.myspace-theme .intro h1 span {
     padding: 10px;
   }
 }
+
+/* Friends Comments mobile tightening */
+@media (max-width: 560px) {
+  .comment-card {
+    grid-template-columns: 78px minmax(0, 1fr);
+  }
+
+  .comment-avatar {
+    width: 78px;
+    padding: 5px;
+  }
+
+  .comment-avatar img,
+  .comment-avatar span {
+    width: 62px;
+    height: 62px;
+    max-width: 62px;
+  }
+
+  .comment-avatar p,
+  .comment-avatar strong,
+  .comment-avatar a {
+    max-width: 66px;
+    font-size: 0.66rem;
+  }
+}
+
+/* ==========================================================
+   FINAL FIX: Compact MySpace Friend Space / Top Friends
+   This intentionally uses strong selectors + !important because
+   earlier theme/media rules were letting the friend tiles expand
+   into giant gallery cards.
+   ========================================================== */
+
+html.myspace-theme .tour-friends-list,
+html[data-tour-theme="myspace"] .tour-friends-list,
+.myspace-theme .tour-friends-list {
+  display: grid !important;
+  grid-template-columns: repeat(4, 112px) !important;
+  justify-content: start !important;
+  align-items: start !important;
+  gap: 10px 12px !important;
+  padding: 10px !important;
+  background: #fff !important;
+}
+
+html.myspace-theme .tour-friend,
+html[data-tour-theme="myspace"] .tour-friend,
+.myspace-theme .tour-friend {
+  display: block !important;
+  width: 112px !important;
+  max-width: 112px !important;
+  min-width: 0 !important;
+  color: #111 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+}
+
+html.myspace-theme .tour-friend-media,
+html[data-tour-theme="myspace"] .tour-friend-media,
+.myspace-theme .tour-friend-media,
+html.myspace-theme .tour-friend--pretty-suspect .tour-friend-media,
+html.myspace-theme .tour-friend--cosmic-waste .tour-friend-media,
+html.myspace-theme .tour-friend--dead-nexus .tour-friend-media,
+html.myspace-theme .tour-friend--hide-heaven .tour-friend-media,
+html.myspace-theme .tour-friend--drawn-by-knives .tour-friend-media,
+html.myspace-theme .tour-friend--salt .tour-friend-media,
+html.myspace-theme .tour-friend--hallway-scenes .tour-friend-media,
+html.myspace-theme .tour-friend--foghorn .tour-friend-media,
+html[data-tour-theme="myspace"] .tour-friend--pretty-suspect .tour-friend-media,
+html[data-tour-theme="myspace"] .tour-friend--cosmic-waste .tour-friend-media,
+html[data-tour-theme="myspace"] .tour-friend--dead-nexus .tour-friend-media,
+html[data-tour-theme="myspace"] .tour-friend--hide-heaven .tour-friend-media,
+html[data-tour-theme="myspace"] .tour-friend--drawn-by-knives .tour-friend-media,
+html[data-tour-theme="myspace"] .tour-friend--salt .tour-friend-media,
+html[data-tour-theme="myspace"] .tour-friend--hallway-scenes .tour-friend-media,
+html[data-tour-theme="myspace"] .tour-friend--foghorn .tour-friend-media,
+.myspace-theme .tour-friend--pretty-suspect .tour-friend-media,
+.myspace-theme .tour-friend--cosmic-waste .tour-friend-media,
+.myspace-theme .tour-friend--dead-nexus .tour-friend-media,
+.myspace-theme .tour-friend--hide-heaven .tour-friend-media,
+.myspace-theme .tour-friend--drawn-by-knives .tour-friend-media,
+.myspace-theme .tour-friend--salt .tour-friend-media,
+.myspace-theme .tour-friend--hallway-scenes .tour-friend-media,
+.myspace-theme .tour-friend--foghorn .tour-friend-media {
+  display: grid !important;
+  width: 112px !important;
+  height: 112px !important;
+  max-width: 112px !important;
+  max-height: 112px !important;
+  min-width: 112px !important;
+  min-height: 112px !important;
+  aspect-ratio: auto !important;
+  place-items: center !important;
+  margin: 0 auto !important;
+  padding: 4px !important;
+  overflow: hidden !important;
+  border: 3px outset #bceff8 !important;
+  color: #fff;
+  font: 900 0.88rem/0.9 var(--myspace-display-font) !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+}
+
+html.myspace-theme .tour-friend-media img,
+html[data-tour-theme="myspace"] .tour-friend-media img,
+.myspace-theme .tour-friend-media img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+html.myspace-theme .tour-friend p,
+html.myspace-theme .myspace-friends-note,
+html[data-tour-theme="myspace"] .tour-friend p,
+html[data-tour-theme="myspace"] .myspace-friends-note,
+.myspace-theme .tour-friend p,
+.myspace-theme .myspace-friends-note {
+  width: 112px !important;
+  max-width: 112px !important;
+  margin: 4px auto 0 !important;
+  color: #111 !important;
+  font: 700 0.7rem/1.1 Verdana, Arial, Helvetica, sans-serif !important;
+  text-align: center !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+}
+
+html.myspace-theme .tour-friend:hover .tour-friend-media,
+html.myspace-theme .tour-friend:focus-visible .tour-friend-media,
+html[data-tour-theme="myspace"] .tour-friend:hover .tour-friend-media,
+html[data-tour-theme="myspace"] .tour-friend:focus-visible .tour-friend-media,
+.myspace-theme .tour-friend:hover .tour-friend-media,
+.myspace-theme .tour-friend:focus-visible .tour-friend-media {
+  border-style: inset !important;
+  box-shadow:
+    0 0 0 2px #ff4ec8,
+    0 0 12px rgba(255, 78, 200, 0.72) !important;
+}
+
+@media (max-width: 820px) {
+  html.myspace-theme .tour-friends-list,
+  html[data-tour-theme="myspace"] .tour-friends-list,
+  .myspace-theme .tour-friends-list {
+    grid-template-columns: repeat(4, 100px) !important;
+    gap: 9px !important;
+    padding: 8px !important;
+  }
+
+  html.myspace-theme .tour-friend,
+  html[data-tour-theme="myspace"] .tour-friend,
+  .myspace-theme .tour-friend,
+  html.myspace-theme .tour-friend p,
+  html.myspace-theme .myspace-friends-note,
+  html[data-tour-theme="myspace"] .tour-friend p,
+  html[data-tour-theme="myspace"] .myspace-friends-note,
+  .myspace-theme .tour-friend p,
+  .myspace-theme .myspace-friends-note {
+    width: 100px !important;
+    max-width: 100px !important;
+  }
+
+  html.myspace-theme .tour-friend-media,
+  html[data-tour-theme="myspace"] .tour-friend-media,
+  .myspace-theme .tour-friend-media {
+    width: 100px !important;
+    height: 100px !important;
+    max-width: 100px !important;
+    max-height: 100px !important;
+    min-width: 100px !important;
+    min-height: 100px !important;
+  }
+}
+
+@media (max-width: 560px) {
+  html.myspace-theme .tour-friends-list,
+  html[data-tour-theme="myspace"] .tour-friends-list,
+  .myspace-theme .tour-friends-list {
+    grid-template-columns: repeat(2, 104px) !important;
+    justify-content: center !important;
+    gap: 10px 14px !important;
+    padding: 10px !important;
+  }
+
+  html.myspace-theme .tour-friend,
+  html[data-tour-theme="myspace"] .tour-friend,
+  .myspace-theme .tour-friend,
+  html.myspace-theme .tour-friend p,
+  html.myspace-theme .myspace-friends-note,
+  html[data-tour-theme="myspace"] .tour-friend p,
+  html[data-tour-theme="myspace"] .myspace-friends-note,
+  .myspace-theme .tour-friend p,
+  .myspace-theme .myspace-friends-note {
+    width: 104px !important;
+    max-width: 104px !important;
+  }
+
+  html.myspace-theme .tour-friend-media,
+  html[data-tour-theme="myspace"] .tour-friend-media,
+  .myspace-theme .tour-friend-media {
+    width: 104px !important;
+    height: 104px !important;
+    max-width: 104px !important;
+    max-height: 104px !important;
+    min-width: 104px !important;
+    min-height: 104px !important;
+  }
+}
+
