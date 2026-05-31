@@ -52,7 +52,7 @@ function prepareTourThemeCopy() {
   }
 
   if (showsHeading) {
-    showsHeading.textContent = "Latest Bulletins";
+    showsHeading.textContent = "Upcoming Shows";
   }
 }
 
@@ -83,7 +83,7 @@ function prepareMyspaceTourWall() {
         <a href="https://oathboundband.com">Web</a>
         <a href="https://oathboundband.com/music">Music</a>
         <a href="https://www.youtube.com/@Oathbound-Band">Music Videos</a>
-        <a href="#myspace-bulletins">Blogs</a>
+        <a href="#myspace-latest-blog">Blogs</a>
       </nav>
       <form class="myspace-search" action="/" role="search">
         <label class="sr-only" for="myspace-search-input">Search</label>
@@ -95,14 +95,14 @@ function prepareMyspaceTourWall() {
     </div>
     <nav class="myspace-tabs" aria-label="Myspace-inspired navigation">
       <a href="https://oathboundband.com">Home</a>
-      <a href="#myspace-bulletins">Browse</a>
+      <a href="#myspace-upcoming-shows">Browse</a>
       <a href="https://oathboundband.com">Search</a>
       <a href="https://oathboundband.com/socials">Invite</a>
       <a href="https://www.youtube.com/@Oathbound-Band">Film</a>
       <a href="https://oathboundband.com/contact">Mail</a>
-      <a href="#myspace-bulletins">Blog</a>
+      <a href="#myspace-latest-blog">Blog</a>
       <a href="https://oathboundband.com/music">Music</a>
-      <a href="#myspace-bulletins">Shows</a>
+      <a href="#myspace-upcoming-shows">Shows</a>
       <a href="#myspace-friend-space">Friends</a>
       <a href="/past-shows/">Past Shows</a>
     </nav>
@@ -152,16 +152,12 @@ function prepareMyspaceTourWall() {
       </dl>
     </section>
 
-    <section id="myspace-friend-space" class="myspace-box myspace-friends-box" aria-labelledby="myspace-friends-title">
-      <h2 id="myspace-friends-title">Oathbound's Friend Space</h2>
-      <p class="myspace-friends-note">Oathbound has <strong>8</strong> band friends.</p>
-      <div id="tour-friends-list" class="tour-friends-list" aria-label="Top 8 Tour Friends"></div>
-    </section>
   `;
 
   const content = document.createElement("div");
   content.className = "myspace-main-column";
-  showsShell.id = "myspace-bulletins";
+  showsShell.id = "myspace-upcoming-shows";
+  showsShell.classList.add("myspace-upcoming-shows");
 
   const player = document.createElement("section");
   player.className = "myspace-player myspace-box";
@@ -190,14 +186,100 @@ function prepareMyspaceTourWall() {
 
   const blogTitle = document.createElement("section");
   blogTitle.className = "myspace-blog-title";
+  blogTitle.id = "myspace-latest-blog";
   blogTitle.innerHTML = `
     <p>Latest Blog Entry</p>
     <h2>MYSPACE TOUR: pick your city, grab tickets, see you in the pit.</h2>
   `;
 
+  const friendSpace = document.createElement("section");
+  friendSpace.id = "myspace-friend-space";
+  friendSpace.className = "myspace-box myspace-friends-box";
+  friendSpace.setAttribute("aria-labelledby", "myspace-friends-title");
+  friendSpace.innerHTML = `
+    <div class="myspace-module-heading">
+      <h2 id="myspace-friends-title">Oathbound's Friend Space</h2>
+      <p>Oathbound has <strong>4,376</strong> friends.</p>
+    </div>
+    <div id="tour-friends-list" class="tour-friends-list" aria-label="Top 8 Tour Friends"></div>
+  `;
+
+  const comments = document.createElement("section");
+  comments.id = "myspace-friends-comments";
+  comments.className = "myspace-box myspace-comments-box";
+  comments.setAttribute("aria-labelledby", "myspace-comments-title");
+  comments.innerHTML = `
+    <div class="myspace-module-heading">
+      <h2 id="myspace-comments-title">Oathbound's Friends Comments</h2>
+      <a href="#myspace-friends-comments">View All Comments</a>
+    </div>
+    <div class="friends-comments">
+      <article class="comment-card">
+        <div class="comment-avatar">
+          <img src="assets/top8-pretty-suspect.webp" alt="">
+          <strong>Pretty Suspect</strong>
+        </div>
+        <div class="comment-body">
+          <p class="comment-time">May 24, 2026 8:42 PM</p>
+          <p>tour flyer looks cursed in the best way. everybody stretch your necks now.</p>
+        </div>
+      </article>
+      <article class="comment-card">
+        <div class="comment-avatar">
+          <span>CC</span>
+          <strong>The Campbell Club</strong>
+        </div>
+        <div class="comment-body">
+          <p class="comment-time">May 25, 2026 10:05 AM</p>
+          <p>all ages show confirmed. loud guitars loading. bring earplugs and friends.</p>
+        </div>
+      </article>
+      <article class="comment-card">
+        <div class="comment-avatar">
+          <img src="assets/top8-cosmic-waste.webp" alt="">
+          <strong>Cosmic Waste</strong>
+        </div>
+        <div class="comment-body">
+          <p class="comment-time">May 26, 2026 1:11 AM</p>
+          <p>albany lineup is stacked. somebody pack extra cables and questionable van snacks.</p>
+        </div>
+      </article>
+      <article class="comment-card">
+        <div class="comment-avatar">
+          <img src="assets/top8-hide-heaven.webp" alt="">
+          <strong>Hide Heaven</strong>
+        </div>
+        <div class="comment-body">
+          <p class="comment-time">May 27, 2026 9:34 AM</p>
+          <p>oregon is not ready for this much eyeliner-coded breakdown energy.</p>
+        </div>
+      </article>
+      <article class="comment-card">
+        <div class="comment-avatar">
+          <span>SK</span>
+          <strong>scene_kid_208</strong>
+        </div>
+        <div class="comment-body">
+          <p class="comment-time">May 29, 2026 11:52 AM</p>
+          <p>added you after hearing set adrift. please play it on tour or i will be devastated lol.</p>
+        </div>
+      </article>
+      <article class="comment-card">
+        <div class="comment-avatar">
+          <img src="assets/top8-foghorn.webp" alt="">
+          <strong>Foghorn</strong>
+        </div>
+        <div class="comment-body">
+          <p class="comment-time">May 30, 2026 7:08 PM</p>
+          <p>portland finale looking dangerous. somebody tell dante's the internet is leaking into the venue.</p>
+        </div>
+      </article>
+    </div>
+  `;
+
   main.prepend(topbar);
   layout.append(sidebar, content);
-  content.append(intro, player, blogTitle, showsShell);
+  content.append(intro, player, blogTitle, showsShell, friendSpace, comments);
   main.append(layout);
   topbar.querySelector(".myspace-search")?.addEventListener("submit", () => {
     window.oathboundAnalytics?.trackEvent("myspace_search_submit", {

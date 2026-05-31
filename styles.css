@@ -1528,8 +1528,10 @@ html[data-tour-theme="myspace"] .footer-nav a {
   padding: 12px 0 52px;
 }
 
-.myspace-theme #myspace-bulletins,
-.myspace-theme #myspace-friend-space {
+.myspace-theme #myspace-upcoming-shows,
+.myspace-theme #myspace-latest-blog,
+.myspace-theme #myspace-friend-space,
+.myspace-theme #myspace-friends-comments {
   scroll-margin-top: 16px;
 }
 
@@ -1725,7 +1727,8 @@ html[data-tour-theme="myspace"] .footer-nav a {
 .myspace-network-banner,
 .myspace-blog-title,
 .myspace-theme .intro,
-.myspace-theme .shows-shell {
+.myspace-theme .shows-shell,
+.myspace-comments-box {
   border: 2px solid #111;
   background: #f3f3f3;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.78);
@@ -1733,7 +1736,8 @@ html[data-tour-theme="myspace"] .footer-nav a {
 
 .myspace-box h2,
 .myspace-theme .section-heading h2,
-.myspace-player h2 {
+.myspace-player h2,
+.myspace-module-heading h2 {
   margin: 0;
   padding: 7px 9px;
   color: #fff;
@@ -1773,7 +1777,8 @@ html[data-tour-theme="myspace"] .footer-nav a {
 }
 
 .myspace-profile-meta strong,
-.myspace-post-details strong {
+.myspace-show-details strong,
+.myspace-show-description strong {
   color: #d900a8;
 }
 
@@ -1804,8 +1809,8 @@ html[data-tour-theme="myspace"] .footer-nav a {
 
 .myspace-contact-grid a:hover,
 .myspace-contact-grid a:focus-visible,
-.myspace-post-actions .button:hover,
-.myspace-post-actions .button:focus-visible,
+.myspace-show-actions .button:hover,
+.myspace-show-actions .button:focus-visible,
 .myspace-listen-link:hover,
 .myspace-listen-link:focus-visible {
   color: #111;
@@ -1854,6 +1859,33 @@ html[data-tour-theme="myspace"] .footer-nav a {
   grid-template-columns: repeat(2, minmax(128px, 1fr));
   gap: 12px;
   padding: 12px;
+}
+
+.myspace-module-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 2px solid #111;
+  background: #ef9eea;
+}
+
+.myspace-module-heading h2 {
+  border-bottom: 0;
+  background: transparent;
+}
+
+.myspace-module-heading p,
+.myspace-module-heading a {
+  margin: 0;
+  padding: 7px 9px;
+  color: #111;
+  font: 700 0.78rem/1 Verdana, Arial, sans-serif;
+}
+
+.myspace-module-heading a {
+  color: #003399;
+  text-decoration: underline;
 }
 
 .tour-friend {
@@ -1955,10 +1987,6 @@ html[data-tour-theme="myspace"] .footer-nav a {
     #050505;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   text-shadow: 2px 2px 0 #111, 0 0 10px #ff3131;
-}
-
-.myspace-friends-note {
-  padding: 0 8px 2px;
 }
 
 .myspace-network-banner {
@@ -2150,7 +2178,7 @@ html.myspace-theme .intro h1 span {
     #f7fbff;
 }
 
-.myspace-post {
+.myspace-show-card {
   display: grid;
   grid-template-columns: 112px minmax(0, 1fr);
   gap: 9px;
@@ -2158,12 +2186,12 @@ html.myspace-theme .intro h1 span {
   background: #fff;
 }
 
-.myspace-post--next {
+.myspace-show-card--next {
   border-color: #ff4ec8;
   box-shadow: 0 0 0 3px #28efbf inset;
 }
 
-.myspace-post-avatar {
+.myspace-show-avatar {
   display: grid;
   align-content: start;
   gap: 5px;
@@ -2175,7 +2203,7 @@ html.myspace-theme .intro h1 span {
   background: #bceff8;
 }
 
-.myspace-post-avatar img {
+.myspace-show-avatar img {
   width: 100%;
   aspect-ratio: 1 / 1;
   border: 2px solid #111;
@@ -2183,45 +2211,42 @@ html.myspace-theme .intro h1 span {
   object-position: center;
 }
 
-.myspace-post-body {
+.myspace-show-body {
   min-width: 0;
   padding: 8px 10px 10px 0;
 }
 
-.myspace-post-kicker,
-.myspace-post-time {
-  margin: 0 0 5px;
-  color: #666;
-  font-size: 0.74rem;
-}
-
-.myspace-post h3 {
+.myspace-show-card h3 {
   margin: 0 0 4px;
   color: #d900a8;
   font: 900 clamp(1rem, 2.2vw, 1.35rem)/1.15 Verdana, Arial, sans-serif;
+}
+
+.myspace-show-card h3 a {
+  color: inherit;
   text-decoration: underline;
 }
 
-.myspace-post-details {
+.myspace-show-details {
   display: grid;
   gap: 3px;
   margin: 7px 0;
 }
 
-.myspace-post-details p,
-.myspace-post-notes {
+.myspace-show-details p,
+.myspace-show-description {
   margin: 0;
   color: #111;
   font-size: 0.84rem;
   line-height: 1.4;
 }
 
-.myspace-post-notes {
+.myspace-show-description {
   margin-top: 8px;
 }
 
-.myspace-post-badges,
-.myspace-post-actions {
+.myspace-show-badges,
+.myspace-show-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -2240,7 +2265,7 @@ html.myspace-theme .intro h1 span {
   box-shadow: 2px 2px 0 #ff4ec8;
 }
 
-.myspace-post-actions .button {
+.myspace-show-actions .button {
   min-width: 0;
   min-height: 30px;
   padding: 0 10px;
@@ -2254,9 +2279,68 @@ html.myspace-theme .intro h1 span {
   box-shadow: none;
 }
 
-.myspace-post-actions .button--primary {
+.myspace-show-actions .button--primary {
   color: #111;
   background: #ffff00;
+}
+
+.friends-comments {
+  display: grid;
+  gap: 8px;
+  padding: 10px;
+  background: #fff;
+}
+
+.comment-card {
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  border: 2px solid #b7c7d6;
+  background: #f8f8f8;
+}
+
+.comment-avatar {
+  display: grid;
+  align-content: start;
+  gap: 5px;
+  padding: 7px;
+  color: #111;
+  font: 700 0.72rem/1.1 Verdana, Arial, sans-serif;
+  text-align: center;
+  background: #bceff8;
+}
+
+.comment-avatar img,
+.comment-avatar span {
+  display: grid;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  place-items: center;
+  border: 2px solid #111;
+  color: #fff;
+  font: 900 1.15rem/1 Verdana, Arial, sans-serif;
+  background: #111;
+  object-fit: cover;
+}
+
+.comment-body {
+  min-width: 0;
+  padding: 7px 9px;
+  color: #111;
+  font: 0.82rem/1.35 Verdana, Arial, sans-serif;
+  background: #fff;
+}
+
+.comment-body p {
+  margin: 0;
+}
+
+.comment-body p + p {
+  margin-top: 6px;
+}
+
+.comment-time {
+  color: #666;
+  font-size: 0.72rem;
 }
 
 .myspace-theme .site-footer {
@@ -2311,7 +2395,8 @@ html.myspace-theme .intro h1 span {
     width: min(calc(100% - 14px), 1280px);
   }
 
-  .myspace-post {
+  .myspace-show-card,
+  .comment-card {
     grid-template-columns: 78px minmax(0, 1fr);
     gap: 7px;
   }
@@ -2326,11 +2411,13 @@ html.myspace-theme .intro h1 span {
     margin-left: 0;
   }
 
-  .myspace-post-avatar {
+  .myspace-show-avatar,
+  .comment-avatar {
     padding: 6px;
   }
 
-  .myspace-post-body {
+  .myspace-show-body,
+  .comment-body {
     padding: 7px 7px 9px 0;
   }
 

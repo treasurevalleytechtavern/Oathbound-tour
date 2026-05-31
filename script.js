@@ -75,7 +75,7 @@ function renderShows(shows) {
 
   if (showCount) {
     showCount.textContent = isMyspaceTheme
-      ? `${displayedShows.length} bulletins`
+      ? `${displayedShows.length} ${displayedShows.length === 1 ? "show" : "shows"}`
       : hasMoreShows
         ? `Next ${displayedShows.length} of ${shows.length} upcoming shows`
         : copy[pageMode].countLabel(displayedShows.length);
@@ -96,7 +96,7 @@ function renderShows(shows) {
   }
 
   if (isMyspaceTheme) {
-    renderMyspaceTourWall(displayedShows);
+    renderMyspaceUpcomingShows(displayedShows);
     renderTourFriends(displayedShows);
     return;
   }
@@ -106,22 +106,23 @@ function renderShows(shows) {
   showsList.appendChild(fragment);
 }
 
-function renderMyspaceTourWall(shows) {
+function renderMyspaceUpcomingShows(shows) {
   const fragment = document.createDocumentFragment();
-  shows.forEach((show, index) => fragment.appendChild(createMyspacePost(show, index)));
+  shows.forEach((show, index) => fragment.appendChild(createMyspaceShowCard(show, index)));
   showsList.appendChild(fragment);
 }
 
-function createMyspacePost(show, index) {
-  const post = document.createElement("article");
+function createMyspaceShowCard(show, index) {
+  const card = document.createElement("article");
   const showDate = parseLocalDate(show.date);
   const location = [show.city, show.region].filter(Boolean).join(", ") || show.country || "Location TBA";
   const timeText = formatTimes(show);
+  const primaryUrl = show.ticketUrl || show.infoUrl || createDirectionsUrl(show);
 
-  post.className = index === 0 ? "myspace-post myspace-post--next" : "myspace-post";
+  card.className = index === 0 ? "myspace-show-card myspace-show-card--next" : "myspace-show-card";
 
   const avatarColumn = document.createElement("div");
-  avatarColumn.className = "myspace-post-avatar";
+  avatarColumn.className = "myspace-show-avatar";
 
   const avatar = document.createElement("img");
   avatar.src = `${rootPath}/assets/oathbound-profile-dsc03045-web.jpg`;
@@ -130,29 +131,28 @@ function createMyspacePost(show, index) {
   avatarColumn.appendChild(avatar);
 
   const avatarName = document.createElement("span");
-  avatarName.textContent = index % 2 === 0 ? "Oathbound" : "Pretty Suspect";
+  avatarName.textContent = "Oathbound Shows";
   avatarColumn.appendChild(avatarName);
 
   const body = document.createElement("div");
-  body.className = "myspace-post-body";
-
-  const kicker = document.createElement("p");
-  kicker.className = "myspace-post-kicker";
-  kicker.textContent = index === 0
-    ? "Oathbound posted a bulletin"
-    : index % 2 === 0
-      ? "New show added"
-      : "Pretty Suspect left a comment";
+  body.className = "myspace-show-body";
 
   const title = document.createElement("h3");
-  title.textContent = `${location} / ${show.venue || "Venue TBA"}`;
-
-  const timestamp = document.createElement("p");
-  timestamp.className = "myspace-post-time";
-  timestamp.textContent = `Posted ${formatLongDate(showDate)} at 3:33 PM`;
+  if (primaryUrl) {
+    const titleLink = document.createElement("a");
+    titleLink.href = primaryUrl;
+    titleLink.textContent = `${location} / ${show.venue || "Venue TBA"}`;
+    if (primaryUrl.startsWith("http")) {
+      titleLink.target = "_blank";
+      titleLink.rel = "noopener noreferrer";
+    }
+    title.appendChild(titleLink);
+  } else {
+    title.textContent = `${location} / ${show.venue || "Venue TBA"}`;
+  }
 
   const details = document.createElement("div");
-  details.className = "myspace-post-details";
+  details.className = "myspace-show-details";
 
   const dateLine = document.createElement("p");
   dateLine.innerHTML = `<strong>Date:</strong> ${formatLongDate(showDate)}`;
@@ -164,18 +164,24 @@ function createMyspacePost(show, index) {
     details.appendChild(timeLine);
   }
 
+  if (show.venue) {
+    const venueLine = document.createElement("p");
+    venueLine.innerHTML = `<strong>Venue:</strong> ${escapeHtml(show.venue)}`;
+    details.appendChild(venueLine);
+  }
+
   if (show.lineup) {
     const lineup = document.createElement("p");
-    lineup.innerHTML = `<strong>Lineup:</strong> ${escapeHtml(show.lineup)}`;
+    lineup.innerHTML = `<strong>Lineup:</strong> ${escapeHtml(formatLineup(show.lineup))}`;
     details.appendChild(lineup);
   }
 
   const notes = document.createElement("p");
-  notes.className = "myspace-post-notes";
-  notes.textContent = shortenPostText(show.notes || "Tour stop details are waking up from dial-up sleep. Check the links and pull up loud.");
+  notes.className = "myspace-show-description";
+  notes.innerHTML = `<strong>Description:</strong> ${escapeHtml(shortenPostText(show.notes || "Pretty Suspect and Oathbound are bringing the Myspace Tour through town. Expect a loud, sweaty, full-send night of heavy hooks, sharp edges, and scene-era chaos."))}`;
 
   const badges = document.createElement("div");
-  badges.className = "myspace-post-badges";
+  badges.className = "myspace-show-badges";
   const age = normalizeAgeRestriction(show.ageRestriction);
   if (age) {
     const ageBadge = document.createElement("span");
@@ -185,7 +191,7 @@ function createMyspacePost(show, index) {
   }
 
   const actions = document.createElement("div");
-  actions.className = "myspace-post-actions";
+  actions.className = "myspace-show-actions";
 
   if (show.ticketUrl) {
     actions.appendChild(createButton(show.ticketUrl, show.ticketLabel || "Tickets", true, "ticket", show, index));
@@ -200,7 +206,7 @@ function createMyspacePost(show, index) {
     actions.appendChild(createButton(directionsUrl, "Map It", false, "directions", show, index));
   }
 
-  body.append(kicker, title, timestamp, details, notes);
+  body.append(title, details, notes);
   if (badges.children.length) {
     body.appendChild(badges);
   }
@@ -208,9 +214,9 @@ function createMyspacePost(show, index) {
     body.appendChild(actions);
   }
 
-  post.append(avatarColumn, body);
-  window.oathboundAnalytics?.decorateShowCard(post, show, index);
-  return post;
+  card.append(avatarColumn, body);
+  window.oathboundAnalytics?.decorateShowCard(card, show, index);
+  return card;
 }
 
 function renderTourFriends() {
@@ -533,6 +539,14 @@ function shortenPostText(text) {
   }
 
   return `${trimmed.slice(0, 257).trim()}...`;
+}
+
+function formatLineup(lineup = "") {
+  return lineup
+    .split(";")
+    .map((item) => item.trim())
+    .filter(Boolean)
+    .join(", ");
 }
 
 function createFriendInitials(label) {
