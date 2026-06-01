@@ -104,6 +104,7 @@ function prepareMyspaceTourWall() {
       <a href="https://oathboundband.com/music">Music</a>
       <a href="#myspace-upcoming-shows">Shows</a>
       <a href="#myspace-friend-space">Friends</a>
+      <a href="/street-team/">Street Team</a>
       <a href="/past-shows/">Past Shows</a>
     </nav>
   `;

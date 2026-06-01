@@ -1,0 +1,75 @@
+{
+  "general": [
+    {
+      "title": "Oathbound x Pretty Suspect Blank Flyer",
+      "type": "Printable Flyer",
+      "url": "/street-team/kits/OB%20x%20PS%20Blank%20Flyer.jpeg",
+      "preview": "/street-team/kits/OB%20x%20PS%20Blank%20Flyer.jpeg",
+      "fileType": "JPEG"
+    },
+    {
+      "title": "Oathbound x Pretty Suspect Routing Flyer",
+      "type": "Share Graphic",
+      "url": "/street-team/kits/OB%20x%20PS%20Routing%20Flyer.jpg",
+      "preview": "/street-team/kits/OB%20x%20PS%20Routing%20Flyer.jpg",
+      "fileType": "JPG"
+    }
+  ],
+  "cities": {
+    "or/albany": [
+      {
+        "title": "Albany Show Flyer",
+        "type": "Show Flyer",
+        "url": "/street-team/kits/or/6-19-26-Albany-Flyer.JPG",
+        "preview": "/street-team/kits/or/6-19-26-Albany-Flyer.JPG",
+        "fileType": "JPG"
+      }
+    ],
+    "ca/citrus-heights": [
+      {
+        "title": "Citrus Heights Show Flyer",
+        "type": "Show Flyer",
+        "url": "/street-team/kits/ca/6-20%20Sacramento%20Flyer.JPG",
+        "preview": "/street-team/kits/ca/6-20%20Sacramento%20Flyer.JPG",
+        "fileType": "JPG"
+      }
+    ],
+    "ca/palmdale": [
+      {
+        "title": "Palmdale Show Flyer",
+        "type": "Show Flyer",
+        "url": "/street-team/kits/ca/6-22%20Palmdale%20Flyer.JPG",
+        "preview": "/street-team/kits/ca/6-22%20Palmdale%20Flyer.JPG",
+        "fileType": "JPG"
+      }
+    ],
+    "ca/los-angeles": [
+      {
+        "title": "Los Angeles Show Flyer",
+        "type": "Show Flyer",
+        "url": "/street-team/kits/ca/6-23%20LA%20Flyer.jpg",
+        "preview": "/street-team/kits/ca/6-23%20LA%20Flyer.jpg",
+        "fileType": "JPG"
+      }
+    ],
+    "ca/san-diego": [
+      {
+        "title": "San Diego Show Flyer",
+        "type": "Show Flyer",
+        "url": "/street-team/kits/ca/6-25%20San%20Diego%20Flyer.JPEG",
+        "preview": "/street-team/kits/ca/6-25%20San%20Diego%20Flyer.JPEG",
+        "fileType": "JPEG"
+      }
+    ],
+    "or/portland": [
+      {
+        "title": "Portland Show Flyer",
+        "type": "Show Flyer",
+        "url": "/street-team/kits/or/6-28-26-Portland%20Flyer.PNG",
+        "preview": "/street-team/kits/or/6-28-26-Portland%20Flyer.PNG",
+        "fileType": "PNG"
+      }
+    ]
+  },
+  "shows": {}
+}
