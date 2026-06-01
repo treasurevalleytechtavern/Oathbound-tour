@@ -76,14 +76,14 @@ video {
 
 body[data-page="street-team"] .background-overlay {
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.26) 48%, rgba(0, 0, 0, 0.66)),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.48) 68%, #020202),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.5) 48%, rgba(0, 0, 0, 0.84)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.76) 70%, #020202),
     repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 5px);
 }
 
 body[data-page="street-team"] .street-team-background-video {
-  filter: grayscale(0.55) contrast(1.14) brightness(1.08);
-  opacity: 0.92;
+  filter: grayscale(1) contrast(1.22) brightness(0.82);
+  opacity: 0.68;
 }
 
 .site-header {
@@ -877,7 +877,7 @@ body[data-page="admin"] .intro {
 }
 
 .street-team-feature p:not(.eyebrow) {
-  max-width: 640px;
+  max-width: 100%;
   margin-bottom: 0;
   color: var(--soft);
   font-size: clamp(1rem, 1.7vw, 1.2rem);
@@ -1350,7 +1350,7 @@ body.has-artwork-modal {
 
 .street-show-card--compact .street-show-card__meta {
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   color: var(--muted);
   font-size: 0.74rem;
   font-weight: 800;
@@ -1363,9 +1363,18 @@ body.has-artwork-modal {
   justify-content: center;
 }
 
+.street-icon-badge--link {
+  transition: transform 160ms ease, filter 160ms ease;
+}
+
+.street-icon-badge--link:hover {
+  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.35));
+  transform: translateY(-1px);
+}
+
 .street-icon-badge img {
-  width: 90px;
-  height: 90px;
+  width: 112px;
+  height: 112px;
   object-fit: contain;
 }
 
@@ -1373,42 +1382,25 @@ body.has-artwork-modal {
   margin: -2px 0 0 64px;
 }
 
+.street-show-resources {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
 .street-action-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 12px;
-  margin-top: 14px;
 }
 
 .street-action-item {
   display: grid;
-  grid-template-columns: 90px minmax(0, 1fr);
-  gap: 14px;
+  gap: 8px;
   align-items: center;
   padding: 12px;
   border: 1px solid var(--line);
-  background:
-    linear-gradient(135deg, rgba(116, 247, 255, 0.08), transparent 42%),
-    rgba(0, 0, 0, 0.4);
-}
-
-.street-action-item img {
-  width: 90px;
-  height: 90px;
-  object-fit: contain;
-}
-
-.street-action-item--asset {
-  grid-template-columns: minmax(110px, 0.45fr) minmax(0, 1fr);
-  align-items: stretch;
-}
-
-.street-action-item--asset > img {
-  width: 100%;
-  height: clamp(170px, 24vw, 260px);
-  object-fit: contain;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(0, 0, 0, 0.34);
 }
 
 .street-action-item strong,
@@ -1910,30 +1902,12 @@ body[data-widget="compact"] .widget-all-link {
   }
 
   .street-icon-badge img {
-    width: 90px;
-    height: 90px;
+    width: 104px;
+    height: 104px;
   }
 
   .street-action-grid {
     grid-template-columns: 1fr;
-  }
-
-  .street-action-item {
-    grid-template-columns: 90px minmax(0, 1fr);
-  }
-
-  .street-action-item img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .street-action-item--asset {
-    grid-template-columns: 1fr;
-  }
-
-  .street-action-item--asset > img {
-    width: min(100%, 240px);
-    height: 220px;
   }
 
   .street-show-card__date {
