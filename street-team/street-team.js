@@ -257,7 +257,7 @@ function renderStateSelector(regions) {
     button.setAttribute("aria-pressed", region.slug === streetTeamState.selectedRegion ? "true" : "false");
     button.setAttribute("aria-label", `${region.label}, ${region.count} ${region.count === 1 ? "show" : "shows"}`);
     button.innerHTML = `
-      <img src="${getStateIconPath(region)}" alt="${escapeHtml(region.label)}" loading="eager">
+      <img src="${getStateIconPath(region)}" alt="${escapeHtml(region.label)}" loading="eager" onerror="this.onerror=null; this.src='${getStateIconFallbackPath(region)}';">
       <small>${region.count} ${region.count === 1 ? "show" : "shows"}</small>
     `;
     button.addEventListener("click", () => {
@@ -273,6 +273,11 @@ function renderStateSelector(regions) {
 }
 
 function getStateIconPath(region) {
+  const stateName = slugify(region.label || region.abbreviation || "");
+  return `${siteRoot}/assets/icons/states/full-size-300x300/${stateName}-prismatic-300x300.png`;
+}
+
+function getStateIconFallbackPath(region) {
   const stateName = slugify(region.label || region.abbreviation || "");
   return `${siteRoot}/assets/icons/states/full-size-300x300/${stateName}-blue-300x300.png`;
 }
@@ -405,38 +410,49 @@ function createCompactShowRow(show) {
         <p class="show-location">${venue}</p>
         <p class="show-time">${dateLine}${timeLine ? ` / ${escapeHtml(timeLine)}` : ""}</p>
       </div>
-      <div class="street-show-card__meta">${getShowBadges(show).map((badge) => `
-        <span class="street-icon-badge" title="${escapeHtml(badge.label)}">
-          <img src="${escapeHtml(badge.icon)}" alt="${escapeHtml(badge.label)}" loading="lazy">
-        </span>
-      `).join("")}</div>
+      <div class="street-show-card__meta">${getShowBadges(show).map((badge) => renderShowBadge(badge, show)).join("")}</div>
     </div>
   `;
 
   if (!isCancelled) {
-    card.appendChild(createShowResourceGrid(show, downloads, socialAssets));
+    card.appendChild(createShowResourceSection(show, downloads, socialAssets));
   }
 
   return card;
 }
 
-function createShowResourceGrid(show, downloads, socialAssets) {
+function createShowResourceSection(show, downloads, socialAssets) {
+  const section = document.createElement("div");
+  section.className = "street-show-resources";
+
+  if (downloads.length) {
+    const downloadsRow = document.createElement("div");
+    downloadsRow.className = "show-downloads";
+
+    const title = document.createElement("h5");
+    title.textContent = "Show flyer";
+
+    const downloadsGrid = document.createElement("div");
+    downloadsGrid.className = "download-grid download-grid--tiny";
+    downloads.forEach((download) => downloadsGrid.appendChild(createDownloadCard(download, show)));
+
+    downloadsRow.append(title, downloadsGrid);
+    section.appendChild(downloadsRow);
+  }
+
   const grid = document.createElement("div");
   grid.className = "street-action-grid";
   grid.setAttribute("aria-label", "Street team resources for this show");
 
   if (downloads.length) {
-    downloads.forEach((download) => grid.appendChild(createShowDownloadItem(download, show)));
     grid.appendChild(createStreetActionItem({
       key: "in-person",
-      icon: `${siteRoot}/assets/icons/300x300/help-locally-300x300.png`,
       label: "Flyer run",
       text: "Print or post this flyer where it is allowed: venues, record stores, coffee shops, rehearsal spaces, and campus boards.",
     }));
   } else {
     grid.appendChild(createStreetActionItem({
       key: "social-fallback",
-      icon: `${siteRoot}/assets/icons/300x300/spread-the-word-300x300.png`,
       label: "No flyer yet",
       text: `Help ${show.city} wake up anyway: repost the band's show posts, drop the date in local heavy music spaces, and tag friends who would actually show up.`,
     }));
@@ -447,67 +463,18 @@ function createShowResourceGrid(show, downloads, socialAssets) {
   } else {
     grid.appendChild(createStreetActionItem({
       key: "social",
-      icon: `${siteRoot}/assets/icons/300x300/boost-online-300x300.png`,
       label: "Social push",
       text: `Share the show with people near ${show.city}, tag Oathbound, and make it easy for heavy music fans to find the room.`,
     }));
   }
 
-  const primaryUrl = show.ticketUrl || show.infoUrl;
-  if (primaryUrl) {
-    grid.appendChild(createLinkedActionItem({
-      key: "tickets",
-      icon: `${siteRoot}/assets/icons/90x90/tickets-90x90.png`,
-      label: show.ticketUrl ? show.ticketLabel || "Tickets" : show.infoLabel || "Details",
-      text: show.ticketUrl ? "Use the official ticket link in your posts so people can act right away." : "Use the official event link when people ask for details.",
-      linkLabel: show.ticketUrl ? show.ticketLabel || "Get tickets" : show.infoLabel || "Open details",
-      href: primaryUrl,
-      track: show.ticketUrl ? "street-team-ticket" : "street-team-details",
-      show,
-    }));
-  }
-
-  return grid;
-}
-
-function createShowDownloadItem(download, show) {
-  const item = document.createElement("article");
-  item.className = "street-action-item street-action-item--asset";
-
-  if (download.preview) {
-    const image = document.createElement("img");
-    image.src = download.preview;
-    image.alt = download.alt || `${download.title || "Show flyer"} preview`;
-    image.loading = "lazy";
-    item.appendChild(image);
-  }
-
-  const body = document.createElement("div");
-  const title = document.createElement("strong");
-  title.textContent = download.title || `${show.city} Flyer`;
-
-  const hint = document.createElement("span");
-  hint.textContent = download.usage || download.notes || "Show-specific flyer for shares, posts, and approved print spots.";
-
-  const link = createTrackedLink(download.url, "Download flyer", {
-    track: "street-team-download",
-    state: show.regionSlug,
-    city: show.citySlug,
-    showId: show.id,
-    downloadTitle: slugify(download.title || ""),
-    downloadType: slugify(download.type || "download"),
-  }, "street-card-link");
-  link.download = "";
-
-  body.append(title, hint, link);
-  item.appendChild(body);
-  return item;
+  section.appendChild(grid);
+  return section;
 }
 
 function createSocialAssetItem(asset, show) {
   return createLinkedActionItem({
     key: "social",
-    icon: `${siteRoot}/assets/icons/300x300/boost-online-300x300.png`,
     label: asset.title || `${toTitleCase(asset.platform)} post`,
     text: asset.notes || asset.usage || "Share, repost, or tag friends from this post when it fits your area.",
     href: asset.url,
@@ -535,7 +502,6 @@ function createStreetActionItem({ key, icon, label, text }) {
   const item = document.createElement("article");
   item.className = `street-action-item street-action-item--${key}`;
   item.innerHTML = `
-    <img src="${escapeHtml(icon)}" alt="" loading="lazy">
     <div>
       <strong>${escapeHtml(label)}</strong>
       <span>${escapeHtml(text)}</span>
@@ -551,25 +517,41 @@ function getShowBadges(show) {
     const ageKey = show.ageRestriction.includes("21") ? "21" : "all-ages";
     badges.push({
       label: show.ageRestriction,
-      icon: `${siteRoot}/assets/icons/90x90/${ageKey}-90x90.png`,
+      icon: `${siteRoot}/assets/icons/300x300/${ageKey}-300x300.png`,
     });
   }
 
   if (isFreeShow(show)) {
     badges.push({
       label: "Free show",
-      icon: `${siteRoot}/assets/icons/90x90/free-show-90x90.png`,
+      icon: `${siteRoot}/assets/icons/300x300/free-show-300x300.png`,
     });
   }
 
   if (show.ticketUrl || show.infoUrl) {
     badges.push({
       label: show.ticketUrl ? show.ticketLabel || "Tickets" : show.infoLabel || "Details",
-      icon: `${siteRoot}/assets/icons/90x90/tickets-90x90.png`,
+      icon: `${siteRoot}/assets/icons/300x300/tickets-300x300.png`,
+      href: show.ticketUrl || show.infoUrl,
+      track: show.ticketUrl ? "street-team-ticket" : "street-team-details",
     });
   }
 
   return badges;
+}
+
+function renderShowBadge(badge, show) {
+  const image = `<img src="${escapeHtml(badge.icon)}" alt="${escapeHtml(badge.label)}" loading="lazy">`;
+
+  if (!badge.href) {
+    return `<span class="street-icon-badge" title="${escapeHtml(badge.label)}">${image}</span>`;
+  }
+
+  return `
+    <a class="street-icon-badge street-icon-badge--link" href="${escapeHtml(badge.href)}" title="${escapeHtml(badge.label)}" data-track="${escapeHtml(badge.track)}" data-state="${escapeHtml(show.regionSlug)}" data-city="${escapeHtml(show.citySlug)}" data-show-id="${escapeHtml(show.id)}" target="_blank" rel="noopener noreferrer">
+      ${image}
+    </a>
+  `;
 }
 
 function getShowResourceDownloads(show) {
