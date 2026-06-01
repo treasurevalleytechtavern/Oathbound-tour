@@ -313,7 +313,6 @@
     "warningRequirements": [
       "Missing Facebook event",
       "Missing QR code",
-      "Missing story graphic",
       "Missing square graphic",
       "Missing extra social tags"
     ],

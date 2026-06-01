@@ -74,6 +74,18 @@ video {
     repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 5px);
 }
 
+body[data-page="street-team"] .background-overlay {
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.26) 48%, rgba(0, 0, 0, 0.66)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.48) 68%, #020202),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 5px);
+}
+
+body[data-page="street-team"] .street-team-background-video {
+  filter: grayscale(0.55) contrast(1.14) brightness(1.08);
+  opacity: 0.92;
+}
+
 .site-header {
   display: flex;
   align-items: center;
@@ -847,9 +859,9 @@ body[data-page="admin"] .intro {
 
 .street-team-feature {
   display: grid;
-  grid-template-columns: minmax(0, 0.78fr) minmax(280px, 0.72fr);
-  align-items: center;
-  gap: clamp(18px, 4vw, 42px);
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: start;
+  gap: clamp(18px, 4vw, 32px);
   padding: clamp(18px, 4vw, 34px);
   border: 1px solid var(--line);
   background: rgba(0, 0, 0, 0.56);
@@ -871,12 +883,62 @@ body[data-page="admin"] .intro {
   font-size: clamp(1rem, 1.7vw, 1.2rem);
 }
 
+.street-team-feature__image-link {
+  display: block;
+  width: min(100%, 760px);
+  justify-self: center;
+  cursor: zoom-in;
+}
+
 .street-team-feature img {
-  width: min(100%, 420px);
-  justify-self: end;
+  width: 100%;
   border: 1px solid var(--line);
   object-fit: contain;
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+}
+
+.artwork-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: grid;
+  place-items: center;
+  padding: clamp(14px, 3vw, 32px);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.artwork-modal[hidden] {
+  display: none;
+}
+
+.artwork-modal img {
+  max-width: min(100%, 980px);
+  max-height: 92vh;
+  object-fit: contain;
+  border: 1px solid var(--line-strong);
+  background: #050505;
+}
+
+.artwork-modal__close {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 1;
+  min-height: 42px;
+  padding: 10px 14px;
+  border: 1px solid var(--line-strong);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.82);
+  cursor: pointer;
+}
+
+body.has-artwork-modal {
+  overflow: hidden;
 }
 
 .street-team-kit-layout {
@@ -945,6 +1007,34 @@ body[data-page="admin"] .intro {
   border: 1px solid var(--line);
   color: var(--soft);
   background: rgba(255, 255, 255, 0.05);
+}
+
+.street-team-oath > p {
+  margin: 0 0 14px;
+  color: var(--text);
+  font-weight: 800;
+}
+
+.street-team-oath li {
+  display: grid;
+  gap: 4px;
+}
+
+.street-team-oath li strong,
+.street-team-oath li span {
+  display: block;
+}
+
+.street-team-oath li strong {
+  color: var(--text);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.street-team-oath li span {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.35;
 }
 
 .state-selector {
@@ -1243,12 +1333,14 @@ body[data-page="admin"] .intro {
 
 .street-show-card--compact .street-show-card__body h4 {
   margin-bottom: 3px;
-  font-size: 0.95rem;
+  color: var(--text);
+  font-size: clamp(1.22rem, 2.6vw, 1.65rem);
+  letter-spacing: 0;
 }
 
 .street-show-card--compact .show-location,
 .street-show-card--compact .show-time {
-  font-size: 0.8rem;
+  font-size: 0.86rem;
 }
 
 .street-show-card__meta {
@@ -1257,10 +1349,24 @@ body[data-page="admin"] .intro {
 }
 
 .street-show-card--compact .street-show-card__meta {
+  flex-wrap: wrap;
+  gap: 6px;
   color: var(--muted);
   font-size: 0.74rem;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.street-icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.street-icon-badge img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
 }
 
 .street-show-card--compact .street-show-card__actions {
@@ -1269,25 +1375,40 @@ body[data-page="admin"] .intro {
 
 .street-action-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 8px;
-  margin-top: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
 }
 
 .street-action-item {
   display: grid;
-  grid-template-columns: 42px minmax(0, 1fr);
-  gap: 10px;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 14px;
   align-items: center;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid var(--line);
-  background: rgba(0, 0, 0, 0.34);
+  background:
+    linear-gradient(135deg, rgba(116, 247, 255, 0.08), transparent 42%),
+    rgba(0, 0, 0, 0.4);
 }
 
 .street-action-item img {
-  width: 42px;
-  height: 42px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
+}
+
+.street-action-item--asset {
+  grid-template-columns: minmax(110px, 0.45fr) minmax(0, 1fr);
+  align-items: stretch;
+}
+
+.street-action-item--asset > img {
+  width: 100%;
+  height: clamp(170px, 24vw, 260px);
+  object-fit: contain;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .street-action-item strong,
@@ -1303,8 +1424,23 @@ body[data-page="admin"] .intro {
 
 .street-action-item span {
   color: var(--muted);
-  font-size: 0.78rem;
-  line-height: 1.35;
+  font-size: 0.88rem;
+  line-height: 1.42;
+}
+
+.street-card-link {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 8px;
+  color: #74f7ff;
+  font-size: 0.76rem;
+  font-weight: 900;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.street-card-link:hover {
+  color: #ff5bd6;
 }
 
 .text-link {
@@ -1721,8 +1857,8 @@ body[data-widget="compact"] .widget-all-link {
     grid-template-columns: 1fr;
   }
 
-  .street-team-feature img {
-    width: min(100%, 320px);
+  .street-team-feature__image-link {
+    width: 100%;
     justify-self: start;
   }
 
@@ -1771,6 +1907,33 @@ body[data-widget="compact"] .widget-all-link {
   .street-show-card__meta {
     grid-column: 2;
     justify-content: flex-start;
+  }
+
+  .street-icon-badge img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .street-action-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .street-action-item {
+    grid-template-columns: 90px minmax(0, 1fr);
+  }
+
+  .street-action-item img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .street-action-item--asset {
+    grid-template-columns: 1fr;
+  }
+
+  .street-action-item--asset > img {
+    width: min(100%, 240px);
+    height: 220px;
   }
 
   .street-show-card__date {
