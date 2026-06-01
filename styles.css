@@ -835,6 +835,118 @@ body[data-page="admin"] .intro {
   color: var(--text);
 }
 
+.street-team-purpose-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.street-team-purpose-grid .street-team-copy-band {
+  min-height: 100%;
+}
+
+.street-team-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 0.78fr) minmax(280px, 0.72fr);
+  align-items: center;
+  gap: clamp(18px, 4vw, 42px);
+  padding: clamp(18px, 4vw, 34px);
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.56);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(12px);
+}
+
+.street-team-feature h2 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 4.8vw, 4rem);
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.street-team-feature p:not(.eyebrow) {
+  max-width: 640px;
+  margin-bottom: 0;
+  color: var(--soft);
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+}
+
+.street-team-feature img {
+  width: min(100%, 420px);
+  justify-self: end;
+  border: 1px solid var(--line);
+  object-fit: contain;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+}
+
+.street-team-kit-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.caption-bank,
+.tiny-rules {
+  padding: clamp(16px, 3vw, 24px);
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.44);
+}
+
+.caption-bank h3,
+.tiny-rules h3 {
+  margin: 0 0 10px;
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  text-transform: uppercase;
+}
+
+.caption-bank > p {
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+.caption-bank article {
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+
+.caption-bank article:first-of-type {
+  border-top: 0;
+}
+
+.caption-bank h4 {
+  margin: 0 0 5px;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+.caption-bank article p {
+  margin: 0;
+  color: var(--soft);
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.tiny-rules {
+  margin-top: 16px;
+}
+
+.tiny-rules ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tiny-rules li {
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  color: var(--soft);
+  background: rgba(255, 255, 255, 0.05);
+}
+
 .state-selector {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -871,6 +983,7 @@ body[data-page="admin"] .intro {
     rgba(0, 0, 0, 0.46);
   cursor: pointer;
   box-shadow: 0 20px 55px rgba(0, 0, 0, 0.22);
+  text-decoration: none;
 }
 
 .state-selector--compact .state-button {
@@ -1154,6 +1267,46 @@ body[data-page="admin"] .intro {
   margin: -2px 0 0 64px;
 }
 
+.street-action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.street-action-item {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.34);
+}
+
+.street-action-item img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.street-action-item strong,
+.street-action-item span {
+  display: block;
+}
+
+.street-action-item strong {
+  color: var(--text);
+  font-size: 0.76rem;
+  text-transform: uppercase;
+}
+
+.street-action-item span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
 .text-link {
   display: inline-flex;
   min-height: 0;
@@ -1244,6 +1397,12 @@ body[data-page="admin"] .intro {
   margin: 0;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.download-card__hint {
+  color: var(--soft);
+  font-size: 0.8rem;
+  line-height: 1.35;
 }
 
 .download-card .button {
@@ -1554,6 +1713,17 @@ body[data-widget="compact"] .widget-all-link {
   .street-team-copy-band,
   .cta-panel {
     padding: 18px;
+  }
+
+  .street-team-purpose-grid,
+  .street-team-feature,
+  .street-team-kit-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .street-team-feature img {
+    width: min(100%, 320px);
+    justify-self: start;
   }
 
   .street-team-section .section-heading {
