@@ -192,7 +192,7 @@ function renderStateSelector(regions) {
 
 function getStateIconPath(region) {
   const stateName = slugify(region.label || region.abbreviation || "");
-  return `${siteRoot}/assets/icons/states/full-size-300x300/${stateName}-blue.png`;
+  return `${siteRoot}/assets/icons/states/full-size-300x300/${stateName}-blue-300x300.png`;
 }
 
 function renderShowsForState() {

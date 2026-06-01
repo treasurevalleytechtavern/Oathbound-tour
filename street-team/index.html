@@ -6,7 +6,7 @@
     <title>Oathbound Street Team</title>
     <meta name="description" content="Join the Oathbound Street Team, find upcoming shows by area, and download approved flyers and graphics.">
     <link rel="icon" type="image/png" href="../assets/favicon.png">
-    <link rel="stylesheet" href="../styles.css?v=20260601-format-mid">
+    <link rel="stylesheet" href="../styles.css?v=20260601-street-order">
   </head>
   <body data-page="street-team" data-root="..">
     <video class="background-video" autoplay muted loop playsinline preload="metadata" poster="../assets/oathbound-video-poster.png" aria-hidden="true" tabindex="-1">
@@ -34,29 +34,6 @@
           <a class="button button--primary" href="#find-your-area" data-track="street-team-find-area">Pick Your State</a>
           <a class="button" href="https://oathboundband.com/street-team-signup" target="_blank" rel="noopener noreferrer" data-track="street-team-join" data-track-destination="godaddy-form">Join the Street Team</a>
         </div>
-      </section>
-
-      <section id="street-team-kit" class="street-team-section" aria-labelledby="street-team-kit-title">
-        <div class="section-heading">
-          <div>
-            <h2 id="street-team-kit-title">Street Team Kit</h2>
-            <p>Use approved flyers, graphics, and captions to help spread the word. City-specific materials will appear below when they are available.</p>
-          </div>
-        </div>
-        <div id="general-downloads" class="download-grid" aria-live="polite"></div>
-        <p id="downloads-fallback" class="street-team-note" hidden>Flyers and graphics are being updated. Check back soon or join the street team for updates.</p>
-      </section>
-
-      <section id="find-your-area" class="street-team-section" aria-labelledby="find-your-area-title">
-        <div class="section-heading">
-          <div>
-            <h2 id="find-your-area-title">Pick Your State</h2>
-            <p>Grab the materials for your area below. Each state includes flyers, graphics, and show info you can use to help promote the tour. Use what fits. Share what feels natural. Make it loud.</p>
-          </div>
-          <p id="street-team-show-count" aria-live="polite"></p>
-        </div>
-        <div id="state-selector" class="state-selector" aria-label="Select a state"></div>
-        <div id="street-team-shows" class="street-team-shows" aria-live="polite"></div>
       </section>
 
       <section class="street-team-section street-team-copy-band" aria-labelledby="street-team-purpose-title">
@@ -91,6 +68,29 @@
           <p>Small actions stack up.</p>
           <p>One share can become one ticket. One ticket can become one car full of people. One car full of people can change the whole room.</p>
         </div>
+      </section>
+
+      <section id="find-your-area" class="street-team-section" aria-labelledby="find-your-area-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="find-your-area-title">Pick Your State</h2>
+            <p>Grab the materials for your area below. Each state includes flyers, graphics, and show info you can use to help promote the tour. Use what fits. Share what feels natural. Make it loud.</p>
+          </div>
+          <p id="street-team-show-count" aria-live="polite"></p>
+        </div>
+        <div id="state-selector" class="state-selector" aria-label="Select a state"></div>
+        <div id="street-team-shows" class="street-team-shows" aria-live="polite"></div>
+      </section>
+
+      <section id="street-team-kit" class="street-team-section" aria-labelledby="street-team-kit-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="street-team-kit-title">Street Team Kit</h2>
+            <p>Use approved flyers, graphics, and captions to help spread the word. City-specific materials will appear above with the matching area when they are available.</p>
+          </div>
+        </div>
+        <div id="general-downloads" class="download-grid" aria-live="polite"></div>
+        <p id="downloads-fallback" class="street-team-note" hidden>Flyers and graphics are being updated. Check back soon or join the street team for updates.</p>
       </section>
 
       <section class="street-team-section cta-panel" aria-labelledby="state-not-listed-title">
@@ -130,6 +130,6 @@
 
     <script src="../analytics.js?v=20260531-ga4" defer></script>
     <script src="../site-ui.js?v=20260531-street-team" defer></script>
-    <script src="./street-team.js?v=20260601-root-fetches" defer></script>
+    <script src="./street-team.js?v=20260601-state-icon-paths" defer></script>
   </body>
 </html>
