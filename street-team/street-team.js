@@ -10,6 +10,7 @@ const downloadsFallback = document.querySelector("#downloads-fallback");
 let streetTeamState = {
   shows: [],
   downloads: { general: [], cities: {}, shows: {} },
+  streetAssets: [],
   selectedRegion: "",
 };
 
@@ -17,17 +18,24 @@ loadStreetTeamPage();
 wireTracking();
 
 async function loadStreetTeamPage() {
-  const [showsResult, downloadsResult] = await Promise.allSettled([
+  const [showsResult, downloadsResult, streetAssetsResult] = await Promise.allSettled([
     fetchJson(`${siteRoot}/data/shows.json`),
     fetchJson(`${siteRoot}/street-team/street-team-downloads.json`),
+    fetchJson(`${siteRoot}/data/street-team-assets.json`),
   ]);
 
   if (downloadsResult.status === "fulfilled") {
     streetTeamState.downloads = normalizeDownloads(downloadsResult.value);
-    renderGeneralDownloads();
   } else {
     downloadsFallback.hidden = false;
   }
+
+  if (streetAssetsResult.status === "fulfilled") {
+    streetTeamState.streetAssets = Array.isArray(streetAssetsResult.value) ? streetAssetsResult.value.map(normalizeStreetAsset) : [];
+    mergeStreetAssetsIntoDownloads(streetTeamState.streetAssets);
+  }
+
+  renderGeneralDownloads();
 
   if (showsResult.status !== "fulfilled") {
     renderSafeMessage("Upcoming show details are being updated. Check back soon or join the street team below.", true);
@@ -71,6 +79,61 @@ function normalizeDownloads(downloads) {
     cities: downloads.cities || {},
     shows: downloads.shows || {},
   };
+}
+
+function normalizeStreetAsset(asset) {
+  return {
+    assetId: String(asset.assetId || "").trim(),
+    showId: String(asset.showId || "").trim(),
+    kitKey: String(asset.assetsKey || asset.kitKey || "").trim(),
+    assetType: String(asset.assetType || "material").trim(),
+    title: String(asset.assetTitle || asset.title || "Street Team Material").trim(),
+    url: normalizeAssetUrl(asset.fileUrl || asset.url || ""),
+    preview: normalizeAssetUrl(asset.thumbUrl || asset.preview || asset.fileUrl || ""),
+    fileName: String(asset.fileName || "").trim(),
+    altText: String(asset.altText || asset.assetTitle || "Street team material").trim(),
+    platform: String(asset.platform || "all").trim(),
+    status: String(asset.status || "").trim(),
+    usage: String(asset.usage || "").trim(),
+    notes: String(asset.notes || "").trim(),
+    lastUpdated: String(asset.lastUpdated || "").trim(),
+  };
+}
+
+function mergeStreetAssetsIntoDownloads(assets) {
+  assets
+    .filter((asset) => asset.url && !/draft|hidden|archived/i.test(asset.status))
+    .forEach((asset) => {
+      const download = {
+        title: asset.title,
+        type: toTitleCase(asset.assetType),
+        url: asset.url,
+        preview: asset.preview,
+        fileType: getFileType(asset.url),
+        alt: asset.altText,
+        platform: asset.platform,
+        usage: asset.usage,
+        notes: asset.notes,
+        status: asset.status,
+        lastUpdated: asset.lastUpdated,
+      };
+
+      if (asset.showId) {
+        const showDownloads = streetTeamState.downloads.shows[asset.showId] || [];
+        if (!showDownloads.some((item) => item.url === download.url)) {
+          showDownloads.push(download);
+        }
+        streetTeamState.downloads.shows[asset.showId] = showDownloads;
+      }
+
+      if (asset.kitKey) {
+        const cityDownloads = streetTeamState.downloads.cities[asset.kitKey] || [];
+        if (!cityDownloads.some((item) => item.url === download.url)) {
+          cityDownloads.push(download);
+        }
+        streetTeamState.downloads.cities[asset.kitKey] = cityDownloads;
+      }
+    });
 }
 
 function normalizeShow(rawShow) {
@@ -177,7 +240,7 @@ function renderStateSelector(regions) {
     button.setAttribute("aria-pressed", region.slug === streetTeamState.selectedRegion ? "true" : "false");
     button.setAttribute("aria-label", `${region.label}, ${region.count} ${region.count === 1 ? "show" : "shows"}`);
     button.innerHTML = `
-      <img src="${getStateIconPath(region)}" alt="${escapeHtml(region.label)}" loading="lazy">
+      <img src="${getStateIconPath(region)}" alt="${escapeHtml(region.label)}" loading="eager">
       <small>${region.count} ${region.count === 1 ? "show" : "shows"}</small>
     `;
     button.addEventListener("click", () => {
@@ -188,11 +251,27 @@ function renderStateSelector(regions) {
     });
     stateSelector.appendChild(button);
   });
+
+  stateSelector.appendChild(createUnlistedStateButton());
 }
 
 function getStateIconPath(region) {
   const stateName = slugify(region.label || region.abbreviation || "");
   return `${siteRoot}/assets/icons/states/full-size-300x300/${stateName}-blue-300x300.png`;
+}
+
+function createUnlistedStateButton() {
+  const link = document.createElement("a");
+  link.className = "state-button state-button--link";
+  link.href = "#my-state-is-not-listed";
+  link.dataset.track = "street-team-state-select";
+  link.dataset.state = "not-listed";
+  link.setAttribute("aria-label", "My state is not listed");
+  link.innerHTML = `
+    <img src="${siteRoot}/assets/icons/states/full-size-300x300/my-state-isnt-listed.png" alt="My state is not listed" loading="eager">
+    <small>Join anyway</small>
+  `;
+  return link;
 }
 
 function renderShowsForState() {
@@ -309,6 +388,8 @@ function createCompactShowRow(show) {
   const timeLine = isAreaOnly ? "" : formatTimes(show);
   const age = show.ageRestriction ? `<span>${escapeHtml(show.ageRestriction)}</span>` : "";
 
+  const streetTeamTips = getStreetTeamTips(show);
+
   card.innerHTML = `
     <div class="street-show-card__main">
       <div class="street-show-card__date">
@@ -322,6 +403,17 @@ function createCompactShowRow(show) {
         <p class="show-time">${dateLine}${timeLine ? ` / ${escapeHtml(timeLine)}` : ""}</p>
       </div>
       <div class="street-show-card__meta">${age}</div>
+    </div>
+    <div class="street-action-grid" aria-label="Ways to help promote this show">
+      ${streetTeamTips.map((tip) => `
+        <div class="street-action-item street-action-item--${escapeHtml(tip.key)}">
+          <img src="${escapeHtml(tip.icon)}" alt="" loading="lazy">
+          <div>
+            <strong>${escapeHtml(tip.label)}</strong>
+            <span>${escapeHtml(tip.text)}</span>
+          </div>
+        </div>
+      `).join("")}
     </div>
   `;
 
@@ -366,7 +458,7 @@ function createDownloadCard(download, show = null) {
   if (download.preview) {
     const image = document.createElement("img");
     image.src = download.preview;
-    image.alt = `${download.title} preview`;
+    image.alt = download.alt || `${download.title} preview`;
     image.loading = "lazy";
     card.appendChild(image);
   }
@@ -378,7 +470,11 @@ function createDownloadCard(download, show = null) {
   title.textContent = download.title || "Street Team Material";
 
   const type = document.createElement("p");
-  type.textContent = [download.type, download.fileType, download.size].filter(Boolean).join(" / ");
+  type.textContent = [download.type, download.platform && download.platform !== "all" ? download.platform : "", download.fileType, download.size].filter(Boolean).join(" / ");
+
+  const detail = document.createElement("p");
+  detail.className = "download-card__hint";
+  detail.textContent = download.usage || download.notes || (show ? `Use this when sharing ${show.city}.` : "Use this for general tour posts.");
 
   const link = createTrackedLink(download.url, "Download", {
     track: "street-team-download",
@@ -390,7 +486,7 @@ function createDownloadCard(download, show = null) {
   }, "button button--primary");
   link.download = "";
 
-  body.append(title, type, link);
+  body.append(title, type, detail, link);
   card.appendChild(body);
   return card;
 }
@@ -489,6 +585,58 @@ function normalizeCountry(country = "") {
   }
 
   return normalized;
+}
+
+function getStreetTeamTips(show) {
+  const tips = [
+    {
+      key: "social",
+      label: "Socials",
+      text: `Post the flyer, tag friends near ${show.city}, and share the ticket link where local heavy music fans will see it.`,
+      icon: `${siteRoot}/assets/icons/90x90/music-90x90.png`,
+    },
+    {
+      key: "in-person",
+      label: "In person",
+      text: "Print or share flyers where allowed: record stores, coffee shops, venues, rehearsal spaces, campus boards.",
+      icon: `${siteRoot}/assets/icons/90x90/lineup-90x90.png`,
+    },
+  ];
+
+  if (show.ticketUrl || show.infoUrl) {
+    tips.push({
+      key: "tickets",
+      label: "Ticket link",
+      text: "Drop the official link with your post so interested people can act right away.",
+      icon: `${siteRoot}/assets/icons/90x90/tickets-90x90.png`,
+    });
+  }
+
+  return tips;
+}
+
+function normalizeAssetUrl(url = "") {
+  const trimmed = String(url).trim();
+  if (!trimmed) {
+    return "";
+  }
+
+  if (/^https?:\/\//i.test(trimmed)) {
+    return trimmed;
+  }
+
+  return trimmed.startsWith("/") ? trimmed : `${siteRoot}/${trimmed.replace(/^\.?\//, "")}`;
+}
+
+function getFileType(url = "") {
+  const extension = url.split("?")[0].split(".").pop();
+  return extension ? extension.toUpperCase() : "";
+}
+
+function toTitleCase(value = "") {
+  return String(value)
+    .replace(/[-_]+/g, " ")
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
 }
 
 function normalizeAgeRestriction(ageRestriction = "") {
