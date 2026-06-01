@@ -6,7 +6,7 @@
     <title>Oathbound Street Team</title>
     <meta name="description" content="Join the Oathbound Street Team, find upcoming shows by area, and download approved flyers and graphics.">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
-    <link rel="stylesheet" href="/styles.css?v=20260601-street-crew">
+    <link rel="stylesheet" href="/styles.css?v=20260601-street-team-polish">
   </head>
   <body data-page="street-team" data-root="..">
     <video class="background-video street-team-background-video" autoplay muted loop playsinline preload="metadata" poster="/street-team/assets/oathbound-street-team.png" aria-hidden="true" tabindex="-1">
@@ -39,34 +39,36 @@
       <section class="street-team-section street-team-purpose-grid" aria-label="Street team purpose">
         <article class="street-team-copy-band" aria-labelledby="street-team-purpose-title">
           <div class="section-heading">
-            <h2 id="street-team-purpose-title">What the Street Team Is For</h2>
+            <h2 id="street-team-purpose-title">Why It Matters</h2>
           </div>
           <div class="street-team-prose">
-            <p>That is what the Oathbound Street Team is for.</p>
-            <p>This is a crew for anyone who wants to help bring more noise, more bodies, and more energy into the room. Whether you are in one of our tour cities, nearby, or just want to help spread the word from wherever you are, you can be part of making these shows hit harder.</p>
+            <p>This is for anyone who wants to help make these shows feel bigger before the first note hits.</p>
+            <p>Whether you are in a tour city, nearby, or spreading the word from somewhere else, you can help bring more noise, more bodies, and more energy into the room.</p>
+            <p>Heavy music still grows person to person: one flyer, one share, one invite, one friend who almost missed the show until somebody told them. More people in the room means more support for the scene, more fuel for every band on the bill, and a better night for everyone who shows up.</p>
           </div>
         </article>
 
         <article class="street-team-copy-band" aria-labelledby="what-street-team-does-title">
           <div class="section-heading">
-            <h2 id="what-street-team-does-title">What the Street Team Does</h2>
+            <h2 id="what-street-team-does-title">How You Help</h2>
           </div>
           <div class="street-team-prose">
-            <p>The street team helps get the word out before each show.</p>
-            <p>That can mean sharing flyers online, posting tour dates, inviting friends, tagging local bands and venues, dropping the ticket link in the right places, printing flyers, asking local shops if they will hang one, or simply making sure the people who would love this show actually know it exists.</p>
-            <p>You do not need to be a promoter. You do not need a huge following. You do not need to know the "right" people.</p>
-            <p>You just need to care about heavy music, local scenes, and helping bring the right people into the room.</p>
+            <p>You help get the word out before each show.</p>
+            <p>That can mean sharing flyers online, posting tour dates, inviting friends, tagging local bands and venues, dropping the ticket link where people will actually see it, printing flyers, or asking local shops if they will hang one.</p>
+            <p>You do not need to be a promoter. You do not need a huge following. You just need to care about heavy music, local scenes, and helping the right people find the show. Show up early, be cool to the venue, stay for the other bands, and bring good pit energy.</p>
           </div>
         </article>
       </section>
 
       <section class="street-team-section street-team-feature" aria-labelledby="street-team-feature-title">
         <div class="street-team-feature__copy">
-          <p class="eyebrow">Street Team Art</p>
+          <p class="eyebrow">How to Help</p>
           <h2 id="street-team-feature-title">Share the Noise</h2>
           <p>Use the general art when you want to point people toward the tour as a whole. For city-specific flyers and show details, pick your state below and grab the materials tied to your area.</p>
         </div>
-        <img src="/street-team/assets/oathbound-street-team.png" alt="Oathbound Street Team artwork" loading="lazy">
+        <a class="street-team-feature__image-link" href="/street-team/assets/oathbound-street-team.png" data-artwork-modal data-track="street-team-artwork-preview">
+          <img src="/street-team/assets/oathbound-street-team.png" alt="Oathbound Street Team artwork" loading="lazy">
+        </a>
       </section>
 
       <section id="street-team-kit" class="street-team-section street-team-kit-section" aria-labelledby="street-team-kit-title">
@@ -98,14 +100,16 @@
             </article>
           </div>
         </div>
-        <div class="tiny-rules" aria-labelledby="tiny-rules-title">
-          <h3 id="tiny-rules-title">Keep It Simple</h3>
+        <div class="tiny-rules street-team-oath" aria-labelledby="tiny-rules-title">
+          <h3 id="tiny-rules-title">The Street Team Oath</h3>
+          <p>Promote hard. Keep it respectful. Help the scene.</p>
           <ul>
-            <li>Only post flyers where allowed.</li>
-            <li>Don't cover other bands' flyers.</li>
-            <li>Don't spam people.</li>
-            <li>Tag the band when you share.</li>
-            <li>Be cool to venues, bands, and other fans.</li>
+            <li><strong>Post Where Allowed</strong><span>Only put up flyers where it's okay.</span></li>
+            <li><strong>Respect Other Flyers</strong><span>Don't cover other bands' posters.</span></li>
+            <li><strong>Don't Spam</strong><span>Share with intention, not desperation.</span></li>
+            <li><strong>Tag Oathbound</strong><span>Tag the band when you post or share.</span></li>
+            <li><strong>Support the Full Bill</strong><span>Show up early and stay for the other bands when you can.</span></li>
+            <li><strong>Be Cool</strong><span>Respect venues, bands, staff, and fans.</span></li>
           </ul>
         </div>
       </section>
@@ -157,8 +161,13 @@
       <p class="footer-tagline">Forged in sound. Bound by oath.</p>
     </footer>
 
+    <div id="street-team-artwork-modal" class="artwork-modal" hidden>
+      <button class="artwork-modal__close" type="button" aria-label="Close artwork preview">Close</button>
+      <img src="/street-team/assets/oathbound-street-team.png" alt="Oathbound Street Team artwork">
+    </div>
+
     <script src="/analytics.js?v=20260531-ga4" defer></script>
     <script src="/site-ui.js?v=20260531-street-team" defer></script>
-    <script src="/street-team/street-team.js?v=20260601-street-team-assets-2" defer></script>
+    <script src="/street-team/street-team.js?v=20260601-street-team-polish" defer></script>
   </body>
 </html>
