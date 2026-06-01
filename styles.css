@@ -441,15 +441,23 @@ body[data-page="admin"] .intro {
   align-items: center;
   justify-content: flex-end;
   flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: clamp(6px, 1vw, 10px);
   padding: 0 0 18px;
 }
 
-.age-image-badge {
+.age-image-badge,
+.status-image-badge {
   width: clamp(68px, 8vw, 98px);
   height: clamp(68px, 8vw, 98px);
   object-fit: contain;
   object-position: center;
   filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.12));
+}
+
+.status-image-badge {
+  width: clamp(54px, 6vw, 76px);
+  height: clamp(54px, 6vw, 76px);
 }
 
 .age-text-badge {
@@ -1490,7 +1498,8 @@ body[data-widget="compact"] .widget-all-link {
     flex-basis: 100%;
   }
 
-  .age-image-badge {
+  .age-image-badge,
+  .status-image-badge {
     width: 52px;
     height: 52px;
   }
@@ -2943,8 +2952,16 @@ html.myspace-theme .intro h1 span {
 .myspace-show-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  align-items: center;
+  gap: 8px;
   margin-top: 9px;
+}
+
+.myspace-icon-badge {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(2px 2px 0 #ee55c7) drop-shadow(-1px -1px 0 #bceff8);
 }
 
 .myspace-age-badge {

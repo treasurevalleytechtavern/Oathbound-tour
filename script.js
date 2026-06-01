@@ -182,13 +182,7 @@ function createMyspaceShowCard(show, index) {
 
   const badges = document.createElement("div");
   badges.className = "myspace-show-badges";
-  const age = normalizeAgeRestriction(show.ageRestriction);
-  if (age) {
-    const ageBadge = document.createElement("span");
-    ageBadge.className = "myspace-age-badge";
-    ageBadge.textContent = age;
-    badges.appendChild(ageBadge);
-  }
+  renderIconBadges(badges, show, "myspace-icon-badge");
 
   const actions = document.createElement("div");
   actions.className = "myspace-show-actions";
@@ -333,8 +327,8 @@ function createShowCard(show, index) {
   setText(card, ".show-notes", show.notes || "");
 
   renderShowStatus(card, showDate, index);
-  renderStatusChip(card.querySelector(".show-flags"), show.status);
-  renderAgeBadge(card.querySelector(".show-age"), show.ageRestriction);
+  card.querySelector(".show-flags")?.remove();
+  renderIconBadges(card.querySelector(".show-age"), show);
   toggleElement(card.querySelector(".show-lineup"), Boolean(show.lineup && show.lineup.trim()));
   toggleElement(card.querySelector(".show-notes"), Boolean(show.notes && show.notes.trim()));
 
@@ -377,24 +371,6 @@ function renderShowStatus(card, showDate, index) {
   status.textContent = detail ? `Next Show • ${detail}` : "Next Show";
 }
 
-function renderStatusChip(container, rawStatus = "") {
-  if (!container) {
-    return;
-  }
-
-  const normalized = normalizeShowStatus(rawStatus);
-
-  if (!normalized) {
-    container.remove();
-    return;
-  }
-
-  const chip = document.createElement("span");
-  chip.className = `status-chip status-chip--${normalized.key}`;
-  chip.textContent = normalized.label;
-  container.appendChild(chip);
-}
-
 function createButton(url, label, isPrimary = false, actionType = "details", show = null, index = 0) {
   const button = document.createElement("a");
   button.className = isPrimary ? "button button--primary" : "button";
@@ -410,39 +386,119 @@ function createButton(url, label, isPrimary = false, actionType = "details", sho
   return button;
 }
 
-function renderAgeBadge(container, ageRestriction) {
+function renderIconBadges(container, show, extraClassName = "") {
   if (!container) {
     return;
   }
 
-  const normalized = normalizeAgeRestriction(ageRestriction);
+  const badges = getShowIconBadges(show);
 
-  if (!normalized) {
+  if (!badges.length) {
     container.remove();
     return;
   }
 
-  if (normalized === "21+") {
-    container.appendChild(createImageBadge("assets/age-21-plus.png", "21+"));
-    return;
-  }
+  badges.forEach((badge) => {
+    if (badge.src) {
+      container.appendChild(createImageBadge(badge.src, badge.label, badge.className, extraClassName));
+      return;
+    }
 
-  if (normalized === "All Ages") {
-    container.appendChild(createImageBadge("assets/age-all-ages.png", "All Ages"));
-    return;
-  }
-
-  const fallback = document.createElement("span");
-  fallback.className = "age-text-badge";
-  fallback.textContent = normalized;
-  container.appendChild(fallback);
+    const fallback = document.createElement("span");
+    fallback.className = [badge.className, extraClassName].filter(Boolean).join(" ");
+    fallback.textContent = badge.label;
+    container.appendChild(fallback);
+  });
 }
 
-function createImageBadge(src, label) {
+function getShowIconBadges(show) {
+  const badges = [];
+  const age = normalizeAgeRestriction(show.ageRestriction);
+
+  if (age === "21+") {
+    badges.push({
+      src: "assets/icons/300x300/21-300x300.png",
+      label: "21+",
+      className: "age-image-badge",
+    });
+  } else if (age === "All Ages") {
+    badges.push({
+      src: "assets/icons/300x300/all-ages-300x300.png",
+      label: "All Ages",
+      className: "age-image-badge",
+    });
+  } else if (age) {
+    badges.push({
+      label: age,
+      className: "age-text-badge",
+    });
+  }
+
+  badges.push(...getShowStatusIconBadges(show));
+  return badges;
+}
+
+function getShowStatusIconBadges(show) {
+  const status = normalizeBadgeText(show.status);
+  const badges = [];
+
+  if (status.includes("cancel")) {
+    badges.push({
+      src: "assets/icons/90x90/canceled-90x90.png",
+      label: "Cancelled",
+      className: "status-image-badge status-image-badge--cancelled",
+    });
+  }
+
+  if (status.includes("new date") || status.includes("new-date") || status.includes("resched")) {
+    badges.push({
+      src: "assets/icons/90x90/new-date-90x90.png",
+      label: "New Date",
+      className: "status-image-badge status-image-badge--new-date",
+    });
+  }
+
+  if (status.includes("relocat") || status.includes("moved")) {
+    badges.push({
+      src: "assets/icons/90x90/relocated-90x90.png",
+      label: "Relocated",
+      className: "status-image-badge status-image-badge--relocated",
+    });
+  }
+
+  if (isFreeShow(show)) {
+    badges.push({
+      src: "assets/icons/90x90/free-show-90x90.png",
+      label: "Free Show",
+      className: "status-image-badge status-image-badge--free-show",
+    });
+  }
+
+  return badges;
+}
+
+function isFreeShow(show) {
+  const text = normalizeBadgeText([
+    show.status,
+    show.ticketLabel,
+    show.ticketUrl,
+    show.infoLabel,
+    show.notes,
+  ].filter(Boolean).join(" "));
+
+  return text.includes("free-show") || /\bfree\b/.test(text);
+}
+
+function normalizeBadgeText(value = "") {
+  return value.toString().trim().toLowerCase();
+}
+
+function createImageBadge(src, label, className = "age-image-badge", extraClassName = "") {
   const image = document.createElement("img");
-  image.className = "age-image-badge";
+  image.className = [className, extraClassName].filter(Boolean).join(" ");
   image.src = `${rootPath}/${src}`;
   image.alt = label;
+  image.title = label;
   image.loading = "lazy";
   return image;
 }
@@ -467,24 +523,6 @@ function normalizeAgeRestriction(ageRestriction = "") {
   }
 
   return ageRestriction.trim();
-}
-
-function normalizeShowStatus(status = "") {
-  const normalized = status.trim().toLowerCase();
-
-  if (!normalized) {
-    return null;
-  }
-
-  if (normalized.includes("cancel")) {
-    return { key: "cancelled", label: "Cancelled" };
-  }
-
-  if (normalized.includes("relocat") || normalized.includes("moved")) {
-    return { key: "relocated", label: "Relocated" };
-  }
-
-  return { key: "default", label: status.trim() };
 }
 
 function createDirectionsUrl(show) {
