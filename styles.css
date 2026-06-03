@@ -538,6 +538,40 @@ body[data-page="admin"] .intro {
   pointer-events: none;
 }
 
+.prismatic-button {
+  display: inline-flex;
+  width: fit-content;
+  min-width: 0;
+  min-height: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  line-height: 0;
+  text-decoration: none;
+  background: transparent;
+  transition: filter 160ms ease, transform 160ms ease;
+}
+
+.prismatic-button:hover,
+.prismatic-button:focus-visible {
+  filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.36));
+  transform: translateY(-1px);
+}
+
+.prismatic-button img {
+  display: block;
+  width: 180px;
+  height: auto;
+}
+
+.street-team-hero__actions .prismatic-button img {
+  width: 300px;
+  height: 169px;
+  object-fit: contain;
+}
+
 .empty-state,
 .error-state {
   padding: clamp(26px, 6vw, 46px);
@@ -1378,6 +1412,11 @@ body.has-artwork-modal {
   object-fit: contain;
 }
 
+.street-icon-badge--ticket img {
+  width: 180px;
+  height: auto;
+}
+
 .street-show-card--compact .street-show-card__actions {
   margin: -2px 0 0 64px;
 }
@@ -1486,7 +1525,7 @@ body.has-artwork-modal {
 
 .download-card {
   display: grid;
-  grid-template-columns: 84px minmax(0, 1fr);
+  grid-template-columns: minmax(150px, 0.38fr) minmax(0, 1fr);
   min-height: 100%;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -1499,9 +1538,10 @@ body.has-artwork-modal {
 
 .download-card img {
   width: 100%;
-  height: 100%;
-  min-height: 84px;
-  object-fit: cover;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 0.72;
+  object-fit: contain;
   object-position: center;
   background: rgba(255, 255, 255, 0.06);
 }
@@ -1541,6 +1581,18 @@ body.has-artwork-modal {
   font-size: 0.68rem;
 }
 
+.download-card .prismatic-button {
+  margin-top: 3px;
+}
+
+.download-card .prismatic-button img {
+  width: 180px;
+  height: auto;
+  min-height: 0;
+  object-fit: contain;
+  background: transparent;
+}
+
 .cta-panel {
   display: grid;
   justify-items: start;
@@ -1566,6 +1618,7 @@ body.has-artwork-modal {
 }
 
 .button:focus-visible,
+.prismatic-button:focus-visible,
 .site-nav a:focus-visible,
 .state-button:focus-visible,
 .footer-nav a:focus-visible {
@@ -1866,14 +1919,14 @@ body[data-widget="compact"] .widget-all-link {
   }
 
   .state-button {
-    flex: 0 0 176px;
-    min-height: 194px;
+    flex: 0 0 204px;
+    min-height: 218px;
     padding: 14px 12px;
   }
 
   .state-button img {
-    width: 138px;
-    height: 138px;
+    width: 166px;
+    height: 166px;
   }
 
   .market-heading {
@@ -1920,13 +1973,13 @@ body[data-widget="compact"] .widget-all-link {
   }
 
   .download-card {
-    grid-template-columns: 72px minmax(0, 1fr);
+    grid-template-columns: 140px minmax(0, 1fr);
   }
 
   .download-card img {
-    height: 100%;
-    min-height: 78px;
-    aspect-ratio: auto;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 0.72;
   }
 
   body[data-widget="compact"] .show-card {
