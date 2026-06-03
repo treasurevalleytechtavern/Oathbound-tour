@@ -281,7 +281,7 @@ function renderStateSelector(regions) {
 
 function getStateIconPath(region) {
   const stateName = slugify(region.label || region.abbreviation || "");
-  return `${siteRoot}/assets/icons/states/full-size-300x300/${stateName}-prismatic-300x300.png`;
+  return `${siteRoot}/assets/icons/states/Prismatic (300 x 300 px)/${stateName}-prismatic-v2.png`;
 }
 
 function getStateIconAlternatePath(region) {
@@ -291,7 +291,7 @@ function getStateIconAlternatePath(region) {
 
 function getStateIconFallbackPath(region) {
   const stateName = slugify(region.label || region.abbreviation || "");
-  return `${siteRoot}/assets/icons/states/full-size-300x300/${stateName}-blue-300x300.png`;
+  return `${siteRoot}/assets/icons/states/Blue (300 x 300 px)/${stateName}-blue-300x300.png`;
 }
 
 function createUnlistedStateButton() {
@@ -302,7 +302,7 @@ function createUnlistedStateButton() {
   link.dataset.state = "not-listed";
   link.setAttribute("aria-label", "My state is not listed");
   link.innerHTML = `
-    <img src="${siteRoot}/assets/icons/states/full-size-300x300/my-state-isnt-listed-prismatic.png" alt="My state is not listed" loading="eager" data-fallback-src="${siteRoot}/assets/icons/300x300/my_state_isnt_listed_transparent.png" data-final-fallback-src="${siteRoot}/assets/icons/states/full-size-300x300/my-state-isnt-listed.png">
+    <img src="${siteRoot}/assets/icons/states/Prismatic (300 x 300 px)/my-state-isnt-listed-prismatic-v2.png" alt="My state is not listed" loading="eager" data-fallback-src="${siteRoot}/assets/icons/300x300/my_state_isnt_listed_transparent.png" data-final-fallback-src="${siteRoot}/assets/icons/states/Blue (300 x 300 px)/my-state-isnt-listed.png">
     <small>My state isn't listed</small>
   `;
   wireImageFallback(link.querySelector("img"));
@@ -947,6 +947,7 @@ function normalizeShowStatus(status = "") {
 
 function getRegionName(region) {
   const names = {
+    AZ: "Arizona",
     CA: "California",
     ID: "Idaho",
     NV: "Nevada",
