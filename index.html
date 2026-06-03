@@ -1,22 +1,38 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Oathbound Street Team</title>
-    <meta name="description" content="Join the Oathbound Street Team, find upcoming shows by area, and download approved flyers and graphics.">
-    <link rel="icon" type="image/png" href="/assets/favicon.png">
-    <link rel="stylesheet" href="/styles.css?v=20260602-prismatic-filenames">
+    <title>Oathbound Tour</title>
+    <meta name="description" content="Upcoming Oathbound tour dates, tickets, venues, and show details.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+      (() => {
+        const themeStartsAt = new Date("2026-05-22T00:00:00-06:00");
+        const themeEndsAt = new Date("2026-06-29T00:00:00-06:00");
+        const now = new Date();
+
+        if (now >= themeStartsAt && now < themeEndsAt) {
+          document.documentElement.dataset.tourTheme = "myspace";
+          document.documentElement.classList.add("myspace-theme");
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=20260531-friendspace-fixed">
   </head>
-  <body data-page="street-team" data-root="..">
-    <video class="background-video street-team-background-video" autoplay muted loop playsinline preload="metadata" poster="/street-team/assets/oathbound-street-team.png" aria-hidden="true" tabindex="-1">
-      <source src="/street-team/assets/street-crew-background-2026-06-compressed.mp4" type="video/mp4">
+  <body data-page="upcoming" data-root=".">
+    <video class="background-video" autoplay muted loop playsinline preload="metadata" poster="assets/oathbound-video-poster.png" aria-hidden="true" tabindex="-1">
+      <source src="assets/oathbound-background-compressed.mp4" type="video/mp4">
     </video>
     <div class="background-overlay" aria-hidden="true"></div>
 
     <header class="site-header">
+      <p class="tour-window-title" aria-hidden="true">xX PrettySuspect x Oathbound Xx</p>
       <a class="brand" href="https://oathboundband.com" aria-label="Oathbound home">
-        <img src="/assets/oathbound-logo-white.png" alt="Oathbound">
+        <img src="assets/oathbound-logo-white.png" alt="Oathbound">
       </a>
       <nav class="site-nav" aria-label="Main navigation">
         <a href="/" data-nav="upcoming">Tour</a>
@@ -25,136 +41,46 @@
       </nav>
     </header>
 
-    <main class="site-main street-team-page">
-      <section class="intro street-team-hero" aria-labelledby="page-title">
-        <p class="eyebrow">Street Team Hub</p>
-        <h1 id="page-title">Join the Oathbound Street Team</h1>
-        <p id="page-copy">Hard shows do not happen in a vacuum. They happen because someone shared the flyer, tagged their friends, woke up the group chat, and told the people who would care where to be.</p>
-        <div class="street-team-hero__actions">
-          <a class="prismatic-button prismatic-button--area" href="#find-your-area" data-track="street-team-find-area" aria-label="Pick your area">
-            <img src="/assets/icons/buttons/300x169/pick-your-area-button-prismatic-300x169.png" alt="Pick your area">
-          </a>
-          <a class="prismatic-button prismatic-button--join" href="https://oathboundband.com/street-team-signup" target="_blank" rel="noopener noreferrer" data-track="street-team-join" data-track-destination="godaddy-form" aria-label="Join the Street Team">
-            <img src="/assets/icons/buttons/300x169/sign-up-button-prismatic-300x169.png" alt="Join the Street Team">
-          </a>
-        </div>
+    <main class="site-main">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow">Live Dates</p>
+        <h1 id="page-title">Upcoming Shows</h1>
+        <p id="page-copy">Find Oathbound on the road. New dates will appear here as soon as they are announced.</p>
       </section>
 
-      <section class="street-team-section street-team-purpose-grid" aria-label="Street team purpose">
-        <article class="street-team-copy-band" aria-labelledby="street-team-purpose-title">
-          <div class="section-heading">
-            <h2 id="street-team-purpose-title">Why It Matters</h2>
-          </div>
-          <div class="street-team-prose">
-            <p>This is for anyone who wants to help make these shows feel bigger before the first note hits.</p>
-            <p>Whether you are in a tour city, nearby, or spreading the word from somewhere else, you can help bring more noise, more bodies, and more energy into the room.</p>
-            <p>Heavy music still grows person to person: one flyer, one share, one invite, one friend who almost missed the show until somebody told them. More people in the room means more support for the scene, more fuel for every band on the bill, and a better night for everyone who shows up.</p>
-          </div>
-        </article>
-
-        <article class="street-team-copy-band" aria-labelledby="what-street-team-does-title">
-          <div class="section-heading">
-            <h2 id="what-street-team-does-title">How You Help</h2>
-          </div>
-          <div class="street-team-prose">
-            <p>You help get the word out before each show.</p>
-            <p>That can mean sharing flyers online, posting tour dates, inviting friends, tagging local bands and venues, dropping the ticket link where people will actually see it, printing flyers, or asking local shops if they will hang one.</p>
-            <p>You do not need to be a promoter. You do not need a huge following. You just need to care about heavy music, local scenes, and helping the right people find the show. Show up early, be cool to the venue, stay for the other bands, and bring good pit energy.</p>
-          </div>
-        </article>
-      </section>
-
-      <section class="street-team-section street-team-feature" aria-labelledby="street-team-feature-title">
-        <div class="street-team-feature__copy">
-          <p class="eyebrow">How to Help</p>
-          <h2 id="street-team-feature-title">Share the Noise</h2>
-            <p>Use the general art when you want to point people toward the tour as a whole. For city-specific flyers and show details, pick your area below and grab the materials tied to your area.</p>
-        </div>
-        <a class="street-team-feature__image-link" href="/street-team/assets/oathbound-street-team.png" data-artwork-modal data-track="street-team-artwork-preview">
-          <img src="/street-team/assets/oathbound-street-team.png" alt="Oathbound Street Team artwork" loading="lazy">
-        </a>
-      </section>
-
-      <section id="street-team-kit" class="street-team-section street-team-kit-section" aria-labelledby="street-team-kit-title">
+      <section class="shows-shell" aria-labelledby="shows-heading">
         <div class="section-heading">
-          <div>
-            <h2 id="street-team-kit-title">Street Team Kit</h2>
-            <p>Here are the high-level materials and starter copy. Use these for general tour posts. For flyers tied to a specific show, pick your area below.</p>
-          </div>
+          <h2 id="shows-heading">Shows</h2>
+          <p id="show-count" aria-live="polite"></p>
         </div>
-        <div class="street-team-kit-layout">
-          <div>
-            <div id="general-downloads" class="download-grid" aria-live="polite"></div>
-            <p id="downloads-fallback" class="street-team-note" hidden>Flyers and graphics are being updated. Check back soon or join the street team for updates.</p>
-          </div>
-          <div class="caption-bank" aria-labelledby="caption-bank-title">
-            <h3 id="caption-bank-title">Starter Captions</h3>
-            <p>Use these as-is or change them so they sound more like you. They are just here to help you get started.</p>
-            <article>
-              <h4>Simple caption</h4>
-              <p>Oathbound and Pretty Suspect are coming to [CITY] on [DATE]. Come out, bring a friend, and support heavy music.</p>
-            </article>
-            <article>
-              <h4>Scene caption</h4>
-              <p>[CITY], don't sleep on this one. Oathbound and Pretty Suspect are bringing the Myspace Tour to [VENUE] on [DATE]. Let's make the room loud.</p>
-            </article>
-            <article>
-              <h4>Personal caption</h4>
-              <p>I'm helping spread the word for this show because heavy music needs people in the room. Come hang, bring someone, and support the scene.</p>
-            </article>
-          </div>
-        </div>
-        <div class="tiny-rules street-team-oath" aria-labelledby="tiny-rules-title">
-          <h3 id="tiny-rules-title">The Street Team Oath</h3>
-          <p>Promote hard. Keep it respectful. Help the scene.</p>
-          <ul>
-            <li><strong>Post Where Allowed</strong><span>Only put up flyers where it's okay.</span></li>
-            <li><strong>Respect Other Flyers</strong><span>Don't cover other bands' posters.</span></li>
-            <li><strong>Don't Spam</strong><span>Share with intention, not desperation.</span></li>
-            <li><strong>Tag Oathbound</strong><span>Tag the band when you post or share.</span></li>
-            <li><strong>Support the Full Bill</strong><span>Show up early and stay for the other bands when you can.</span></li>
-            <li><strong>Be Cool</strong><span>Respect venues, bands, staff, and fans.</span></li>
-          </ul>
-        </div>
-      </section>
-
-      <section id="find-your-area" class="street-team-section" aria-labelledby="find-your-area-title">
-        <div class="section-heading">
-          <div>
-            <h2 id="find-your-area-title">Pick Your Area</h2>
-            <p>Grab the materials for your area below. Each state includes flyers, graphics, and show info you can use to help promote the tour. Use what fits. Share what feels natural. Make it loud.</p>
-          </div>
-          <p id="street-team-show-count" aria-live="polite"></p>
-        </div>
-        <div id="state-selector" class="state-selector" aria-label="Select a state"></div>
-        <div id="street-team-shows" class="street-team-shows" aria-live="polite"></div>
-      </section>
-
-      <section id="my-state-is-not-listed" class="street-team-section cta-panel" aria-labelledby="state-not-listed-title">
-        <p class="eyebrow">More Places</p>
-        <h2 id="state-not-listed-title">My State Is Not Listed</h2>
-        <p>Not seeing your state? You can still help.</p>
-        <p>Join the street team and let us know where you are. We may not be playing your city yet, but every share, playlist add, follow, repost, and recommendation helps build the next run.</p>
-        <p class="street-team-note">Heavy music spreads because people carry it.</p>
-        <a class="prismatic-button prismatic-button--join" href="https://oathboundband.com/street-team-signup" target="_blank" rel="noopener noreferrer" data-track="street-team-join" data-track-destination="godaddy-form" aria-label="Join the Street Team">
-          <img src="/assets/icons/buttons/300x169/sign-up-button-prismatic-300x169.png" alt="Join the Street Team">
-        </a>
-      </section>
-
-      <section class="street-team-section street-team-copy-band" aria-labelledby="why-it-matters-title">
-        <div class="section-heading">
-          <h2 id="why-it-matters-title">Why It Matters</h2>
-        </div>
-        <div class="street-team-prose">
-          <p>Oathbound is built for the room.</p>
-          <p>The sweat. The feedback. The first hit of the drums. The stranger next to you screaming the same line. The moment the whole floor moves like one living thing.</p>
-          <p>But people cannot show up to a show they never hear about.</p>
-          <p>That is where you come in.</p>
-          <p>If you have ever wished more tours came through your city, more local bands got seen, more people cared about the scene, or more heavy music had a fighting chance outside the algorithm, this is one way to help.</p>
-          <p>Join the street team. Share the noise. Bring your friends. We'll see you in the pit.</p>
-        </div>
+        <div id="shows-list" class="shows-list" aria-live="polite"></div>
       </section>
     </main>
+
+    <template id="show-card-template">
+      <article class="show-card">
+        <time class="show-date">
+          <span class="show-month"></span>
+          <span class="show-day"></span>
+          <span class="show-year"></span>
+        </time>
+        <div class="show-details">
+          <p class="show-status"></p>
+          <div class="show-flags"></div>
+          <div class="show-title-row">
+            <div>
+              <h3 class="show-venue"></h3>
+              <p class="show-location"></p>
+            </div>
+            <div class="show-age"></div>
+          </div>
+          <p class="show-time"></p>
+          <p class="show-lineup"></p>
+          <p class="show-notes"></p>
+        </div>
+        <div class="show-actions"></div>
+      </article>
+    </template>
 
     <footer class="site-footer">
       <p class="footer-copy">Copyright &copy; 2026 Oathbound - All Rights Reserved</p>
@@ -167,13 +93,8 @@
       <p class="footer-tagline">Forged in sound. Bound by oath.</p>
     </footer>
 
-    <div id="street-team-artwork-modal" class="artwork-modal" hidden>
-      <button class="artwork-modal__close" type="button" aria-label="Close artwork preview">Close</button>
-      <img src="/street-team/assets/oathbound-street-team.png" alt="Oathbound Street Team artwork">
-    </div>
-
-    <script src="/analytics.js?v=20260531-ga4" defer></script>
-    <script src="/site-ui.js?v=20260531-street-team" defer></script>
-    <script src="/street-team/street-team.js?v=20260602-prismatic-filenames" defer></script>
+    <script src="analytics.js?v=20260531-ga4" defer></script>
+    <script src="site-ui.js?v=20260531-past-comments" defer></script>
+    <script src="script.js?v=20260531-myspace-shows-modules" defer></script>
   </body>
 </html>
