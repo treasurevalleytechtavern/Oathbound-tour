@@ -1705,6 +1705,10 @@ body[data-widget="compact"] .widget-all-link {
 }
 
 @media (max-width: 760px) {
+  body[data-page="street-team"] {
+    overflow-x: hidden;
+  }
+
   .site-header {
     align-items: flex-start;
     flex-direction: column;
@@ -1877,16 +1881,49 @@ body[data-widget="compact"] .widget-all-link {
   }
 
   .street-team-page {
-    gap: 34px;
+    gap: 28px;
   }
 
   .street-team-hero {
     min-height: 0;
+    padding-top: 0;
+  }
+
+  .street-team-hero h1 {
+    font-size: clamp(2.15rem, 12vw, 3.6rem);
+    line-height: 0.92;
+  }
+
+  .street-team-hero #page-copy {
+    font-size: 1rem;
+    line-height: 1.42;
   }
 
   .street-team-hero__actions,
   .street-show-card__actions {
     align-items: stretch;
+  }
+
+  .street-team-hero__actions {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 6px 10px;
+  }
+
+  .street-team-hero__actions .prismatic-button {
+    flex: 0 1 160px;
+    max-width: 160px;
+  }
+
+  .street-team-hero__actions .prismatic-button img {
+    width: 160px;
+    height: auto;
+  }
+
+  .prismatic-button img,
+  .download-card .prismatic-button img,
+  .street-icon-badge--ticket img {
+    width: 150px;
   }
 
   .street-team-hero__actions .button,
@@ -1896,7 +1933,25 @@ body[data-widget="compact"] .widget-all-link {
 
   .street-team-copy-band,
   .cta-panel {
-    padding: 18px;
+    padding: 16px;
+  }
+
+  .street-team-feature,
+  .caption-bank,
+  .tiny-rules,
+  .street-team-kit-section {
+    padding: 16px;
+  }
+
+  .street-team-feature h2 {
+    font-size: clamp(1.8rem, 10vw, 2.8rem);
+  }
+
+  .street-team-feature p:not(.eyebrow),
+  .street-team-prose p,
+  .cta-panel p {
+    font-size: 0.98rem;
+    line-height: 1.5;
   }
 
   .street-team-purpose-grid,
@@ -1916,20 +1971,29 @@ body[data-widget="compact"] .widget-all-link {
   }
 
   .state-selector {
-    display: flex;
-    overflow-x: auto;
-    padding-bottom: 6px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    overflow-x: visible;
+    padding-bottom: 0;
+    margin-bottom: 20px;
   }
 
   .state-button {
-    flex: 0 0 204px;
-    min-height: 218px;
-    padding: 14px 12px;
+    min-width: 0;
+    min-height: 142px;
+    padding: 8px 6px 10px;
+    gap: 8px;
   }
 
   .state-button img {
-    width: 166px;
-    height: 166px;
+    width: min(100%, 104px);
+    height: min(28vw, 104px);
+  }
+
+  .state-button small {
+    font-size: 0.7rem;
+    line-height: 1.15;
   }
 
   .market-heading {
@@ -1939,12 +2003,12 @@ body[data-widget="compact"] .widget-all-link {
   }
 
   .market-toggle {
-    min-height: 58px;
-    padding: 12px;
+    min-height: 54px;
+    padding: 10px;
   }
 
   .market-panel {
-    padding: 10px;
+    padding: 8px;
   }
 
   .street-show-card__main {
@@ -1958,8 +2022,13 @@ body[data-widget="compact"] .widget-all-link {
   }
 
   .street-icon-badge img {
-    width: 104px;
-    height: 104px;
+    width: 88px;
+    height: 88px;
+  }
+
+  .street-icon-badge--ticket img {
+    width: 150px;
+    height: auto;
   }
 
   .street-action-grid {
@@ -1976,13 +2045,23 @@ body[data-widget="compact"] .widget-all-link {
   }
 
   .download-card {
-    grid-template-columns: 140px minmax(0, 1fr);
+    grid-template-columns: minmax(96px, 0.34fr) minmax(0, 1fr);
   }
 
   .download-card img {
     height: auto;
     min-height: 0;
     aspect-ratio: 0.72;
+  }
+
+  .download-card__body {
+    min-width: 0;
+    padding: 10px 8px;
+  }
+
+  .download-card h4,
+  .download-card p {
+    overflow-wrap: anywhere;
   }
 
   body[data-widget="compact"] .show-card {
