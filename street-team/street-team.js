@@ -263,9 +263,10 @@ function renderStateSelector(regions) {
     button.setAttribute("aria-pressed", region.slug === streetTeamState.selectedRegion ? "true" : "false");
     button.setAttribute("aria-label", `${region.label}, ${region.count} ${region.count === 1 ? "show" : "shows"}`);
     button.innerHTML = `
-      <img src="${getStateIconPath(region)}" alt="${escapeHtml(region.label)}" loading="eager" onerror="this.onerror=null; this.src='${getStateIconFallbackPath(region)}';">
+      <img src="${getStateIconPath(region)}" alt="${escapeHtml(region.label)}" loading="eager" data-fallback-src="${getStateIconAlternatePath(region)}" data-final-fallback-src="${getStateIconFallbackPath(region)}">
       <small>${region.count} ${region.count === 1 ? "show" : "shows"}</small>
     `;
+    wireImageFallback(button.querySelector("img"));
     button.addEventListener("click", () => {
       streetTeamState.selectedRegion = region.slug;
       renderStateSelector(regions);
@@ -279,6 +280,11 @@ function renderStateSelector(regions) {
 }
 
 function getStateIconPath(region) {
+  const stateName = slugify(region.label || region.abbreviation || "");
+  return `${siteRoot}/assets/icons/states/full-size-300x300/${stateName}-prismatic-300x300.png`;
+}
+
+function getStateIconAlternatePath(region) {
   const stateName = slugify(region.label || region.abbreviation || "");
   return `${siteRoot}/assets/icons/300x300/${stateName}-prismatic-300x300.png`;
 }
@@ -296,9 +302,10 @@ function createUnlistedStateButton() {
   link.dataset.state = "not-listed";
   link.setAttribute("aria-label", "My state is not listed");
   link.innerHTML = `
-    <img src="${siteRoot}/assets/icons/300x300/my_state_isnt_listed_transparent.png" alt="My state is not listed" loading="eager" onerror="this.onerror=null; this.src='${siteRoot}/assets/icons/states/full-size-300x300/my-state-isnt-listed.png';">
+    <img src="${siteRoot}/assets/icons/states/full-size-300x300/my-state-isnt-listed-prismatic.png" alt="My state is not listed" loading="eager" data-fallback-src="${siteRoot}/assets/icons/300x300/my_state_isnt_listed_transparent.png" data-final-fallback-src="${siteRoot}/assets/icons/states/full-size-300x300/my-state-isnt-listed.png">
     <small>My state isn't listed</small>
   `;
+  wireImageFallback(link.querySelector("img"));
   return link;
 }
 
@@ -693,6 +700,28 @@ function createImageTrackedLink(url, label, imageUrl, data = {}, className = "pr
   link.setAttribute("aria-label", label);
   link.innerHTML = `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(label)}" loading="lazy">`;
   return link;
+}
+
+function wireImageFallback(image) {
+  if (!image) {
+    return;
+  }
+
+  image.addEventListener("error", () => {
+    const fallbackSrc = image.dataset.fallbackSrc;
+    const finalFallbackSrc = image.dataset.finalFallbackSrc;
+
+    if (fallbackSrc && image.src !== fallbackSrc) {
+      image.src = fallbackSrc;
+      image.dataset.fallbackSrc = "";
+      return;
+    }
+
+    if (finalFallbackSrc && image.src !== finalFallbackSrc) {
+      image.src = finalFallbackSrc;
+      image.dataset.finalFallbackSrc = "";
+    }
+  });
 }
 
 function getCityDownloads(show) {
