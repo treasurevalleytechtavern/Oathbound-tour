@@ -6,6 +6,12 @@ const showsContainer = document.querySelector("#street-team-shows");
 const showCount = document.querySelector("#street-team-show-count");
 const generalDownloadsContainer = document.querySelector("#general-downloads");
 const downloadsFallback = document.querySelector("#downloads-fallback");
+const BUTTON_ICONS = {
+  download: `${siteRoot}/assets/icons/buttons/300x169/download-button-prismatic-300x169.png`,
+  join: `${siteRoot}/assets/icons/buttons/300x169/sign-up-button-prismatic-300x169.png`,
+  area: `${siteRoot}/assets/icons/buttons/300x169/pick-your-area-button-prismatic-300x169.png`,
+  tickets: `${siteRoot}/assets/icons/buttons/300x169/tickets-button-prismatic-300x169.png`,
+};
 
 let streetTeamState = {
   shows: [],
@@ -274,7 +280,7 @@ function renderStateSelector(regions) {
 
 function getStateIconPath(region) {
   const stateName = slugify(region.label || region.abbreviation || "");
-  return `${siteRoot}/assets/icons/states/full-size-300x300/${stateName}-prismatic-300x300.png`;
+  return `${siteRoot}/assets/icons/300x300/${stateName}-prismatic-300x300.png`;
 }
 
 function getStateIconFallbackPath(region) {
@@ -290,7 +296,8 @@ function createUnlistedStateButton() {
   link.dataset.state = "not-listed";
   link.setAttribute("aria-label", "My state is not listed");
   link.innerHTML = `
-    <img src="${siteRoot}/assets/icons/states/full-size-300x300/my-state-isnt-listed.png" alt="My state is not listed" loading="eager">
+    <img src="${siteRoot}/assets/icons/300x300/my_state_isnt_listed_transparent.png" alt="My state is not listed" loading="eager" onerror="this.onerror=null; this.src='${siteRoot}/assets/icons/states/full-size-300x300/my-state-isnt-listed.png';">
+    <small>My state isn't listed</small>
   `;
   return link;
 }
@@ -308,11 +315,9 @@ function renderShowsForState() {
   }
 
   const marketEntries = Array.from(markets.entries());
-  const firstDownloadIndex = marketEntries.findIndex(([, marketShows]) => getAreaDownloads(marketShows).length > 0);
-  const defaultOpenIndex = firstDownloadIndex >= 0 ? firstDownloadIndex : 0;
 
-  marketEntries.forEach(([market, marketShows], index) => {
-    fragment.appendChild(createAreaCard(market, marketShows, index === defaultOpenIndex));
+  marketEntries.forEach(([market, marketShows]) => {
+    fragment.appendChild(createAreaCard(market, marketShows, false));
   });
 
   showsContainer.appendChild(fragment);
@@ -352,12 +357,12 @@ function createAreaCard(market, marketShows, isOpen) {
 
   const actionRow = document.createElement("div");
   actionRow.className = "area-actions";
-  actionRow.appendChild(createTrackedLink(STREET_TEAM_SIGNUP_URL, "Join Street Team", {
+  actionRow.appendChild(createImageTrackedLink(STREET_TEAM_SIGNUP_URL, "Join Street Team", BUTTON_ICONS.join, {
     track: "street-team-join",
     state: marketShows[0]?.regionSlug || "",
     market,
     trackDestination: "godaddy-form",
-  }, "button button--primary"));
+  }, "prismatic-button prismatic-button--join"));
 
   panel.appendChild(actionRow);
 
@@ -468,6 +473,21 @@ function createShowResourceSection(show, downloads, socialAssets) {
     }));
   }
 
+  const primaryUrl = show.ticketUrl || show.infoUrl;
+  if (primaryUrl) {
+    grid.appendChild(createLinkedActionItem({
+      key: "tickets",
+      label: "Ticket link",
+      text: "Share the ticket link with friends who might be interested, make a plan together, and give people an easy next step before the night slips by.",
+      href: primaryUrl,
+      track: show.ticketUrl ? "street-team-ticket" : "street-team-details",
+      show,
+      linkLabel: show.ticketUrl ? show.ticketLabel || "Tickets" : show.infoLabel || "Details",
+      buttonIcon: BUTTON_ICONS.tickets,
+      buttonClass: "prismatic-button prismatic-button--ticket",
+    }));
+  }
+
   section.appendChild(grid);
   return section;
 }
@@ -485,9 +505,17 @@ function createSocialAssetItem(asset, show) {
   });
 }
 
-function createLinkedActionItem({ key, icon, label, text, href, track, show, destination = "", linkLabel = "Open link" }) {
+function createLinkedActionItem({ key, icon, label, text, href, track, show, destination = "", linkLabel = "Open link", buttonIcon = "", buttonClass = "prismatic-button" }) {
   const item = createStreetActionItem({ key, icon, label, text });
-  const link = createTrackedLink(href, linkLabel, {
+  const link = buttonIcon
+    ? createImageTrackedLink(href, linkLabel, buttonIcon, {
+      track,
+      state: show.regionSlug,
+      city: show.citySlug,
+      showId: show.id,
+      trackDestination: destination,
+    }, buttonClass)
+    : createTrackedLink(href, linkLabel, {
     track,
     state: show.regionSlug,
     city: show.citySlug,
@@ -531,7 +559,7 @@ function getShowBadges(show) {
   if (show.ticketUrl || show.infoUrl) {
     badges.push({
       label: show.ticketUrl ? show.ticketLabel || "Tickets" : show.infoLabel || "Details",
-      icon: `${siteRoot}/assets/icons/300x300/tickets-300x300.png`,
+      icon: BUTTON_ICONS.tickets,
       href: show.ticketUrl || show.infoUrl,
       track: show.ticketUrl ? "street-team-ticket" : "street-team-details",
     });
@@ -548,7 +576,7 @@ function renderShowBadge(badge, show) {
   }
 
   return `
-    <a class="street-icon-badge street-icon-badge--link" href="${escapeHtml(badge.href)}" title="${escapeHtml(badge.label)}" data-track="${escapeHtml(badge.track)}" data-state="${escapeHtml(show.regionSlug)}" data-city="${escapeHtml(show.citySlug)}" data-show-id="${escapeHtml(show.id)}" target="_blank" rel="noopener noreferrer">
+    <a class="street-icon-badge street-icon-badge--link street-icon-badge--ticket" href="${escapeHtml(badge.href)}" title="${escapeHtml(badge.label)}" data-track="${escapeHtml(badge.track)}" data-state="${escapeHtml(show.regionSlug)}" data-city="${escapeHtml(show.citySlug)}" data-show-id="${escapeHtml(show.id)}" target="_blank" rel="noopener noreferrer">
       ${image}
     </a>
   `;
@@ -625,14 +653,14 @@ function createDownloadCard(download, show = null) {
   detail.className = "download-card__hint";
   detail.textContent = download.usage || download.notes || (show ? `Use this when sharing ${show.city}.` : "Use this for general tour posts.");
 
-  const link = createTrackedLink(download.url, "Download", {
+  const link = createImageTrackedLink(download.url, "Download", BUTTON_ICONS.download, {
     track: "street-team-download",
     state: show?.regionSlug || "",
     city: show?.citySlug || "",
     showId: show?.id || "",
     downloadTitle: slugify(download.title || ""),
     downloadType: slugify(download.type || "download"),
-  }, "button button--primary");
+  }, "prismatic-button prismatic-button--download");
   link.download = "";
 
   body.append(title, type, detail, link);
@@ -657,6 +685,13 @@ function createTrackedLink(url, label, data = {}, className = "button") {
     }
   });
 
+  return link;
+}
+
+function createImageTrackedLink(url, label, imageUrl, data = {}, className = "prismatic-button") {
+  const link = createTrackedLink(url, label, data, className);
+  link.setAttribute("aria-label", label);
+  link.innerHTML = `<img src="${escapeHtml(imageUrl)}" alt="${escapeHtml(label)}" loading="lazy">`;
   return link;
 }
 

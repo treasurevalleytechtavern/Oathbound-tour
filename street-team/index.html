@@ -6,7 +6,7 @@
     <title>Oathbound Street Team</title>
     <meta name="description" content="Join the Oathbound Street Team, find upcoming shows by area, and download approved flyers and graphics.">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
-    <link rel="stylesheet" href="/styles.css?v=20260601-street-team-layout-2">
+    <link rel="stylesheet" href="/styles.css?v=20260602-prismatic-filenames">
   </head>
   <body data-page="street-team" data-root="..">
     <video class="background-video street-team-background-video" autoplay muted loop playsinline preload="metadata" poster="/street-team/assets/oathbound-street-team.png" aria-hidden="true" tabindex="-1">
@@ -31,8 +31,12 @@
         <h1 id="page-title">Join the Oathbound Street Team</h1>
         <p id="page-copy">Hard shows do not happen in a vacuum. They happen because someone shared the flyer, tagged their friends, woke up the group chat, and told the people who would care where to be.</p>
         <div class="street-team-hero__actions">
-          <a class="button button--primary" href="#find-your-area" data-track="street-team-find-area">Pick Your State</a>
-          <a class="button" href="https://oathboundband.com/street-team-signup" target="_blank" rel="noopener noreferrer" data-track="street-team-join" data-track-destination="godaddy-form">Join the Street Team</a>
+          <a class="prismatic-button prismatic-button--area" href="#find-your-area" data-track="street-team-find-area" aria-label="Pick your area">
+            <img src="/assets/icons/buttons/300x169/pick-your-area-button-prismatic-300x169.png" alt="Pick your area">
+          </a>
+          <a class="prismatic-button prismatic-button--join" href="https://oathboundband.com/street-team-signup" target="_blank" rel="noopener noreferrer" data-track="street-team-join" data-track-destination="godaddy-form" aria-label="Join the Street Team">
+            <img src="/assets/icons/buttons/300x169/sign-up-button-prismatic-300x169.png" alt="Join the Street Team">
+          </a>
         </div>
       </section>
 
@@ -64,7 +68,7 @@
         <div class="street-team-feature__copy">
           <p class="eyebrow">How to Help</p>
           <h2 id="street-team-feature-title">Share the Noise</h2>
-          <p>Use the general art when you want to point people toward the tour as a whole. For city-specific flyers and show details, pick your state below and grab the materials tied to your area.</p>
+            <p>Use the general art when you want to point people toward the tour as a whole. For city-specific flyers and show details, pick your area below and grab the materials tied to your area.</p>
         </div>
         <a class="street-team-feature__image-link" href="/street-team/assets/oathbound-street-team.png" data-artwork-modal data-track="street-team-artwork-preview">
           <img src="/street-team/assets/oathbound-street-team.png" alt="Oathbound Street Team artwork" loading="lazy">
@@ -75,7 +79,7 @@
         <div class="section-heading">
           <div>
             <h2 id="street-team-kit-title">Street Team Kit</h2>
-            <p>Here are the high-level materials and starter copy. Use these for general tour posts. For flyers tied to a specific show, pick your state below.</p>
+            <p>Here are the high-level materials and starter copy. Use these for general tour posts. For flyers tied to a specific show, pick your area below.</p>
           </div>
         </div>
         <div class="street-team-kit-layout">
@@ -117,7 +121,7 @@
       <section id="find-your-area" class="street-team-section" aria-labelledby="find-your-area-title">
         <div class="section-heading">
           <div>
-            <h2 id="find-your-area-title">Pick Your State</h2>
+            <h2 id="find-your-area-title">Pick Your Area</h2>
             <p>Grab the materials for your area below. Each state includes flyers, graphics, and show info you can use to help promote the tour. Use what fits. Share what feels natural. Make it loud.</p>
           </div>
           <p id="street-team-show-count" aria-live="polite"></p>
@@ -132,7 +136,9 @@
         <p>Not seeing your state? You can still help.</p>
         <p>Join the street team and let us know where you are. We may not be playing your city yet, but every share, playlist add, follow, repost, and recommendation helps build the next run.</p>
         <p class="street-team-note">Heavy music spreads because people carry it.</p>
-        <a class="button button--primary" href="https://oathboundband.com/street-team-signup" target="_blank" rel="noopener noreferrer" data-track="street-team-join" data-track-destination="godaddy-form">Join the Street Team</a>
+        <a class="prismatic-button prismatic-button--join" href="https://oathboundband.com/street-team-signup" target="_blank" rel="noopener noreferrer" data-track="street-team-join" data-track-destination="godaddy-form" aria-label="Join the Street Team">
+          <img src="/assets/icons/buttons/300x169/sign-up-button-prismatic-300x169.png" alt="Join the Street Team">
+        </a>
       </section>
 
       <section class="street-team-section street-team-copy-band" aria-labelledby="why-it-matters-title">
@@ -168,6 +174,6 @@
 
     <script src="/analytics.js?v=20260531-ga4" defer></script>
     <script src="/site-ui.js?v=20260531-street-team" defer></script>
-    <script src="/street-team/street-team.js?v=20260601-state-prismatic" defer></script>
+    <script src="/street-team/street-team.js?v=20260602-prismatic-filenames" defer></script>
   </body>
 </html>
