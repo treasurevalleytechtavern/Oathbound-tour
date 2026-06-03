@@ -235,6 +235,10 @@ const OATHBOUND_GA_MEASUREMENT_ID = "G-EZQ2J0R6SS";
       return "past_shows";
     }
 
+    if (pageMode === "street-team") {
+      return "street_team";
+    }
+
     return isMyspaceActive ? "myspace_tour" : "upcoming_tour";
   }
 
