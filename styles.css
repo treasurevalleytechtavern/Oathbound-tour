@@ -1549,6 +1549,8 @@ body.has-artwork-modal {
 .download-card__body {
   display: grid;
   align-content: start;
+  align-self: start;
+  justify-items: start;
   gap: 6px;
   padding: 10px;
 }
@@ -1582,13 +1584,14 @@ body.has-artwork-modal {
 }
 
 .download-card .prismatic-button {
-  margin-top: 3px;
+  margin-top: 6px;
 }
 
 .download-card .prismatic-button img {
   width: 180px;
   height: auto;
   min-height: 0;
+  aspect-ratio: auto;
   object-fit: contain;
   background: transparent;
 }
