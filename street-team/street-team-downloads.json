@@ -2,7 +2,7 @@
   "general": [
     {
       "title": "Oathbound x Pretty Suspect Routing Flyer",
-      "type": "Share Graphic",
+      "type": "Street Team Download",
       "url": "/street-team/kits/OB%20x%20PS%20Routing%20Flyer.jpg",
       "preview": "/street-team/kits/OB%20x%20PS%20Routing%20Flyer.jpg",
       "fileType": "JPG"
@@ -12,7 +12,7 @@
     "or/albany": [
       {
         "title": "Albany Show Flyer",
-        "type": "Show Flyer",
+        "type": "Street Team Download",
         "url": "/street-team/kits/or/albany/6-19-26-Albany-Flyer.JPG",
         "preview": "/street-team/kits/or/albany/6-19-26-Albany-Flyer.JPG",
         "fileType": "JPG"
@@ -21,7 +21,7 @@
     "ca/citrus-heights": [
       {
         "title": "Citrus Heights Show Flyer",
-        "type": "Show Flyer",
+        "type": "Street Team Download",
         "url": "/street-team/kits/ca/citrus-heights/6-20-26-sacramento-flyer.JPG",
         "preview": "/street-team/kits/ca/citrus-heights/6-20-26-sacramento-flyer.JPG",
         "fileType": "JPG"
@@ -30,7 +30,7 @@
     "ca/palmdale": [
       {
         "title": "Palmdale Show Flyer",
-        "type": "Show Flyer",
+        "type": "Street Team Download",
         "url": "/street-team/kits/ca/palmdale/6-22-26-palmdale-flyer.JPG",
         "preview": "/street-team/kits/ca/palmdale/6-22-26-palmdale-flyer.JPG",
         "fileType": "JPG"
@@ -39,7 +39,7 @@
     "ca/los-angeles": [
       {
         "title": "Los Angeles Show Flyer",
-        "type": "Show Flyer",
+        "type": "Street Team Download",
         "url": "/street-team/kits/ca/los-angeles/6-23-26-la-flyer.jpg",
         "preview": "/street-team/kits/ca/los-angeles/6-23-26-la-flyer.jpg",
         "fileType": "JPG"
@@ -48,7 +48,7 @@
     "ca/san-diego": [
       {
         "title": "San Diego Show Flyer",
-        "type": "Show Flyer",
+        "type": "Street Team Download",
         "url": "/street-team/kits/ca/san-diego/6-25-26-san-diego-flyer.JPEG",
         "preview": "/street-team/kits/ca/san-diego/6-25-26-san-diego-flyer.JPEG",
         "fileType": "JPEG"
@@ -57,12 +57,67 @@
     "or/portland": [
       {
         "title": "Portland Show Flyer",
-        "type": "Show Flyer",
+        "type": "Street Team Download",
         "url": "/street-team/kits/or/portland/6-28-26-Portland%20Flyer.PNG",
         "preview": "/street-team/kits/or/portland/6-28-26-Portland%20Flyer.PNG",
         "fileType": "PNG"
       }
     ]
   },
-  "shows": {}
+  "shows": {
+    "2026-06-19-albany-or": [
+      {
+        "title": "Albany Show Flyer",
+        "type": "Street Team Download",
+        "url": "/street-team/kits/or/albany/6-19-26-Albany-Flyer.JPG",
+        "preview": "/street-team/kits/or/albany/6-19-26-Albany-Flyer.JPG",
+        "fileType": "JPG"
+      }
+    ],
+    "2026-06-20-citrus-heights-ca": [
+      {
+        "title": "Citrus Heights Show Flyer",
+        "type": "Street Team Download",
+        "url": "/street-team/kits/ca/citrus-heights/6-20-26-sacramento-flyer.JPG",
+        "preview": "/street-team/kits/ca/citrus-heights/6-20-26-sacramento-flyer.JPG",
+        "fileType": "JPG"
+      }
+    ],
+    "2026-06-22-palmdale-ca": [
+      {
+        "title": "Palmdale Show Flyer",
+        "type": "Street Team Download",
+        "url": "/street-team/kits/ca/palmdale/6-22-26-palmdale-flyer.JPG",
+        "preview": "/street-team/kits/ca/palmdale/6-22-26-palmdale-flyer.JPG",
+        "fileType": "JPG"
+      }
+    ],
+    "2026-06-23-los-angeles-ca": [
+      {
+        "title": "Los Angeles Show Flyer",
+        "type": "Street Team Download",
+        "url": "/street-team/kits/ca/los-angeles/6-23-26-la-flyer.jpg",
+        "preview": "/street-team/kits/ca/los-angeles/6-23-26-la-flyer.jpg",
+        "fileType": "JPG"
+      }
+    ],
+    "2026-06-25-san-diego-ca": [
+      {
+        "title": "San Diego Show Flyer",
+        "type": "Street Team Download",
+        "url": "/street-team/kits/ca/san-diego/6-25-26-san-diego-flyer.JPEG",
+        "preview": "/street-team/kits/ca/san-diego/6-25-26-san-diego-flyer.JPEG",
+        "fileType": "JPEG"
+      }
+    ],
+    "2026-06-28-portland-or": [
+      {
+        "title": "Portland Show Flyer",
+        "type": "Street Team Download",
+        "url": "/street-team/kits/or/portland/6-28-26-Portland%20Flyer.PNG",
+        "preview": "/street-team/kits/or/portland/6-28-26-Portland%20Flyer.PNG",
+        "fileType": "PNG"
+      }
+    ]
+  }
 }

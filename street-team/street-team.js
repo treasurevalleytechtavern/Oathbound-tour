@@ -1,6 +1,7 @@
 const STREET_TEAM_SIGNUP_URL = "https://oathboundband.com/street-team-signup";
 const rootPath = document.body.dataset.root || "..";
 const siteRoot = getSiteRoot();
+const stateIconRoot = `${siteRoot}/assets/icons/states/Prismatic (300 x 300 px)`;
 const stateSelector = document.querySelector("#state-selector");
 const showsContainer = document.querySelector("#street-team-shows");
 const showCount = document.querySelector("#street-team-show-count");
@@ -12,6 +13,145 @@ const BUTTON_ICONS = {
   area: `${siteRoot}/assets/icons/buttons/300x169/pick-your-area-button-prismatic-300x169.png`,
   tickets: `${siteRoot}/assets/icons/buttons/300x169/tickets-button-prismatic-300x169.png`,
 };
+const ROUTING_FLYER_ASSET_ID = "street-team-general-oathbound-x-pretty-suspect-routing-flyer";
+const CAPTION_TEMPLATES = [
+  `[City], it is your turn.
+
+Oathbound hits [Venue] on [Date] at [Time].
+Bring a friend and help make the room loud.
+
+[Lineup]
+[TicketInfo]
+
+[BandTags]
+
+#Oathbound #PrettySuspect #MyspaceTour #LiveMusic #Metalcore #PostHardcore #[CityHashtag]`,
+  `Heavy show rolling into [City].
+
+[Date] at [Venue].
+Show starts at [Time].
+[AgeRestriction]
+
+Come early. Stay loud. Support the whole bill.
+
+[Lineup]
+[TicketInfo]
+
+[BandTags]
+
+#Oathbound #MyspaceTour #LiveMusic #LocalShows #HeavyMusic #Hardcore #[CityHashtag]`,
+  `Street team signal boost for [City].
+
+Oathbound and friends are coming to [Venue] on [Date].
+If you know someone who goes to heavy shows, send this to them.
+
+Time: [Time]
+Lineup: [Lineup]
+[TicketInfo]
+
+[BandTags]
+
+#Oathbound #PrettySuspect #StreetTeam #MyspaceTour #LiveMusic #SupportLocalMusic #[CityHashtag]`,
+  `[City] friends, do not let this one sneak past you.
+
+Oathbound plays [Venue] on [Date].
+[Time] show.
+[TicketInfo]
+
+Loud guitars. Local support. Proper room-shaking behavior.
+
+[Lineup]
+
+[BandTags]
+
+#Oathbound #MyspaceTour #MetalShow #HardcoreShow #LiveMusic #SceneSupport #[CityHashtag]`,
+  `Your next "wait, why did I miss that?" show is right here.
+
+Oathbound at [Venue]
+[City]
+[Date]
+[Time]
+
+Save it. Share it. Drag one friend out of the scroll-hole.
+
+[Lineup]
+[TicketInfo]
+
+[BandTags]
+
+#Oathbound #PrettySuspect #LiveMusic #Metalcore #PostHardcore #LocalMusic #[CityHashtag]`,
+  `[City], come make some noise.
+
+Oathbound brings the Myspace Tour energy to [Venue] on [Date].
+Show time: [Time]
+
+[Lineup]
+[TicketInfo]
+
+Share this with someone who still believes small rooms make the best shows.
+
+[BandTags]
+
+#Oathbound #MyspaceTour #LiveShows #Metalcore #Hardcore #PunkShows #[CityHashtag]`,
+  `This is your friendly "go to the show" nudge.
+
+[City]
+[Venue]
+[Date]
+[Time]
+
+Oathbound is coming through with:
+[Lineup]
+
+[TicketInfo]
+
+Screenshot it, send it, post it, tape it to the inside of your skull.
+
+[BandTags]
+
+#Oathbound #PrettySuspect #LiveMusic #StreetTeam #HeavyShows #LocalScene #[CityHashtag]`,
+  `The flyer is cool, but the room needs bodies.
+
+Oathbound plays [Venue] in [City] on [Date].
+Music starts at [Time].
+
+[Lineup]
+[TicketInfo]
+[AgeRestriction]
+
+Help spread the word and bring the loud people.
+
+[BandTags]
+
+#Oathbound #MyspaceTour #Metalcore #HardcoreMusic #SupportTheScene #LocalShows #[CityHashtag]`,
+  `[City] show alert.
+
+Oathbound at [Venue]
+[Date] at [Time]
+
+If you like riffs, chaos, and shows that feel better in person than on your phone, this is the one.
+
+[Lineup]
+[TicketInfo]
+
+[BandTags]
+
+#Oathbound #PrettySuspect #LiveMusic #MetalShow #HardcoreShow #SceneKidsNeverDie #[CityHashtag]`,
+  `Help pack the room for Oathbound in [City].
+
+Where: [Venue]
+When: [Date]
+Time: [Time]
+Lineup: [Lineup]
+
+[TicketInfo]
+
+Post it. Share it. Text it to the friend who always says "I didn't know about it."
+
+[BandTags]
+
+#Oathbound #MyspaceTour #StreetTeam #LiveMusic #Metalcore #PostHardcore #SupportLocalMusic #[CityHashtag]`,
+];
 
 let streetTeamState = {
   shows: [],
@@ -263,7 +403,7 @@ function renderStateSelector(regions) {
     button.setAttribute("aria-pressed", region.slug === streetTeamState.selectedRegion ? "true" : "false");
     button.setAttribute("aria-label", `${region.label}, ${region.count} ${region.count === 1 ? "show" : "shows"}`);
     button.innerHTML = `
-      <img src="${getStateIconPath(region)}" alt="${escapeHtml(region.label)}" loading="eager" data-fallback-src="${getStateIconAlternatePath(region)}" data-final-fallback-src="${getStateIconFallbackPath(region)}">
+      <img src="${getStateIconPath(region)}" alt="${escapeHtml(region.label)}" loading="eager">
       <small>${region.count} ${region.count === 1 ? "show" : "shows"}</small>
     `;
     wireImageFallback(button.querySelector("img"));
@@ -281,17 +421,7 @@ function renderStateSelector(regions) {
 
 function getStateIconPath(region) {
   const stateName = slugify(region.label || region.abbreviation || "");
-  return `${siteRoot}/assets/icons/states/Prismatic (300 x 300 px)/${stateName}-prismatic-v2.png`;
-}
-
-function getStateIconAlternatePath(region) {
-  const stateName = slugify(region.label || region.abbreviation || "");
-  return `${siteRoot}/assets/icons/300x300/${stateName}-prismatic-300x300.png`;
-}
-
-function getStateIconFallbackPath(region) {
-  const stateName = slugify(region.label || region.abbreviation || "");
-  return `${siteRoot}/assets/icons/states/Blue (300 x 300 px)/${stateName}-blue-300x300.png`;
+  return `${stateIconRoot}/${stateName}-prismatic-v2.png`;
 }
 
 function createUnlistedStateButton() {
@@ -302,7 +432,7 @@ function createUnlistedStateButton() {
   link.dataset.state = "not-listed";
   link.setAttribute("aria-label", "My state is not listed");
   link.innerHTML = `
-    <img src="${siteRoot}/assets/icons/states/Prismatic (300 x 300 px)/my-state-isnt-listed-prismatic-v2.png" alt="My state is not listed" loading="eager" data-fallback-src="${siteRoot}/assets/icons/300x300/my_state_isnt_listed_transparent.png" data-final-fallback-src="${siteRoot}/assets/icons/states/Blue (300 x 300 px)/my-state-isnt-listed.png">
+    <img src="${stateIconRoot}/my-state-isn't-listed-prismatic-v2.png" alt="My state is not listed" loading="eager">
     <small>My state isn't listed</small>
   `;
   wireImageFallback(link.querySelector("img"));
@@ -322,9 +452,10 @@ function renderShowsForState() {
   }
 
   const marketEntries = Array.from(markets.entries());
+  const shouldAutoExpandSingleShow = shows.length === 1;
 
   marketEntries.forEach(([market, marketShows]) => {
-    fragment.appendChild(createAreaCard(market, marketShows, false));
+    fragment.appendChild(createAreaCard(market, marketShows, shouldAutoExpandSingleShow));
   });
 
   showsContainer.appendChild(fragment);
@@ -398,6 +529,7 @@ function createCompactShowRow(show) {
   const location = [show.city, show.region].filter(Boolean).join(", ");
   const downloads = getShowResourceDownloads(show);
   const socialAssets = getShowSocialAssets(show);
+  const flyerState = getShowFlyerState(show);
 
   card.className = isCancelled ? "street-show-card street-show-card--compact street-show-card--cancelled" : "street-show-card street-show-card--compact";
   card.dataset.track = "street-team-view-show";
@@ -427,40 +559,52 @@ function createCompactShowRow(show) {
   `;
 
   if (!isCancelled) {
-    card.appendChild(createShowResourceSection(show, downloads, socialAssets));
+    card.appendChild(createShowResourceSection(show, downloads, socialAssets, flyerState));
   }
 
   return card;
 }
 
-function createShowResourceSection(show, downloads, socialAssets) {
+function createShowResourceSection(show, downloads, socialAssets, flyerState = getShowFlyerState(show)) {
   const section = document.createElement("div");
   section.className = "street-show-resources";
+  const displayDownloads = getDisplayDownloads(downloads, flyerState);
 
-  if (downloads.length) {
+  if (flyerState.notice) {
+    const notice = document.createElement("p");
+    notice.className = "street-team-note street-team-note--inline";
+    notice.textContent = flyerState.notice;
+    section.appendChild(notice);
+  }
+
+  if (displayDownloads.length) {
     const downloadsRow = document.createElement("div");
     downloadsRow.className = "show-downloads";
 
     const title = document.createElement("h5");
-    title.textContent = "Show flyer";
+    title.textContent = flyerState.kind === "routing" ? "Tour routing flyer" : "Show flyer";
 
     const downloadsGrid = document.createElement("div");
     downloadsGrid.className = "download-grid download-grid--tiny";
-    downloads.forEach((download) => downloadsGrid.appendChild(createDownloadCard(download, show)));
+    displayDownloads.forEach((download) => downloadsGrid.appendChild(createDownloadCard(download, show)));
 
     downloadsRow.append(title, downloadsGrid);
     section.appendChild(downloadsRow);
   }
 
+  section.appendChild(createCaptionGenerator(show, flyerState));
+
   const grid = document.createElement("div");
   grid.className = "street-action-grid";
   grid.setAttribute("aria-label", "Street team resources for this show");
 
-  if (downloads.length) {
+  if (displayDownloads.length) {
     grid.appendChild(createStreetActionItem({
       key: "in-person",
-      label: "Flyer run",
-      text: "Print or post this flyer where it is allowed: venues, record stores, coffee shops, rehearsal spaces, and campus boards.",
+      label: flyerState.kind === "routing" ? "Routing flyer" : "Flyer run",
+      text: flyerState.kind === "routing"
+        ? "Use the routing flyer until the city flyer lands, and pair it with the show details below."
+        : "Print or post this flyer where it is allowed: venues, record stores, coffee shops, rehearsal spaces, and campus boards.",
     }));
   } else {
     grid.appendChild(createStreetActionItem({
@@ -543,6 +687,471 @@ function createStreetActionItem({ key, icon, label, text }) {
     </div>
   `;
   return item;
+}
+
+function createCaptionGenerator(show, flyerState) {
+  const section = document.createElement("section");
+  section.className = "caption-generator";
+  section.dataset.showId = show.id;
+
+  const title = document.createElement("h5");
+  title.textContent = "Make a quick post";
+
+  const subtext = document.createElement("p");
+  subtext.className = "caption-generator__subtext";
+  subtext.textContent = getCaptionSubtext(flyerState);
+
+  const buttons = document.createElement("div");
+  buttons.className = "caption-platform-buttons";
+
+  const output = document.createElement("textarea");
+  output.className = "caption-output";
+  output.readOnly = true;
+  output.rows = 8;
+  output.value = generateCaption(show, "general");
+  output.setAttribute("aria-label", `Generated caption for ${show.showName || show.city}`);
+
+  const status = document.createElement("p");
+  status.className = "caption-status";
+  status.setAttribute("aria-live", "polite");
+
+  const openButton = document.createElement("button");
+  openButton.type = "button";
+  openButton.className = "button open-platform-button";
+  openButton.textContent = "Open Platform";
+
+  let selectedPlatform = "general";
+
+  [
+    ["instagram", "Copy for Instagram"],
+    ["tiktok", "Copy for TikTok"],
+    ["facebook", "Copy for Facebook"],
+    ["general", "Copy General Caption"],
+  ].forEach(([platform, label]) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = `button caption-platform-button caption-platform-button--${platform}`;
+    button.dataset.platform = platform;
+    button.textContent = label;
+    button.addEventListener("click", async () => {
+      selectedPlatform = platform;
+      output.value = generateCaption(show, platform);
+      updateSelectedCaptionPlatform(buttons, platform);
+      updateOpenPlatformButton(openButton, show, platform);
+      await copyCaption(output.value, status);
+    });
+    buttons.appendChild(button);
+  });
+
+  const actions = document.createElement("div");
+  actions.className = "caption-actions";
+
+  const generateButton = document.createElement("button");
+  generateButton.type = "button";
+  generateButton.className = "button generate-caption-button";
+  generateButton.textContent = "Generate Another";
+  generateButton.addEventListener("click", () => {
+    output.value = generateCaption(show, selectedPlatform);
+    status.textContent = "Fresh caption ready.";
+  });
+
+  const copyButton = document.createElement("button");
+  copyButton.type = "button";
+  copyButton.className = "button button--primary copy-caption-button";
+  copyButton.textContent = "Copy Caption";
+  copyButton.addEventListener("click", () => copyCaption(output.value, status));
+
+  const shareButton = document.createElement("button");
+  shareButton.type = "button";
+  shareButton.className = "button native-share-button";
+  shareButton.textContent = "Share from phone";
+  shareButton.hidden = !navigator.share;
+  shareButton.addEventListener("click", () => shareCaption(show, output.value, status));
+
+  openButton.addEventListener("click", () => openPlatform(show, selectedPlatform));
+
+  actions.append(generateButton, copyButton, shareButton, openButton);
+  section.append(title, subtext, buttons, output, actions, status);
+  updateSelectedCaptionPlatform(buttons, selectedPlatform);
+  updateOpenPlatformButton(openButton, show, selectedPlatform);
+  return section;
+}
+
+function updateSelectedCaptionPlatform(container, platform) {
+  container.querySelectorAll("button").forEach((button) => {
+    button.setAttribute("aria-pressed", button.dataset.platform === platform ? "true" : "false");
+  });
+}
+
+function getCaptionSubtext(flyerState) {
+  if (flyerState.kind === "show") {
+    return "Generate a caption, copy it, and post it with the flyer.";
+  }
+
+  if (flyerState.kind === "routing") {
+    return "City flyer coming soon. Use the routing flyer or share the show link.";
+  }
+
+  return "Flyer coming soon. You can still share the show details.";
+}
+
+function getShowFlyerState(show) {
+  const showAsset = streetTeamState.streetAssets.find((asset) => (
+    asset.showId === show.id
+    && asset.status.toLowerCase() === "ready"
+    && asset.url
+    && /^(street-team-download|flyer)$/i.test(asset.assetType)
+  ));
+
+  if (showAsset) {
+    return { kind: "show", asset: showAsset, notice: "" };
+  }
+
+  const routingAsset = streetTeamState.streetAssets.find((asset) => (
+    asset.assetId === ROUTING_FLYER_ASSET_ID
+    && asset.status.toLowerCase() === "ready"
+    && asset.url
+  ));
+
+  if (routingAsset) {
+    return {
+      kind: "routing",
+      asset: routingAsset,
+      notice: "City flyer coming soon. You can use the tour routing flyer for now.",
+    };
+  }
+
+  return {
+    kind: "none",
+    asset: null,
+    notice: "Flyer coming soon. You can still share the show details.",
+  };
+}
+
+function getDisplayDownloads(downloads, flyerState) {
+  if (flyerState.kind === "routing" && flyerState.asset) {
+    return [streetAssetToDownload(flyerState.asset)];
+  }
+
+  if (flyerState.kind === "none") {
+    return [];
+  }
+
+  return downloads;
+}
+
+function streetAssetToDownload(asset) {
+  return {
+    title: asset.title,
+    type: asset.downloadType || toTitleCase(asset.assetType),
+    url: asset.url,
+    preview: asset.preview || asset.url,
+    fileType: getFileType(asset.url),
+    alt: asset.altText,
+    platform: asset.platform,
+    usage: asset.usage,
+    notes: asset.notes,
+    status: asset.status,
+    lastUpdated: asset.lastUpdated,
+  };
+}
+
+function generateCaption(show, platform = "general") {
+  const template = CAPTION_TEMPLATES[Math.floor(Math.random() * CAPTION_TEMPLATES.length)];
+  const values = getCaptionValues(show, platform);
+  let caption = Object.entries(values).reduce((text, [key, value]) => text.replaceAll(`[${key}]`, value), template);
+
+  caption = cleanupCaption(caption);
+
+  if (platform === "tiktok") {
+    caption = shortenCaption(caption, 460);
+    caption = limitHashtags(caption, ["#Oathbound", "#MyspaceTour", `#${values.CityHashtag}`, "#LiveMusic", "#Metalcore"]);
+  }
+
+  if (platform === "facebook") {
+    caption = limitHashtags(caption, ["#Oathbound", "#MyspaceTour", "#LiveMusic"]);
+  }
+
+  if (platform === "instagram") {
+    caption = ensureHashtags(caption, getCaptionHashtags(values, 6));
+  }
+
+  return cleanupCaption(caption);
+}
+
+function getCaptionValues(show, platform) {
+  const lineup = getCaptionLineup(show);
+  const regionHashtag = toHashtagPart(show.regionName || show.region);
+
+  return {
+    City: show.city || "your city",
+    Region: show.region || "",
+    RegionName: show.regionName || show.region || "",
+    Market: show.market || show.city || "",
+    Venue: show.venue || "the venue",
+    Date: show.date ? formatFanDate(parseLocalDate(show.date)) : "date TBA",
+    Time: show.showTime ? formatTime(show.showTime) : show.doorsTime ? formatTime(show.doorsTime) : "time TBA",
+    Doors: show.doorsTime ? formatTime(show.doorsTime) : "",
+    Lineup: lineup,
+    AgeRestriction: show.ageRestriction || "",
+    TicketInfo: getCaptionTicketInfo(show),
+    BandTags: getBandTags(show, platform),
+    CityHashtag: toHashtagPart(show.city),
+    RegionHashtag: regionHashtag,
+  };
+}
+
+function getCaptionLineup(show) {
+  if (Array.isArray(show.lineupArtists) && show.lineupArtists.length) {
+    return show.lineupArtists.map((artist) => String(artist).trim()).filter(Boolean).join(" / ");
+  }
+
+  return show.lineup || "Lineup TBA";
+}
+
+function getCaptionTicketInfo(show) {
+  if (isFreeShow(show)) {
+    return show.ticketUrl ? `Free show. RSVP/info: ${show.ticketUrl}` : "Free show.";
+  }
+
+  if (show.ticketUrl) {
+    return `Tickets/info: ${show.ticketUrl}`;
+  }
+
+  if (show.infoUrl) {
+    return `Info: ${show.infoUrl}`;
+  }
+
+  return "Ticket/info link coming soon.";
+}
+
+function getBandTags(show, platform) {
+  if (platform === "general") {
+    platform = "instagram";
+  }
+
+  const handles = collectShowBands(show)
+    .map((band) => getPlatformHandle(band, platform))
+    .filter(Boolean);
+
+  return Array.from(new Set(handles)).join(" ");
+}
+
+function collectShowBands(show) {
+  const bands = [];
+  ["featuredBands", "supportingBands", "supportedBand"].forEach((key) => {
+    const value = show[key];
+    if (Array.isArray(value)) {
+      bands.push(...value);
+    } else if (value && typeof value === "object") {
+      bands.push(value);
+    }
+  });
+  return bands;
+}
+
+function getPlatformHandle(band, platform) {
+  const socials = band.socials || band;
+  const rawUrl = String(socials?.[platform] || "").trim();
+
+  if (!rawUrl) {
+    return "";
+  }
+
+  if (platform === "instagram") {
+    return extractUrlHandle(rawUrl, "instagram.com");
+  }
+
+  if (platform === "tiktok") {
+    return extractUrlHandle(rawUrl, "tiktok.com");
+  }
+
+  if (platform === "facebook") {
+    return extractFacebookHandle(rawUrl);
+  }
+
+  return "";
+}
+
+function extractUrlHandle(rawUrl, domain) {
+  if (rawUrl.startsWith("@")) {
+    return rawUrl;
+  }
+
+  try {
+    const url = new URL(rawUrl);
+    if (!url.hostname.includes(domain)) {
+      return "";
+    }
+    const handle = url.pathname.split("/").filter(Boolean)[0] || "";
+    return handle ? `@${handle.replace(/^@/, "")}` : "";
+  } catch {
+    return "";
+  }
+}
+
+function extractFacebookHandle(rawUrl) {
+  try {
+    const url = new URL(rawUrl);
+    if (!url.hostname.includes("facebook.com")) {
+      return "";
+    }
+    const handle = url.pathname.split("/").filter(Boolean)[0] || "";
+    if (!handle || /^profile\.php$/i.test(handle) || /^pages$/i.test(handle)) {
+      return "";
+    }
+    return `@${handle}`;
+  } catch {
+    return "";
+  }
+}
+
+function toHashtagPart(value = "") {
+  return String(value).replace(/[^a-z0-9]/gi, "");
+}
+
+function getCaptionHashtags(values, extraCount = 5) {
+  const extras = ["Metalcore", "PostHardcore", "Hardcore", "HeavyMusic", "LocalShows", "SupportLocalMusic", "StreetTeam", values.CityHashtag, values.RegionHashtag]
+    .filter(Boolean)
+    .map((tag) => `#${tag.replace(/^#/, "")}`);
+  return Array.from(new Set(["#Oathbound", "#MyspaceTour", "#LiveMusic", ...extras])).slice(0, 3 + extraCount);
+}
+
+function ensureHashtags(caption, hashtags) {
+  const existing = new Set((caption.match(/#[a-z0-9_]+/gi) || []).map((tag) => tag.toLowerCase()));
+  const additions = hashtags.filter((tag) => !existing.has(tag.toLowerCase()));
+  return additions.length ? `${caption}\n${additions.join(" ")}` : caption;
+}
+
+function limitHashtags(caption, hashtags) {
+  const withoutTags = cleanupCaption(caption.replace(/(?:^|\s)#[a-z0-9_]+/gi, " "));
+  const cleanTags = hashtags.filter((tag) => /^#[a-z0-9_]+$/i.test(tag));
+  return cleanupCaption(`${withoutTags}\n\n${Array.from(new Set(cleanTags)).join(" ")}`);
+}
+
+function shortenCaption(caption, maxLength) {
+  if (caption.length <= maxLength) {
+    return caption;
+  }
+
+  const paragraphs = caption.split(/\n{2,}/).filter(Boolean);
+  return cleanupCaption(paragraphs.slice(0, 4).join("\n\n"));
+}
+
+function cleanupCaption(caption) {
+  return String(caption)
+    .replace(/\[(?:Region|RegionName|Market|Doors|AgeRestriction|BandTags|CityHashtag|RegionHashtag)\]/g, "")
+    .split("\n")
+    .map((line) => line.replace(/\s+/g, " ").trim())
+    .filter((line) => line && !/^(undefined|null)$/i.test(line))
+    .join("\n")
+    .replace(/#(?=\s|$)/g, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+async function copyCaption(caption, status) {
+  try {
+    if (!navigator.clipboard?.writeText) {
+      throw new Error("Clipboard API unavailable");
+    }
+    await navigator.clipboard.writeText(caption);
+    status.textContent = "Copied. Go make the internet noisy.";
+  } catch {
+    if (fallbackCopyCaption(caption)) {
+      status.textContent = "Copied. Go make the internet noisy.";
+      return;
+    }
+    status.textContent = "Copy did not fire. The caption is ready to select above.";
+  }
+}
+
+function fallbackCopyCaption(caption) {
+  const textarea = document.createElement("textarea");
+  textarea.value = caption;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.top = "0";
+  textarea.style.left = "-9999px";
+  document.body.appendChild(textarea);
+  textarea.select();
+  textarea.setSelectionRange(0, textarea.value.length);
+
+  try {
+    return document.execCommand("copy");
+  } catch {
+    return false;
+  } finally {
+    textarea.remove();
+  }
+}
+
+async function shareCaption(show, caption, status) {
+  if (!navigator.share) {
+    await copyCaption(caption, status);
+    return;
+  }
+
+  try {
+    await navigator.share({
+      title: show.showName || `Oathbound in ${show.city}`,
+      text: caption,
+      url: show.ticketUrl || show.infoUrl || window.location.href,
+    });
+    status.textContent = "Shared. Go make the internet noisy.";
+  } catch {
+    await copyCaption(caption, status);
+  }
+}
+
+function updateOpenPlatformButton(button, show, platform) {
+  button.textContent = platform === "general" ? "Open Platform" : `Open ${getPlatformLabel(platform)}`;
+  button.hidden = false;
+  button.disabled = false;
+  button.setAttribute("aria-disabled", "false");
+
+  if (platform === "general") {
+    button.disabled = true;
+    button.setAttribute("aria-disabled", "true");
+  }
+}
+
+function getPlatformLabel(platform) {
+  return {
+    instagram: "Instagram",
+    tiktok: "TikTok",
+    facebook: "Facebook",
+  }[platform] || toTitleCase(platform);
+}
+
+function openPlatform(show, platform) {
+  const url = getPlatformOpenUrl(show, platform);
+  if (url) {
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
+}
+
+function getPlatformOpenUrl(show, platform) {
+  if (platform === "instagram") {
+    return "https://www.instagram.com/";
+  }
+
+  if (platform === "tiktok") {
+    return "https://www.tiktok.com/";
+  }
+
+  if (platform === "facebook") {
+    if (show.facebookShareUrl) {
+      return show.facebookShareUrl;
+    }
+    if (show.facebookEventUrl) {
+      return show.facebookEventUrl;
+    }
+    const shareUrl = show.ticketUrl || show.infoUrl || window.location.href;
+    return shareUrl ? `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}` : "https://www.facebook.com/";
+  }
+
+  return "";
 }
 
 function getShowBadges(show) {
@@ -927,6 +1536,17 @@ function normalizeLineup(lineup = "") {
     .join(", ");
 }
 
+function toTextList(value) {
+  if (Array.isArray(value)) {
+    return value.map((item) => String(item).trim()).filter(Boolean);
+  }
+
+  return String(value || "")
+    .split(/[;|,]/)
+    .map((item) => item.trim())
+    .filter(Boolean);
+}
+
 function normalizeShowStatus(status = "") {
   const normalized = String(status).trim().toLowerCase();
 
@@ -1005,6 +1625,14 @@ function formatLongDate(date) {
     month: "short",
     day: "numeric",
     year: "numeric",
+  });
+}
+
+function formatFanDate(date) {
+  return date.toLocaleDateString("en-US", {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
   });
 }
 
