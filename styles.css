@@ -891,6 +891,40 @@ body[data-page="admin"] .intro {
   min-height: 100%;
 }
 
+.street-team-perks {
+  position: relative;
+  display: grid;
+  gap: 10px;
+  overflow: hidden;
+  padding: clamp(22px, 4vw, 36px);
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent 34%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.48)),
+    rgba(0, 0, 0, 0.62);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+}
+
+.street-team-perks::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  content: "";
+  background: var(--accent);
+}
+
+.street-team-perks h2 {
+  max-width: 820px;
+  margin: 0;
+  font-size: clamp(1.9rem, 4.5vw, 3.8rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.street-team-perks .street-team-prose {
+  max-width: 980px;
+}
+
 .street-team-feature {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -1569,6 +1603,13 @@ body.has-artwork-modal {
   font-size: 0.9rem;
 }
 
+.street-team-note--inline {
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  color: var(--soft);
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .download-card__hint {
   color: var(--soft);
   font-size: 0.8rem;
@@ -1594,6 +1635,173 @@ body.has-artwork-modal {
   aspect-ratio: auto;
   object-fit: contain;
   background: transparent;
+}
+
+.caption-generator {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+  gap: 10px;
+  justify-items: stretch;
+  padding: 14px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02)),
+    rgba(0, 0, 0, 0.44);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+.caption-generator > * {
+  min-width: 0;
+}
+
+.caption-generator h5 {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.caption-generator__subtext,
+.caption-status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.4;
+}
+
+.caption-platform-buttons,
+.caption-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.caption-platform-buttons .button,
+.caption-actions .button {
+  position: relative;
+  min-width: 0;
+  min-height: 36px;
+  overflow: hidden;
+  padding: 0 12px;
+  font-size: 0.68rem;
+  isolation: isolate;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease,
+    transform 160ms ease,
+    background 160ms ease;
+}
+
+.caption-platform-buttons .button::before,
+.caption-actions .button::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  content: "";
+  opacity: 0.16;
+  background: linear-gradient(135deg, var(--button-glow, #ffffff), transparent 58%);
+  transition: opacity 160ms ease;
+}
+
+.caption-platform-buttons .button:hover,
+.caption-platform-buttons .button:focus-visible,
+.caption-actions .button:hover,
+.caption-actions .button:focus-visible {
+  border-color: var(--button-glow, var(--accent));
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 0 20px color-mix(in srgb, var(--button-glow, #ffffff) 34%, transparent);
+  transform: translateY(-1px);
+}
+
+.caption-platform-buttons .button:hover::before,
+.caption-platform-buttons .button:focus-visible::before,
+.caption-actions .button:hover::before,
+.caption-actions .button:focus-visible::before {
+  opacity: 0.32;
+}
+
+.caption-platform-button--instagram {
+  --button-glow: #ff5bd6;
+}
+
+.caption-platform-button--tiktok {
+  --button-glow: #25f4ee;
+}
+
+.caption-platform-button--facebook {
+  --button-glow: #7bb6ff;
+}
+
+.caption-platform-button--general {
+  --button-glow: #f5f5f5;
+}
+
+.caption-platform-button[aria-pressed="true"] {
+  border-color: var(--button-glow, var(--accent));
+  color: #050505;
+  background: var(--button-glow, var(--accent));
+  box-shadow: 0 0 22px color-mix(in srgb, var(--button-glow, #ffffff) 42%, transparent);
+}
+
+.caption-platform-button[aria-pressed="true"]::before {
+  opacity: 0;
+}
+
+.caption-actions .button--primary {
+  --button-glow: #ffffff;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 0 24px rgba(255, 255, 255, 0.12);
+}
+
+.caption-actions .generate-caption-button {
+  --button-glow: #ffe073;
+}
+
+.caption-actions .native-share-button {
+  --button-glow: #74f7ff;
+}
+
+.caption-actions .open-platform-button {
+  --button-glow: #ff8fdc;
+}
+
+.caption-output {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 218px;
+  padding: 13px 14px;
+  resize: vertical;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  color: var(--text);
+  font: 0.92rem/1.48 "Trebuchet MS", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 0;
+  white-space: pre-wrap;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015)),
+    rgba(0, 0, 0, 0.68);
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.52),
+    inset 0 18px 38px rgba(0, 0, 0, 0.18);
+}
+
+.caption-output:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.36);
+  outline-offset: 2px;
+}
+
+.caption-status {
+  min-height: 1.3em;
+  color: var(--soft);
 }
 
 .cta-panel {
@@ -1936,6 +2144,14 @@ body[data-widget="compact"] .widget-all-link {
     padding: 16px;
   }
 
+  .street-team-perks {
+    padding: 16px;
+  }
+
+  .street-team-perks h2 {
+    font-size: clamp(1.75rem, 9vw, 2.55rem);
+  }
+
   .street-team-feature,
   .caption-bank,
   .tiny-rules,
@@ -2033,6 +2249,21 @@ body[data-widget="compact"] .widget-all-link {
 
   .street-action-grid {
     grid-template-columns: 1fr;
+  }
+
+  .caption-platform-buttons,
+  .caption-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .caption-platform-buttons .button,
+  .caption-actions .button {
+    width: 100%;
+  }
+
+  .caption-output {
+    min-height: 210px;
   }
 
   .street-show-card__date {
