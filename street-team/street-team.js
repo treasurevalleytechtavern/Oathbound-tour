@@ -431,11 +431,17 @@ function createUnlistedStateButton() {
   link.dataset.track = "street-team-state-select";
   link.dataset.state = "not-listed";
   link.setAttribute("aria-label", "My state is not listed");
-  link.innerHTML = `
-    <img src="${stateIconRoot}/my-state-isn't-listed-prismatic-v2.png" alt="My state is not listed" loading="eager">
-    <small>My state isn't listed</small>
-  `;
-  wireImageFallback(link.querySelector("img"));
+
+  const image = document.createElement("img");
+  image.src = `${stateIconRoot}/my-state-isn%27t-listed-prismatic-v2.png`;
+  image.alt = "My state is not listed";
+  image.loading = "eager";
+
+  const label = document.createElement("small");
+  label.textContent = "My state isn't listed";
+
+  link.append(image, label);
+  wireImageFallback(image);
   return link;
 }
 
