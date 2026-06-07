@@ -430,7 +430,7 @@ function createUnlistedStateButton() {
   link.setAttribute("aria-label", "My state is not listed");
 
   const image = document.createElement("img");
-  image.src = `${stateIconRoot}/my-state-isn%27t-listed-prismatic-v2.png`;
+  image.src = `${stateIconRoot}/my-state-isnt-listed-prismatic-v2.png`;
   image.alt = "My state is not listed";
   image.loading = "eager";
 
