@@ -6,7 +6,7 @@
     <title>Oathbound Street Team</title>
     <meta name="description" content="Join the Oathbound Street Team, find upcoming shows by area, and download approved flyers and graphics.">
     <link rel="icon" type="image/png" href="/assets/favicon.png">
-    <link rel="stylesheet" href="/styles.css?v=20260606-not-listed-icon">
+    <link rel="stylesheet" href="/styles.css?v=20260606-instagram-five-tags">
   </head>
   <body data-page="street-team" data-root="..">
     <video class="background-video street-team-background-video" autoplay muted loop playsinline preload="metadata" poster="/street-team/assets/oathbound-street-team.png" aria-hidden="true" tabindex="-1">
@@ -73,6 +73,13 @@
         </div>
       </section>
 
+      <section class="street-team-section street-team-oath-section" aria-labelledby="street-team-oath-title">
+        <h2 id="street-team-oath-title" class="sr-only">Street Team Oath</h2>
+        <a class="street-team-oath-link" href="/street-team/assets/street-team-oath.png" data-artwork-modal data-track="street-team-oath-preview" aria-label="Open the Street Team Oath infographic full screen">
+          <img src="/street-team/assets/street-team-oath.png" alt="Street Team Oath. Make noise. Bring people in. Respect the scene. 1. Flyer with respect: post flyers where they're welcome. Don't make extra work for venues, shops, or the people letting heavy music have a home. 2. Don't bury the scene: don't cover, tear down, or crowd out other bands' posters. Everybody's trying to get people in the room. 3. Share loud, not desperate: post the flyer, share the event, and remind people again closer to the show. Don't flood feeds, spam comments, or make it weird. 4. Bring the right people: invite the friends who would actually show up, throw down, and get it. Real word of mouth beats random spam. 5. Back the whole bill: show up early and stay for the other bands when you can. The whole lineup makes the night hit harder. Be loud. Be kind. Help build the scene." loading="lazy">
+        </a>
+      </section>
+
       <section class="street-team-section street-team-feature" aria-labelledby="street-team-feature-title">
         <div class="street-team-feature__copy">
           <p class="eyebrow">How to Help</p>
@@ -82,49 +89,6 @@
         <a class="street-team-feature__image-link" href="/street-team/assets/oathbound-street-team.png" data-artwork-modal data-track="street-team-artwork-preview">
           <img src="/street-team/assets/oathbound-street-team.png" alt="Oathbound Street Team artwork" loading="lazy">
         </a>
-      </section>
-
-      <section id="street-team-kit" class="street-team-section street-team-kit-section" aria-labelledby="street-team-kit-title">
-        <div class="section-heading">
-          <div>
-            <h2 id="street-team-kit-title">Street Team Kit</h2>
-            <p>Here are the high-level materials and starter copy. Use these for general tour posts. For flyers tied to a specific show, pick your area below.</p>
-          </div>
-        </div>
-        <div class="street-team-kit-layout">
-          <div>
-            <div id="general-downloads" class="download-grid" aria-live="polite"></div>
-            <p id="downloads-fallback" class="street-team-note" hidden>Flyers and graphics are being updated. Check back soon or join the street team for updates.</p>
-          </div>
-          <div class="caption-bank" aria-labelledby="caption-bank-title">
-            <h3 id="caption-bank-title">Starter Captions</h3>
-            <p>Use these as-is or change them so they sound more like you. They are just here to help you get started.</p>
-            <article>
-              <h4>Simple caption</h4>
-              <p>Oathbound and Pretty Suspect are coming to [CITY] on [DATE]. Come out, bring a friend, and support heavy music.</p>
-            </article>
-            <article>
-              <h4>Scene caption</h4>
-              <p>[CITY], don't sleep on this one. Oathbound and Pretty Suspect are bringing the Myspace Tour to [VENUE] on [DATE]. Let's make the room loud.</p>
-            </article>
-            <article>
-              <h4>Personal caption</h4>
-              <p>I'm helping spread the word for this show because heavy music needs people in the room. Come hang, bring someone, and support the scene.</p>
-            </article>
-          </div>
-        </div>
-        <div class="tiny-rules street-team-oath" aria-labelledby="tiny-rules-title">
-          <h3 id="tiny-rules-title">The Street Team Oath</h3>
-          <p>Promote hard. Keep it respectful. Help the scene.</p>
-          <ul>
-            <li><strong>Post Where Allowed</strong><span>Only put up flyers where it's okay.</span></li>
-            <li><strong>Respect Other Flyers</strong><span>Don't cover other bands' posters.</span></li>
-            <li><strong>Don't Spam</strong><span>Share with intention, not desperation.</span></li>
-            <li><strong>Tag Oathbound</strong><span>Tag the band when you post or share.</span></li>
-            <li><strong>Support the Full Bill</strong><span>Show up early and stay for the other bands when you can.</span></li>
-            <li><strong>Be Cool</strong><span>Respect venues, bands, staff, and fans.</span></li>
-          </ul>
-        </div>
       </section>
 
       <section id="find-your-area" class="street-team-section" aria-labelledby="find-your-area-title">
@@ -176,13 +140,13 @@
       <p class="footer-tagline">Forged in sound. Bound by oath.</p>
     </footer>
 
-    <div id="street-team-artwork-modal" class="artwork-modal" hidden>
-      <button class="artwork-modal__close" type="button" aria-label="Close artwork preview">Close</button>
+    <div id="street-team-artwork-modal" class="artwork-modal" role="dialog" aria-modal="true" aria-label="Artwork preview" hidden>
+      <button class="artwork-modal__close" type="button" aria-label="Close artwork preview">X</button>
       <img src="/street-team/assets/oathbound-street-team.png" alt="Oathbound Street Team artwork">
     </div>
 
     <script src="/analytics.js?v=20260602-street-team-ga4" defer></script>
     <script src="/site-ui.js?v=20260531-street-team" defer></script>
-    <script src="/street-team/street-team.js?v=20260606-not-listed-icon" defer></script>
+    <script src="/street-team/street-team.js?v=20260606-instagram-five-tags" defer></script>
   </body>
 </html>

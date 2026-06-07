@@ -5,8 +5,6 @@ const stateIconRoot = `${siteRoot}/assets/icons/states/Prismatic (300 x 300 px)`
 const stateSelector = document.querySelector("#state-selector");
 const showsContainer = document.querySelector("#street-team-shows");
 const showCount = document.querySelector("#street-team-show-count");
-const generalDownloadsContainer = document.querySelector("#general-downloads");
-const downloadsFallback = document.querySelector("#downloads-fallback");
 const BUTTON_ICONS = {
   download: `${siteRoot}/assets/icons/buttons/300x169/download-button-prismatic-300x169.png`,
   join: `${siteRoot}/assets/icons/buttons/300x169/sign-up-button-prismatic-300x169.png`,
@@ -173,16 +171,12 @@ async function loadStreetTeamPage() {
 
   if (downloadsResult.status === "fulfilled") {
     streetTeamState.downloads = normalizeDownloads(downloadsResult.value);
-  } else {
-    downloadsFallback.hidden = false;
   }
 
   if (streetAssetsResult.status === "fulfilled") {
     streetTeamState.streetAssets = Array.isArray(streetAssetsResult.value) ? streetAssetsResult.value.map(normalizeStreetAsset) : [];
     mergeStreetAssetsIntoDownloads(streetTeamState.streetAssets);
   }
-
-  renderGeneralDownloads();
 
   if (showsResult.status !== "fulfilled") {
     renderSafeMessage("Upcoming show details are being updated. Check back soon or join the street team below.", true);
@@ -332,6 +326,9 @@ function normalizeShow(rawShow) {
     ageRestriction: normalizeAgeRestriction(rawShow.ageRestriction),
     ticketUrl: String(rawShow.ticketUrl || "").trim(),
     ticketLabel: String(rawShow.ticketLabel || "").trim(),
+    doorSalesOnly: rawShow.doorSalesOnly === true,
+    ticketStatus: String(rawShow.ticketStatus || "").trim(),
+    ticketDisplayLabel: String(rawShow.ticketDisplayLabel || "").trim(),
     infoUrl: String(rawShow.infoUrl || "").trim(),
     infoLabel: String(rawShow.infoLabel || "").trim(),
     notes: String(rawShow.notes || "").trim(),
@@ -433,7 +430,7 @@ function createUnlistedStateButton() {
   link.setAttribute("aria-label", "My state is not listed");
 
   const image = document.createElement("img");
-  image.src = `${stateIconRoot}/my-state-isnt-listed-prismatic-v2.png`;
+  image.src = `${stateIconRoot}/my-state-isn%27t-listed-prismatic-v2.png`;
   image.alt = "My state is not listed";
   image.loading = "eager";
 
@@ -879,7 +876,7 @@ function generateCaption(show, platform = "general") {
   }
 
   if (platform === "instagram") {
-    caption = ensureHashtags(caption, getCaptionHashtags(values, 6));
+    caption = limitHashtags(caption, ["#Oathbound", "#MyspaceTour", `#${values.CityHashtag}`, "#LiveMusic", "#Metalcore"]);
   }
 
   return cleanupCaption(caption);
@@ -918,6 +915,10 @@ function getCaptionLineup(show) {
 function getCaptionTicketInfo(show) {
   if (isFreeShow(show)) {
     return show.ticketUrl ? `Free show. RSVP/info: ${show.ticketUrl}` : "Free show.";
+  }
+
+  if (isDoorSalesOnly(show)) {
+    return getDoorSalesOnlyLabel(show);
   }
 
   if (show.ticketUrl) {
@@ -1178,6 +1179,13 @@ function getShowBadges(show) {
     });
   }
 
+  if (isDoorSalesOnly(show)) {
+    badges.push({
+      label: getDoorSalesOnlyLabel(show),
+      className: "street-text-badge street-text-badge--door-sales",
+    });
+  }
+
   if (show.ticketUrl || show.infoUrl) {
     badges.push({
       label: show.ticketUrl ? show.ticketLabel || "Tickets" : show.infoLabel || "Details",
@@ -1191,6 +1199,10 @@ function getShowBadges(show) {
 }
 
 function renderShowBadge(badge, show) {
+  if (!badge.icon) {
+    return `<span class="${escapeHtml(badge.className || "street-text-badge")}" title="${escapeHtml(badge.label)}">${escapeHtml(badge.label)}</span>`;
+  }
+
   const image = `<img src="${escapeHtml(badge.icon)}" alt="${escapeHtml(badge.label)}" loading="lazy">`;
 
   if (!badge.href) {
@@ -1209,7 +1221,7 @@ function getShowResourceDownloads(show) {
   const downloads = [];
 
   [...getShowDownloads(show), ...getCityDownloads(show)].forEach((download) => {
-    const key = download.url || download.title;
+    const key = getDownloadDedupeKey(download);
 
     if (!key || seen.has(key)) {
       return;
@@ -1220,6 +1232,19 @@ function getShowResourceDownloads(show) {
   });
 
   return downloads;
+}
+
+function getDownloadDedupeKey(download) {
+  const url = String(download.url || download.preview || "").trim();
+
+  if (url) {
+    return normalizeAssetUrl(url)
+      .replace(/^https?:\/\/[^/]+/i, "")
+      .replace(/\/+/g, "/")
+      .toLowerCase();
+  }
+
+  return String(download.title || "").trim().toLowerCase();
 }
 
 function getShowSocialAssets(show) {
@@ -1236,18 +1261,17 @@ function isFreeShow(show) {
   return show.isFreeShow === true || /\bfree\b/i.test(`${show.ticketLabel || ""} ${show.notes || ""}`);
 }
 
-function renderGeneralDownloads() {
-  generalDownloadsContainer.innerHTML = "";
-
-  const downloads = streetTeamState.downloads.general || [];
-  if (!downloads.length) {
-    generalDownloadsContainer.innerHTML = `<p class="street-team-note">General flyers and graphics are being updated.</p>`;
-    return;
+function isDoorSalesOnly(show) {
+  if (show.doorSalesOnly === true) {
+    return true;
   }
 
-  const fragment = document.createDocumentFragment();
-  downloads.forEach((download) => fragment.appendChild(createDownloadCard(download)));
-  generalDownloadsContainer.appendChild(fragment);
+  const status = String(show.ticketStatus || "").trim().toLowerCase();
+  return status === "door-sales-only" || status === "door sales only";
+}
+
+function getDoorSalesOnlyLabel(show) {
+  return String(show.ticketDisplayLabel || "").trim() || "Door sales only";
 }
 
 function createDownloadCard(download, show = null) {
@@ -1393,15 +1417,21 @@ function wireTracking() {
 }
 
 function wireArtworkModal() {
-  const trigger = document.querySelector("[data-artwork-modal]");
+  const triggers = Array.from(document.querySelectorAll("[data-artwork-modal]"));
   const modal = document.querySelector("#street-team-artwork-modal");
   const closeButton = modal?.querySelector(".artwork-modal__close");
+  const modalImage = modal?.querySelector("img");
+  let activeTrigger = null;
 
-  if (!trigger || !modal || !closeButton) {
+  if (!triggers.length || !modal || !closeButton || !modalImage) {
     return;
   }
 
-  const openModal = () => {
+  const openModal = (trigger) => {
+    const triggerImage = trigger.querySelector("img");
+    modalImage.src = trigger.href || triggerImage?.src || modalImage.src;
+    modalImage.alt = triggerImage?.alt || trigger.getAttribute("aria-label") || "Artwork preview";
+    activeTrigger = trigger;
     modal.hidden = false;
     document.body.classList.add("has-artwork-modal");
     closeButton.focus();
@@ -1410,12 +1440,15 @@ function wireArtworkModal() {
   const closeModal = () => {
     modal.hidden = true;
     document.body.classList.remove("has-artwork-modal");
-    trigger.focus();
+    activeTrigger?.focus();
+    activeTrigger = null;
   };
 
-  trigger.addEventListener("click", (event) => {
-    event.preventDefault();
-    openModal();
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", (event) => {
+      event.preventDefault();
+      openModal(trigger);
+    });
   });
 
   closeButton.addEventListener("click", closeModal);
