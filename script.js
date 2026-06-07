@@ -182,7 +182,7 @@ function createMyspaceShowCard(show, index) {
 
   const badges = document.createElement("div");
   badges.className = "myspace-show-badges";
-  renderIconBadges(badges, show, "myspace-icon-badge");
+  renderMyspaceBadges(badges, show);
 
   const actions = document.createElement("div");
   actions.className = "myspace-show-actions";
@@ -327,7 +327,7 @@ function createShowCard(show, index) {
   setText(card, ".show-notes", show.notes || "");
 
   renderShowStatus(card, showDate, index);
-  card.querySelector(".show-flags")?.remove();
+  renderShowFlags(card.querySelector(".show-flags"), show);
   renderIconBadges(card.querySelector(".show-age"), show);
   toggleElement(card.querySelector(".show-lineup"), Boolean(show.lineup && show.lineup.trim()));
   toggleElement(card.querySelector(".show-notes"), Boolean(show.notes && show.notes.trim()));
@@ -371,6 +371,26 @@ function renderShowStatus(card, showDate, index) {
   status.textContent = detail ? `Next Show • ${detail}` : "Next Show";
 }
 
+function renderShowFlags(container, show) {
+  if (!container) {
+    return;
+  }
+
+  const chips = getTicketStatusChips(show);
+
+  if (!chips.length) {
+    container.remove();
+    return;
+  }
+
+  chips.forEach((chip) => {
+    const badge = document.createElement("span");
+    badge.className = chip.className;
+    badge.textContent = chip.label;
+    container.appendChild(badge);
+  });
+}
+
 function createButton(url, label, isPrimary = false, actionType = "details", show = null, index = 0) {
   const button = document.createElement("a");
   button.className = isPrimary ? "button button--primary" : "button";
@@ -411,6 +431,51 @@ function renderIconBadges(container, show, extraClassName = "") {
   });
 }
 
+function renderMyspaceBadges(container, show) {
+  if (!container) {
+    return;
+  }
+
+  const badges = getShowTextBadges(show);
+
+  if (!badges.length) {
+    container.remove();
+    return;
+  }
+
+  badges.forEach((label) => {
+    const badge = document.createElement("span");
+    badge.className = label === getDoorSalesOnlyLabel(show)
+      ? "myspace-age-badge myspace-age-badge--door-sales"
+      : "myspace-age-badge";
+    badge.textContent = label;
+    container.appendChild(badge);
+  });
+}
+
+function getShowTextBadges(show) {
+  const badges = [];
+  const age = normalizeAgeRestriction(show.ageRestriction);
+
+  if (age) {
+    badges.push(age);
+  }
+
+  getShowStatusIconBadges(show).forEach((badge) => {
+    if (badge.label && !badges.includes(badge.label)) {
+      badges.push(badge.label);
+    }
+  });
+
+  getTicketStatusChips(show).forEach((chip) => {
+    if (chip.label && !badges.includes(chip.label)) {
+      badges.push(chip.label);
+    }
+  });
+
+  return badges;
+}
+
 function getShowIconBadges(show) {
   const badges = [];
   const age = normalizeAgeRestriction(show.ageRestriction);
@@ -436,6 +501,30 @@ function getShowIconBadges(show) {
 
   badges.push(...getShowStatusIconBadges(show));
   return badges;
+}
+
+function getTicketStatusChips(show) {
+  if (!isDoorSalesOnly(show)) {
+    return [];
+  }
+
+  return [{
+    label: getDoorSalesOnlyLabel(show),
+    className: "status-chip status-chip--door-sales",
+  }];
+}
+
+function isDoorSalesOnly(show) {
+  if (show.doorSalesOnly === true) {
+    return true;
+  }
+
+  const status = normalizeBadgeText(show.ticketStatus);
+  return status === "door-sales-only" || status === "door sales only";
+}
+
+function getDoorSalesOnlyLabel(show) {
+  return String(show.ticketDisplayLabel || "").trim() || "Door sales only";
 }
 
 function getShowStatusIconBadges(show) {

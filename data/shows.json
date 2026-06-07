@@ -21,10 +21,13 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": true,
+    "ticketStatus": "door-sales-only",
+    "ticketDisplayLabel": "Door sales only",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "All Ages",
-    "confirmationStatus": "announced",
+    "confirmationStatus": "verified",
     "verificationStatus": "verified",
     "displayMode": "full",
     "status": "",
@@ -40,15 +43,11 @@
     ],
     "socialTags": [],
     "hashtags": [],
-    "promoStatus": "Critical",
-    "streetTeamReady": false,
-    "criticalWarning": true,
-    "missingRequirements": [
-      "Missing ticket link for paid show"
-    ],
-    "warningRequirements": [
-      "Missing flyer"
-    ],
+    "promoStatus": "Ready",
+    "streetTeamReady": true,
+    "criticalWarning": false,
+    "missingRequirements": [],
+    "warningRequirements": [],
     "supportingAct1Name": "pretty-suspect",
     "supportingAct1Instagram": "",
     "supportingAct1Website": "",
@@ -191,7 +190,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Campbell Club in Eugene\n\n2026-06-18 / 7:30 PM show / 7:00 PM doors at Campbell Club - Eugene, OR\nLineup: Oathbound; Pretty Suspect; Corpse Flip\n\nBands: @oathbound_band @prettysuspect.band @corpseflip_eug\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Campbell Club in Eugene\n\n2026-06-18 / 7:30 PM show / 7:00 PM doors at Campbell Club - Eugene, OR\nLineup: Oathbound; Pretty Suspect; Corpse Flip\nTickets/info: Door sales only\nBands: @oathbound_band @prettysuspect.band @corpseflip_eug\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band",
           "@prettysuspect.band",
@@ -201,7 +200,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Campbell Club in Eugene\n\n2026-06-18 / 7:30 PM show / 7:00 PM doors at Campbell Club - Eugene, OR\nLineup: Oathbound; Pretty Suspect; Corpse Flip\n\nBands: @Oathboundband @PrettySuspect97401\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Campbell Club in Eugene\n\n2026-06-18 / 7:30 PM show / 7:00 PM doors at Campbell Club - Eugene, OR\nLineup: Oathbound; Pretty Suspect; Corpse Flip\nTickets/info: Door sales only\nBands: @Oathboundband @PrettySuspect97401\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband",
           "@PrettySuspect97401"
@@ -212,7 +211,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Campbell Club in Eugene\n\n2026-06-18 / 7:30 PM show / 7:00 PM doors at Campbell Club - Eugene, OR\nLineup: Oathbound; Pretty Suspect; Corpse Flip\n\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Campbell Club in Eugene\n\n2026-06-18 / 7:30 PM show / 7:00 PM doors at Campbell Club - Eugene, OR\nLineup: Oathbound; Pretty Suspect; Corpse Flip\nTickets/info: Door sales only\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial",
           "@prettysuspect"
@@ -245,6 +244,9 @@
     "ticketUrl": "https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "ticket-link",
+    "ticketDisplayLabel": "Tickets",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "All Ages",
@@ -511,7 +513,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "520 Events Center in Albany\n\n2026-06-19 / 6:30 PM show / 6:00 PM doors at 520 Events Center - Albany, OR\nLineup: Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste\nInfo/tickets: https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/\nBands: @oathbound_band @prettysuspect.band @hideheaven541 @drawnbyknives @dead_nexus @cosmicwastecrew\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "520 Events Center in Albany\n\n2026-06-19 / 6:30 PM show / 6:00 PM doors at 520 Events Center - Albany, OR\nLineup: Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste\nTickets/info: https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/\nBands: @oathbound_band @prettysuspect.band @hideheaven541 @drawnbyknives @dead_nexus @cosmicwastecrew\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band",
           "@prettysuspect.band",
@@ -524,7 +526,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "520 Events Center in Albany\n\n2026-06-19 / 6:30 PM show / 6:00 PM doors at 520 Events Center - Albany, OR\nLineup: Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste\nInfo/tickets: https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/\nBands: @Oathboundband @PrettySuspect97401 @profile.php @drawnbyknives @deadnexus @CosmicWaste\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "520 Events Center in Albany\n\n2026-06-19 / 6:30 PM show / 6:00 PM doors at 520 Events Center - Albany, OR\nLineup: Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste\nTickets/info: https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/\nBands: @Oathboundband @PrettySuspect97401 @profile.php @drawnbyknives @deadnexus @CosmicWaste\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband",
           "@PrettySuspect97401",
@@ -537,7 +539,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "520 Events Center in Albany\n\n2026-06-19 / 6:30 PM show / 6:00 PM doors at 520 Events Center - Albany, OR\nLineup: Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste\nInfo/tickets: https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "520 Events Center in Albany\n\n2026-06-19 / 6:30 PM show / 6:00 PM doors at 520 Events Center - Albany, OR\nLineup: Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste\nTickets/info: https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial",
           "@prettysuspect"
@@ -573,6 +575,9 @@
     "ticketUrl": "",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
+    "doorSalesOnly": true,
+    "ticketStatus": "door-sales-only",
+    "ticketDisplayLabel": "Door sales only",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "All Ages",
@@ -590,12 +595,10 @@
     "promoAssetNeeds": [],
     "socialTags": [],
     "hashtags": [],
-    "promoStatus": "Critical",
-    "streetTeamReady": false,
-    "criticalWarning": true,
-    "missingRequirements": [
-      "Missing ticket link for paid show"
-    ],
+    "promoStatus": "Ready",
+    "streetTeamReady": true,
+    "criticalWarning": false,
+    "missingRequirements": [],
     "warningRequirements": [],
     "supportingAct1Name": "pretty-suspect",
     "supportingAct1Instagram": "",
@@ -764,7 +767,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Smashed Live in Citrus Heights\n\n2026-06-20 / 7:00 PM show / 6:30 PM doors at Smashed Live - Citrus Heights, CA\nLineup: Oathbound; Pretty Suspect; Salt; Hallway Scenes\n\nBands: @oathbound_band @prettysuspect.band @hallwayscenes\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Smashed Live in Citrus Heights\n\n2026-06-20 / 7:00 PM show / 6:30 PM doors at Smashed Live - Citrus Heights, CA\nLineup: Oathbound; Pretty Suspect; Salt; Hallway Scenes\nTickets/info: Door sales only\nBands: @oathbound_band @prettysuspect.band @hallwayscenes\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band",
           "@prettysuspect.band",
@@ -776,7 +779,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Smashed Live in Citrus Heights\n\n2026-06-20 / 7:00 PM show / 6:30 PM doors at Smashed Live - Citrus Heights, CA\nLineup: Oathbound; Pretty Suspect; Salt; Hallway Scenes\n\nBands: @Oathboundband @PrettySuspect97401\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Smashed Live in Citrus Heights\n\n2026-06-20 / 7:00 PM show / 6:30 PM doors at Smashed Live - Citrus Heights, CA\nLineup: Oathbound; Pretty Suspect; Salt; Hallway Scenes\nTickets/info: Door sales only\nBands: @Oathboundband @PrettySuspect97401\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband",
           "@PrettySuspect97401"
@@ -788,7 +791,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Smashed Live in Citrus Heights\n\n2026-06-20 / 7:00 PM show / 6:30 PM doors at Smashed Live - Citrus Heights, CA\nLineup: Oathbound; Pretty Suspect; Salt; Hallway Scenes\n\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Smashed Live in Citrus Heights\n\n2026-06-20 / 7:00 PM show / 6:30 PM doors at Smashed Live - Citrus Heights, CA\nLineup: Oathbound; Pretty Suspect; Salt; Hallway Scenes\nTickets/info: Door sales only\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial",
           "@prettysuspect"
@@ -822,6 +825,9 @@
     "ticketUrl": "https://my805tix.com/e/pretty-suspect",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "ticket-link",
+    "ticketDisplayLabel": "Tickets",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "All Ages",
@@ -841,13 +847,11 @@
     ],
     "socialTags": [],
     "hashtags": [],
-    "promoStatus": "Warnings",
+    "promoStatus": "Ready",
     "streetTeamReady": true,
     "criticalWarning": false,
     "missingRequirements": [],
-    "warningRequirements": [
-      "Missing flyer"
-    ],
+    "warningRequirements": [],
     "supportingAct1Name": "pretty-suspect",
     "supportingAct1Instagram": "",
     "supportingAct1Website": "",
@@ -1019,7 +1023,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Humdinger Brewing SLO Taproom in San Luis Obispo\n\n2026-06-21 / 6:30 PM show / 6:00 PM doors at Humdinger Brewing SLO Taproom - San Luis Obispo, CA\nLineup: Oathbound; Pretty Suspect; Idol Eyes; Stabbable Offense\nInfo/tickets: https://my805tix.com/e/pretty-suspect\nBands: @oathbound_band @prettysuspect.band @idoleyes.ca @stabbableoffense\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Humdinger Brewing SLO Taproom in San Luis Obispo\n\n2026-06-21 / 6:30 PM show / 6:00 PM doors at Humdinger Brewing SLO Taproom - San Luis Obispo, CA\nLineup: Oathbound; Pretty Suspect; Idol Eyes; Stabbable Offense\nTickets/info: https://my805tix.com/e/pretty-suspect\nBands: @oathbound_band @prettysuspect.band @idoleyes.ca @stabbableoffense\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band",
           "@prettysuspect.band",
@@ -1030,7 +1034,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Humdinger Brewing SLO Taproom in San Luis Obispo\n\n2026-06-21 / 6:30 PM show / 6:00 PM doors at Humdinger Brewing SLO Taproom - San Luis Obispo, CA\nLineup: Oathbound; Pretty Suspect; Idol Eyes; Stabbable Offense\nInfo/tickets: https://my805tix.com/e/pretty-suspect\nBands: @Oathboundband @PrettySuspect97401 @stabbableoffense\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Humdinger Brewing SLO Taproom in San Luis Obispo\n\n2026-06-21 / 6:30 PM show / 6:00 PM doors at Humdinger Brewing SLO Taproom - San Luis Obispo, CA\nLineup: Oathbound; Pretty Suspect; Idol Eyes; Stabbable Offense\nTickets/info: https://my805tix.com/e/pretty-suspect\nBands: @Oathboundband @PrettySuspect97401 @stabbableoffense\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband",
           "@PrettySuspect97401",
@@ -1042,7 +1046,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Humdinger Brewing SLO Taproom in San Luis Obispo\n\n2026-06-21 / 6:30 PM show / 6:00 PM doors at Humdinger Brewing SLO Taproom - San Luis Obispo, CA\nLineup: Oathbound; Pretty Suspect; Idol Eyes; Stabbable Offense\nInfo/tickets: https://my805tix.com/e/pretty-suspect\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Humdinger Brewing SLO Taproom in San Luis Obispo\n\n2026-06-21 / 6:30 PM show / 6:00 PM doors at Humdinger Brewing SLO Taproom - San Luis Obispo, CA\nLineup: Oathbound; Pretty Suspect; Idol Eyes; Stabbable Offense\nTickets/info: https://my805tix.com/e/pretty-suspect\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial",
           "@prettysuspect"
@@ -1076,6 +1080,9 @@
     "ticketUrl": "https://www.ticketweb.com/event/free-show-pretty-suspect-transplants-brewing-company-tickets/14928993",
     "ticketLabel": "Tickets",
     "isFreeShow": true,
+    "doorSalesOnly": false,
+    "ticketStatus": "free",
+    "ticketDisplayLabel": "Free show",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "All Ages",
@@ -1244,7 +1251,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Transplants Brewing Company in Palmdale\n\n2026-06-22 / 7:00 PM show / 6:30 PM doors at Transplants Brewing Company - Palmdale, CA\nLineup: Oathbound; Pretty Suspect; Revelry\nInfo/tickets: https://www.ticketweb.com/event/free-show-pretty-suspect-transplants-brewing-company-tickets/14928993\nBands: @oathbound_band @prettysuspect.band @revelry_ca\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Transplants Brewing Company in Palmdale\n\n2026-06-22 / 7:00 PM show / 6:30 PM doors at Transplants Brewing Company - Palmdale, CA\nLineup: Oathbound; Pretty Suspect; Revelry\nTickets/info: Free show\nBands: @oathbound_band @prettysuspect.band @revelry_ca\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band",
           "@prettysuspect.band",
@@ -1254,7 +1261,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Transplants Brewing Company in Palmdale\n\n2026-06-22 / 7:00 PM show / 6:30 PM doors at Transplants Brewing Company - Palmdale, CA\nLineup: Oathbound; Pretty Suspect; Revelry\nInfo/tickets: https://www.ticketweb.com/event/free-show-pretty-suspect-transplants-brewing-company-tickets/14928993\nBands: @Oathboundband @PrettySuspect97401 @revelryca\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Transplants Brewing Company in Palmdale\n\n2026-06-22 / 7:00 PM show / 6:30 PM doors at Transplants Brewing Company - Palmdale, CA\nLineup: Oathbound; Pretty Suspect; Revelry\nTickets/info: Free show\nBands: @Oathboundband @PrettySuspect97401 @revelryca\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband",
           "@PrettySuspect97401",
@@ -1264,7 +1271,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Transplants Brewing Company in Palmdale\n\n2026-06-22 / 7:00 PM show / 6:30 PM doors at Transplants Brewing Company - Palmdale, CA\nLineup: Oathbound; Pretty Suspect; Revelry\nInfo/tickets: https://www.ticketweb.com/event/free-show-pretty-suspect-transplants-brewing-company-tickets/14928993\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Transplants Brewing Company in Palmdale\n\n2026-06-22 / 7:00 PM show / 6:30 PM doors at Transplants Brewing Company - Palmdale, CA\nLineup: Oathbound; Pretty Suspect; Revelry\nTickets/info: Free show\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial",
           "@prettysuspect"
@@ -1297,6 +1304,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": true,
+    "doorSalesOnly": false,
+    "ticketStatus": "free",
+    "ticketDisplayLabel": "Free show",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "21+",
@@ -1493,7 +1503,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "The Escondite in Los Angeles\n\n2026-06-23 / 8:00 PM show at The Escondite - Los Angeles, CA\nLineup: Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib\n\nBands: @oathbound_band @prettysuspect.band @daybreakends @xdeadhabibx\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "The Escondite in Los Angeles\n\n2026-06-23 / 8:00 PM show at The Escondite - Los Angeles, CA\nLineup: Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib\nTickets/info: Free show\nBands: @oathbound_band @prettysuspect.band @daybreakends @xdeadhabibx\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band",
           "@prettysuspect.band",
@@ -1504,7 +1514,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "The Escondite in Los Angeles\n\n2026-06-23 / 8:00 PM show at The Escondite - Los Angeles, CA\nLineup: Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib\n\nBands: @Oathboundband @PrettySuspect97401 @DbEband\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "The Escondite in Los Angeles\n\n2026-06-23 / 8:00 PM show at The Escondite - Los Angeles, CA\nLineup: Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib\nTickets/info: Free show\nBands: @Oathboundband @PrettySuspect97401 @DbEband\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband",
           "@PrettySuspect97401",
@@ -1516,7 +1526,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "The Escondite in Los Angeles\n\n2026-06-23 / 8:00 PM show at The Escondite - Los Angeles, CA\nLineup: Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib\n\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "The Escondite in Los Angeles\n\n2026-06-23 / 8:00 PM show at The Escondite - Los Angeles, CA\nLineup: Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib\nTickets/info: Free show\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial",
           "@prettysuspect"
@@ -1550,6 +1560,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": true,
+    "ticketStatus": "door-sales-only",
+    "ticketDisplayLabel": "Door sales only",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "21+",
@@ -1567,12 +1580,10 @@
     "promoAssetNeeds": [],
     "socialTags": [],
     "hashtags": [],
-    "promoStatus": "Critical",
-    "streetTeamReady": false,
-    "criticalWarning": true,
-    "missingRequirements": [
-      "Missing ticket link for paid show"
-    ],
+    "promoStatus": "Ready",
+    "streetTeamReady": true,
+    "criticalWarning": false,
+    "missingRequirements": [],
     "warningRequirements": [],
     "supportingAct1Name": "pretty-suspect",
     "supportingAct1Instagram": "",
@@ -1742,7 +1753,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "McGuffie's Live in San Diego\n\n2026-06-25 / 8:00 PM show at McGuffie's Live - San Diego, CA\nLineup: Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus\n\nBands: @oathbound_band @prettysuspect.band @lob.music\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "McGuffie's Live in San Diego\n\n2026-06-25 / 8:00 PM show at McGuffie's Live - San Diego, CA\nLineup: Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus\nTickets/info: Door sales only\nBands: @oathbound_band @prettysuspect.band @lob.music\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band",
           "@prettysuspect.band",
@@ -1754,7 +1765,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "McGuffie's Live in San Diego\n\n2026-06-25 / 8:00 PM show at McGuffie's Live - San Diego, CA\nLineup: Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus\n\nBands: @Oathboundband @PrettySuspect97401 @saulxofxtarsus\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "McGuffie's Live in San Diego\n\n2026-06-25 / 8:00 PM show at McGuffie's Live - San Diego, CA\nLineup: Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus\nTickets/info: Door sales only\nBands: @Oathboundband @PrettySuspect97401 @saulxofxtarsus\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband",
           "@PrettySuspect97401",
@@ -1766,7 +1777,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "McGuffie's Live in San Diego\n\n2026-06-25 / 8:00 PM show at McGuffie's Live - San Diego, CA\nLineup: Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus\n\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "McGuffie's Live in San Diego\n\n2026-06-25 / 8:00 PM show at McGuffie's Live - San Diego, CA\nLineup: Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus\nTickets/info: Door sales only\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial",
           "@prettysuspect"
@@ -1800,10 +1811,13 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": true,
+    "ticketStatus": "door-sales-only",
+    "ticketDisplayLabel": "Door sales only",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "All Ages",
-    "confirmationStatus": "announced",
+    "confirmationStatus": "verified",
     "verificationStatus": "partially_verified",
     "displayMode": "full",
     "status": "",
@@ -1819,12 +1833,10 @@
     ],
     "socialTags": [],
     "hashtags": [],
-    "promoStatus": "Critical",
-    "streetTeamReady": false,
-    "criticalWarning": true,
-    "missingRequirements": [
-      "Missing ticket link for paid show"
-    ],
+    "promoStatus": "Warnings",
+    "streetTeamReady": true,
+    "criticalWarning": false,
+    "missingRequirements": [],
     "warningRequirements": [
       "Missing flyer"
     ],
@@ -1941,7 +1953,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "The Empire in Reno\n\n2026-06-26 / 7:00 PM show / 6:30 PM doors at The Empire - Reno, NV\nLineup: Oathbound; Pretty Suspect\n\nBands: @oathbound_band @prettysuspect.band\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "The Empire in Reno\n\n2026-06-26 / 7:00 PM show / 6:30 PM doors at The Empire - Reno, NV\nLineup: Oathbound; Pretty Suspect\nTickets/info: Door sales only\nBands: @oathbound_band @prettysuspect.band\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band",
           "@prettysuspect.band"
@@ -1950,7 +1962,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "The Empire in Reno\n\n2026-06-26 / 7:00 PM show / 6:30 PM doors at The Empire - Reno, NV\nLineup: Oathbound; Pretty Suspect\n\nBands: @Oathboundband @PrettySuspect97401\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "The Empire in Reno\n\n2026-06-26 / 7:00 PM show / 6:30 PM doors at The Empire - Reno, NV\nLineup: Oathbound; Pretty Suspect\nTickets/info: Door sales only\nBands: @Oathboundband @PrettySuspect97401\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband",
           "@PrettySuspect97401"
@@ -1959,7 +1971,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "The Empire in Reno\n\n2026-06-26 / 7:00 PM show / 6:30 PM doors at The Empire - Reno, NV\nLineup: Oathbound; Pretty Suspect\n\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "The Empire in Reno\n\n2026-06-26 / 7:00 PM show / 6:30 PM doors at The Empire - Reno, NV\nLineup: Oathbound; Pretty Suspect\nTickets/info: Door sales only\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial",
           "@prettysuspect"
@@ -1990,6 +2002,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "All Ages",
@@ -2179,6 +2194,9 @@
     "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "ticket-link",
+    "ticketDisplayLabel": "Tickets",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "21+",
@@ -2366,7 +2384,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dante's in Portland\n\n2026-06-28 / 6:00 PM show / 5:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound; Pretty Suspect; Hangfire; Foghorn\nInfo/tickets: https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943\nBands: @oathbound_band @prettysuspect.band @officialfoghorn\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Dante's in Portland\n\n2026-06-28 / 6:00 PM show / 5:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound; Pretty Suspect; Hangfire; Foghorn\nTickets/info: https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943\nBands: @oathbound_band @prettysuspect.band @officialfoghorn\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band",
           "@prettysuspect.band",
@@ -2378,7 +2396,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dante's in Portland\n\n2026-06-28 / 6:00 PM show / 5:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound; Pretty Suspect; Hangfire; Foghorn\nInfo/tickets: https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943\nBands: @Oathboundband @PrettySuspect97401 @foghornwa\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Dante's in Portland\n\n2026-06-28 / 6:00 PM show / 5:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound; Pretty Suspect; Hangfire; Foghorn\nTickets/info: https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943\nBands: @Oathboundband @PrettySuspect97401 @foghornwa\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband",
           "@PrettySuspect97401",
@@ -2390,7 +2408,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dante's in Portland\n\n2026-06-28 / 6:00 PM show / 5:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound; Pretty Suspect; Hangfire; Foghorn\nInfo/tickets: https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Dante's in Portland\n\n2026-06-28 / 6:00 PM show / 5:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound; Pretty Suspect; Hangfire; Foghorn\nTickets/info: https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial",
           "@prettysuspect"
@@ -2424,6 +2442,9 @@
     "ticketUrl": "https://www.ticketweb.com/event/vampires-everywhere-kiss-the-sun-dantes-tickets/14142904",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "ticket-link",
+    "ticketDisplayLabel": "Tickets",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "21+",
@@ -2518,7 +2539,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dante's in Portland\n\n2026-04-30 / 7:30 PM show / 6:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound\nInfo/tickets: https://www.ticketweb.com/event/vampires-everywhere-kiss-the-sun-dantes-tickets/14142904\nBands: @oathbound_band\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Dante's in Portland\n\n2026-04-30 / 7:30 PM show / 6:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound\nTickets/info: https://www.ticketweb.com/event/vampires-everywhere-kiss-the-sun-dantes-tickets/14142904\nBands: @oathbound_band\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band"
         ],
@@ -2526,7 +2547,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dante's in Portland\n\n2026-04-30 / 7:30 PM show / 6:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound\nInfo/tickets: https://www.ticketweb.com/event/vampires-everywhere-kiss-the-sun-dantes-tickets/14142904\nBands: @Oathboundband\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Dante's in Portland\n\n2026-04-30 / 7:30 PM show / 6:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound\nTickets/info: https://www.ticketweb.com/event/vampires-everywhere-kiss-the-sun-dantes-tickets/14142904\nBands: @Oathboundband\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband"
         ],
@@ -2534,7 +2555,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dante's in Portland\n\n2026-04-30 / 7:30 PM show / 6:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound\nInfo/tickets: https://www.ticketweb.com/event/vampires-everywhere-kiss-the-sun-dantes-tickets/14142904\nBands: @oathboundofficial\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Dante's in Portland\n\n2026-04-30 / 7:30 PM show / 6:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound\nTickets/info: https://www.ticketweb.com/event/vampires-everywhere-kiss-the-sun-dantes-tickets/14142904\nBands: @oathboundofficial\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial"
         ],
@@ -2564,6 +2585,9 @@
     "ticketUrl": "https://rockafairy.betterworld.org/events/oathbound",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "ticket-link",
+    "ticketDisplayLabel": "Tickets",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "All Ages",
@@ -2662,7 +2686,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Rockafairy Hall in Medford\n\n2026-05-15 / 7:30 PM show / 7:30 PM doors at Rockafairy Hall - Medford, OR\nLineup: Oathbound\nInfo/tickets: https://rockafairy.betterworld.org/events/oathbound\nBands: @oathbound_band\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Rockafairy Hall in Medford\n\n2026-05-15 / 7:30 PM show / 7:30 PM doors at Rockafairy Hall - Medford, OR\nLineup: Oathbound\nTickets/info: https://rockafairy.betterworld.org/events/oathbound\nBands: @oathbound_band\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band"
         ],
@@ -2670,7 +2694,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Rockafairy Hall in Medford\n\n2026-05-15 / 7:30 PM show / 7:30 PM doors at Rockafairy Hall - Medford, OR\nLineup: Oathbound\nInfo/tickets: https://rockafairy.betterworld.org/events/oathbound\nBands: @Oathboundband\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Rockafairy Hall in Medford\n\n2026-05-15 / 7:30 PM show / 7:30 PM doors at Rockafairy Hall - Medford, OR\nLineup: Oathbound\nTickets/info: https://rockafairy.betterworld.org/events/oathbound\nBands: @Oathboundband\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband"
         ],
@@ -2678,7 +2702,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Rockafairy Hall in Medford\n\n2026-05-15 / 7:30 PM show / 7:30 PM doors at Rockafairy Hall - Medford, OR\nLineup: Oathbound\nInfo/tickets: https://rockafairy.betterworld.org/events/oathbound\nBands: @oathboundofficial\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Rockafairy Hall in Medford\n\n2026-05-15 / 7:30 PM show / 7:30 PM doors at Rockafairy Hall - Medford, OR\nLineup: Oathbound\nTickets/info: https://rockafairy.betterworld.org/events/oathbound\nBands: @oathboundofficial\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial"
         ],
@@ -2708,6 +2732,9 @@
     "ticketUrl": "https://www.eventbrite.com/e/titvn-x-oathbound-tickets-1986355278108?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=aff0bandsintown&bit_userid=104036509&comeFrom=2570&artist_event_id=1038593213",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "ticket-link",
+    "ticketDisplayLabel": "Tickets",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "All Ages",
@@ -2802,7 +2829,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Mulberry Station Brewing Company in Chico\n\n2026-05-16 / 7:00 PM show at Mulberry Station Brewing Company - Chico, CA\nLineup: Oathbound\nInfo/tickets: https://www.eventbrite.com/e/titvn-x-oathbound-tickets-1986355278108?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=aff0bandsintown&bit_userid=104036509&comeFrom=2570&artist_event_id=1038593213\nBands: @oathbound_band\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Mulberry Station Brewing Company in Chico\n\n2026-05-16 / 7:00 PM show at Mulberry Station Brewing Company - Chico, CA\nLineup: Oathbound\nTickets/info: https://www.eventbrite.com/e/titvn-x-oathbound-tickets-1986355278108?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=aff0bandsintown&bit_userid=104036509&comeFrom=2570&artist_event_id=1038593213\nBands: @oathbound_band\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band"
         ],
@@ -2810,7 +2837,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Mulberry Station Brewing Company in Chico\n\n2026-05-16 / 7:00 PM show at Mulberry Station Brewing Company - Chico, CA\nLineup: Oathbound\nInfo/tickets: https://www.eventbrite.com/e/titvn-x-oathbound-tickets-1986355278108?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=aff0bandsintown&bit_userid=104036509&comeFrom=2570&artist_event_id=1038593213\nBands: @Oathboundband\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Mulberry Station Brewing Company in Chico\n\n2026-05-16 / 7:00 PM show at Mulberry Station Brewing Company - Chico, CA\nLineup: Oathbound\nTickets/info: https://www.eventbrite.com/e/titvn-x-oathbound-tickets-1986355278108?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=aff0bandsintown&bit_userid=104036509&comeFrom=2570&artist_event_id=1038593213\nBands: @Oathboundband\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband"
         ],
@@ -2818,7 +2845,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Mulberry Station Brewing Company in Chico\n\n2026-05-16 / 7:00 PM show at Mulberry Station Brewing Company - Chico, CA\nLineup: Oathbound\nInfo/tickets: https://www.eventbrite.com/e/titvn-x-oathbound-tickets-1986355278108?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=aff0bandsintown&bit_userid=104036509&comeFrom=2570&artist_event_id=1038593213\nBands: @oathboundofficial\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "Mulberry Station Brewing Company in Chico\n\n2026-05-16 / 7:00 PM show at Mulberry Station Brewing Company - Chico, CA\nLineup: Oathbound\nTickets/info: https://www.eventbrite.com/e/titvn-x-oathbound-tickets-1986355278108?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=aff0bandsintown&bit_userid=104036509&comeFrom=2570&artist_event_id=1038593213\nBands: @oathboundofficial\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial"
         ],
@@ -2848,6 +2875,9 @@
     "ticketUrl": "https://www.ticketweb.com/event/titvn-oathbound-emberwake-and-sun-the-alpine-tickets/14154994",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "ticket-link",
+    "ticketDisplayLabel": "Tickets",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "All Ages",
@@ -2942,7 +2972,7 @@
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "The Alpine in Reno\n\n2026-05-17 / 8:00 PM show / 7:00 PM doors at The Alpine - Reno, NV\nLineup: Oathbound\nInfo/tickets: https://www.ticketweb.com/event/titvn-oathbound-emberwake-and-sun-the-alpine-tickets/14154994\nBands: @oathbound_band\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "The Alpine in Reno\n\n2026-05-17 / 8:00 PM show / 7:00 PM doors at The Alpine - Reno, NV\nLineup: Oathbound\nTickets/info: https://www.ticketweb.com/event/titvn-oathbound-emberwake-and-sun-the-alpine-tickets/14154994\nBands: @oathbound_band\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band"
         ],
@@ -2950,7 +2980,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "The Alpine in Reno\n\n2026-05-17 / 8:00 PM show / 7:00 PM doors at The Alpine - Reno, NV\nLineup: Oathbound\nInfo/tickets: https://www.ticketweb.com/event/titvn-oathbound-emberwake-and-sun-the-alpine-tickets/14154994\nBands: @Oathboundband\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "The Alpine in Reno\n\n2026-05-17 / 8:00 PM show / 7:00 PM doors at The Alpine - Reno, NV\nLineup: Oathbound\nTickets/info: https://www.ticketweb.com/event/titvn-oathbound-emberwake-and-sun-the-alpine-tickets/14154994\nBands: @Oathboundband\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband"
         ],
@@ -2958,7 +2988,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "The Alpine in Reno\n\n2026-05-17 / 8:00 PM show / 7:00 PM doors at The Alpine - Reno, NV\nLineup: Oathbound\nInfo/tickets: https://www.ticketweb.com/event/titvn-oathbound-emberwake-and-sun-the-alpine-tickets/14154994\nBands: @oathboundofficial\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "The Alpine in Reno\n\n2026-05-17 / 8:00 PM show / 7:00 PM doors at The Alpine - Reno, NV\nLineup: Oathbound\nTickets/info: https://www.ticketweb.com/event/titvn-oathbound-emberwake-and-sun-the-alpine-tickets/14154994\nBands: @oathboundofficial\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial"
         ],
@@ -2988,6 +3018,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -3114,6 +3147,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -3256,6 +3292,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -3382,6 +3421,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -3508,6 +3550,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -3634,6 +3679,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -3776,6 +3824,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -3918,6 +3969,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -4060,6 +4114,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -4186,6 +4243,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -4312,6 +4372,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -4454,6 +4517,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -4580,6 +4646,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -4706,6 +4775,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -4832,6 +4904,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -4958,6 +5033,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -5084,6 +5162,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -5210,6 +5291,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -5336,6 +5420,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -5462,6 +5549,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -5604,6 +5694,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -5730,6 +5823,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -5856,6 +5952,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -5982,6 +6081,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -6108,6 +6210,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -6250,6 +6355,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -6376,6 +6484,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -6502,6 +6613,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -6628,6 +6742,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -6770,6 +6887,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -6896,6 +7016,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -7038,6 +7161,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -7164,6 +7290,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -7290,6 +7419,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -7416,6 +7548,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -7542,6 +7677,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -7668,6 +7806,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -7810,6 +7951,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -7936,6 +8080,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -8078,6 +8225,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -8220,6 +8370,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -8346,6 +8499,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -8472,6 +8628,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -8598,6 +8757,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
@@ -8724,6 +8886,9 @@
     "ticketUrl": "",
     "ticketLabel": "",
     "isFreeShow": false,
+    "doorSalesOnly": false,
+    "ticketStatus": "missing-ticket-link",
+    "ticketDisplayLabel": "Ticket link needed",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "",
