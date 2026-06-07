@@ -1527,6 +1527,10 @@ function normalizeAssetUrl(url = "") {
     return trimmed;
   }
 
+  if (/^street-team\//i.test(trimmed)) {
+    return `/${trimmed.replace(/^\/+/, "")}`;
+  }
+
   return trimmed.startsWith("/") ? trimmed : `${siteRoot}/${trimmed.replace(/^\.?\//, "")}`;
 }
 
