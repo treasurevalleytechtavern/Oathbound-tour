@@ -21,7 +21,7 @@
         }
       })();
     </script>
-    <link rel="stylesheet" href="styles.css?v=20260608-myspace-emoji-rain">
+    <link rel="stylesheet" href="styles.css?v=20260608-show-finder">
   </head>
   <body data-page="upcoming" data-root=".">
     <video class="background-video" autoplay muted loop playsinline preload="metadata" poster="assets/oathbound-video-poster.png" aria-hidden="true" tabindex="-1">
@@ -46,6 +46,10 @@
         <p class="eyebrow">Live Dates</p>
         <h1 id="page-title">Upcoming Shows</h1>
         <p id="page-copy">Find Oathbound on the road. New dates will appear here as soon as they are announced.</p>
+        <div class="tour-finder" data-tour-finder>
+          <button class="button button--primary tour-finder__button" type="button" data-find-nearest-show>Find Nearest Show</button>
+          <p class="tour-finder__status" data-tour-finder-status aria-live="polite"></p>
+        </div>
       </section>
 
       <section class="shows-shell" aria-labelledby="shows-heading">
@@ -95,6 +99,6 @@
 
     <script src="analytics.js?v=20260531-ga4" defer></script>
     <script src="site-ui.js?v=20260608-myspace-emoji-rain" defer></script>
-    <script src="script.js?v=20260531-myspace-shows-modules" defer></script>
+    <script src="script.js?v=20260608-show-finder" defer></script>
   </body>
 </html>

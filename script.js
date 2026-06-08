@@ -7,8 +7,30 @@ const showsList = document.querySelector("#shows-list");
 const showCount = document.querySelector("#show-count");
 const template = document.querySelector("#show-card-template");
 const widgetFooter = document.querySelector(".widget-footer");
+const findNearestButton = document.querySelector("[data-find-nearest-show]");
+const tourFinderStatus = document.querySelector("[data-tour-finder-status]");
+const showUrlParams = new URLSearchParams(window.location.search);
+const initialTargetSlug = normalizeSlug(showUrlParams.get("show") || showUrlParams.get("city") || showUrlParams.get("location") || "");
+const shouldFilterTargetShows = ["1", "true", "yes", "only"].includes((showUrlParams.get("filter") || "").toLowerCase());
+let currentShows = [];
+let activeTargetSlug = initialTargetSlug;
+let activeTargetSource = initialTargetSlug ? "url" : "";
+let pendingTargetScroll = Boolean(initialTargetSlug);
 const isMyspaceTheme = document.documentElement.classList.contains("myspace-theme")
   && document.body.dataset.page === "upcoming";
+
+const showCoordinatesBySlug = {
+  albany: { latitude: 44.6365, longitude: -123.1059 },
+  "citrus-heights": { latitude: 38.7071, longitude: -121.2811 },
+  eugene: { latitude: 44.0521, longitude: -123.0868 },
+  "los-angeles": { latitude: 34.0522, longitude: -118.2437 },
+  medford: { latitude: 42.3265, longitude: -122.8756 },
+  palmdale: { latitude: 34.5794, longitude: -118.1165 },
+  portland: { latitude: 45.5152, longitude: -122.6784 },
+  reno: { latitude: 39.5296, longitude: -119.8138 },
+  "san-diego": { latitude: 32.7157, longitude: -117.1611 },
+  "san-luis-obispo": { latitude: 35.2828, longitude: -120.6596 },
+};
 
 const copy = {
   upcoming: {
@@ -27,6 +49,12 @@ if (isMyspaceTheme) {
   renderTourFriends();
 }
 
+if (findNearestButton && pageMode !== "upcoming") {
+  findNearestButton.closest("[data-tour-finder]")?.remove();
+}
+
+findNearestButton?.addEventListener("click", findNearestShow);
+
 loadShows();
 
 async function loadShows() {
@@ -39,6 +67,7 @@ async function loadShows() {
 
     const shows = await response.json();
     const filteredShows = filterShows(shows, pageMode);
+    currentShows = filteredShows;
     renderShows(filteredShows);
   } catch (error) {
     if (isMyspaceTheme) {
@@ -67,17 +96,236 @@ function filterShows(shows, mode) {
     });
 }
 
+function prepareShowsForDisplay(shows) {
+  if (pageMode !== "upcoming" || !activeTargetSlug) {
+    return shows;
+  }
+
+  const targetShows = shows.filter((show) => getShowSlug(show) === activeTargetSlug);
+
+  if (!targetShows.length) {
+    setTourFinderStatus(`No upcoming shows found for ${activeTargetSlug.replace(/-/g, " ")}.`);
+    return shows;
+  }
+
+  if (shouldFilterTargetShows && activeTargetSource === "url") {
+    setTourFinderStatus(`Showing ${targetShows.length} ${targetShows.length === 1 ? "show" : "shows"} for ${formatTargetLocation(targetShows[0])}.`);
+    return targetShows;
+  }
+
+  const otherShows = shows.filter((show) => getShowSlug(show) !== activeTargetSlug);
+  return [...targetShows, ...sortShowsByDistanceFromTarget(otherShows, activeTargetSlug)];
+}
+
+function findNearestShow() {
+  if (!navigator.geolocation) {
+    setTourFinderStatus("Location lookup is not available in this browser. Check out the upcoming shows below.");
+    return;
+  }
+
+  setNearestButtonState(true);
+  setTourFinderStatus("Checking your location...");
+
+  navigator.geolocation.getCurrentPosition(
+    ({ coords }) => {
+      const nearest = findNearestShowFromCoordinates(coords.latitude, coords.longitude);
+
+      if (!nearest) {
+        setNearestButtonState(false);
+        setTourFinderStatus("We could not match your location to a tour stop. Check out the upcoming shows below.");
+        return;
+      }
+
+      activeTargetSlug = getShowSlug(nearest.show);
+      activeTargetSource = "nearest";
+      pendingTargetScroll = true;
+      updateShowUrl(activeTargetSlug);
+      setNearestButtonState(false);
+      setTourFinderStatus(`${formatTargetLocation(nearest.show)} is the nearest upcoming stop, about ${Math.round(nearest.distance)} miles away.`);
+      renderShows(currentShows);
+    },
+    () => {
+      setNearestButtonState(false);
+      setTourFinderStatus("Location permission was not shared. Check out the upcoming shows below.");
+    },
+    {
+      enableHighAccuracy: false,
+      maximumAge: 300000,
+      timeout: 10000,
+    },
+  );
+}
+
+function findNearestShowFromCoordinates(latitude, longitude) {
+  return currentShows
+    .map((show) => {
+      const coordinates = getShowCoordinates(show);
+
+      if (!coordinates) {
+        return null;
+      }
+
+      return {
+        show,
+        distance: getDistanceInMiles(latitude, longitude, coordinates.latitude, coordinates.longitude),
+      };
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.distance - b.distance)[0] || null;
+}
+
+function sortShowsByDistanceFromTarget(shows, targetSlug) {
+  const targetCoordinates = showCoordinatesBySlug[targetSlug];
+
+  if (!targetCoordinates) {
+    return shows;
+  }
+
+  return [...shows].sort((a, b) => {
+    const first = getShowCoordinates(a);
+    const second = getShowCoordinates(b);
+
+    if (!first && !second) {
+      return parseLocalDate(a.date).getTime() - parseLocalDate(b.date).getTime();
+    }
+
+    if (!first) {
+      return 1;
+    }
+
+    if (!second) {
+      return -1;
+    }
+
+    return getDistanceInMiles(targetCoordinates.latitude, targetCoordinates.longitude, first.latitude, first.longitude)
+      - getDistanceInMiles(targetCoordinates.latitude, targetCoordinates.longitude, second.latitude, second.longitude);
+  });
+}
+
+function decorateTargetCard(card, show) {
+  const slug = getShowSlug(show);
+
+  if (slug) {
+    card.id = `show-${slug}-${normalizeSlug(show.date || "date")}`;
+    card.dataset.showSlug = slug;
+  }
+
+  if (activeTargetSlug && slug === activeTargetSlug) {
+    card.classList.add("show-card--target");
+    card.setAttribute("tabindex", "-1");
+  }
+}
+
+function finishTargetRender(displayedShows) {
+  if (pageMode !== "upcoming" || !activeTargetSlug) {
+    return;
+  }
+
+  const targetShow = displayedShows.find((show) => getShowSlug(show) === activeTargetSlug);
+
+  if (!targetShow) {
+    return;
+  }
+
+  if (activeTargetSource === "url") {
+    if (shouldFilterTargetShows) {
+      setTourFinderStatus(`Showing only ${formatTargetLocation(targetShow)}.`);
+      return;
+    }
+
+    const filterHint = shouldFilterTargetShows ? "" : " The rest of the tour is sorted by distance from there.";
+    setTourFinderStatus(`Showing ${formatTargetLocation(targetShow)} first.${filterHint}`);
+  }
+
+  if (!pendingTargetScroll) {
+    return;
+  }
+
+  pendingTargetScroll = false;
+  requestAnimationFrame(() => {
+    const targetCard = showsList.querySelector(".show-card--target, .myspace-show-card.show-card--target");
+
+    if (!targetCard) {
+      return;
+    }
+
+    targetCard.scrollIntoView({ behavior: "auto", block: "start", inline: "nearest" });
+    targetCard.focus({ preventScroll: true });
+  });
+}
+
+function getShowSlug(show) {
+  return normalizeSlug(show.citySlug || show.id || show.city || "");
+}
+
+function normalizeSlug(value = "") {
+  return value
+    .toString()
+    .trim()
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+function getShowCoordinates(show) {
+  return showCoordinatesBySlug[getShowSlug(show)] || null;
+}
+
+function getDistanceInMiles(firstLatitude, firstLongitude, secondLatitude, secondLongitude) {
+  const earthRadiusMiles = 3958.8;
+  const firstLatRadians = toRadians(firstLatitude);
+  const secondLatRadians = toRadians(secondLatitude);
+  const latDelta = toRadians(secondLatitude - firstLatitude);
+  const lonDelta = toRadians(secondLongitude - firstLongitude);
+  const haversine = Math.sin(latDelta / 2) ** 2
+    + Math.cos(firstLatRadians) * Math.cos(secondLatRadians) * Math.sin(lonDelta / 2) ** 2;
+
+  return earthRadiusMiles * 2 * Math.atan2(Math.sqrt(haversine), Math.sqrt(1 - haversine));
+}
+
+function toRadians(value) {
+  return value * Math.PI / 180;
+}
+
+function formatTargetLocation(show) {
+  return [show.city, show.region].filter(Boolean).join(", ") || show.city || "that city";
+}
+
+function updateShowUrl(slug) {
+  const url = new URL(window.location.href);
+  url.searchParams.set("show", slug);
+  url.searchParams.delete("filter");
+  window.history.replaceState({}, "", url);
+}
+
+function setNearestButtonState(isLoading) {
+  if (!findNearestButton) {
+    return;
+  }
+
+  findNearestButton.disabled = isLoading;
+  findNearestButton.textContent = isLoading ? "Finding..." : "Find Nearest Show";
+}
+
+function setTourFinderStatus(message) {
+  if (tourFinderStatus) {
+    tourFinderStatus.textContent = message;
+  }
+}
+
 function renderShows(shows) {
   showsList.innerHTML = "";
-  const displayedShows = showLimit && pageMode === "upcoming" ? shows.slice(0, showLimit) : shows;
-  const hasMoreShows = showLimit && pageMode === "upcoming" && shows.length > displayedShows.length;
+  const preparedShows = prepareShowsForDisplay(shows);
+  const displayedShows = showLimit && pageMode === "upcoming" ? preparedShows.slice(0, showLimit) : preparedShows;
+  const hasMoreShows = showLimit && pageMode === "upcoming" && preparedShows.length > displayedShows.length;
   window.oathboundAnalytics?.trackShowList(displayedShows);
 
   if (showCount) {
     showCount.textContent = isMyspaceTheme
       ? `${displayedShows.length} ${displayedShows.length === 1 ? "show" : "shows"}`
       : hasMoreShows
-        ? `Next ${displayedShows.length} of ${shows.length} upcoming shows`
+        ? `Next ${displayedShows.length} of ${preparedShows.length} upcoming shows`
         : copy[pageMode].countLabel(displayedShows.length);
   }
 
@@ -98,12 +346,14 @@ function renderShows(shows) {
   if (isMyspaceTheme) {
     renderMyspaceUpcomingShows(displayedShows);
     renderTourFriends(displayedShows);
+    finishTargetRender(displayedShows);
     return;
   }
 
   const fragment = document.createDocumentFragment();
   displayedShows.forEach((show, index) => fragment.appendChild(createShowCard(show, index)));
   showsList.appendChild(fragment);
+  finishTargetRender(displayedShows);
 }
 
 function renderMyspaceUpcomingShows(shows) {
@@ -119,7 +369,8 @@ function createMyspaceShowCard(show, index) {
   const timeText = formatTimes(show);
   const primaryUrl = show.ticketUrl || show.infoUrl || createDirectionsUrl(show);
 
-  card.className = index === 0 ? "myspace-show-card myspace-show-card--next" : "myspace-show-card";
+  card.className = index === 0 && !activeTargetSlug ? "myspace-show-card myspace-show-card--next" : "myspace-show-card";
+  decorateTargetCard(card, show);
 
   const avatarColumn = document.createElement("div");
   avatarColumn.className = "myspace-show-avatar";
@@ -311,6 +562,7 @@ function createShowCard(show, index) {
   const showDate = parseLocalDate(show.date);
   const location = [show.city, show.region].filter(Boolean).join(", ") || show.country || "Location TBA";
   const timeText = formatTimes(show);
+  decorateTargetCard(card, show);
 
   const dateElement = card.querySelector(".show-date");
   if (dateElement) {
@@ -361,7 +613,7 @@ function renderShowStatus(card, showDate, index) {
     return;
   }
 
-  if (pageMode !== "upcoming" || index !== 0) {
+  if (pageMode !== "upcoming" || index !== 0 || activeTargetSlug) {
     status.remove();
     return;
   }
