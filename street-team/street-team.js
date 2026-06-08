@@ -13,24 +13,26 @@ const BUTTON_ICONS = {
 };
 const ROUTING_FLYER_ASSET_ID = "street-team-general-oathbound-x-pretty-suspect-routing-flyer";
 const CAPTION_TEMPLATES = [
-  `[City], it is your turn.
+  `[City], Oathbound is coming through.
 
-Oathbound hits [Venue] on [Date] at [Time].
-Bring a friend and help make the room loud.
+[Venue]
+[Date] at [Time]
 
 [Lineup]
 [TicketInfo]
 
+Bring a friend and come early for the whole bill.
+
 [BandTags]
 
 #Oathbound #PrettySuspect #MyspaceTour #LiveMusic #Metalcore #PostHardcore #[CityHashtag]`,
-  `Heavy show rolling into [City].
+  `Heavy music friends in [City], this one is for you.
 
 [Date] at [Venue].
-Show starts at [Time].
+Music starts at [Time].
 [AgeRestriction]
 
-Come early. Stay loud. Support the whole bill.
+Come hang, support the locals, and help make the room feel alive.
 
 [Lineup]
 [TicketInfo]
@@ -38,10 +40,10 @@ Come early. Stay loud. Support the whole bill.
 [BandTags]
 
 #Oathbound #MyspaceTour #LiveMusic #LocalShows #HeavyMusic #Hardcore #[CityHashtag]`,
-  `Street team signal boost for [City].
+  `[City] show reminder.
 
-Oathbound and friends are coming to [Venue] on [Date].
-If you know someone who goes to heavy shows, send this to them.
+Oathbound and friends are at [Venue] on [Date].
+If you know someone who would be into this, send it their way.
 
 Time: [Time]
 Lineup: [Lineup]
@@ -50,27 +52,27 @@ Lineup: [Lineup]
 [BandTags]
 
 #Oathbound #PrettySuspect #StreetTeam #MyspaceTour #LiveMusic #SupportLocalMusic #[CityHashtag]`,
-  `[City] friends, do not let this one sneak past you.
+  `[City] friends, don't miss this one.
 
 Oathbound plays [Venue] on [Date].
-[Time] show.
+Show time is [Time].
 [TicketInfo]
 
-Loud guitars. Local support. Proper room-shaking behavior.
+Come out, bring someone with you, and stay for the whole lineup.
 
 [Lineup]
 
 [BandTags]
 
 #Oathbound #MyspaceTour #MetalShow #HardcoreShow #LiveMusic #SceneSupport #[CityHashtag]`,
-  `Your next "wait, why did I miss that?" show is right here.
+  `Put this one on your calendar.
 
 Oathbound at [Venue]
 [City]
 [Date]
 [Time]
 
-Save it. Share it. Drag one friend out of the scroll-hole.
+Save it, share it, and bring a friend who needs a loud night out.
 
 [Lineup]
 [TicketInfo]
@@ -80,18 +82,18 @@ Save it. Share it. Drag one friend out of the scroll-hole.
 #Oathbound #PrettySuspect #LiveMusic #Metalcore #PostHardcore #LocalMusic #[CityHashtag]`,
   `[City], come make some noise.
 
-Oathbound brings the Myspace Tour energy to [Venue] on [Date].
+Oathbound brings the Myspace Tour to [Venue] on [Date].
 Show time: [Time]
 
 [Lineup]
 [TicketInfo]
 
-Share this with someone who still believes small rooms make the best shows.
+Share this with someone who loves loud bands in small rooms.
 
 [BandTags]
 
 #Oathbound #MyspaceTour #LiveShows #Metalcore #Hardcore #PunkShows #[CityHashtag]`,
-  `This is your friendly "go to the show" nudge.
+  `Here is your friendly go-to-the-show nudge.
 
 [City]
 [Venue]
@@ -103,12 +105,12 @@ Oathbound is coming through with:
 
 [TicketInfo]
 
-Screenshot it, send it, post it, tape it to the inside of your skull.
+Screenshot it, send it to the group chat, and come hang.
 
 [BandTags]
 
 #Oathbound #PrettySuspect #LiveMusic #StreetTeam #HeavyShows #LocalScene #[CityHashtag]`,
-  `The flyer is cool, but the room needs bodies.
+  `The flyer helps, but people in the room matter more.
 
 Oathbound plays [Venue] in [City] on [Date].
 Music starts at [Time].
@@ -117,7 +119,7 @@ Music starts at [Time].
 [TicketInfo]
 [AgeRestriction]
 
-Help spread the word and bring the loud people.
+Help spread the word and bring the people who would love this.
 
 [BandTags]
 
@@ -127,7 +129,7 @@ Help spread the word and bring the loud people.
 Oathbound at [Venue]
 [Date] at [Time]
 
-If you like riffs, chaos, and shows that feel better in person than on your phone, this is the one.
+If you like loud guitars and shows that feel better in person, come through.
 
 [Lineup]
 [TicketInfo]
@@ -144,7 +146,7 @@ Lineup: [Lineup]
 
 [TicketInfo]
 
-Post it. Share it. Text it to the friend who always says "I didn't know about it."
+Post it, share it, and text the friend who always says "I didn't know about it."
 
 [BandTags]
 
@@ -897,7 +899,7 @@ function getCaptionValues(show, platform) {
     Doors: show.doorsTime ? formatTime(show.doorsTime) : "",
     Lineup: lineup,
     AgeRestriction: show.ageRestriction || "",
-    TicketInfo: getCaptionTicketInfo(show),
+    TicketInfo: getCaptionTicketInfo(show, platform),
     BandTags: getBandTags(show, platform),
     CityHashtag: toHashtagPart(show.city),
     RegionHashtag: regionHashtag,
@@ -912,24 +914,22 @@ function getCaptionLineup(show) {
   return show.lineup || "Lineup TBA";
 }
 
-function getCaptionTicketInfo(show) {
+function getCaptionTicketInfo(show, platform) {
+  const bioText = getMainBandBioText(show, platform);
+
   if (isFreeShow(show)) {
-    return show.ticketUrl ? `Free show. RSVP/info: ${show.ticketUrl}` : "Free show.";
+    return show.ticketUrl || show.infoUrl ? `Free show. Bring a friend.` : "Free show.";
   }
 
   if (isDoorSalesOnly(show)) {
     return getDoorSalesOnlyLabel(show);
   }
 
-  if (show.ticketUrl) {
-    return `Tickets/info: ${show.ticketUrl}`;
+  if (show.ticketUrl || show.infoUrl) {
+    return `Tickets/info are in ${bioText}.`;
   }
 
-  if (show.infoUrl) {
-    return `Info: ${show.infoUrl}`;
-  }
-
-  return "Ticket/info link coming soon.";
+  return "Ticket/info details coming soon.";
 }
 
 function getBandTags(show, platform) {
@@ -942,6 +942,43 @@ function getBandTags(show, platform) {
     .filter(Boolean);
 
   return Array.from(new Set(handles)).join(" ");
+}
+
+function getMainBandBioText(show, platform) {
+  const tags = getMainBandTags(show, platform);
+
+  if (!tags.length) {
+    return platform === "general" ? "the band's bio" : "the band bio";
+  }
+
+  if (tags.length === 1) {
+    return `the bio for ${tags[0]}`;
+  }
+
+  return `the bios for ${tags.slice(0, -1).join(", ")} and ${tags[tags.length - 1]}`;
+}
+
+function getMainBandTags(show, platform) {
+  const normalizedPlatform = platform === "general" ? "instagram" : platform;
+  const bands = [];
+
+  if (show.supportedBand) {
+    bands.push(show.supportedBand);
+  }
+
+  if (Array.isArray(show.featuredBands)) {
+    bands.push(...show.featuredBands.filter((band) => /headline|featured|touring/i.test(`${band.role || ""} ${band.status || ""}`)));
+  }
+
+  if (Array.isArray(show.supportingBands)) {
+    bands.push(...show.supportingBands.filter((band) => /featured|touring/i.test(`${band.role || ""} ${band.status || ""}`)));
+  }
+
+  const tags = bands
+    .map((band) => getPlatformHandle(band, normalizedPlatform))
+    .filter(Boolean);
+
+  return Array.from(new Set(tags)).slice(0, 2);
 }
 
 function collectShowBands(show) {
