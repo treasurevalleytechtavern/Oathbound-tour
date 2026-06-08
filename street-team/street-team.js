@@ -1630,7 +1630,12 @@ function toTextList(value) {
 function normalizeShowStatus(status = "") {
   const normalized = String(status).trim().toLowerCase();
 
-  if (!normalized || normalized === "announced") {
+  if (
+    !normalized
+    || normalized === "announced"
+    || normalized.includes("verified")
+    || /^(ready|needed|critical|warnings?|not street team|draft|hidden|archived)$/i.test(normalized)
+  ) {
     return null;
   }
 
