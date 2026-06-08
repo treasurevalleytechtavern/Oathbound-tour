@@ -5,7 +5,7 @@
       "type": "Street Team Download",
       "url": "/street-team/kits/OBxPS-tour-routing-v1.JPEG",
       "preview": "/street-team/kits/OBxPS-tour-routing-v1.JPEG",
-      "fileType": "JPG"
+      "fileType": "JPEG"
     }
   ],
   "cities": {
@@ -61,6 +61,15 @@
         "url": "/street-team/kits/or/portland/6-28-26-Portland%20Flyer.PNG",
         "preview": "/street-team/kits/or/portland/6-28-26-Portland%20Flyer.PNG",
         "fileType": "PNG"
+      }
+    ],
+    "or/medford": [
+      {
+        "title": "The Rockafairy in Medford - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/or/medford/6-27-Rockafairy.JPG",
+        "preview": "/street-team/kits/or/medford/6-27-Rockafairy.JPG",
+        "fileType": "JPG"
       }
     ]
   },
@@ -134,6 +143,15 @@
         "type": "Flyer",
         "url": "/street-team/kits/ca/san-luis-obispo/6-21-SLO-FLyer.JPG",
         "preview": "/street-team/kits/ca/san-luis-obispo/6-21-SLO-FLyer.JPG",
+        "fileType": "JPG"
+      }
+    ],
+    "2026-06-27-medford-or": [
+      {
+        "title": "The Rockafairy in Medford - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/or/medford/6-27-Rockafairy.JPG",
+        "preview": "/street-team/kits/or/medford/6-27-Rockafairy.JPG",
         "fileType": "JPG"
       }
     ]
