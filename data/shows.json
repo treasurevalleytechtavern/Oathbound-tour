@@ -1984,11 +1984,11 @@
     "id": "2026-06-27-medford-or",
     "showName": "The Rockafairy in Medford",
     "date": "2026-06-27",
-    "doorsTime": "7:30 PM",
+    "doorsTime": "7:00 PM",
     "showTime": "8:00 PM",
     "timeZone": "America/Los_Angeles",
     "headlineAct": "oathbound",
-    "lineup": "Oathbound; Pretty Suspect",
+    "lineup": "Oathbound; Pretty Suspect; Two Piece Face; Hide Heaven; Atelectasis",
     "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Medford, Oregon on Saturday, June 27 at The Rockafairy, with support from Hide Heaven and Two Piece Face. This all-ages stop brings the tour’s blend of heavy riffs, visual spectacle, and early-internet scene energy to Medford for one loud Saturday night. Doors are at 7:30 PM, the show starts at 8:00 PM, and tickets are $10 advance / $15 day of show.",
     "venue": "The Rockafairy",
     "address": "31 W 6th St",
@@ -1999,16 +1999,16 @@
     "market": "Southern Oregon",
     "citySlug": "medford",
     "regionSlug": "or",
-    "ticketUrl": "",
-    "ticketLabel": "",
+    "ticketUrl": "https://rockafairy.betterworld.org/events/oathboundjune27",
+    "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": false,
-    "ticketStatus": "missing-ticket-link",
-    "ticketDisplayLabel": "Ticket link needed",
+    "ticketStatus": "ticket-link",
+    "ticketDisplayLabel": "Tickets",
     "infoUrl": "",
     "infoLabel": "",
     "ageRestriction": "All Ages",
-    "confirmationStatus": "announced",
+    "confirmationStatus": "verified",
     "verificationStatus": "partially_verified",
     "displayMode": "full",
     "status": "",
@@ -2024,25 +2024,21 @@
     ],
     "socialTags": [],
     "hashtags": [],
-    "promoStatus": "Critical",
-    "streetTeamReady": false,
-    "criticalWarning": true,
-    "missingRequirements": [
-      "Missing ticket link for paid show"
-    ],
-    "warningRequirements": [
-      "Missing flyer"
-    ],
+    "promoStatus": "Ready",
+    "streetTeamReady": true,
+    "criticalWarning": false,
+    "missingRequirements": [],
+    "warningRequirements": [],
     "supportingAct1Name": "pretty-suspect",
     "supportingAct1Instagram": "",
     "supportingAct1Website": "",
-    "supportingAct2Name": "",
+    "supportingAct2Name": "two-face",
     "supportingAct2Instagram": "",
     "supportingAct2Website": "",
-    "supportingAct3Name": "",
+    "supportingAct3Name": "hide-heaven",
     "supportingAct3Instagram": "",
     "supportingAct3Website": "",
-    "supportingAct4Name": "",
+    "supportingAct4Name": "atelectasis",
     "supportingAct4Instagram": "",
     "supportingAct4Website": "",
     "supportingAct5Name": "",
@@ -2072,11 +2068,29 @@
         "name": "Pretty Suspect",
         "instagram": "https://www.instagram.com/prettysuspect.band/",
         "website": "https://www.prettysuspect.com/"
+      },
+      {
+        "name": "Two Piece Face",
+        "instagram": "https://www.instagram.com/two_piece_face_official/",
+        "website": ""
+      },
+      {
+        "name": "Hide Heaven",
+        "instagram": "https://www.instagram.com/hideheaven541/",
+        "website": ""
+      },
+      {
+        "name": "Atelectasis",
+        "instagram": "https://www.instagram.com/atelectasisofficial/",
+        "website": "https://linktr.ee/atelectasis.band"
       }
     ],
     "lineupArtists": [
       "Oathbound",
-      "Pretty Suspect"
+      "Pretty Suspect",
+      "Two Piece Face",
+      "Hide Heaven",
+      "Atelectasis"
     ],
     "featuredBands": [
       {
@@ -2108,6 +2122,45 @@
           "website": "https://www.prettysuspect.com/"
         },
         "streetTeamNotes": ""
+      },
+      {
+        "bandId": "two-face",
+        "bandName": "Two Piece Face",
+        "displayName": "Two Piece Face",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/two_piece_face_official/",
+          "facebook": "https://www.facebook.com/twopiecefacebook/",
+          "youtube": "https://www.youtube.com/channel/UCGK1XPNwh-XLgdoFRuogJLg/about",
+          "bandcamp": "https://twopieceface.bandcamp.com/track/maze"
+        },
+        "streetTeamNotes": ""
+      },
+      {
+        "bandId": "hide-heaven",
+        "bandName": "Hide Heaven",
+        "displayName": "Hide Heaven",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/hideheaven541/",
+          "facebook": "https://www.facebook.com/profile.php?id=100090334207130"
+        },
+        "streetTeamNotes": ""
+      },
+      {
+        "bandId": "atelectasis",
+        "bandName": "Atelectasis",
+        "displayName": "Atelectasis",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/atelectasisofficial/",
+          "facebook": "https://www.facebook.com/profile.php?id=61575371348236",
+          "tiktok": "https://www.tiktok.com/@atelectasisofficial",
+          "youtube": "https://www.youtube.com/@atelectasisofficial",
+          "spotify": "https://open.spotify.com/artist/1TrDXeDbi6Bohq6f9X94bV",
+          "website": "https://linktr.ee/atelectasis.band"
+        },
+        "streetTeamNotes": "Thrash Metal based in Southern Oregon."
       }
     ],
     "supportedBand": {
@@ -2140,35 +2193,83 @@
           "website": "https://www.prettysuspect.com/"
         },
         "streetTeamNotes": ""
+      },
+      {
+        "bandId": "two-face",
+        "bandName": "Two Piece Face",
+        "displayName": "Two Piece Face",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/two_piece_face_official/",
+          "facebook": "https://www.facebook.com/twopiecefacebook/",
+          "youtube": "https://www.youtube.com/channel/UCGK1XPNwh-XLgdoFRuogJLg/about",
+          "bandcamp": "https://twopieceface.bandcamp.com/track/maze"
+        },
+        "streetTeamNotes": ""
+      },
+      {
+        "bandId": "hide-heaven",
+        "bandName": "Hide Heaven",
+        "displayName": "Hide Heaven",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/hideheaven541/",
+          "facebook": "https://www.facebook.com/profile.php?id=100090334207130"
+        },
+        "streetTeamNotes": ""
+      },
+      {
+        "bandId": "atelectasis",
+        "bandName": "Atelectasis",
+        "displayName": "Atelectasis",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/atelectasisofficial/",
+          "facebook": "https://www.facebook.com/profile.php?id=61575371348236",
+          "tiktok": "https://www.tiktok.com/@atelectasisofficial",
+          "youtube": "https://www.youtube.com/@atelectasisofficial",
+          "spotify": "https://open.spotify.com/artist/1TrDXeDbi6Bohq6f9X94bV",
+          "website": "https://linktr.ee/atelectasis.band"
+        },
+        "streetTeamNotes": "Thrash Metal based in Southern Oregon."
       }
     ],
     "fanCaptions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "The Rockafairy in Medford\n\n2026-06-27 / 8:00 PM show / 7:30 PM doors at The Rockafairy - Medford, OR\nLineup: Oathbound; Pretty Suspect\n\nBands: @oathbound_band @prettysuspect.band\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "The Rockafairy in Medford\n\n2026-06-27 / 8:00 PM show / 7:00 PM doors at The Rockafairy - Medford, OR\nLineup: Oathbound; Pretty Suspect; Two Piece Face; Hide Heaven; Atelectasis\nTickets/info: https://rockafairy.betterworld.org/events/oathboundjune27\nBands: @oathbound_band @prettysuspect.band @two_piece_face_official @hideheaven541 @atelectasisofficial\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathbound_band",
-          "@prettysuspect.band"
+          "@prettysuspect.band",
+          "@two_piece_face_official",
+          "@hideheaven541",
+          "@atelectasisofficial"
         ],
         "missingHandles": []
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "The Rockafairy in Medford\n\n2026-06-27 / 8:00 PM show / 7:30 PM doors at The Rockafairy - Medford, OR\nLineup: Oathbound; Pretty Suspect\n\nBands: @Oathboundband @PrettySuspect97401\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "The Rockafairy in Medford\n\n2026-06-27 / 8:00 PM show / 7:00 PM doors at The Rockafairy - Medford, OR\nLineup: Oathbound; Pretty Suspect; Two Piece Face; Hide Heaven; Atelectasis\nTickets/info: https://rockafairy.betterworld.org/events/oathboundjune27\nBands: @Oathboundband @PrettySuspect97401 @twopiecefacebook @profile.php\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@Oathboundband",
-          "@PrettySuspect97401"
+          "@PrettySuspect97401",
+          "@twopiecefacebook",
+          "@profile.php"
         ],
         "missingHandles": []
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "The Rockafairy in Medford\n\n2026-06-27 / 8:00 PM show / 7:30 PM doors at The Rockafairy - Medford, OR\nLineup: Oathbound; Pretty Suspect\n\nBands: @oathboundofficial @prettysuspect\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
+        "text": "The Rockafairy in Medford\n\n2026-06-27 / 8:00 PM show / 7:00 PM doors at The Rockafairy - Medford, OR\nLineup: Oathbound; Pretty Suspect; Two Piece Face; Hide Heaven; Atelectasis\nTickets/info: https://rockafairy.betterworld.org/events/oathboundjune27\nBands: @oathboundofficial @prettysuspect @atelectasisofficial\n#livemusic #streetteam\n\nShare this with a friend and help pack the room.",
         "handles": [
           "@oathboundofficial",
-          "@prettysuspect"
+          "@prettysuspect",
+          "@atelectasisofficial"
         ],
-        "missingHandles": []
+        "missingHandles": [
+          "Two Piece Face",
+          "Hide Heaven"
+        ]
       }
     }
   },
