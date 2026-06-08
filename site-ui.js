@@ -70,6 +70,7 @@ function prepareMyspaceTourWall() {
     return;
   }
 
+  createMyspaceEmojiRain();
   siteHeader?.setAttribute("aria-hidden", "true");
 
   const topbar = document.createElement("header");
@@ -288,6 +289,45 @@ function prepareMyspaceTourWall() {
     });
   });
   prepareMyspaceAudioPlayer(player);
+}
+
+function createMyspaceEmojiRain() {
+  if (document.querySelector(".myspace-emoji-rain")) {
+    return;
+  }
+
+  const rain = document.createElement("div");
+  rain.className = "myspace-emoji-rain";
+  rain.setAttribute("aria-hidden", "true");
+
+  const drops = [
+    { x: 4, delay: -1, duration: 15, size: 1.9, drift: -18 },
+    { x: 10, delay: -9, duration: 19, size: 1.2, drift: 24 },
+    { x: 17, delay: -4, duration: 17, size: 1.55, drift: -30 },
+    { x: 25, delay: -13, duration: 22, size: 2.05, drift: 16 },
+    { x: 33, delay: -7, duration: 18, size: 1.35, drift: 34 },
+    { x: 42, delay: -16, duration: 24, size: 1.8, drift: -22 },
+    { x: 50, delay: -3, duration: 16, size: 1.15, drift: 28 },
+    { x: 58, delay: -11, duration: 20, size: 2.15, drift: -36 },
+    { x: 66, delay: -6, duration: 18, size: 1.4, drift: 20 },
+    { x: 73, delay: -15, duration: 23, size: 1.75, drift: -26 },
+    { x: 82, delay: -8, duration: 19, size: 1.25, drift: 32 },
+    { x: 91, delay: -18, duration: 25, size: 2, drift: -20 },
+    { x: 97, delay: -5, duration: 17, size: 1.45, drift: 18 },
+  ];
+
+  drops.forEach((drop) => {
+    const emoji = document.createElement("span");
+    emoji.textContent = "\u{1F918}";
+    emoji.style.setProperty("--emoji-x", `${drop.x}vw`);
+    emoji.style.setProperty("--emoji-delay", `${drop.delay}s`);
+    emoji.style.setProperty("--emoji-duration", `${drop.duration}s`);
+    emoji.style.setProperty("--emoji-size", `${drop.size}rem`);
+    emoji.style.setProperty("--emoji-drift", `${drop.drift}px`);
+    rain.appendChild(emoji);
+  });
+
+  document.body.prepend(rain);
 }
 
 function prepareMyspaceAudioPlayer(player) {
