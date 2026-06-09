@@ -15,6 +15,7 @@ const shouldFilterTargetShows = ["1", "true", "yes", "only"].includes((showUrlPa
 let currentShows = [];
 let activeTargetSlug = initialTargetSlug;
 let activeTargetSource = initialTargetSlug ? "url" : "";
+let activeTargetDistanceMiles = null;
 let pendingTargetScroll = Boolean(initialTargetSlug);
 const isMyspaceTheme = document.documentElement.classList.contains("myspace-theme")
   && document.body.dataset.page === "upcoming";
@@ -113,8 +114,7 @@ function prepareShowsForDisplay(shows) {
     return targetShows;
   }
 
-  const otherShows = shows.filter((show) => getShowSlug(show) !== activeTargetSlug);
-  return [...targetShows, ...sortShowsByDistanceFromTarget(otherShows, activeTargetSlug)];
+  return shows;
 }
 
 function findNearestShow() {
@@ -138,6 +138,7 @@ function findNearestShow() {
 
       activeTargetSlug = getShowSlug(nearest.show);
       activeTargetSource = "nearest";
+      activeTargetDistanceMiles = nearest.distance;
       pendingTargetScroll = true;
       updateShowUrl(activeTargetSlug);
       setNearestButtonState(false);
@@ -157,49 +158,23 @@ function findNearestShow() {
 }
 
 function findNearestShowFromCoordinates(latitude, longitude) {
-  return currentShows
-    .map((show) => {
-      const coordinates = getShowCoordinates(show);
+  let nearest = null;
 
-      if (!coordinates) {
-        return null;
-      }
+  currentShows.forEach((show) => {
+    const coordinates = getShowCoordinates(show);
 
-      return {
-        show,
-        distance: getDistanceInMiles(latitude, longitude, coordinates.latitude, coordinates.longitude),
-      };
-    })
-    .filter(Boolean)
-    .sort((a, b) => a.distance - b.distance)[0] || null;
-}
-
-function sortShowsByDistanceFromTarget(shows, targetSlug) {
-  const targetCoordinates = showCoordinatesBySlug[targetSlug];
-
-  if (!targetCoordinates) {
-    return shows;
-  }
-
-  return [...shows].sort((a, b) => {
-    const first = getShowCoordinates(a);
-    const second = getShowCoordinates(b);
-
-    if (!first && !second) {
-      return parseLocalDate(a.date).getTime() - parseLocalDate(b.date).getTime();
+    if (!coordinates) {
+      return;
     }
 
-    if (!first) {
-      return 1;
-    }
+    const distance = getDistanceInMiles(latitude, longitude, coordinates.latitude, coordinates.longitude);
 
-    if (!second) {
-      return -1;
+    if (!nearest || distance < nearest.distance) {
+      nearest = { show, distance };
     }
-
-    return getDistanceInMiles(targetCoordinates.latitude, targetCoordinates.longitude, first.latitude, first.longitude)
-      - getDistanceInMiles(targetCoordinates.latitude, targetCoordinates.longitude, second.latitude, second.longitude);
   });
+
+  return nearest;
 }
 
 function decorateTargetCard(card, show) {
@@ -214,6 +189,21 @@ function decorateTargetCard(card, show) {
     card.classList.add("show-card--target");
     card.setAttribute("tabindex", "-1");
   }
+}
+
+function appendDistanceBadge(container, show) {
+  if (!container || !activeTargetDistanceMiles || getShowSlug(show) !== activeTargetSlug) {
+    return;
+  }
+
+  container.appendChild(createDistanceBadge(activeTargetDistanceMiles));
+}
+
+function createDistanceBadge(distanceMiles) {
+  const badge = document.createElement("span");
+  badge.className = "show-distance-badge";
+  badge.textContent = `About ${Math.round(distanceMiles)} mi away`;
+  return badge;
 }
 
 function finishTargetRender(displayedShows) {
@@ -233,8 +223,7 @@ function finishTargetRender(displayedShows) {
       return;
     }
 
-    const filterHint = shouldFilterTargetShows ? "" : " The rest of the tour is sorted by distance from there.";
-    setTourFinderStatus(`Showing ${formatTargetLocation(targetShow)} first.${filterHint}`);
+    setTourFinderStatus(`Jumped to ${formatTargetLocation(targetShow)}. The tour stays in date order.`);
   }
 
   if (!pendingTargetScroll) {
@@ -401,6 +390,7 @@ function createMyspaceShowCard(show, index) {
   } else {
     title.textContent = `${location} / ${show.venue || "Venue TBA"}`;
   }
+  appendDistanceBadge(title, show);
 
   const details = document.createElement("div");
   details.className = "myspace-show-details";
@@ -577,6 +567,7 @@ function createShowCard(show, index) {
   setText(card, ".show-time", [formatLongDate(showDate), timeText].filter(Boolean).join(" / "));
   setText(card, ".show-lineup", show.lineup || "");
   setText(card, ".show-notes", show.notes || "");
+  appendDistanceBadge(card.querySelector(".show-location"), show);
 
   renderShowStatus(card, showDate, index);
   renderShowFlags(card.querySelector(".show-flags"), show);

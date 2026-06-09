@@ -484,6 +484,23 @@ body[data-page="admin"] .intro {
   text-transform: uppercase;
 }
 
+.show-distance-badge {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 24px;
+  align-items: center;
+  margin-left: 10px;
+  padding: 0 9px;
+  border: 1px solid rgba(80, 224, 188, 0.66);
+  color: #ebfffb;
+  font-size: 0.68rem;
+  font-weight: 900;
+  line-height: 1;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background: rgba(5, 34, 29, 0.84);
+}
+
 .show-venue {
   margin: 0 0 8px;
   color: var(--text);
@@ -615,6 +632,7 @@ body[data-page="admin"] .intro {
   line-height: 0;
   text-decoration: none;
   background: transparent;
+  cursor: pointer;
   transition: filter 160ms ease, transform 160ms ease;
 }
 
@@ -622,6 +640,12 @@ body[data-page="admin"] .intro {
 .prismatic-button:focus-visible {
   filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.36));
   transform: translateY(-1px);
+}
+
+.prismatic-button:disabled {
+  cursor: progress;
+  opacity: 0.72;
+  transform: none;
 }
 
 .prismatic-button img {
@@ -634,6 +658,15 @@ body[data-page="admin"] .intro {
   width: 300px;
   height: 169px;
   object-fit: contain;
+}
+
+.street-team-hero__status {
+  margin: 12px 0 0;
+  max-width: 760px;
+  color: var(--soft);
+  font-size: 0.95rem;
+  font-weight: 800;
+  overflow-wrap: anywhere;
 }
 
 .empty-state,
@@ -1325,6 +1358,37 @@ body.has-artwork-modal {
   background: rgba(255, 255, 255, 0.045);
   box-shadow: none;
   backdrop-filter: none;
+}
+
+.street-show-card--target {
+  position: relative;
+  border-color: rgba(80, 224, 188, 0.92);
+  background:
+    linear-gradient(90deg, rgba(80, 224, 188, 0.18), rgba(255, 255, 255, 0.05)),
+    rgba(255, 255, 255, 0.06);
+  box-shadow:
+    0 0 0 1px rgba(80, 224, 188, 0.42),
+    0 0 28px rgba(80, 224, 188, 0.18);
+}
+
+.street-show-card--target::after {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 5px 8px;
+  border: 1px solid rgba(80, 224, 188, 0.68);
+  color: #ebfffb;
+  content: "Matched Show";
+  font-size: 0.64rem;
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  background: rgba(5, 34, 29, 0.9);
+}
+
+.street-show-card--target:focus {
+  outline: 2px solid rgba(80, 224, 188, 0.92);
+  outline-offset: 4px;
 }
 
 .street-show-card__main {
@@ -2768,6 +2832,13 @@ html[data-tour-theme="myspace"] .show-card--target::after {
   box-shadow: 3px 3px 0 #ee55c7;
 }
 
+html[data-tour-theme="myspace"] .show-distance-badge {
+  border: 2px solid #050505;
+  color: #050505;
+  background: #28efbf;
+  box-shadow: 3px 3px 0 #ee55c7;
+}
+
 html[data-tour-theme="myspace"] .show-date {
   border-right: 3px solid #ee55c7;
 }
@@ -2876,6 +2947,10 @@ html[data-tour-theme="myspace"] .footer-nav a {
 
   .tour-finder__status {
     max-width: none;
+  }
+
+  .show-distance-badge {
+    margin: 7px 0 0;
   }
 
   .myspace-theme .site-header {
