@@ -1558,7 +1558,7 @@ function createDownloadCard(download, show = null) {
 
   const detail = document.createElement("p");
   detail.className = "download-card__hint";
-  detail.textContent = download.usage || download.notes || (show ? `Use this when sharing ${show.city}.` : "Use this for general tour posts.");
+  detail.textContent = getDownloadHint(download, show);
 
   const link = createImageTrackedLink(download.url, "Download", BUTTON_ICONS.download, {
     track: "street-team-download",
@@ -1573,6 +1573,26 @@ function createDownloadCard(download, show = null) {
   body.append(title, type, detail, link);
   card.appendChild(body);
   return card;
+}
+
+function getDownloadHint(download, show = null) {
+  if (show && isQrDownload(download)) {
+    return `Download this version to print and hang for the ${show.city} show.`;
+  }
+
+  if (show && isShowFlyerDownload(download)) {
+    return `Use this when sharing the ${show.city} show online.`;
+  }
+
+  return download.usage || download.notes || (show ? `Use this when sharing ${show.city}.` : "Use this for general tour posts.");
+}
+
+function isQrDownload(download) {
+  return /qr/i.test(`${download.title || ""} ${download.type || ""} ${download.url || ""}`);
+}
+
+function isShowFlyerDownload(download) {
+  return /flyer|street-team-download/i.test(`${download.title || ""} ${download.type || ""}`) && !isQrDownload(download);
 }
 
 function createTrackedLink(url, label, data = {}, className = "button") {
