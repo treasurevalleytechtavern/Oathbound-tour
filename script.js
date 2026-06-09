@@ -11,12 +11,14 @@ const findNearestButton = document.querySelector("[data-find-nearest-show]");
 const tourFinderStatus = document.querySelector("[data-tour-finder-status]");
 const showUrlParams = new URLSearchParams(window.location.search);
 const initialTargetSlug = normalizeSlug(showUrlParams.get("show") || showUrlParams.get("city") || showUrlParams.get("location") || "");
+const initialTargetVenueSlug = normalizeSlug(showUrlParams.get("venue") || showUrlParams.get("venueSlug") || showUrlParams.get("venueId") || "");
 const shouldFilterTargetShows = ["1", "true", "yes", "only"].includes((showUrlParams.get("filter") || "").toLowerCase());
 let currentShows = [];
-let activeTargetSlug = initialTargetSlug;
-let activeTargetSource = initialTargetSlug ? "url" : "";
+let activeTargetSlug = initialTargetVenueSlug ? "" : initialTargetSlug;
+let activeTargetVenueSlug = initialTargetVenueSlug;
+let activeTargetSource = initialTargetSlug || initialTargetVenueSlug ? "url" : "";
 let activeTargetDistanceMiles = null;
-let pendingTargetScroll = Boolean(initialTargetSlug);
+let pendingTargetScroll = Boolean(initialTargetSlug || initialTargetVenueSlug);
 const isMyspaceTheme = document.documentElement.classList.contains("myspace-theme")
   && document.body.dataset.page === "upcoming";
 
@@ -98,14 +100,14 @@ function filterShows(shows, mode) {
 }
 
 function prepareShowsForDisplay(shows) {
-  if (pageMode !== "upcoming" || !activeTargetSlug) {
+  if (pageMode !== "upcoming" || !hasActiveTarget()) {
     return shows;
   }
 
-  const targetShows = shows.filter((show) => getShowSlug(show) === activeTargetSlug);
+  const targetShows = shows.filter(isTargetShow);
 
   if (!targetShows.length) {
-    setTourFinderStatus(`No upcoming shows found for ${activeTargetSlug.replace(/-/g, " ")}.`);
+    setTourFinderStatus(`No upcoming shows found for ${getActiveTargetLabel()}.`);
     return shows;
   }
 
@@ -137,6 +139,7 @@ function findNearestShow() {
       }
 
       activeTargetSlug = getShowSlug(nearest.show);
+      activeTargetVenueSlug = "";
       activeTargetSource = "nearest";
       activeTargetDistanceMiles = nearest.distance;
       pendingTargetScroll = true;
@@ -179,20 +182,25 @@ function findNearestShowFromCoordinates(latitude, longitude) {
 
 function decorateTargetCard(card, show) {
   const slug = getShowSlug(show);
+  const venueSlug = getShowVenueSlug(show);
 
   if (slug) {
     card.id = `show-${slug}-${normalizeSlug(show.date || "date")}`;
     card.dataset.showSlug = slug;
   }
 
-  if (activeTargetSlug && slug === activeTargetSlug) {
+  if (venueSlug) {
+    card.dataset.venueSlug = venueSlug;
+  }
+
+  if (isTargetShow(show)) {
     card.classList.add("show-card--target");
     card.setAttribute("tabindex", "-1");
   }
 }
 
 function appendDistanceBadge(container, show) {
-  if (!container || !activeTargetDistanceMiles || getShowSlug(show) !== activeTargetSlug) {
+  if (!container || !activeTargetDistanceMiles || !isTargetShow(show)) {
     return;
   }
 
@@ -207,11 +215,11 @@ function createDistanceBadge(distanceMiles) {
 }
 
 function finishTargetRender(displayedShows) {
-  if (pageMode !== "upcoming" || !activeTargetSlug) {
+  if (pageMode !== "upcoming" || !hasActiveTarget()) {
     return;
   }
 
-  const targetShow = displayedShows.find((show) => getShowSlug(show) === activeTargetSlug);
+  const targetShow = displayedShows.find(isTargetShow);
 
   if (!targetShow) {
     return;
@@ -219,11 +227,11 @@ function finishTargetRender(displayedShows) {
 
   if (activeTargetSource === "url") {
     if (shouldFilterTargetShows) {
-      setTourFinderStatus(`Showing only ${formatTargetLocation(targetShow)}.`);
+      setTourFinderStatus(`Showing only ${formatTargetTargetText(targetShow)}.`);
       return;
     }
 
-    setTourFinderStatus(`Jumped to ${formatTargetLocation(targetShow)}. The tour stays in date order.`);
+    setTourFinderStatus(`Jumped to ${formatTargetTargetText(targetShow)}. The tour stays in date order.`);
   }
 
   if (!pendingTargetScroll) {
@@ -245,6 +253,35 @@ function finishTargetRender(displayedShows) {
 
 function getShowSlug(show) {
   return normalizeSlug(show.citySlug || show.id || show.city || "");
+}
+
+function getShowVenueSlug(show) {
+  return normalizeSlug(show.venueRef?.venueSlug || show.venue || "");
+}
+
+function getShowVenueTargetValues(show) {
+  return [
+    show.venueRef?.venueSlug,
+    show.venueRef?.venueId,
+    show.venueRef?.venue,
+    show.venue,
+  ].map(normalizeSlug).filter(Boolean);
+}
+
+function isTargetShow(show) {
+  if (activeTargetVenueSlug) {
+    return getShowVenueTargetValues(show).includes(activeTargetVenueSlug);
+  }
+
+  return Boolean(activeTargetSlug && getShowSlug(show) === activeTargetSlug);
+}
+
+function hasActiveTarget() {
+  return Boolean(activeTargetSlug || activeTargetVenueSlug);
+}
+
+function getActiveTargetLabel() {
+  return (activeTargetVenueSlug || activeTargetSlug || "that location").replace(/-/g, " ");
 }
 
 function normalizeSlug(value = "") {
@@ -281,9 +318,20 @@ function formatTargetLocation(show) {
   return [show.city, show.region].filter(Boolean).join(", ") || show.city || "that city";
 }
 
+function formatTargetTargetText(show) {
+  if (activeTargetVenueSlug && show.venue) {
+    return `${show.venue} in ${formatTargetLocation(show)}`;
+  }
+
+  return formatTargetLocation(show);
+}
+
 function updateShowUrl(slug) {
   const url = new URL(window.location.href);
   url.searchParams.set("show", slug);
+  url.searchParams.delete("venue");
+  url.searchParams.delete("venueSlug");
+  url.searchParams.delete("venueId");
   url.searchParams.delete("filter");
   window.history.replaceState({}, "", url);
 }
@@ -358,7 +406,7 @@ function createMyspaceShowCard(show, index) {
   const timeText = formatTimes(show);
   const primaryUrl = show.ticketUrl || show.infoUrl || createDirectionsUrl(show);
 
-  card.className = index === 0 && !activeTargetSlug ? "myspace-show-card myspace-show-card--next" : "myspace-show-card";
+  card.className = index === 0 && !hasActiveTarget() ? "myspace-show-card myspace-show-card--next" : "myspace-show-card";
   decorateTargetCard(card, show);
 
   const avatarColumn = document.createElement("div");
@@ -604,7 +652,7 @@ function renderShowStatus(card, showDate, index) {
     return;
   }
 
-  if (pageMode !== "upcoming" || index !== 0 || activeTargetSlug) {
+  if (pageMode !== "upcoming" || index !== 0 || hasActiveTarget()) {
     status.remove();
     return;
   }

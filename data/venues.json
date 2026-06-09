@@ -1,0 +1,1333 @@
+[
+  {
+    "venueId": "520-events-center-albany-or",
+    "venue": "520 Events Center",
+    "venueSlug": "520-events-center",
+    "address": "1236 Price Rd SE",
+    "city": "Albany",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Willamette Valley",
+    "citySlug": "albany",
+    "regionSlug": "or",
+    "upcomingShows": [
+      {
+        "id": "2026-06-19-albany-or",
+        "showName": "520 Events Center in Albany",
+        "date": "2026-06-19",
+        "doorsTime": "6:00 PM",
+        "showTime": "6:30 PM",
+        "venue": "520 Events Center",
+        "city": "Albany",
+        "region": "OR",
+        "market": "Willamette Valley",
+        "lineup": "Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste",
+        "ticketUrl": "https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "venueId": "airport-tavern-music-hall-tacoma-wa",
+    "venue": "Airport Tavern Music Hall",
+    "venueSlug": "airport-tavern-music-hall",
+    "city": "Tacoma",
+    "region": "WA",
+    "regionName": "Washington",
+    "country": "US",
+    "market": "South Sound",
+    "citySlug": "tacoma",
+    "regionSlug": "wa",
+    "pastShows": [
+      {
+        "id": "2026-01-17-tacoma-wa",
+        "showName": "Airport Tavern Music Hall in Tacoma",
+        "date": "2026-01-17",
+        "venue": "Airport Tavern Music Hall",
+        "city": "Tacoma",
+        "region": "WA",
+        "market": "South Sound",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2025-11-14-tacoma-wa",
+        "showName": "Airport Tavern Music Hall in Tacoma",
+        "date": "2025-11-14",
+        "venue": "Airport Tavern Music Hall",
+        "city": "Tacoma",
+        "region": "WA",
+        "market": "South Sound",
+        "lineup": "Clear the Chaos",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2025-01-10-tacoma-wa",
+        "showName": "Airport Tavern Music Hall in Tacoma",
+        "date": "2025-01-10",
+        "venue": "Airport Tavern Music Hall",
+        "city": "Tacoma",
+        "region": "WA",
+        "market": "South Sound",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2024-10-05-tacoma-wa",
+        "showName": "Airport Tavern Music Hall in Tacoma",
+        "date": "2024-10-05",
+        "venue": "Airport Tavern Music Hall",
+        "city": "Tacoma",
+        "region": "WA",
+        "market": "South Sound",
+        "lineup": "Vultures Above Us",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "alturas-reno-nv",
+    "venue": "Alturas",
+    "venueSlug": "alturas",
+    "city": "Reno",
+    "region": "NV",
+    "regionName": "Nevada",
+    "country": "US",
+    "market": "Northern Nevada",
+    "citySlug": "reno",
+    "regionSlug": "nv",
+    "pastShows": [
+      {
+        "id": "2026-03-28-reno-nv",
+        "showName": "Alturas in Reno",
+        "date": "2026-03-28",
+        "venue": "Alturas",
+        "city": "Reno",
+        "region": "NV",
+        "market": "Northern Nevada",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2025-08-29-reno-nv",
+        "showName": "Alturas in Reno",
+        "date": "2025-08-29",
+        "venue": "Alturas",
+        "city": "Reno",
+        "region": "NV",
+        "market": "Northern Nevada",
+        "lineup": "Manzanita Death March",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "campbell-club-eugene-or",
+    "venue": "Campbell Club",
+    "venueSlug": "campbell-club",
+    "address": "1670 Alder St",
+    "city": "Eugene",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Willamette Valley",
+    "citySlug": "eugene",
+    "regionSlug": "or",
+    "upcomingShows": [
+      {
+        "id": "2026-06-18-eugene-or",
+        "showName": "Campbell Club in Eugene",
+        "date": "2026-06-18",
+        "doorsTime": "7:00 PM",
+        "showTime": "7:30 PM",
+        "venue": "Campbell Club",
+        "city": "Eugene",
+        "region": "OR",
+        "market": "Willamette Valley",
+        "lineup": "Oathbound; Pretty Suspect; Corpse Flip",
+        "ticketLabel": "Door sales only",
+        "confirmationStatus": "verified"
+      }
+    ]
+  },
+  {
+    "venueId": "dantes-portland-or",
+    "venue": "Dante's",
+    "venueSlug": "dantes",
+    "address": "350 W Burnside St",
+    "city": "Portland",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Portland Area",
+    "citySlug": "portland",
+    "regionSlug": "or",
+    "upcomingShows": [
+      {
+        "id": "2026-06-28-portland-or",
+        "showName": "Dante's in Portland",
+        "date": "2026-06-28",
+        "doorsTime": "5:30 PM",
+        "showTime": "6:00 PM",
+        "venue": "Dante's",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Metro",
+        "lineup": "Oathbound; Pretty Suspect; Hangfire; Foghorn",
+        "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "announced"
+      }
+    ],
+    "pastShows": [
+      {
+        "id": "2026-04-30-portland-or",
+        "showName": "Dante's in Portland",
+        "date": "2026-04-30",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:30 PM",
+        "venue": "Dante's",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Metro",
+        "lineup": "Oathbound",
+        "ticketUrl": "https://www.ticketweb.com/event/vampires-everywhere-kiss-the-sun-dantes-tickets/14142904",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2025-05-03-portland-or",
+        "showName": "Dante's in Portland",
+        "date": "2025-05-03",
+        "venue": "Dante's",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Metro",
+        "lineup": "Spirits",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2025-01-11-portland-or",
+        "showName": "Dante's in Portland",
+        "date": "2025-01-11",
+        "venue": "Dante's",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Metro",
+        "lineup": "Within the Pyre",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "el-callejon-gallery-pomona-ca",
+    "venue": "El Callejon Gallery",
+    "venueSlug": "el-callejon-gallery",
+    "city": "Pomona",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Greater Los Angeles / Inland Empire",
+    "citySlug": "pomona",
+    "regionSlug": "ca",
+    "pastShows": [
+      {
+        "id": "2025-08-28-pomona-ca",
+        "showName": "El Callejon Gallery in Pomona",
+        "date": "2025-08-28",
+        "venue": "El Callejon Gallery",
+        "city": "Pomona",
+        "region": "CA",
+        "market": "Greater Los Angeles / Inland Empire",
+        "lineup": "A Lost Asylum",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "el-corazon-seattle-wa",
+    "venue": "El Corazon",
+    "venueSlug": "el-corazon",
+    "city": "Seattle",
+    "region": "WA",
+    "regionName": "Washington",
+    "country": "US",
+    "market": "Seattle Area",
+    "citySlug": "seattle",
+    "regionSlug": "wa",
+    "pastShows": [
+      {
+        "id": "2025-03-21-seattle-wa",
+        "showName": "El Corazon in Seattle",
+        "date": "2025-03-21",
+        "venue": "El Corazon",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "A Skylit Drive",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "hawthorne-hideaway-portland-or",
+    "venue": "Hawthorne Hideaway",
+    "venueSlug": "hawthorne-hideaway",
+    "city": "Portland",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Portland Area",
+    "citySlug": "portland",
+    "regionSlug": "or",
+    "pastShows": [
+      {
+        "id": "2026-03-21-portland-or",
+        "showName": "Hawthorne Hideaway in Portland",
+        "date": "2026-03-21",
+        "venue": "Hawthorne Hideaway",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Metro",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2025-08-23-portland-or",
+        "showName": "Hawthorne Hideaway in Portland",
+        "date": "2025-08-23",
+        "venue": "Hawthorne Hideaway",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Metro",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "humdinger-brewing-slo-taproom-san-luis-obispo-ca",
+    "venue": "Humdinger Brewing SLO Taproom",
+    "venueSlug": "humdinger-brewing-slo-taproom",
+    "address": "855 Capitolio Way STE 1",
+    "city": "San Luis Obispo",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Central Coast",
+    "citySlug": "san-luis-obispo",
+    "regionSlug": "ca",
+    "upcomingShows": [
+      {
+        "id": "2026-06-21-san-luis-obispo-ca",
+        "showName": "Humdinger Brewing SLO Taproom in San Luis Obispo",
+        "date": "2026-06-21",
+        "doorsTime": "6:00 PM",
+        "showTime": "6:30 PM",
+        "venue": "Humdinger Brewing SLO Taproom",
+        "city": "San Luis Obispo",
+        "region": "CA",
+        "market": "Central Coast / SLO",
+        "lineup": "Oathbound; Pretty Suspect; Idol Eyes; Stabbable Offense",
+        "ticketUrl": "https://my805tix.com/e/pretty-suspect",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "announced"
+      }
+    ],
+    "pastShows": [
+      {
+        "id": "2025-06-20-san-luis-obispo-ca",
+        "showName": "Humdinger Brewing SLO Taproom in San Luis Obispo",
+        "date": "2025-06-20",
+        "venue": "Humdinger Brewing SLO Taproom",
+        "city": "San Luis Obispo",
+        "region": "CA",
+        "market": "Central Coast / SLO",
+        "lineup": "Memoire",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "ivy-room-albany-ca",
+    "venue": "Ivy Room",
+    "venueSlug": "ivy-room",
+    "city": "Albany",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Bay Area",
+    "citySlug": "albany",
+    "regionSlug": "ca",
+    "pastShows": [
+      {
+        "id": "2026-03-23-albany-ca",
+        "showName": "Ivy Room in Albany",
+        "date": "2026-03-23",
+        "venue": "Ivy Room",
+        "city": "Albany",
+        "region": "CA",
+        "market": "Bay Area",
+        "lineup": "The Beauty in Death",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "john-henrys-eugene-or",
+    "venue": "John Henry's",
+    "venueSlug": "john-henrys",
+    "city": "Eugene",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Willamette Valley",
+    "citySlug": "eugene",
+    "regionSlug": "or",
+    "pastShows": [
+      {
+        "id": "2026-03-29-eugene-or",
+        "showName": "John Henry's in Eugene",
+        "date": "2026-03-29",
+        "venue": "John Henry's",
+        "city": "Eugene",
+        "region": "OR",
+        "market": "Willamette Valley",
+        "lineup": "Crucible of Absolution",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "little-street-indio-ca",
+    "venue": "Little Street",
+    "venueSlug": "little-street",
+    "city": "Indio",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Coachella Valley",
+    "citySlug": "indio",
+    "regionSlug": "ca",
+    "pastShows": [
+      {
+        "id": "2025-06-16-indio-ca",
+        "showName": "Little Street in Indio",
+        "date": "2025-06-16",
+        "venue": "Little Street",
+        "city": "Indio",
+        "region": "CA",
+        "market": "Coachella Valley",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "mcguffies-live-san-diego-ca",
+    "venue": "McGuffie's Live",
+    "venueSlug": "mcguffies-live",
+    "address": "8515 Navajo Rd",
+    "city": "San Diego",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "San Diego Area",
+    "citySlug": "san-diego",
+    "regionSlug": "ca",
+    "upcomingShows": [
+      {
+        "id": "2026-06-25-san-diego-ca",
+        "showName": "McGuffie's Live in San Diego",
+        "date": "2026-06-25",
+        "showTime": "8:00 PM",
+        "venue": "McGuffie's Live",
+        "city": "San Diego",
+        "region": "CA",
+        "market": "San Diego Area",
+        "lineup": "Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus",
+        "ticketLabel": "Door sales only",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "venueId": "mulberry-station-brewing-company-chico-ca",
+    "venue": "Mulberry Station Brewing Company",
+    "venueSlug": "mulberry-station-brewing-company",
+    "city": "Chico",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Northern California",
+    "citySlug": "chico",
+    "regionSlug": "ca",
+    "pastShows": [
+      {
+        "id": "2026-05-16-chico-ca",
+        "showName": "Mulberry Station Brewing Company in Chico",
+        "date": "2026-05-16",
+        "showTime": "7:00 PM",
+        "venue": "Mulberry Station Brewing Company",
+        "city": "Chico",
+        "region": "CA",
+        "market": "Northern California",
+        "lineup": "Oathbound",
+        "ticketUrl": "https://www.eventbrite.com/e/titvn-x-oathbound-tickets-1986355278108?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=aff0bandsintown&bit_userid=104036509&comeFrom=2570&artist_event_id=1038593213",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "naked-lounge-chico-ca",
+    "venue": "Naked Lounge",
+    "venueSlug": "naked-lounge",
+    "city": "Chico",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Northern California",
+    "citySlug": "chico",
+    "regionSlug": "ca",
+    "pastShows": [
+      {
+        "id": "2025-06-21-chico-ca",
+        "showName": "Naked Lounge in Chico",
+        "date": "2025-06-21",
+        "venue": "Naked Lounge",
+        "city": "Chico",
+        "region": "CA",
+        "market": "Northern California",
+        "lineup": "Facejug",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "old-ironsides-sacramento-ca",
+    "venue": "Old Ironsides",
+    "venueSlug": "old-ironsides",
+    "address": "1901 10th St",
+    "city": "Sacramento",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Sacramento Area",
+    "citySlug": "sacramento",
+    "regionSlug": "ca"
+  },
+  {
+    "venueId": "our-studio-grants-pass-or",
+    "venue": "Our Studio",
+    "venueSlug": "our-studio",
+    "city": "Grants Pass",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Southern Oregon",
+    "citySlug": "grants-pass",
+    "regionSlug": "or",
+    "pastShows": [
+      {
+        "id": "2025-08-24-grants-pass-or",
+        "showName": "Our Studio in Grants Pass",
+        "date": "2025-08-24",
+        "venue": "Our Studio",
+        "city": "Grants Pass",
+        "region": "OR",
+        "market": "Southern Oregon",
+        "lineup": "A Lost Asylum",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "pho-cao-phoenix-az",
+    "venue": "Pho Cao",
+    "venueSlug": "pho-cao",
+    "city": "Phoenix",
+    "region": "AZ",
+    "regionName": "Arizona",
+    "country": "US",
+    "market": "Phoenix Area",
+    "citySlug": "phoenix",
+    "regionSlug": "az",
+    "pastShows": [
+      {
+        "id": "2026-03-27-phoenix-az",
+        "showName": "Pho Cao in Phoenix",
+        "date": "2026-03-27",
+        "venue": "Pho Cao",
+        "city": "Phoenix",
+        "region": "AZ",
+        "market": "Phoenix Area",
+        "lineup": "Addict3d",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "rays-golden-lion-richland-wa",
+    "venue": "Rays Golden Lion",
+    "venueSlug": "rays-golden-lion",
+    "city": "Richland",
+    "region": "WA",
+    "regionName": "Washington",
+    "country": "US",
+    "market": "Tri-Cities",
+    "citySlug": "richland",
+    "regionSlug": "wa",
+    "pastShows": [
+      {
+        "id": "2026-03-06-richland-wa",
+        "showName": "Rays Golden Lion in Richland",
+        "date": "2026-03-06",
+        "venue": "Rays Golden Lion",
+        "city": "Richland",
+        "region": "WA",
+        "market": "Tri-Cities",
+        "lineup": "EVA",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "real-art-tacoma-wa",
+    "venue": "Real Art",
+    "venueSlug": "real-art",
+    "city": "Tacoma",
+    "region": "WA",
+    "regionName": "Washington",
+    "country": "US",
+    "market": "South Sound",
+    "citySlug": "tacoma",
+    "regionSlug": "wa",
+    "pastShows": [
+      {
+        "id": "2025-02-26-tacoma-wa",
+        "showName": "Real Art in Tacoma",
+        "date": "2025-02-26",
+        "venue": "Real Art",
+        "city": "Tacoma",
+        "region": "WA",
+        "market": "South Sound",
+        "lineup": "Dark Watch",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2024-11-10-tacoma-wa",
+        "showName": "Real Art in Tacoma",
+        "date": "2024-11-10",
+        "venue": "Real Art",
+        "city": "Tacoma",
+        "region": "WA",
+        "market": "South Sound",
+        "lineup": "Pastel Faces",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2024-08-31-tacoma-wa",
+        "showName": "Real Art in Tacoma",
+        "date": "2024-08-31",
+        "venue": "Real Art",
+        "city": "Tacoma",
+        "region": "WA",
+        "market": "South Sound",
+        "lineup": "Fate Defined",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "rockafairy-hall-medford-or",
+    "venue": "Rockafairy Hall",
+    "venueSlug": "rockafairy-hall",
+    "address": "31 W 6th St",
+    "city": "Medford",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Southern Oregon",
+    "citySlug": "medford",
+    "regionSlug": "or",
+    "pastShows": [
+      {
+        "id": "2026-05-15-medford-or",
+        "showName": "Rockafairy Hall in Medford",
+        "date": "2026-05-15",
+        "doorsTime": "7:30 PM",
+        "showTime": "7:30 PM",
+        "venue": "Rockafairy Hall",
+        "city": "Medford",
+        "region": "OR",
+        "market": "Southern Oregon",
+        "lineup": "Oathbound",
+        "ticketUrl": "https://rockafairy.betterworld.org/events/oathbound",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "savage-henrys-eureka-ca",
+    "venue": "Savage Henry's",
+    "venueSlug": "savage-henrys",
+    "city": "Eureka",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Northern California Coast",
+    "citySlug": "eureka",
+    "regionSlug": "ca",
+    "pastShows": [
+      {
+        "id": "2025-08-25-eureka-ca",
+        "showName": "Savage Henry's in Eureka",
+        "date": "2025-08-25",
+        "venue": "Savage Henry's",
+        "city": "Eureka",
+        "region": "CA",
+        "market": "Northern California Coast",
+        "lineup": "Silver Talon",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "sirens-song-tavern-eureka-ca",
+    "venue": "Siren's Song Tavern",
+    "venueSlug": "sirens-song-tavern",
+    "city": "Eureka",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Northern California Coast",
+    "citySlug": "eureka",
+    "regionSlug": "ca",
+    "pastShows": [
+      {
+        "id": "2026-03-22-eureka-ca",
+        "showName": "Siren's Song Tavern in Eureka",
+        "date": "2026-03-22",
+        "venue": "Siren's Song Tavern",
+        "city": "Eureka",
+        "region": "CA",
+        "market": "Northern California Coast",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "smashed-live-citrus-heights-ca",
+    "venue": "Smashed Live",
+    "venueSlug": "smashed-live",
+    "address": "6412 Tupelo Dr Suite A/B",
+    "city": "Citrus Heights",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Sacramento Area",
+    "citySlug": "citrus-heights",
+    "regionSlug": "ca",
+    "upcomingShows": [
+      {
+        "id": "2026-06-20-citrus-heights-ca",
+        "showName": "Smashed Live in Citrus Heights",
+        "date": "2026-06-20",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:00 PM",
+        "venue": "Smashed Live",
+        "city": "Citrus Heights",
+        "region": "CA",
+        "market": "Sacramento Area",
+        "lineup": "Oathbound; Pretty Suspect; Salt; Hallway Scenes",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "venueId": "stuft-pizza-san-clemente-ca",
+    "venue": "Stuft Pizza",
+    "venueSlug": "stuft-pizza",
+    "city": "San Clemente",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Orange County",
+    "citySlug": "san-clemente",
+    "regionSlug": "ca",
+    "pastShows": [
+      {
+        "id": "2026-03-26-san-clemente-ca",
+        "showName": "Stuft Pizza in San Clemente",
+        "date": "2026-03-26",
+        "venue": "Stuft Pizza",
+        "city": "San Clemente",
+        "region": "CA",
+        "market": "Orange County",
+        "lineup": "Gnumb",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "substation-seattle-wa",
+    "venue": "Substation",
+    "venueSlug": "substation",
+    "city": "Seattle",
+    "region": "WA",
+    "regionName": "Washington",
+    "country": "US",
+    "market": "Seattle Area",
+    "citySlug": "seattle",
+    "regionSlug": "wa",
+    "pastShows": [
+      {
+        "id": "2026-03-20-seattle-wa",
+        "showName": "Substation in Seattle",
+        "date": "2026-03-20",
+        "venue": "Substation",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2025-06-12-seattle-wa",
+        "showName": "Substation in Seattle",
+        "date": "2025-06-12",
+        "venue": "Substation",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2025-01-12-seattle-wa",
+        "showName": "Substation in Seattle",
+        "date": "2025-01-12",
+        "venue": "Substation",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "the-alley-victorville-ca",
+    "venue": "The Alley",
+    "venueSlug": "the-alley",
+    "city": "Victorville",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "High Desert",
+    "citySlug": "victorville",
+    "regionSlug": "ca",
+    "pastShows": [
+      {
+        "id": "2025-06-15-victorville-ca",
+        "showName": "The Alley in Victorville",
+        "date": "2025-06-15",
+        "venue": "The Alley",
+        "city": "Victorville",
+        "region": "CA",
+        "market": "High Desert",
+        "lineup": "Eight Cold Hells",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "the-alpine-reno-nv",
+    "venue": "The Alpine",
+    "venueSlug": "the-alpine",
+    "city": "Reno",
+    "region": "NV",
+    "regionName": "Nevada",
+    "country": "US",
+    "market": "Northern Nevada",
+    "citySlug": "reno",
+    "regionSlug": "nv",
+    "pastShows": [
+      {
+        "id": "2026-05-17-reno-nv",
+        "showName": "The Alpine in Reno",
+        "date": "2026-05-17",
+        "doorsTime": "7:00 PM",
+        "showTime": "8:00 PM",
+        "venue": "The Alpine",
+        "city": "Reno",
+        "region": "NV",
+        "market": "Northern Nevada",
+        "lineup": "Oathbound",
+        "ticketUrl": "https://www.ticketweb.com/event/titvn-oathbound-emberwake-and-sun-the-alpine-tickets/14154994",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "the-big-dipper-spokane-wa",
+    "venue": "The Big Dipper",
+    "venueSlug": "the-big-dipper",
+    "city": "Spokane",
+    "region": "WA",
+    "regionName": "Washington",
+    "country": "US",
+    "market": "Eastern Washington",
+    "citySlug": "spokane",
+    "regionSlug": "wa",
+    "pastShows": [
+      {
+        "id": "2026-03-07-spokane-wa",
+        "showName": "The Big Dipper in Spokane",
+        "date": "2026-03-07",
+        "venue": "The Big Dipper",
+        "city": "Spokane",
+        "region": "WA",
+        "market": "Eastern Washington",
+        "lineup": "Cold Hearts",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2025-03-23-spokane-wa",
+        "showName": "The Big Dipper in Spokane",
+        "date": "2025-03-23",
+        "venue": "The Big Dipper",
+        "city": "Spokane",
+        "region": "WA",
+        "market": "Eastern Washington",
+        "lineup": "False Visions",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "the-blooze-phoenix-az",
+    "venue": "The Blooze",
+    "venueSlug": "the-blooze",
+    "city": "Phoenix",
+    "region": "AZ",
+    "regionName": "Arizona",
+    "country": "US",
+    "market": "Phoenix Area",
+    "citySlug": "phoenix",
+    "regionSlug": "az",
+    "pastShows": [
+      {
+        "id": "2025-06-19-phoenix-az",
+        "showName": "The Blooze in Phoenix",
+        "date": "2025-06-19",
+        "venue": "The Blooze",
+        "city": "Phoenix",
+        "region": "AZ",
+        "market": "Phoenix Area",
+        "lineup": "Speakeasy",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "the-chainsaw-cat-yakima-wa",
+    "venue": "The Chainsaw Cat",
+    "venueSlug": "the-chainsaw-cat",
+    "city": "Yakima",
+    "region": "WA",
+    "regionName": "Washington",
+    "country": "US",
+    "market": "Central Washington",
+    "citySlug": "yakima",
+    "regionSlug": "wa",
+    "pastShows": [
+      {
+        "id": "2025-03-22-yakima-wa",
+        "showName": "The Chainsaw Cat in Yakima",
+        "date": "2025-03-22",
+        "venue": "The Chainsaw Cat",
+        "city": "Yakima",
+        "region": "WA",
+        "market": "Central Washington",
+        "lineup": "Cold Hearts",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2024-10-25-yakima-wa",
+        "showName": "The Chainsaw Cat in Yakima",
+        "date": "2024-10-25",
+        "venue": "The Chainsaw Cat",
+        "city": "Yakima",
+        "region": "WA",
+        "market": "Central Washington",
+        "lineup": "Invicta",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "the-charleston-bremerton-wa",
+    "venue": "The Charleston",
+    "venueSlug": "the-charleston",
+    "city": "Bremerton",
+    "region": "WA",
+    "regionName": "Washington",
+    "country": "US",
+    "market": "Kitsap Peninsula",
+    "citySlug": "bremerton",
+    "regionSlug": "wa",
+    "pastShows": [
+      {
+        "id": "2025-10-09-bremerton-wa",
+        "showName": "The Charleston in Bremerton",
+        "date": "2025-10-09",
+        "venue": "The Charleston",
+        "city": "Bremerton",
+        "region": "WA",
+        "market": "Kitsap Peninsula",
+        "lineup": "Micah Ariss",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "the-chop-shop-pocatello-id",
+    "venue": "The Chop Shop",
+    "venueSlug": "the-chop-shop",
+    "city": "Pocatello",
+    "region": "ID",
+    "regionName": "Idaho",
+    "country": "US",
+    "market": "Southeast Idaho",
+    "citySlug": "pocatello",
+    "regionSlug": "id",
+    "pastShows": [
+      {
+        "id": "2025-08-30-pocatello-id",
+        "showName": "The Chop Shop in Pocatello",
+        "date": "2025-08-30",
+        "venue": "The Chop Shop",
+        "city": "Pocatello",
+        "region": "ID",
+        "market": "Southeast Idaho",
+        "lineup": "Manzanita Death March",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "the-empire-reno-nv",
+    "venue": "The Empire",
+    "venueSlug": "the-empire",
+    "city": "Reno",
+    "region": "NV",
+    "regionName": "Nevada",
+    "country": "US",
+    "market": "Northern Nevada",
+    "citySlug": "reno",
+    "regionSlug": "nv",
+    "upcomingShows": [
+      {
+        "id": "2026-06-26-reno-nv",
+        "showName": "The Empire in Reno",
+        "date": "2026-06-26",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:00 PM",
+        "venue": "The Empire",
+        "city": "Reno",
+        "region": "NV",
+        "market": "Reno / Northern Nevada",
+        "lineup": "Oathbound; Pretty Suspect",
+        "ticketLabel": "Door sales only",
+        "confirmationStatus": "verified"
+      }
+    ],
+    "pastShows": [
+      {
+        "id": "2025-06-14-reno-nv",
+        "showName": "The Empire in Reno",
+        "date": "2025-06-14",
+        "venue": "The Empire",
+        "city": "Reno",
+        "region": "NV",
+        "market": "Northern Nevada",
+        "lineup": "Shared Scars",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "the-escondite-los-angeles-ca",
+    "venue": "The Escondite",
+    "venueSlug": "the-escondite",
+    "address": "410 Boyd St",
+    "city": "Los Angeles",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Los Angeles Area",
+    "citySlug": "los-angeles",
+    "regionSlug": "ca",
+    "upcomingShows": [
+      {
+        "id": "2026-06-23-los-angeles-ca",
+        "showName": "The Escondite in Los Angeles",
+        "date": "2026-06-23",
+        "showTime": "8:00 PM",
+        "venue": "The Escondite",
+        "city": "Los Angeles",
+        "region": "CA",
+        "market": "Los Angeles Area",
+        "lineup": "Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib",
+        "ticketLabel": "Free show",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "venueId": "the-funhouse-seattle-wa",
+    "venue": "The Funhouse",
+    "venueSlug": "the-funhouse",
+    "city": "Seattle",
+    "region": "WA",
+    "regionName": "Washington",
+    "country": "US",
+    "market": "Seattle Area",
+    "citySlug": "seattle",
+    "regionSlug": "wa",
+    "pastShows": [
+      {
+        "id": "2025-09-12-seattle-wa",
+        "showName": "The Funhouse in Seattle",
+        "date": "2025-09-12",
+        "venue": "The Funhouse",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "What's Wrong",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2025-03-28-seattle-wa",
+        "showName": "The Funhouse in Seattle",
+        "date": "2025-03-28",
+        "venue": "The Funhouse",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2025-03-02-seattle-wa",
+        "showName": "The Funhouse in Seattle",
+        "date": "2025-03-02",
+        "venue": "The Funhouse",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "Dark Watch",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2024-12-15-seattle-wa",
+        "showName": "The Funhouse in Seattle",
+        "date": "2024-12-15",
+        "venue": "The Funhouse",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "the-griffin-las-vegas-nv",
+    "venue": "The Griffin",
+    "venueSlug": "the-griffin",
+    "city": "Las Vegas",
+    "region": "NV",
+    "regionName": "Nevada",
+    "country": "US",
+    "market": "Las Vegas Area",
+    "citySlug": "las-vegas",
+    "regionSlug": "nv",
+    "pastShows": [
+      {
+        "id": "2025-06-18-las-vegas-nv",
+        "showName": "The Griffin in Las Vegas",
+        "date": "2025-06-18",
+        "venue": "The Griffin",
+        "city": "Las Vegas",
+        "region": "NV",
+        "market": "Las Vegas Area",
+        "lineup": "Teach",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "the-twilight-portland-or",
+    "venue": "The Twilight",
+    "venueSlug": "the-twilight",
+    "city": "Portland",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Portland Area",
+    "citySlug": "portland",
+    "regionSlug": "or",
+    "pastShows": [
+      {
+        "id": "2025-06-13-portland-or",
+        "showName": "The Twilight in Portland",
+        "date": "2025-06-13",
+        "venue": "The Twilight",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Metro",
+        "lineup": "Vampire Champagne",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "transplants-brewing-company-palmdale-ca",
+    "venue": "Transplants Brewing Company",
+    "venueSlug": "transplants-brewing-company",
+    "address": "40242 La Quinta Ln Unit 101",
+    "city": "Palmdale",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Los Angeles Area / Antelope Valley",
+    "citySlug": "palmdale",
+    "regionSlug": "ca",
+    "upcomingShows": [
+      {
+        "id": "2026-06-22-palmdale-ca",
+        "showName": "Transplants Brewing Company in Palmdale",
+        "date": "2026-06-22",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:00 PM",
+        "venue": "Transplants Brewing Company",
+        "city": "Palmdale",
+        "region": "CA",
+        "market": "Antelope Valley",
+        "lineup": "Oathbound; Pretty Suspect; Revelry",
+        "ticketUrl": "https://www.ticketweb.com/event/free-show-pretty-suspect-transplants-brewing-company-tickets/14928993",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "venueId": "wild-man-brewing-olympia-wa",
+    "venue": "Wild Man Brewing",
+    "venueSlug": "wild-man-brewing",
+    "city": "Olympia",
+    "region": "WA",
+    "regionName": "Washington",
+    "country": "US",
+    "market": "South Sound",
+    "citySlug": "olympia",
+    "regionSlug": "wa",
+    "pastShows": [
+      {
+        "id": "2024-09-22-olympia-wa",
+        "showName": "Wild Man Brewing in Olympia",
+        "date": "2024-09-22",
+        "venue": "Wild Man Brewing",
+        "city": "Olympia",
+        "region": "WA",
+        "market": "South Sound",
+        "lineup": "Dark Harbor",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "venueId": "the-rockafairy-medford-or",
+    "venue": "The Rockafairy",
+    "venueSlug": "the-rockafairy",
+    "address": "31 W 6th St",
+    "city": "Medford",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Southern Oregon",
+    "citySlug": "medford",
+    "regionSlug": "or",
+    "upcomingShows": [
+      {
+        "id": "2026-06-27-medford-or",
+        "showName": "The Rockafairy in Medford",
+        "date": "2026-06-27",
+        "doorsTime": "7:00 PM",
+        "showTime": "8:00 PM",
+        "venue": "The Rockafairy",
+        "city": "Medford",
+        "region": "OR",
+        "market": "Southern Oregon",
+        "lineup": "Oathbound; Pretty Suspect; Two Piece Face; Hide Heaven; Atelectasis",
+        "ticketUrl": "https://rockafairy.betterworld.org/events/oathboundjune27",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "verified"
+      }
+    ]
+  }
+]
