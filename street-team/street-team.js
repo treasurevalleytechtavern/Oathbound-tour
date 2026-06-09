@@ -5,11 +5,31 @@ const stateIconRoot = `${siteRoot}/assets/icons/states/Prismatic (300 x 300 px)`
 const stateSelector = document.querySelector("#state-selector");
 const showsContainer = document.querySelector("#street-team-shows");
 const showCount = document.querySelector("#street-team-show-count");
+const nearestShowButton = document.querySelector("[data-street-team-nearest-show]");
+const nearestShowStatus = document.querySelector("[data-street-team-nearest-status]");
+const streetTeamUrlParams = new URLSearchParams(window.location.search);
+let activeTargetShowSlug = slugify(streetTeamUrlParams.get("show") || streetTeamUrlParams.get("city") || streetTeamUrlParams.get("location") || "");
+let activeTargetMarketSlug = slugify(streetTeamUrlParams.get("market") || "");
+let activeTargetSource = activeTargetShowSlug || activeTargetMarketSlug ? "url" : "";
+let pendingTargetScroll = Boolean(activeTargetShowSlug || activeTargetMarketSlug);
 const BUTTON_ICONS = {
   download: `${siteRoot}/assets/icons/buttons/300x169/download-button-prismatic-300x169.png`,
   join: `${siteRoot}/assets/icons/buttons/300x169/sign-up-button-prismatic-300x169.png`,
+  nearest: `${siteRoot}/assets/icons/buttons/300x169/nearest-show-300x169.png`,
   area: `${siteRoot}/assets/icons/buttons/300x169/pick-your-area-button-prismatic-300x169.png`,
   tickets: `${siteRoot}/assets/icons/buttons/300x169/tickets-button-prismatic-300x169.png`,
+};
+const SHOW_COORDINATES_BY_SLUG = {
+  albany: { latitude: 44.6365, longitude: -123.1059 },
+  "citrus-heights": { latitude: 38.7071, longitude: -121.2811 },
+  eugene: { latitude: 44.0521, longitude: -123.0868 },
+  "los-angeles": { latitude: 34.0522, longitude: -118.2437 },
+  medford: { latitude: 42.3265, longitude: -122.8756 },
+  palmdale: { latitude: 34.5794, longitude: -118.1165 },
+  portland: { latitude: 45.5152, longitude: -122.6784 },
+  reno: { latitude: 39.5296, longitude: -119.8138 },
+  "san-diego": { latitude: 32.7157, longitude: -117.1611 },
+  "san-luis-obispo": { latitude: 35.2828, longitude: -120.6596 },
 };
 const ROUTING_FLYER_ASSET_ID = "street-team-general-oathbound-x-pretty-suspect-routing-flyer";
 const CAPTION_TEMPLATES = [
@@ -163,6 +183,7 @@ let streetTeamState = {
 loadStreetTeamPage();
 wireTracking();
 wireArtworkModal();
+nearestShowButton?.addEventListener("click", findNearestStreetTeamShow);
 
 async function loadStreetTeamPage() {
   const [showsResult, downloadsResult, streetAssetsResult] = await Promise.allSettled([
@@ -201,9 +222,200 @@ async function loadStreetTeamPage() {
   }
 
   const regions = getRegions(streetTeamState.shows);
-  streetTeamState.selectedRegion = streetTeamState.shows[0]?.regionSlug || regions[0]?.slug || "";
+  const targetedShow = getActiveTargetShow();
+  const targetedMarketShow = getActiveTargetMarketShow();
+  streetTeamState.selectedRegion = targetedShow?.regionSlug
+    || targetedMarketShow?.regionSlug
+    || streetTeamState.shows[0]?.regionSlug
+    || regions[0]?.slug
+    || "";
   renderStateSelector(regions);
   renderShowsForState();
+}
+
+function findNearestStreetTeamShow() {
+  if (!navigator.geolocation) {
+    setNearestShowStatus("Location lookup is not available in this browser. Pick your area below.");
+    return;
+  }
+
+  setNearestShowButtonState(true);
+  setNearestShowStatus("Checking your location...");
+
+  navigator.geolocation.getCurrentPosition(
+    ({ coords }) => {
+      const nearest = findNearestShowFromCoordinates(coords.latitude, coords.longitude);
+
+      if (!nearest) {
+        setNearestShowButtonState(false);
+        setNearestShowStatus("We could not match your location to a tour stop. Pick your area below.");
+        return;
+      }
+
+      activeTargetShowSlug = getStreetTeamShowSlug(nearest.show);
+      activeTargetMarketSlug = "";
+      activeTargetSource = "nearest";
+      pendingTargetScroll = true;
+      streetTeamState.selectedRegion = nearest.show.regionSlug;
+      updateStreetTeamShowUrl(activeTargetShowSlug);
+      renderStateSelector(getRegions(streetTeamState.shows));
+      renderShowsForState();
+      setNearestShowButtonState(false);
+      setNearestShowStatus(`${formatTargetLocation(nearest.show)} is the nearest upcoming stop, about ${Math.round(nearest.distance)} miles away.`);
+    },
+    () => {
+      setNearestShowButtonState(false);
+      setNearestShowStatus("Location permission was not shared. Pick your area below.");
+    },
+    {
+      enableHighAccuracy: false,
+      maximumAge: 300000,
+      timeout: 10000,
+    },
+  );
+}
+
+function findNearestShowFromCoordinates(latitude, longitude) {
+  let nearest = null;
+
+  streetTeamState.shows.forEach((show) => {
+    const coordinates = SHOW_COORDINATES_BY_SLUG[getStreetTeamShowSlug(show)];
+
+    if (!coordinates) {
+      return;
+    }
+
+    const distance = getDistanceInMiles(latitude, longitude, coordinates.latitude, coordinates.longitude);
+
+    if (!nearest || distance < nearest.distance) {
+      nearest = { show, distance };
+    }
+  });
+
+  return nearest;
+}
+
+function finishStreetTeamTargetRender(shows) {
+  if (!hasActiveStreetTeamTarget()) {
+    return;
+  }
+
+  const targetShow = activeTargetShowSlug
+    ? shows.find((show) => getStreetTeamShowSlug(show) === activeTargetShowSlug)
+    : null;
+  const targetMarketShow = activeTargetMarketSlug
+    ? shows.find((show) => slugify(show.market) === activeTargetMarketSlug)
+    : null;
+
+  if (activeTargetSource === "url") {
+    if (targetShow) {
+      setNearestShowStatus(`Opened ${formatTargetLocation(targetShow)}. Other areas stay collapsed.`);
+    } else if (targetMarketShow) {
+      setNearestShowStatus(`Opened ${targetMarketShow.market}. Other areas stay collapsed.`);
+    } else {
+      setNearestShowStatus("That show or market is not listed in the current street team pushes.");
+    }
+  }
+
+  if (!pendingTargetScroll) {
+    return;
+  }
+
+  pendingTargetScroll = false;
+  requestAnimationFrame(() => {
+    const target = activeTargetShowSlug
+      ? showsContainer.querySelector(".street-show-card--target")
+      : showsContainer.querySelector(".market-toggle[aria-expanded='true']");
+
+    if (!target) {
+      return;
+    }
+
+    target.scrollIntoView({ behavior: "auto", block: "start", inline: "nearest" });
+    target.focus({ preventScroll: true });
+  });
+}
+
+function getActiveTargetShow() {
+  if (!activeTargetShowSlug) {
+    return null;
+  }
+
+  return streetTeamState.shows.find((show) => getStreetTeamShowSlug(show) === activeTargetShowSlug) || null;
+}
+
+function getActiveTargetMarketShow() {
+  if (!activeTargetMarketSlug) {
+    return null;
+  }
+
+  return streetTeamState.shows.find((show) => slugify(show.market) === activeTargetMarketSlug) || null;
+}
+
+function isTargetMarket(market, marketShows) {
+  if (activeTargetShowSlug && marketShows.some((show) => getStreetTeamShowSlug(show) === activeTargetShowSlug)) {
+    return true;
+  }
+
+  return Boolean(activeTargetMarketSlug && slugify(market) === activeTargetMarketSlug);
+}
+
+function hasActiveStreetTeamTarget() {
+  return Boolean(activeTargetShowSlug || activeTargetMarketSlug);
+}
+
+function clearActiveStreetTeamTarget() {
+  activeTargetShowSlug = "";
+  activeTargetMarketSlug = "";
+  activeTargetSource = "";
+  pendingTargetScroll = false;
+  setNearestShowStatus("");
+}
+
+function getStreetTeamShowSlug(show) {
+  return slugify(show.citySlug || show.id || show.city || "");
+}
+
+function updateStreetTeamShowUrl(slug) {
+  const url = new URL(window.location.href);
+  url.searchParams.set("show", slug);
+  url.searchParams.delete("market");
+  window.history.replaceState({}, "", url);
+}
+
+function setNearestShowButtonState(isLoading) {
+  if (!nearestShowButton) {
+    return;
+  }
+
+  nearestShowButton.disabled = isLoading;
+  nearestShowButton.setAttribute("aria-busy", isLoading ? "true" : "false");
+}
+
+function setNearestShowStatus(message) {
+  if (nearestShowStatus) {
+    nearestShowStatus.textContent = message;
+  }
+}
+
+function getDistanceInMiles(firstLatitude, firstLongitude, secondLatitude, secondLongitude) {
+  const earthRadiusMiles = 3958.8;
+  const firstLatRadians = toRadians(firstLatitude);
+  const secondLatRadians = toRadians(secondLatitude);
+  const latDelta = toRadians(secondLatitude - firstLatitude);
+  const lonDelta = toRadians(secondLongitude - firstLongitude);
+  const haversine = Math.sin(latDelta / 2) ** 2
+    + Math.cos(firstLatRadians) * Math.cos(secondLatRadians) * Math.sin(lonDelta / 2) ** 2;
+
+  return earthRadiusMiles * 2 * Math.atan2(Math.sqrt(haversine), Math.sqrt(1 - haversine));
+}
+
+function toRadians(value) {
+  return value * Math.PI / 180;
+}
+
+function formatTargetLocation(show) {
+  return [show.city, show.region].filter(Boolean).join(", ") || show.city || "that city";
 }
 
 async function fetchJson(url) {
@@ -407,6 +619,7 @@ function renderStateSelector(regions) {
     `;
     wireImageFallback(button.querySelector("img"));
     button.addEventListener("click", () => {
+      clearActiveStreetTeamTarget();
       streetTeamState.selectedRegion = region.slug;
       renderStateSelector(regions);
       renderShowsForState();
@@ -460,10 +673,14 @@ function renderShowsForState() {
   const shouldAutoExpandSingleShow = shows.length === 1;
 
   marketEntries.forEach(([market, marketShows]) => {
-    fragment.appendChild(createAreaCard(market, marketShows, shouldAutoExpandSingleShow));
+    const shouldOpen = hasActiveStreetTeamTarget()
+      ? isTargetMarket(market, marketShows)
+      : shouldAutoExpandSingleShow;
+    fragment.appendChild(createAreaCard(market, marketShows, shouldOpen));
   });
 
   showsContainer.appendChild(fragment);
+  finishStreetTeamTargetRender(shows);
 }
 
 function createAreaCard(market, marketShows, isOpen) {
@@ -541,6 +758,13 @@ function createCompactShowRow(show) {
   card.dataset.showId = show.id;
   card.dataset.state = show.regionSlug;
   card.dataset.city = show.citySlug;
+  card.dataset.showSlug = getStreetTeamShowSlug(show);
+  card.id = `street-show-${getStreetTeamShowSlug(show)}-${slugify(show.date || "date")}`;
+
+  if (activeTargetShowSlug && getStreetTeamShowSlug(show) === activeTargetShowSlug) {
+    card.classList.add("street-show-card--target");
+    card.setAttribute("tabindex", "-1");
+  }
 
   const statusChip = normalizedStatus ? `<span class="status-chip status-chip--${escapeHtml(normalizedStatus.key)}">${escapeHtml(normalizedStatus.label)}</span>` : "";
   const venue = isAreaOnly ? "Area details TBA" : escapeHtml(show.venue || "Venue TBA");
