@@ -16,6 +16,13 @@
         "url": "/street-team/kits/or/albany/6-19-26-Albany-Flyer.JPG",
         "preview": "/street-team/kits/or/albany/6-19-26-Albany-Flyer.JPG",
         "fileType": "JPG"
+      },
+      {
+        "title": "520 Events Center in Albany - QR Code",
+        "type": "Qr Code",
+        "url": "/street-team/kits/or/albany/albany-QR-flyer.png",
+        "preview": "/street-team/kits/or/albany/albany-QR-flyer.png",
+        "fileType": "PNG"
       }
     ],
     "ca/citrus-heights": [
@@ -61,6 +68,13 @@
         "url": "/street-team/kits/or/portland/6-28-26-Portland%20Flyer.PNG",
         "preview": "/street-team/kits/or/portland/6-28-26-Portland%20Flyer.PNG",
         "fileType": "PNG"
+      },
+      {
+        "title": "Dante's in Portland - QR Code",
+        "type": "Qr Code",
+        "url": "/street-team/kits/or/portland/2026-06-28-portland-or-QR-flyer.png",
+        "preview": "/street-team/kits/or/portland/2026-06-28-portland-or-QR-flyer.png",
+        "fileType": "PNG"
       }
     ],
     "or/medford": [
@@ -70,6 +84,22 @@
         "url": "/street-team/kits/or/medford/6-27-Rockafairy.jpg",
         "preview": "/street-team/kits/or/medford/6-27-Rockafairy.jpg",
         "fileType": "JPG"
+      },
+      {
+        "title": "The Rockafairy in Medford - QR Code",
+        "type": "Qr Code",
+        "url": "/street-team/kits/or/medford/2026-06-27-medford-or-QR-flyer.png",
+        "preview": "/street-team/kits/or/medford/2026-06-27-medford-or-QR-flyer.png",
+        "fileType": "PNG"
+      }
+    ],
+    "ca/san-luis-obispo": [
+      {
+        "title": "Humdinger Brewing SLO Taproom in San Luis Obispo - QR Code",
+        "type": "Qr Code",
+        "url": "/street-team/kits/ca/san-luis-obispo/2026-06-21-san-luis-obispo-ca-QR-flyer.png",
+        "preview": "/street-team/kits/ca/san-luis-obispo/2026-06-21-san-luis-obispo-ca-QR-flyer.png",
+        "fileType": "PNG"
       }
     ]
   },
@@ -81,6 +111,13 @@
         "url": "/street-team/kits/or/albany/6-19-26-Albany-Flyer.JPG",
         "preview": "/street-team/kits/or/albany/6-19-26-Albany-Flyer.JPG",
         "fileType": "JPG"
+      },
+      {
+        "title": "520 Events Center in Albany - QR Code",
+        "type": "Qr Code",
+        "url": "/street-team/kits/or/albany/albany-QR-flyer.png",
+        "preview": "/street-team/kits/or/albany/albany-QR-flyer.png",
+        "fileType": "PNG"
       }
     ],
     "2026-06-20-citrus-heights-ca": [
@@ -126,6 +163,13 @@
         "url": "/street-team/kits/or/portland/6-28-26-Portland%20Flyer.PNG",
         "preview": "/street-team/kits/or/portland/6-28-26-Portland%20Flyer.PNG",
         "fileType": "PNG"
+      },
+      {
+        "title": "Dante's in Portland - QR Code",
+        "type": "Qr Code",
+        "url": "/street-team/kits/or/portland/2026-06-28-portland-or-QR-flyer.png",
+        "preview": "/street-team/kits/or/portland/2026-06-28-portland-or-QR-flyer.png",
+        "fileType": "PNG"
       }
     ],
     "2026-06-18-eugene-or": [
@@ -144,6 +188,13 @@
         "url": "/street-team/kits/ca/san-luis-obispo/6-21-SLO-FLyer.JPG",
         "preview": "/street-team/kits/ca/san-luis-obispo/6-21-SLO-FLyer.JPG",
         "fileType": "JPG"
+      },
+      {
+        "title": "Humdinger Brewing SLO Taproom in San Luis Obispo - QR Code",
+        "type": "Qr Code",
+        "url": "/street-team/kits/ca/san-luis-obispo/2026-06-21-san-luis-obispo-ca-QR-flyer.png",
+        "preview": "/street-team/kits/ca/san-luis-obispo/2026-06-21-san-luis-obispo-ca-QR-flyer.png",
+        "fileType": "PNG"
       }
     ],
     "2026-06-27-medford-or": [
@@ -153,6 +204,13 @@
         "url": "/street-team/kits/or/medford/6-27-Rockafairy.jpg",
         "preview": "/street-team/kits/or/medford/6-27-Rockafairy.jpg",
         "fileType": "JPG"
+      },
+      {
+        "title": "The Rockafairy in Medford - QR Code",
+        "type": "Qr Code",
+        "url": "/street-team/kits/or/medford/2026-06-27-medford-or-QR-flyer.png",
+        "preview": "/street-team/kits/or/medford/2026-06-27-medford-or-QR-flyer.png",
+        "fileType": "PNG"
       }
     ]
   }
