@@ -3791,6 +3791,26 @@ html.myspace-theme .intro h1 span {
   margin-top: 8px;
 }
 
+.myspace-show-more {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #d900a8;
+  font: inherit;
+  font-weight: 900;
+  text-decoration: underline;
+  background: transparent;
+  cursor: pointer;
+}
+
+.myspace-show-more:hover,
+.myspace-show-more:focus-visible {
+  color: #111;
+  outline: 1px dotted #d900a8;
+  outline-offset: 2px;
+}
+
 .myspace-show-badges,
 .myspace-show-actions {
   display: flex;

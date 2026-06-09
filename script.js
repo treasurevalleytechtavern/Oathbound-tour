@@ -255,6 +255,22 @@ function getShowSlug(show) {
   return normalizeSlug(show.citySlug || show.id || show.city || "");
 }
 
+function getShowTargetValues(show) {
+  const showId = normalizeSlug(show.id || "");
+  const values = [
+    show.citySlug,
+    show.city,
+    show.id,
+    show.showName,
+  ].map(normalizeSlug).filter(Boolean);
+
+  if (showId) {
+    values.push(showId.replace(/-[a-z]{2}$/, ""));
+  }
+
+  return Array.from(new Set(values));
+}
+
 function getShowVenueSlug(show) {
   return normalizeSlug(show.venueRef?.venueSlug || show.venue || "");
 }
@@ -273,7 +289,7 @@ function isTargetShow(show) {
     return getShowVenueTargetValues(show).includes(activeTargetVenueSlug);
   }
 
-  return Boolean(activeTargetSlug && getShowSlug(show) === activeTargetSlug);
+  return Boolean(activeTargetSlug && getShowTargetValues(show).includes(activeTargetSlug));
 }
 
 function hasActiveTarget() {
@@ -465,9 +481,7 @@ function createMyspaceShowCard(show, index) {
     details.appendChild(lineup);
   }
 
-  const notes = document.createElement("p");
-  notes.className = "myspace-show-description";
-  notes.innerHTML = `<strong>Description:</strong> ${escapeHtml(shortenPostText(show.notes || "Pretty Suspect and Oathbound are bringing the Myspace Tour through town. Expect a loud, sweaty, full-send night of heavy hooks, sharp edges, and scene-era chaos."))}`;
+  const notes = createMyspaceDescription(show.notes || "Pretty Suspect and Oathbound are bringing the Myspace Tour through town. Expect a loud, sweaty, full-send night of heavy hooks, sharp edges, and scene-era chaos.");
 
   const badges = document.createElement("div");
   badges.className = "myspace-show-badges";
@@ -947,6 +961,44 @@ function toggleElement(element, shouldShow) {
   }
 
   element.hidden = true;
+}
+
+function createMyspaceDescription(text) {
+  const paragraph = document.createElement("p");
+  const label = document.createElement("strong");
+  const textNode = document.createTextNode("");
+  const toggle = document.createElement("button");
+  const fullText = text.trim();
+  const shortText = shortenPostText(fullText);
+  const isShortened = shortText !== fullText;
+
+  paragraph.className = "myspace-show-description";
+  label.textContent = "Description:";
+  paragraph.append(label, document.createTextNode(" "), textNode);
+
+  if (!isShortened) {
+    textNode.textContent = fullText;
+    return paragraph;
+  }
+
+  toggle.type = "button";
+  toggle.className = "myspace-show-more";
+  toggle.textContent = "Show more";
+  toggle.setAttribute("aria-expanded", "false");
+
+  const setExpanded = (isExpanded) => {
+    textNode.textContent = isExpanded ? fullText : `${shortText} `;
+    toggle.textContent = isExpanded ? "Show less" : "Show more";
+    toggle.setAttribute("aria-expanded", isExpanded ? "true" : "false");
+  };
+
+  toggle.addEventListener("click", () => {
+    setExpanded(toggle.getAttribute("aria-expanded") !== "true");
+  });
+
+  setExpanded(false);
+  paragraph.appendChild(toggle);
+  return paragraph;
 }
 
 function shortenPostText(text) {
