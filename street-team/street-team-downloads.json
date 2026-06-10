@@ -77,6 +77,15 @@
         "fileType": "PNG"
       }
     ],
+    "nv/reno": [
+      {
+        "title": "The Empire in Reno - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/nv/reno/6-26-Reno.jpeg",
+        "preview": "/street-team/kits/nv/reno/6-26-Reno.jpeg",
+        "fileType": "JPEG"
+      }
+    ],
     "or/medford": [
       {
         "title": "The Rockafairy in Medford - Flyer",
@@ -195,6 +204,15 @@
         "url": "/street-team/kits/ca/san-luis-obispo/2026-06-21-san-luis-obispo-ca-QR-flyer.png",
         "preview": "/street-team/kits/ca/san-luis-obispo/2026-06-21-san-luis-obispo-ca-QR-flyer.png",
         "fileType": "PNG"
+      }
+    ],
+    "2026-06-26-reno-nv": [
+      {
+        "title": "The Empire in Reno - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/nv/reno/6-26-Reno.jpeg",
+        "preview": "/street-team/kits/nv/reno/6-26-Reno.jpeg",
+        "fileType": "JPEG"
       }
     ],
     "2026-06-27-medford-or": [
