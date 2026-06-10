@@ -100,7 +100,7 @@
       "market": "Antelope Valley",
       "lineup": "Oathbound; Pretty Suspect; Revelry",
       "ticketUrl": "https://www.ticketweb.com/event/free-show-pretty-suspect-transplants-brewing-company-tickets/14928993",
-      "ticketLabel": "Tickets",
+      "ticketLabel": "RSVP to FREE Show",
       "confirmationStatus": "announced"
     },
     "assetsKey": "ca/palmdale",
@@ -316,12 +316,18 @@
     "assetType": "flyer",
     "assetTitle": "The Empire in Reno - Flyer",
     "platform": "all",
-    "status": "needed",
+    "status": "ready",
     "promoNeed": "flyer",
     "usage": "Main show flyer",
+    "fileName": "6-26-Reno.jpeg",
+    "fileUrl": "/street-team/kits/nv/reno/6-26-Reno.jpeg",
+    "thumbUrl": "/street-team/kits/nv/reno/6-26-Reno.jpeg",
+    "downloadUrl": "/street-team/kits/nv/reno/6-26-Reno.jpeg",
+    "previewUrl": "/street-team/kits/nv/reno/6-26-Reno.jpeg",
+    "altText": "Retro Myspace-style tour flyer for Pretty Suspect and Oathbound’s Myspace Tour stop in Reno, Nevada. The design features neon pink, cyan, and purple browser-window graphics over black-and-white concert photos, with star-shaped photo cutouts and band logos. Event details read: Pretty Suspect and Oathbound with special guests Bong Lung and Innerstate at The Empire, 620 Ryland Street, Reno, Nevada, on June 26th, 2026. Doors 6 PM, show 7 PM, all ages, $10. Bottom includes tour/support logos including Eclipse and Last Light Touring.",
     "downloadTitle": "The Empire in Reno - Flyer",
     "downloadType": "Flyer",
-    "includeInStreetTeamDownloads": false
+    "includeInStreetTeamDownloads": true
   },
   {
     "assetId": "2026-06-27-medford-or-flyer-flyer",
