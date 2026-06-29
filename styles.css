@@ -49,6 +49,10 @@ video {
   max-width: 100%;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .background-video,
 .background-overlay {
   position: fixed;
@@ -201,9 +205,13 @@ h1 {
   margin-top: 22px;
 }
 
+.tour-finder[hidden],
+.prismatic-button[hidden] {
+  display: none;
+}
+
 .tour-finder__button {
   appearance: none;
-  border-color: rgba(255, 255, 255, 0.58);
 }
 
 .tour-finder__button:disabled {
@@ -683,6 +691,10 @@ body[data-page="admin"] .intro {
   color: var(--text);
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+
+.empty-state__button {
+  margin-top: 14px;
 }
 
 .tool-shell {

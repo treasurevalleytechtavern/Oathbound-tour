@@ -7,8 +7,13 @@ const showsList = document.querySelector("#shows-list");
 const showCount = document.querySelector("#show-count");
 const template = document.querySelector("#show-card-template");
 const widgetFooter = document.querySelector(".widget-footer");
+const tourFinder = document.querySelector("[data-tour-finder]");
 const findNearestButton = document.querySelector("[data-find-nearest-show]");
 const tourFinderStatus = document.querySelector("[data-tour-finder-status]");
+const streetTeamPageUrl = `${rootPath}/street-team/`;
+const buttonIcons = {
+  signUp: `${rootPath}/assets/icons/buttons/300x169/sign-up-button-prismatic-300x169.png`,
+};
 const showUrlParams = new URLSearchParams(window.location.search);
 const initialTargetSlug = normalizeSlug(showUrlParams.get("show") || showUrlParams.get("city") || showUrlParams.get("location") || "");
 const initialTargetVenueSlug = normalizeSlug(showUrlParams.get("venue") || showUrlParams.get("venueSlug") || showUrlParams.get("venueId") || "");
@@ -37,8 +42,8 @@ const showCoordinatesBySlug = {
 
 const copy = {
   upcoming: {
-    emptyTitle: "No upcoming shows listed",
-    emptyText: "Check back soon. New dates will land here when they are announced.",
+    emptyTitle: "NO UPCOMING SHOWS RIGHT NOW",
+    emptyText: "We're between runs, but the next one is always being built. Join the Street Team to tell us where you are, help spread the word, and show us where Oathbound should come next.",
     countLabel: (count) => `${count} upcoming ${count === 1 ? "show" : "shows"}`,
   },
   past: {
@@ -53,7 +58,7 @@ if (isMyspaceTheme) {
 }
 
 if (findNearestButton && pageMode !== "upcoming") {
-  findNearestButton.closest("[data-tour-finder]")?.remove();
+  tourFinder?.remove();
 }
 
 findNearestButton?.addEventListener("click", findNearestShow);
@@ -77,7 +82,7 @@ async function loadShows() {
       renderTourFriends();
     }
 
-    renderMessage("error-state", "Show data unavailable", "The show list could not be loaded. Check data/shows.json and try again.");
+    renderUnavailableState();
     console.error(error);
   }
 }
@@ -358,7 +363,7 @@ function setNearestButtonState(isLoading) {
   }
 
   findNearestButton.disabled = isLoading;
-  findNearestButton.textContent = isLoading ? "Finding..." : "Find Nearest Show";
+  findNearestButton.setAttribute("aria-label", isLoading ? "Finding nearest show" : "Find nearest show");
 }
 
 function setTourFinderStatus(message) {
@@ -372,14 +377,21 @@ function renderShows(shows) {
   const preparedShows = prepareShowsForDisplay(shows);
   const displayedShows = showLimit && pageMode === "upcoming" ? preparedShows.slice(0, showLimit) : preparedShows;
   const hasMoreShows = showLimit && pageMode === "upcoming" && preparedShows.length > displayedShows.length;
+  const isEmptyUpcoming = pageMode === "upcoming" && !displayedShows.length;
   window.oathboundAnalytics?.trackShowList(displayedShows);
 
   if (showCount) {
-    showCount.textContent = isMyspaceTheme
+    showCount.textContent = isEmptyUpcoming
+      ? ""
+      : isMyspaceTheme
       ? `${displayedShows.length} ${displayedShows.length === 1 ? "show" : "shows"}`
       : hasMoreShows
         ? `Next ${displayedShows.length} of ${preparedShows.length} upcoming shows`
         : copy[pageMode].countLabel(displayedShows.length);
+  }
+
+  if (tourFinder && pageMode === "upcoming") {
+    tourFinder.hidden = isEmptyUpcoming;
   }
 
   if (widgetFooter) {
@@ -387,7 +399,9 @@ function renderShows(shows) {
   }
 
   if (!displayedShows.length) {
-    renderMessage("empty-state", copy[pageMode].emptyTitle, copy[pageMode].emptyText);
+    renderMessage("empty-state", copy[pageMode].emptyTitle, copy[pageMode].emptyText, pageMode === "upcoming"
+      ? { label: "Sign Up", url: streetTeamPageUrl, imageUrl: buttonIcons.signUp }
+      : null);
     return;
   }
 
@@ -407,6 +421,26 @@ function renderShows(shows) {
   displayedShows.forEach((show, index) => fragment.appendChild(createShowCard(show, index)));
   showsList.appendChild(fragment);
   finishTargetRender(displayedShows);
+}
+
+function renderUnavailableState() {
+  if (showCount) {
+    showCount.textContent = "";
+  }
+
+  if (tourFinder) {
+    tourFinder.hidden = true;
+  }
+
+  if (widgetFooter) {
+    widgetFooter.hidden = true;
+  }
+
+  renderMessage("error-state", "Show data unavailable", copy.upcoming.emptyText, {
+    label: "Sign Up",
+    url: streetTeamPageUrl,
+    imageUrl: buttonIcons.signUp,
+  });
 }
 
 function renderMyspaceUpcomingShows(shows) {
@@ -933,11 +967,12 @@ function createDirectionsUrl(show) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
 
-function renderMessage(className, title, text) {
+function renderMessage(className, title, text, action = null) {
   showsList.innerHTML = `
     <div class="${className}">
       <h3>${title}</h3>
       <p>${text}</p>
+      ${action ? `<a class="prismatic-button prismatic-button--join empty-state__button" href="${action.url}" aria-label="${action.label}"><img src="${action.imageUrl}" alt="${action.label}"></a>` : ""}
     </div>
   `;
 }
