@@ -697,6 +697,21 @@ body[data-page="admin"] .intro {
   margin-top: 14px;
 }
 
+.empty-state__highlight {
+  color: #f1a8ff;
+  font-weight: 900;
+  text-decoration: underline;
+  text-decoration-color: rgba(241, 168, 255, 0.58);
+  text-underline-offset: 0.16em;
+  text-shadow: 0 0 12px rgba(241, 168, 255, 0.46);
+}
+
+.empty-state__highlight:hover,
+.empty-state__highlight:focus-visible {
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+}
+
 .tool-shell {
   margin-top: clamp(44px, 8vw, 78px);
 }

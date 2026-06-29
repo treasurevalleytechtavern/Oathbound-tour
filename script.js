@@ -10,6 +10,7 @@ const widgetFooter = document.querySelector(".widget-footer");
 const tourFinder = document.querySelector("[data-tour-finder]");
 const findNearestButton = document.querySelector("[data-find-nearest-show]");
 const tourFinderStatus = document.querySelector("[data-tour-finder-status]");
+const streetTeamSignupUrl = "https://oathboundband.com/street-team-signup";
 const streetTeamPageUrl = `${rootPath}/street-team/`;
 const buttonIcons = {
   signUp: `${rootPath}/assets/icons/buttons/300x169/sign-up-button-prismatic-300x169.png`,
@@ -43,7 +44,7 @@ const showCoordinatesBySlug = {
 const copy = {
   upcoming: {
     emptyTitle: "NO UPCOMING SHOWS RIGHT NOW",
-    emptyText: "We're between runs, but the next one is always being built. Join the Street Team to tell us where you are, help spread the word, and show us where Oathbound should come next.",
+    emptyText: `We're between runs, but the next one is always being built. Join the <a class="empty-state__highlight" href="${streetTeamPageUrl}">Street Team</a> to tell us where you are, help spread the word, and show us where Oathbound should come next.`,
     countLabel: (count) => `${count} upcoming ${count === 1 ? "show" : "shows"}`,
   },
   past: {
@@ -400,7 +401,7 @@ function renderShows(shows) {
 
   if (!displayedShows.length) {
     renderMessage("empty-state", copy[pageMode].emptyTitle, copy[pageMode].emptyText, pageMode === "upcoming"
-      ? { label: "Sign Up", url: streetTeamPageUrl, imageUrl: buttonIcons.signUp }
+      ? { label: "Sign Up", url: streetTeamSignupUrl, imageUrl: buttonIcons.signUp }
       : null);
     return;
   }
@@ -438,7 +439,7 @@ function renderUnavailableState() {
 
   renderMessage("error-state", "Show data unavailable", copy.upcoming.emptyText, {
     label: "Sign Up",
-    url: streetTeamPageUrl,
+    url: streetTeamSignupUrl,
     imageUrl: buttonIcons.signUp,
   });
 }
@@ -972,7 +973,7 @@ function renderMessage(className, title, text, action = null) {
     <div class="${className}">
       <h3>${title}</h3>
       <p>${text}</p>
-      ${action ? `<a class="prismatic-button prismatic-button--join empty-state__button" href="${action.url}" aria-label="${action.label}"><img src="${action.imageUrl}" alt="${action.label}"></a>` : ""}
+      ${action ? `<a class="prismatic-button prismatic-button--join empty-state__button" href="${action.url}" aria-label="${action.label}" target="_blank" rel="noopener noreferrer"><img src="${action.imageUrl}" alt="${action.label}"></a>` : ""}
     </div>
   `;
 }
