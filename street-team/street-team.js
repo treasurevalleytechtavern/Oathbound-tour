@@ -7,6 +7,8 @@ const showsContainer = document.querySelector("#street-team-shows");
 const showCount = document.querySelector("#street-team-show-count");
 const nearestShowButton = document.querySelector("[data-street-team-nearest-show]");
 const nearestShowStatus = document.querySelector("[data-street-team-nearest-status]");
+const findAreaButton = document.querySelector(".prismatic-button--area");
+const findAreaSection = document.querySelector("#find-your-area");
 const streetTeamUrlParams = new URLSearchParams(window.location.search);
 let activeTargetShowSlug = slugify(streetTeamUrlParams.get("show") || streetTeamUrlParams.get("city") || streetTeamUrlParams.get("location") || "");
 let activeTargetMarketSlug = slugify(streetTeamUrlParams.get("market") || "");
@@ -202,6 +204,7 @@ async function loadStreetTeamPage() {
   }
 
   if (showsResult.status !== "fulfilled") {
+    hideStreetTeamShowControls();
     renderSafeMessage("Upcoming show details are being updated. Check back soon or join the street team below.", true);
     console.error(showsResult.reason);
     return;
@@ -213,7 +216,7 @@ async function loadStreetTeamPage() {
     .sort((a, b) => parseLocalDate(a.date) - parseLocalDate(b.date));
 
   if (!streetTeamState.shows.length) {
-    stateSelector.hidden = true;
+    hideStreetTeamShowControls();
     renderSafeMessage("No active street team pushes right now, but join below and tell us where you are. We'll reach out when Oathbound is headed near your area.");
     if (showCount) {
       showCount.textContent = "No active pushes";
@@ -231,6 +234,19 @@ async function loadStreetTeamPage() {
     || "";
   renderStateSelector(regions);
   renderShowsForState();
+}
+
+function hideStreetTeamShowControls() {
+  nearestShowButton?.setAttribute("hidden", "");
+  findAreaButton?.setAttribute("hidden", "");
+
+  if (findAreaSection) {
+    findAreaSection.hidden = true;
+  }
+
+  if (stateSelector) {
+    stateSelector.hidden = true;
+  }
 }
 
 function findNearestStreetTeamShow() {
@@ -815,7 +831,9 @@ function createShowResourceSection(show, downloads, socialAssets, flyerState = g
 
     const downloadsGrid = document.createElement("div");
     downloadsGrid.className = "download-grid download-grid--tiny";
-    displayDownloads.forEach((download) => downloadsGrid.appendChild(createDownloadCard(download, show)));
+    displayDownloads.forEach((download) => downloadsGrid.appendChild(createDownloadCard(download, show, {
+      showDownloadCount: displayDownloads.length,
+    })));
 
     downloadsRow.append(title, downloadsGrid);
     section.appendChild(downloadsRow);
@@ -1535,7 +1553,7 @@ function getDoorSalesOnlyLabel(show) {
   return String(show.ticketDisplayLabel || "").trim() || "Door sales only";
 }
 
-function createDownloadCard(download, show = null) {
+function createDownloadCard(download, show = null, options = {}) {
   const card = document.createElement("article");
   card.className = "download-card";
 
@@ -1558,7 +1576,7 @@ function createDownloadCard(download, show = null) {
 
   const detail = document.createElement("p");
   detail.className = "download-card__hint";
-  detail.textContent = getDownloadHint(download, show);
+  detail.textContent = getDownloadHint(download, show, options);
 
   const link = createImageTrackedLink(download.url, "Download", BUTTON_ICONS.download, {
     track: "street-team-download",
@@ -1575,7 +1593,11 @@ function createDownloadCard(download, show = null) {
   return card;
 }
 
-function getDownloadHint(download, show = null) {
+function getDownloadHint(download, show = null, options = {}) {
+  if (show && options.showDownloadCount === 1) {
+    return `Use this when sharing the ${show.city} show.`;
+  }
+
   if (show && isQrDownload(download)) {
     return `Download this version to print and hang for the ${show.city} show.`;
   }
