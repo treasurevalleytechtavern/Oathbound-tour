@@ -563,7 +563,7 @@
       "city": "Seattle",
       "region": "WA",
       "market": "Seattle Area",
-      "lineup": "Oathbound; new-band-1783846589804",
+      "lineup": "Oathbound; Lucrecia",
       "ticketLabel": "Tickets",
       "confirmationStatus": "confirmed"
     },
@@ -589,7 +589,7 @@
       "city": "Medford",
       "region": "OR",
       "market": "Southern Oregon",
-      "lineup": "Oathbound; new-band-1783846589804",
+      "lineup": "Oathbound; Lucrecia",
       "ticketLabel": "Ticket link needed",
       "confirmationStatus": "confirmed"
     },
@@ -615,7 +615,7 @@
       "city": "Citrus Heights",
       "region": "CA",
       "market": "Sacramento Area",
-      "lineup": "Oathbound; new-band-1783846589804",
+      "lineup": "Oathbound; Lucrecia",
       "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
       "ticketLabel": "Tickets",
       "confirmationStatus": "confirmed"
@@ -668,7 +668,7 @@
       "city": "Pacifica",
       "region": "CA",
       "market": "Bay Area",
-      "lineup": "Oathbound; new-band-1783850096966",
+      "lineup": "Oathbound; Beauty Is Betrayal",
       "ticketLabel": "Free show",
       "confirmationStatus": "verified"
     },
@@ -694,7 +694,7 @@
       "city": "Modesto",
       "region": "CA",
       "market": "Central Valley",
-      "lineup": "Oathbound; new-band-1783850096966; new-band-1783850896747",
+      "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
       "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
       "ticketLabel": "Tickets",
       "confirmationStatus": "verified"
@@ -721,7 +721,7 @@
       "city": "Palmdale",
       "region": "CA",
       "market": "Los Angeles Area / Antelope Valley",
-      "lineup": "Oathbound; new-band-1783850096966; new-band-1783850896747",
+      "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
       "ticketLabel": "Free show",
       "confirmationStatus": "verified"
     },
@@ -747,7 +747,7 @@
       "city": "Bakersfield",
       "region": "CA",
       "market": "Bakersfield Area",
-      "lineup": "Oathbound; new-band-1783850096966; new-band-1783850896747",
+      "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
       "ticketLabel": "Ticket link needed",
       "confirmationStatus": "confirmed"
     },
@@ -773,7 +773,7 @@
       "city": "Fresno",
       "region": "CA",
       "market": "Fresno Area",
-      "lineup": "Oathbound; new-band-1783850096966; new-band-1783850896747",
+      "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
       "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
       "ticketLabel": "Tickets",
       "confirmationStatus": "confirmed"
