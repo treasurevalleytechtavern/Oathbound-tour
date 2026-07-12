@@ -1,5 +1,1126 @@
 [
   {
+    "id": "2026-09-20-reno-nv",
+    "showName": "Dark Origins Tour - Oathbound at Cellar Stage",
+    "date": "2026-09-20",
+    "doorsTime": "7:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Cellar Stage @ Alturas",
+    "address": "1044 E 4th St",
+    "city": "Reno",
+    "region": "NV",
+    "regionName": "Nevada",
+    "country": "US",
+    "market": "Northern Nevada",
+    "citySlug": "reno",
+    "regionSlug": "nv",
+    "venueRef": {
+      "venueId": "alturas-reno-nv",
+      "venueSlug": "alturas",
+      "venue": "Cellar Stage @ Alturas",
+      "address": "1044 E 4th St",
+      "city": "Reno",
+      "region": "NV",
+      "regionName": "Nevada",
+      "country": "US",
+      "market": "Northern Nevada",
+      "citySlug": "reno",
+      "regionSlug": "nv"
+    },
+    "lineup": "Oathbound",
+    "lineupArtists": [
+      "Oathbound"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "ageRestriction": "21+",
+    "ticketLabel": "Ticket link needed",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "notes": "Oathbound brings the punishing force of melodic metalcore to Reno, NV on Sunday, September 20 for The Dark Origins Tour! You don't want to miss this night of heavy music! Doors are at 7:00pm. This is a 21+ event.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "confirmed"
+  },
+  {
+    "id": "2026-09-19-fresno-ca",
+    "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
+    "date": "2026-09-19",
+    "doorsTime": "6:30 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Summer Fox Tower",
+    "address": "658 E Olive Ave",
+    "city": "Fresno",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Fresno Area",
+    "citySlug": "fresno",
+    "regionSlug": "ca",
+    "venueRef": {
+      "venueId": "summer-fox-tower",
+      "venueSlug": "summer-fox-tower",
+      "venue": "Summer Fox Tower",
+      "address": "658 E Olive Ave",
+      "city": "Fresno",
+      "region": "CA",
+      "regionName": "California",
+      "country": "US",
+      "market": "Fresno Area",
+      "citySlug": "fresno",
+      "regionSlug": "ca"
+    },
+    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+    "lineupArtists": [
+      "Oathbound",
+      "Beauty Is Betrayal",
+      "Red Keep"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "new-band-1783850096966",
+        "bandName": "New Band",
+        "displayName": "Beauty Is Betrayal",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/beautyisbetrayal",
+          "tiktok": "https://www.tiktok.com/@beautyisbetrayal",
+          "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
+          "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
+          "website": "https://linktr.ee/beautyisbetrayal"
+        }
+      },
+      {
+        "bandId": "new-band-1783850896747",
+        "bandName": "Red Keep",
+        "displayName": "Red Keep",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/redkeepofficial",
+          "facebook": "http://facebook.com/redkeepofficial",
+          "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
+          "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
+          "website": "https://redkeepband.com/home"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "new-band-1783850096966",
+        "bandName": "New Band",
+        "displayName": "Beauty Is Betrayal",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/beautyisbetrayal",
+          "tiktok": "https://www.tiktok.com/@beautyisbetrayal",
+          "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
+          "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
+          "website": "https://linktr.ee/beautyisbetrayal"
+        }
+      },
+      {
+        "bandId": "new-band-1783850896747",
+        "bandName": "Red Keep",
+        "displayName": "Red Keep",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/redkeepofficial",
+          "facebook": "http://facebook.com/redkeepofficial",
+          "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
+          "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
+          "website": "https://redkeepband.com/home"
+        }
+      }
+    ],
+    "ageRestriction": "All Ages",
+    "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
+    "ticketLabel": "Tickets",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "notes": "Oathbound, Beauty is Betrayal and Red Keep bring the punishing force of metalcore to Fresno, CA on Saturday, September 19 for The Dark Origins Tour! You don't want to miss this night of heavy music! Doors are at 6:30pm. This is an all-ages event.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "confirmed"
+  },
+  {
+    "id": "2026-09-18-bakersfield-ca",
+    "showName": "Dark Origins Tour - Oathbound at Jerry's Pizza",
+    "date": "2026-09-18",
+    "doorsTime": "7:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Jerry’s Pizza & Pub",
+    "address": "1817 Chester Ave",
+    "city": "Bakersfield",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Bakersfield Area",
+    "citySlug": "bakersfield",
+    "regionSlug": "ca",
+    "venueRef": {
+      "venueId": "jerrys-pizza-bakersfield-ca",
+      "venueSlug": "jerrys-pizza",
+      "venue": "Jerry’s Pizza & Pub",
+      "address": "1817 Chester Ave",
+      "city": "Bakersfield",
+      "region": "CA",
+      "regionName": "California",
+      "country": "US",
+      "market": "Bakersfield Area",
+      "citySlug": "bakersfield",
+      "regionSlug": "ca"
+    },
+    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+    "lineupArtists": [
+      "Oathbound",
+      "Beauty Is Betrayal",
+      "Red Keep"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "new-band-1783850096966",
+        "bandName": "New Band",
+        "displayName": "Beauty Is Betrayal",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/beautyisbetrayal",
+          "tiktok": "https://www.tiktok.com/@beautyisbetrayal",
+          "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
+          "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
+          "website": "https://linktr.ee/beautyisbetrayal"
+        }
+      },
+      {
+        "bandId": "new-band-1783850896747",
+        "bandName": "Red Keep",
+        "displayName": "Red Keep",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/redkeepofficial",
+          "facebook": "http://facebook.com/redkeepofficial",
+          "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
+          "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
+          "website": "https://redkeepband.com/home"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "new-band-1783850096966",
+        "bandName": "New Band",
+        "displayName": "Beauty Is Betrayal",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/beautyisbetrayal",
+          "tiktok": "https://www.tiktok.com/@beautyisbetrayal",
+          "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
+          "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
+          "website": "https://linktr.ee/beautyisbetrayal"
+        }
+      },
+      {
+        "bandId": "new-band-1783850896747",
+        "bandName": "Red Keep",
+        "displayName": "Red Keep",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/redkeepofficial",
+          "facebook": "http://facebook.com/redkeepofficial",
+          "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
+          "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
+          "website": "https://redkeepband.com/home"
+        }
+      }
+    ],
+    "ageRestriction": "All Ages",
+    "ticketLabel": "Ticket link needed",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "notes": "Oathbound, Beauty is Betrayal and Red Keep bring the punishing force of metalcore to Bakersfield, CA on Friday, September 18 for The Dark Origins Tour! You don't want to miss this night of heavy music! Doors are at 7:00pm. This is an all-ages event.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "confirmed"
+  },
+  {
+    "id": "2026-09-17-palmdale-ca",
+    "showName": "Dark Origins Tour - Oathbound at transplants",
+    "date": "2026-09-17",
+    "doorsTime": "6:30 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Transplants Brewing Company",
+    "address": "40242 La Quinta Ln Unit 101",
+    "city": "Palmdale",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Los Angeles Area / Antelope Valley",
+    "citySlug": "palmdale",
+    "regionSlug": "ca",
+    "venueRef": {
+      "venueId": "transplants-brewing-company-palmdale-ca",
+      "venueSlug": "transplants-brewing-company",
+      "venue": "Transplants Brewing Company",
+      "address": "40242 La Quinta Ln Unit 101",
+      "city": "Palmdale",
+      "region": "CA",
+      "regionName": "California",
+      "country": "US",
+      "market": "Los Angeles Area / Antelope Valley",
+      "citySlug": "palmdale",
+      "regionSlug": "ca"
+    },
+    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+    "lineupArtists": [
+      "Oathbound",
+      "Beauty Is Betrayal",
+      "Red Keep"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "new-band-1783850096966",
+        "bandName": "New Band",
+        "displayName": "Beauty Is Betrayal",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/beautyisbetrayal",
+          "tiktok": "https://www.tiktok.com/@beautyisbetrayal",
+          "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
+          "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
+          "website": "https://linktr.ee/beautyisbetrayal"
+        }
+      },
+      {
+        "bandId": "new-band-1783850896747",
+        "bandName": "Red Keep",
+        "displayName": "Red Keep",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/redkeepofficial",
+          "facebook": "http://facebook.com/redkeepofficial",
+          "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
+          "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
+          "website": "https://redkeepband.com/home"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "new-band-1783850096966",
+        "bandName": "New Band",
+        "displayName": "Beauty Is Betrayal",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/beautyisbetrayal",
+          "tiktok": "https://www.tiktok.com/@beautyisbetrayal",
+          "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
+          "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
+          "website": "https://linktr.ee/beautyisbetrayal"
+        }
+      },
+      {
+        "bandId": "new-band-1783850896747",
+        "bandName": "Red Keep",
+        "displayName": "Red Keep",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/redkeepofficial",
+          "facebook": "http://facebook.com/redkeepofficial",
+          "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
+          "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
+          "website": "https://redkeepband.com/home"
+        }
+      }
+    ],
+    "ageRestriction": "All Ages",
+    "ticketLabel": "Free show",
+    "isFreeShow": true,
+    "doorSalesOnly": false,
+    "notes": "Oathbound, Beauty is Betrayal and Red Keep bring the punishing force of metalcore to Palmdale, CA on Thursday, September 17 for The Dark Origins Tour! You don't want to miss this night of heavy music! THIS IS A FREE SHOW!!! Doors are at 6:30pm. This is an all-ages event.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "verified"
+  },
+  {
+    "id": "2026-09-16-modesto-ca",
+    "showName": "Oathbound at 18 Seventy Brewing",
+    "date": "2026-09-16",
+    "doorsTime": "4:30 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "18 Seventy Brewing",
+    "address": "911 J Street",
+    "city": "Modesto",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Central Valley",
+    "citySlug": "modesto",
+    "regionSlug": "ca",
+    "venueRef": {
+      "venueId": "18-seventy-brewing-modesto-ca",
+      "venueSlug": "18-seventy-brewing",
+      "venue": "18 Seventy Brewing",
+      "address": "911 J Street",
+      "city": "Modesto",
+      "region": "CA",
+      "regionName": "California",
+      "country": "US",
+      "market": "Central Valley",
+      "citySlug": "modesto",
+      "regionSlug": "ca"
+    },
+    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+    "lineupArtists": [
+      "Oathbound",
+      "Beauty Is Betrayal",
+      "Red Keep"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "new-band-1783850096966",
+        "bandName": "New Band",
+        "displayName": "Beauty Is Betrayal",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/beautyisbetrayal",
+          "tiktok": "https://www.tiktok.com/@beautyisbetrayal",
+          "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
+          "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
+          "website": "https://linktr.ee/beautyisbetrayal"
+        }
+      },
+      {
+        "bandId": "new-band-1783850896747",
+        "bandName": "Red Keep",
+        "displayName": "Red Keep",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/redkeepofficial",
+          "facebook": "http://facebook.com/redkeepofficial",
+          "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
+          "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
+          "website": "https://redkeepband.com/home"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "new-band-1783850096966",
+        "bandName": "New Band",
+        "displayName": "Beauty Is Betrayal",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/beautyisbetrayal",
+          "tiktok": "https://www.tiktok.com/@beautyisbetrayal",
+          "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
+          "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
+          "website": "https://linktr.ee/beautyisbetrayal"
+        }
+      },
+      {
+        "bandId": "new-band-1783850896747",
+        "bandName": "Red Keep",
+        "displayName": "Red Keep",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/redkeepofficial",
+          "facebook": "http://facebook.com/redkeepofficial",
+          "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
+          "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
+          "website": "https://redkeepband.com/home"
+        }
+      }
+    ],
+    "ageRestriction": "21+",
+    "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
+    "ticketLabel": "Tickets",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "verified",
+    "assetsKey": "ca/modesto",
+    "assetsPath": "/street-team/kits/ca/modesto/"
+  },
+  {
+    "id": "2026-09-15-pacifica-ca",
+    "showName": "Oathbound at Pacifica",
+    "date": "2026-09-15",
+    "doorsTime": "8:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Longbard Margarita Bar",
+    "address": "180 Eureka Sq",
+    "city": "Pacifica",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Bay Area",
+    "citySlug": "pacifica-ca",
+    "regionSlug": "ca",
+    "venueRef": {
+      "venueId": "longbard-margarita-bar-pacifica-ca",
+      "venueSlug": "longbard-margarita-bar",
+      "venue": "Longbard Margarita Bar",
+      "address": "180 Eureka Sq",
+      "city": "Pacifica",
+      "region": "CA",
+      "regionName": "California",
+      "country": "US",
+      "market": "Bay Area",
+      "citySlug": "pacifica-ca",
+      "regionSlug": "ca"
+    },
+    "lineup": "Oathbound; Beauty Is Betrayal",
+    "lineupArtists": [
+      "Oathbound",
+      "Beauty Is Betrayal"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "new-band-1783850096966",
+        "bandName": "New Band",
+        "displayName": "Beauty Is Betrayal",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/beautyisbetrayal",
+          "tiktok": "https://www.tiktok.com/@beautyisbetrayal",
+          "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
+          "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
+          "website": "https://linktr.ee/beautyisbetrayal"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "new-band-1783850096966",
+        "bandName": "New Band",
+        "displayName": "Beauty Is Betrayal",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/beautyisbetrayal",
+          "tiktok": "https://www.tiktok.com/@beautyisbetrayal",
+          "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
+          "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
+          "website": "https://linktr.ee/beautyisbetrayal"
+        }
+      }
+    ],
+    "ageRestriction": "21+",
+    "ticketLabel": "Free show",
+    "isFreeShow": true,
+    "doorSalesOnly": false,
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "verified",
+    "assetsKey": "ca/pacifica-ca",
+    "assetsPath": "/street-team/kits/ca/pacifica-ca/"
+  },
+  {
+    "id": "2026-09-13-crockett-ca",
+    "showName": "Dark Origins Tour - Toots Tavern",
+    "date": "2026-09-13",
+    "doorsTime": "7:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Toot's Tavern",
+    "address": "627 2nd Ave",
+    "city": "Crockett",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Bay Area",
+    "citySlug": "crockett",
+    "regionSlug": "california",
+    "venueRef": {
+      "venueId": "toots-tavern-crockett-ca",
+      "venueSlug": "toots-tavern",
+      "venue": "Toot's Tavern",
+      "address": "627 2nd Ave",
+      "city": "Crockett",
+      "region": "CA",
+      "regionName": "California",
+      "country": "US",
+      "market": "Bay Area",
+      "citySlug": "crockett",
+      "regionSlug": "california"
+    },
+    "lineup": "Oathbound",
+    "lineupArtists": [
+      "Oathbound"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "ageRestriction": "21+",
+    "ticketLabel": "Ticket link needed",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "notes": "Oathbound brings the punishing force of melodic metalcore to Crockett, CA on Sunday, September 13 for The Dark Origins Tour! You don't want to miss this night of heavy music! Doors are at 7:00pm. This is a 21+ event.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "announced",
+    "assetsKey": "california/crockett",
+    "assetsPath": "/street-team/kits/california/crockett/"
+  },
+  {
+    "id": "2026-09-12-citrus-heights-ca",
+    "showName": "Oathbound with Lucrecia at Smash — Sacramento, CA",
+    "date": "2026-09-12",
+    "doorsTime": "6:00",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Smashed Live",
+    "address": "6412 Tupelo Dr Suite A/B",
+    "city": "Citrus Heights",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Sacramento Area",
+    "citySlug": "citrus-heights",
+    "regionSlug": "ca",
+    "venueRef": {
+      "venueId": "smashed-live-citrus-heights-ca",
+      "venueSlug": "smashed-live",
+      "venue": "Smashed Live",
+      "address": "6412 Tupelo Dr Suite A/B",
+      "city": "Citrus Heights",
+      "region": "CA",
+      "regionName": "California",
+      "country": "US",
+      "market": "Sacramento Area",
+      "citySlug": "citrus-heights",
+      "regionSlug": "ca"
+    },
+    "lineup": "Oathbound; Lucrecia",
+    "lineupArtists": [
+      "Oathbound",
+      "Lucrecia"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "new-band-1783846589804",
+        "bandName": "Lucrecia",
+        "displayName": "Lucrecia",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/lucreciaband",
+          "facebook": "https://www.facebook.com/lucreciaband",
+          "website": "https://lucrecia.bigcartel.com/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "new-band-1783846589804",
+        "bandName": "Lucrecia",
+        "displayName": "Lucrecia",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/lucreciaband",
+          "facebook": "https://www.facebook.com/lucreciaband",
+          "website": "https://lucrecia.bigcartel.com/"
+        }
+      }
+    ],
+    "ageRestriction": "All Ages",
+    "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
+    "ticketLabel": "Tickets",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "confirmed",
+    "assetsKey": "ca/citrus-heights",
+    "assetsPath": "/street-team/kits/ca/citrus-heights/"
+  },
+  {
+    "id": "2026-09-11-medford-or",
+    "showName": "Too Sweet Tour at Rockafairy",
+    "date": "2026-09-11",
+    "doorsTime": "7:30 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Rockafairy Hall",
+    "address": "31 W 6th St",
+    "city": "Medford",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Southern Oregon",
+    "citySlug": "medford",
+    "regionSlug": "or",
+    "venueRef": {
+      "venueId": "rockafairy-hall-medford-or",
+      "venueSlug": "rockafairy-hall",
+      "venue": "Rockafairy Hall",
+      "address": "31 W 6th St",
+      "city": "Medford",
+      "region": "OR",
+      "regionName": "Oregon",
+      "country": "US",
+      "market": "Southern Oregon",
+      "citySlug": "medford",
+      "regionSlug": "or"
+    },
+    "lineup": "Oathbound; Lucrecia",
+    "lineupArtists": [
+      "Oathbound",
+      "Lucrecia"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "new-band-1783846589804",
+        "bandName": "Lucrecia",
+        "displayName": "Lucrecia",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/lucreciaband",
+          "facebook": "https://www.facebook.com/lucreciaband",
+          "website": "https://lucrecia.bigcartel.com/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "new-band-1783846589804",
+        "bandName": "Lucrecia",
+        "displayName": "Lucrecia",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/lucreciaband",
+          "facebook": "https://www.facebook.com/lucreciaband",
+          "website": "https://lucrecia.bigcartel.com/"
+        }
+      }
+    ],
+    "ageRestriction": "21+",
+    "ticketLabel": "Ticket link needed",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "confirmed",
+    "assetsKey": "or/medford",
+    "assetsPath": "/street-team/kits/or/medford/"
+  },
+  {
+    "id": "2026-09-10-seattle-wa",
+    "showName": "Oathbound at Substation 9.10.26",
+    "date": "2026-09-10",
+    "doorsTime": "7:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Substation",
+    "city": "Seattle",
+    "region": "WA",
+    "regionName": "Washington",
+    "country": "US",
+    "market": "Seattle Area",
+    "citySlug": "seattle",
+    "regionSlug": "wa",
+    "venueRef": {
+      "venueId": "substation-seattle-wa",
+      "venueSlug": "substation",
+      "venue": "Substation",
+      "city": "Seattle",
+      "region": "WA",
+      "regionName": "Washington",
+      "country": "US",
+      "market": "Seattle Area",
+      "citySlug": "seattle",
+      "regionSlug": "wa"
+    },
+    "lineup": "Oathbound; Lucrecia",
+    "lineupArtists": [
+      "Oathbound",
+      "Lucrecia"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "new-band-1783846589804",
+        "bandName": "Lucrecia",
+        "displayName": "Lucrecia",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/lucreciaband",
+          "facebook": "https://www.facebook.com/lucreciaband",
+          "website": "https://lucrecia.bigcartel.com/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "new-band-1783846589804",
+        "bandName": "Lucrecia",
+        "displayName": "Lucrecia",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/lucreciaband",
+          "facebook": "https://www.facebook.com/lucreciaband",
+          "website": "https://lucrecia.bigcartel.com/"
+        }
+      }
+    ],
+    "ticketLabel": "Tickets",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "notes": "Oathbound brings the punishing force of melodic metalcore to Seattle, WA on Thursday, September 10 when their Dark Origins Tour links up with Lucrecia's Too Sweet Tour! Joining them will be local favorites What's Wrong and Ocean Ghost. You don't want to miss this night of heavy music! Doors are at 6:30pm. This is a 21+ event.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "confirmed",
+    "assetsKey": "wa/seattle",
+    "assetsPath": "/street-team/kits/wa/seattle/"
+  },
+  {
+    "id": "2026-09-09-portland-or",
+    "showName": "Oathbound at Dante’s — Portland, OR",
+    "date": "2026-09-09",
+    "doorsTime": "7:30 PM",
+    "showTime": "8:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Dante's",
+    "address": "350 W Burnside St",
+    "city": "Portland",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Portland Area",
+    "citySlug": "portland",
+    "regionSlug": "or",
+    "venueRef": {
+      "venueId": "dantes-portland-or",
+      "venueSlug": "dantes",
+      "venue": "Dante's",
+      "address": "350 W Burnside St",
+      "city": "Portland",
+      "region": "OR",
+      "regionName": "Oregon",
+      "country": "US",
+      "market": "Portland Area",
+      "citySlug": "portland",
+      "regionSlug": "or"
+    },
+    "lineup": "Oathbound",
+    "lineupArtists": [
+      "Oathbound"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "ageRestriction": "21+",
+    "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets",
+    "ticketLabel": "Tickets",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "notes": "Oathbound kicks off The Dark Origins Tour at Dante’s in Portland. Join us September 9 for the first night of the tour.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "confirmed",
+    "assetsKey": "or/portland",
+    "assetsPath": "/street-team/kits/or/portland/"
+  },
+  {
     "id": "2026-06-18-eugene-or",
     "showName": "Campbell Club in Eugene",
     "date": "2026-06-18",
@@ -343,27 +1464,13 @@
     "doorsTime": "6:30 PM",
     "showTime": "7:00 PM",
     "timeZone": "America/Los_Angeles",
-    "venue": "Smashed Live",
-    "address": "6412 Tupelo Dr Suite A/B",
-    "city": "Citrus Heights",
-    "region": "CA",
-    "regionName": "California",
+    "venue": "Smashed Live - Sacremento",
     "country": "US",
-    "market": "Sacramento Area",
-    "citySlug": "citrus-heights",
-    "regionSlug": "ca",
     "venueRef": {
-      "venueId": "smashed-live-citrus-heights-ca",
-      "venueSlug": "smashed-live",
-      "venue": "Smashed Live",
-      "address": "6412 Tupelo Dr Suite A/B",
-      "city": "Citrus Heights",
-      "region": "CA",
-      "regionName": "California",
-      "country": "US",
-      "market": "Sacramento Area",
-      "citySlug": "citrus-heights",
-      "regionSlug": "ca"
+      "venueId": "smashed-live-sacremento",
+      "venueSlug": "smashed-live-sacremento",
+      "venue": "Smashed Live - Sacremento",
+      "country": "US"
     },
     "lineup": "Oathbound; Pretty Suspect; Salt; Hallway Scenes",
     "lineupArtists": [
@@ -1837,7 +2944,7 @@
     "showName": "Alturas in Reno",
     "date": "2026-03-28",
     "timeZone": "America/Los_Angeles",
-    "venue": "Alturas",
+    "venue": "CAlturas",
     "city": "Reno",
     "region": "NV",
     "regionName": "Nevada",
@@ -1846,9 +2953,7 @@
     "citySlug": "reno",
     "regionSlug": "nv",
     "venueRef": {
-      "venueId": "alturas-reno-nv",
-      "venueSlug": "alturas",
-      "venue": "Alturas",
+      "venue": "CAlturas",
       "city": "Reno",
       "region": "NV",
       "regionName": "Nevada",
@@ -2636,7 +3741,7 @@
     "showName": "Alturas in Reno",
     "date": "2025-08-29",
     "timeZone": "America/Los_Angeles",
-    "venue": "Alturas",
+    "venue": "CAlturas",
     "city": "Reno",
     "region": "NV",
     "regionName": "Nevada",
@@ -2645,9 +3750,7 @@
     "citySlug": "reno",
     "regionSlug": "nv",
     "venueRef": {
-      "venueId": "alturas-reno-nv",
-      "venueSlug": "alturas",
-      "venue": "Alturas",
+      "venue": "CAlturas",
       "city": "Reno",
       "region": "NV",
       "regionName": "Nevada",
