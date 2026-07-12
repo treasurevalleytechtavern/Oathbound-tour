@@ -1,6 +1,6 @@
 [
   {
-    "bandId": "new-band-1783850896747",
+    "bandId": "r",
     "bandName": "Red Keep",
     "displayName": "Red Keep",
     "status": "active",
@@ -13,10 +13,10 @@
     }
   },
   {
-    "bandId": "new-band-1783850096966",
+    "bandId": "b",
     "bandName": "New Band",
     "displayName": "Beauty Is Betrayal",
-    "status": "active",
+    "status": "touring-artist",
     "socials": {
       "instagram": "https://www.instagram.com/beautyisbetrayal",
       "tiktok": "https://www.tiktok.com/@beautyisbetrayal",
@@ -26,7 +26,7 @@
     }
   },
   {
-    "bandId": "new-band-1783846589804",
+    "bandId": "L",
     "bandName": "Lucrecia",
     "displayName": "Lucrecia",
     "status": "local-support",
