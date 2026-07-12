@@ -1,5 +1,147 @@
 [
   {
+    "venueId": "summer-fox-tower",
+    "venue": "Summer Fox Tower",
+    "venueSlug": "summer-fox-tower",
+    "address": "658 E Olive Ave",
+    "city": "Fresno",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Fresno Area",
+    "citySlug": "fresno",
+    "regionSlug": "ca",
+    "upcomingShows": [
+      {
+        "id": "2026-09-19-fresno-ca",
+        "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
+        "date": "2026-09-19",
+        "doorsTime": "6:30 PM",
+        "venue": "Summer Fox Tower",
+        "city": "Fresno",
+        "region": "CA",
+        "market": "Fresno Area",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "venueId": "jerrys-pizza-bakersfield-ca",
+    "venue": "Jerry’s Pizza & Pub",
+    "venueSlug": "jerrys-pizza",
+    "address": "1817 Chester Ave",
+    "city": "Bakersfield",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Bakersfield Area",
+    "citySlug": "bakersfield",
+    "regionSlug": "ca",
+    "upcomingShows": [
+      {
+        "id": "2026-09-18-bakersfield-ca",
+        "showName": "Dark Origins Tour - Oathbound at Jerry's Pizza",
+        "date": "2026-09-18",
+        "doorsTime": "7:00 PM",
+        "venue": "Jerry’s Pizza & Pub",
+        "city": "Bakersfield",
+        "region": "CA",
+        "market": "Bakersfield Area",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "venueId": "18-seventy-brewing-modesto-ca",
+    "venue": "18 Seventy Brewing",
+    "venueSlug": "18-seventy-brewing",
+    "address": "911 J Street",
+    "city": "Modesto",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Central Valley",
+    "citySlug": "modesto",
+    "regionSlug": "ca",
+    "upcomingShows": [
+      {
+        "id": "2026-09-16-modesto-ca",
+        "showName": "Oathbound at 18 Seventy Brewing",
+        "date": "2026-09-16",
+        "doorsTime": "4:30 PM",
+        "venue": "18 Seventy Brewing",
+        "city": "Modesto",
+        "region": "CA",
+        "market": "Central Valley",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "verified"
+      }
+    ]
+  },
+  {
+    "venueId": "longbard-margarita-bar-pacifica-ca",
+    "venue": "Longbard Margarita Bar",
+    "venueSlug": "longbard-margarita-bar",
+    "address": "180 Eureka Sq",
+    "city": "Pacifica",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Bay Area",
+    "citySlug": "pacifica-ca",
+    "regionSlug": "ca",
+    "upcomingShows": [
+      {
+        "id": "2026-09-15-pacifica-ca",
+        "showName": "Oathbound at Pacifica",
+        "date": "2026-09-15",
+        "doorsTime": "8:00 PM",
+        "venue": "Longbard Margarita Bar",
+        "city": "Pacifica",
+        "region": "CA",
+        "market": "Bay Area",
+        "lineup": "Oathbound; Beauty Is Betrayal",
+        "ticketLabel": "Free show",
+        "confirmationStatus": "verified"
+      }
+    ]
+  },
+  {
+    "venueId": "toots-tavern-crockett-ca",
+    "venue": "Toot's Tavern",
+    "venueSlug": "toots-tavern",
+    "address": "627 2nd Ave",
+    "city": "Crockett",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Bay Area",
+    "citySlug": "crockett",
+    "regionSlug": "california",
+    "upcomingShows": [
+      {
+        "id": "2026-09-13-crockett-ca",
+        "showName": "Dark Origins Tour - Toots Tavern",
+        "date": "2026-09-13",
+        "doorsTime": "7:00 PM",
+        "venue": "Toot's Tavern",
+        "city": "Crockett",
+        "region": "CA",
+        "market": "Bay Area",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
     "venueId": "520-events-center-albany-or",
     "venue": "520 Events Center",
     "venueSlug": "520-events-center",
@@ -11,7 +153,7 @@
     "market": "Willamette Valley",
     "citySlug": "albany",
     "regionSlug": "or",
-    "upcomingShows": [
+    "pastShows": [
       {
         "id": "2026-06-19-albany-or",
         "showName": "520 Events Center in Albany",
@@ -93,8 +235,9 @@
   },
   {
     "venueId": "alturas-reno-nv",
-    "venue": "Alturas",
+    "venue": "Cellar Stage @ Alturas",
     "venueSlug": "alturas",
+    "address": "1044 E 4th St",
     "city": "Reno",
     "region": "NV",
     "regionName": "Nevada",
@@ -102,30 +245,19 @@
     "market": "Northern Nevada",
     "citySlug": "reno",
     "regionSlug": "nv",
-    "pastShows": [
+    "upcomingShows": [
       {
-        "id": "2026-03-28-reno-nv",
-        "showName": "Alturas in Reno",
-        "date": "2026-03-28",
-        "venue": "Alturas",
+        "id": "2026-09-20-reno-nv",
+        "showName": "Dark Origins Tour - Oathbound at Cellar Stage",
+        "date": "2026-09-20",
+        "doorsTime": "7:00 PM",
+        "venue": "Cellar Stage @ Alturas",
         "city": "Reno",
         "region": "NV",
         "market": "Northern Nevada",
         "lineup": "Oathbound",
         "ticketLabel": "Ticket link needed",
-        "confirmationStatus": "past"
-      },
-      {
-        "id": "2025-08-29-reno-nv",
-        "showName": "Alturas in Reno",
-        "date": "2025-08-29",
-        "venue": "Alturas",
-        "city": "Reno",
-        "region": "NV",
-        "market": "Northern Nevada",
-        "lineup": "Manzanita Death March",
-        "ticketLabel": "Ticket link needed",
-        "confirmationStatus": "past"
+        "confirmationStatus": "confirmed"
       }
     ]
   },
@@ -141,7 +273,7 @@
     "market": "Willamette Valley",
     "citySlug": "eugene",
     "regionSlug": "or",
-    "upcomingShows": [
+    "pastShows": [
       {
         "id": "2026-06-18-eugene-or",
         "showName": "Campbell Club in Eugene",
@@ -172,6 +304,23 @@
     "regionSlug": "or",
     "upcomingShows": [
       {
+        "id": "2026-09-09-portland-or",
+        "showName": "Oathbound at Dante’s — Portland, OR",
+        "date": "2026-09-09",
+        "doorsTime": "7:30 PM",
+        "showTime": "8:00 PM",
+        "venue": "Dante's",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Area",
+        "lineup": "Oathbound",
+        "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ],
+    "pastShows": [
+      {
         "id": "2026-06-28-portland-or",
         "showName": "Dante's in Portland",
         "date": "2026-06-28",
@@ -185,9 +334,7 @@
         "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943",
         "ticketLabel": "Buy $13 Advance Tickets",
         "confirmationStatus": "announced"
-      }
-    ],
-    "pastShows": [
+      },
       {
         "id": "2026-04-30-portland-or",
         "showName": "Dante's in Portland",
@@ -331,7 +478,7 @@
     "market": "Central Coast",
     "citySlug": "san-luis-obispo",
     "regionSlug": "ca",
-    "upcomingShows": [
+    "pastShows": [
       {
         "id": "2026-06-21-san-luis-obispo-ca",
         "showName": "Humdinger Brewing SLO Taproom in San Luis Obispo",
@@ -346,9 +493,7 @@
         "ticketUrl": "https://my805tix.com/e/pretty-suspect",
         "ticketLabel": "Buy $10 Advance Tickets",
         "confirmationStatus": "announced"
-      }
-    ],
-    "pastShows": [
+      },
       {
         "id": "2025-06-20-san-luis-obispo-ca",
         "showName": "Humdinger Brewing SLO Taproom in San Luis Obispo",
@@ -453,7 +598,7 @@
     "market": "San Diego Area",
     "citySlug": "san-diego",
     "regionSlug": "ca",
-    "upcomingShows": [
+    "pastShows": [
       {
         "id": "2026-06-25-san-diego-ca",
         "showName": "McGuffie's Live in San Diego",
@@ -676,6 +821,21 @@
     "market": "Southern Oregon",
     "citySlug": "medford",
     "regionSlug": "or",
+    "upcomingShows": [
+      {
+        "id": "2026-09-11-medford-or",
+        "showName": "Too Sweet Tour at Rockafairy",
+        "date": "2026-09-11",
+        "doorsTime": "7:30 PM",
+        "venue": "Rockafairy Hall",
+        "city": "Medford",
+        "region": "OR",
+        "market": "Southern Oregon",
+        "lineup": "Oathbound; Lucrecia",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "confirmed"
+      }
+    ],
     "pastShows": [
       {
         "id": "2026-05-15-medford-or",
@@ -760,18 +920,18 @@
     "regionSlug": "ca",
     "upcomingShows": [
       {
-        "id": "2026-06-20-citrus-heights-ca",
-        "showName": "Smashed Live in Citrus Heights",
-        "date": "2026-06-20",
-        "doorsTime": "6:30 PM",
-        "showTime": "7:00 PM",
+        "id": "2026-09-12-citrus-heights-ca",
+        "showName": "Oathbound with Lucrecia at Smash — Sacramento, CA",
+        "date": "2026-09-12",
+        "doorsTime": "6:00",
         "venue": "Smashed Live",
         "city": "Citrus Heights",
         "region": "CA",
         "market": "Sacramento Area",
-        "lineup": "Oathbound; Pretty Suspect; Salt; Hallway Scenes",
+        "lineup": "Oathbound; Lucrecia",
+        "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
         "ticketLabel": "Tickets",
-        "confirmationStatus": "announced"
+        "confirmationStatus": "confirmed"
       }
     ]
   },
@@ -812,6 +972,21 @@
     "market": "Seattle Area",
     "citySlug": "seattle",
     "regionSlug": "wa",
+    "upcomingShows": [
+      {
+        "id": "2026-09-10-seattle-wa",
+        "showName": "Oathbound at Substation 9.10.26",
+        "date": "2026-09-10",
+        "doorsTime": "7:00 PM",
+        "venue": "Substation",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "Oathbound; Lucrecia",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ],
     "pastShows": [
       {
         "id": "2026-03-20-seattle-wa",
@@ -1071,7 +1246,7 @@
     "market": "Northern Nevada",
     "citySlug": "reno",
     "regionSlug": "nv",
-    "upcomingShows": [
+    "pastShows": [
       {
         "id": "2026-06-26-reno-nv",
         "showName": "The Empire in Reno",
@@ -1085,9 +1260,7 @@
         "lineup": "Oathbound; Pretty Suspect",
         "ticketLabel": "Door sales only",
         "confirmationStatus": "verified"
-      }
-    ],
-    "pastShows": [
+      },
       {
         "id": "2025-06-14-reno-nv",
         "showName": "The Empire in Reno",
@@ -1114,7 +1287,7 @@
     "market": "Los Angeles Area",
     "citySlug": "los-angeles",
     "regionSlug": "ca",
-    "upcomingShows": [
+    "pastShows": [
       {
         "id": "2026-06-23-los-angeles-ca",
         "showName": "The Escondite in Los Angeles",
@@ -1258,6 +1431,21 @@
     "regionSlug": "ca",
     "upcomingShows": [
       {
+        "id": "2026-09-17-palmdale-ca",
+        "showName": "Dark Origins Tour - Oathbound at transplants",
+        "date": "2026-09-17",
+        "doorsTime": "6:30 PM",
+        "venue": "Transplants Brewing Company",
+        "city": "Palmdale",
+        "region": "CA",
+        "market": "Los Angeles Area / Antelope Valley",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketLabel": "Free show",
+        "confirmationStatus": "verified"
+      }
+    ],
+    "pastShows": [
+      {
         "id": "2026-06-22-palmdale-ca",
         "showName": "Transplants Brewing Company in Palmdale",
         "date": "2026-06-22",
@@ -1269,7 +1457,7 @@
         "market": "Antelope Valley",
         "lineup": "Oathbound; Pretty Suspect; Revelry",
         "ticketUrl": "https://www.ticketweb.com/event/free-show-pretty-suspect-transplants-brewing-company-tickets/14928993",
-        "ticketLabel": "Tickets",
+        "ticketLabel": "RSVP to FREE Show",
         "confirmationStatus": "announced"
       }
     ]
@@ -1312,7 +1500,7 @@
     "market": "Southern Oregon",
     "citySlug": "medford",
     "regionSlug": "or",
-    "upcomingShows": [
+    "pastShows": [
       {
         "id": "2026-06-27-medford-or",
         "showName": "The Rockafairy in Medford",
@@ -1329,5 +1517,63 @@
         "confirmationStatus": "verified"
       }
     ]
+  },
+  {
+    "venueId": "smashed-live-sacremento",
+    "venue": "Smashed Live - Sacremento",
+    "venueSlug": "smashed-live-sacremento",
+    "country": "US",
+    "pastShows": [
+      {
+        "id": "2026-06-20-citrus-heights-ca",
+        "showName": "Smashed Live in Citrus Heights",
+        "date": "2026-06-20",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:00 PM",
+        "venue": "Smashed Live - Sacremento",
+        "lineup": "Oathbound; Pretty Suspect; Salt; Hallway Scenes",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "venueId": "18-seventy-brewing-modesto-ca",
+    "venue": "18 Seventy Brewing",
+    "venueSlug": "18-seventy-brewing",
+    "address": "911 J Street",
+    "city": "Modesto",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Central Valley",
+    "citySlug": "modesto",
+    "regionSlug": "ca"
+  },
+  {
+    "venueId": "longbard-margarita-bar-pacifica-ca",
+    "venue": "Longbard Margarita Bar",
+    "venueSlug": "longbard-margarita-bar",
+    "address": "180 Eureka Sq",
+    "city": "Pacifica",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Bay Area",
+    "citySlug": "pacifica-ca",
+    "regionSlug": "ca"
+  },
+  {
+    "venueId": "toots-tavern-crockett-ca",
+    "venue": "Toot's Tavern",
+    "venueSlug": "toots-tavern",
+    "address": "627 2nd Ave",
+    "city": "Crockett",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Bay Area",
+    "citySlug": "crockett",
+    "regionSlug": "california"
   }
 ]
