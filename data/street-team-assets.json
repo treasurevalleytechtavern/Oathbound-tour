@@ -1,26 +1,5 @@
 [
   {
-    "assetId": "D",
-    "showId": "2026-09-20-reno-nv",
-    "show": {
-      "id": "2026-09-20-reno-nv",
-      "showName": "Dark Origins Tour - Oathbound at Cellar Stage",
-      "date": "2026-09-20",
-      "doorsTime": "7:00 PM",
-      "venue": "Cellar Stage @ Alturas",
-      "city": "Reno",
-      "region": "NV",
-      "market": "Northern Nevada",
-      "lineup": "Oathbound",
-      "ticketLabel": "Ticket link needed",
-      "confirmationStatus": "confirmed"
-    },
-    "status": "needed",
-    "downloadTitle": "Street Team Material",
-    "downloadType": "Material",
-    "includeInStreetTeamDownloads": false
-  },
-  {
     "assetId": "street-team-general-oathbound-x-pretty-suspect-routing-flyer",
     "assetType": "street-team-download",
     "assetTitle": "Oathbound x Pretty Suspect Routing Flyer",
@@ -524,7 +503,7 @@
     "includeInStreetTeamDownloads": true
   },
   {
-    "assetId": "new-show-1783845926718-flyer-flyer",
+    "assetId": "2026-09-09-portland-or-flyer-flyer",
     "showId": "2026-09-09-portland-or",
     "show": {
       "id": "2026-09-09-portland-or",
@@ -541,18 +520,20 @@
       "ticketLabel": "Tickets",
       "confirmationStatus": "confirmed"
     },
+    "assetsKey": "or/portland",
+    "assetsPath": "/street-team/kits/or/portland/",
     "assetType": "flyer",
-    "assetTitle": "Oathbound at Dante’s — Portland, OR - Flyer",
+    "assetTitle": "Dark Origins Tour - Oathbound at Dante’s — Portland, OR - Flyer",
     "platform": "all",
     "status": "needed",
     "promoNeed": "flyer",
     "usage": "Main show flyer",
-    "downloadTitle": "Oathbound at Dante’s — Portland, OR - Flyer",
+    "downloadTitle": "Dark Origins Tour - Oathbound at Dante’s — Portland, OR - Flyer",
     "downloadType": "Flyer",
     "includeInStreetTeamDownloads": false
   },
   {
-    "assetId": "new-show-1783846458781-flyer-flyer",
+    "assetId": "2026-09-10-seattle-wa-flyer-flyer",
     "showId": "2026-09-10-seattle-wa",
     "show": {
       "id": "2026-09-10-seattle-wa",
@@ -567,22 +548,24 @@
       "ticketLabel": "Tickets",
       "confirmationStatus": "confirmed"
     },
+    "assetsKey": "wa/seattle",
+    "assetsPath": "/street-team/kits/wa/seattle/",
     "assetType": "flyer",
-    "assetTitle": "New show - Flyer",
+    "assetTitle": "Dark Origins Tour - Oathbound at Substation - Flyer",
     "platform": "all",
     "status": "needed",
     "promoNeed": "flyer",
     "usage": "Main show flyer",
-    "downloadTitle": "New show - Flyer",
+    "downloadTitle": "Dark Origins Tour - Oathbound at Substation - Flyer",
     "downloadType": "Flyer",
     "includeInStreetTeamDownloads": false
   },
   {
-    "assetId": "new-show-1783847244019-flyer-flyer",
+    "assetId": "2026-09-11-medford-or-flyer-flyer",
     "showId": "2026-09-11-medford-or",
     "show": {
       "id": "2026-09-11-medford-or",
-      "showName": "Too Sweet Tour at Rockafairy",
+      "showName": "Dark Origins Tour - Too Sweet Tour at Rockafairy",
       "date": "2026-09-11",
       "doorsTime": "7:30 PM",
       "venue": "Rockafairy Hall",
@@ -593,24 +576,26 @@
       "ticketLabel": "Ticket link needed",
       "confirmationStatus": "confirmed"
     },
+    "assetsKey": "or/medford",
+    "assetsPath": "/street-team/kits/or/medford/",
     "assetType": "flyer",
-    "assetTitle": "Too Sweet Tour at Substation - Flyer",
+    "assetTitle": "Dark Origins Tour - Too Sweet Tour at Substation - Flyer",
     "platform": "all",
     "status": "needed",
     "promoNeed": "flyer",
     "usage": "Main show flyer",
-    "downloadTitle": "Too Sweet Tour at Substation - Flyer",
+    "downloadTitle": "Dark Origins Tour - Too Sweet Tour at Substation - Flyer",
     "downloadType": "Flyer",
     "includeInStreetTeamDownloads": false
   },
   {
-    "assetId": "new-show-1783848304754-flyer-flyer",
+    "assetId": "2026-09-12-citrus-heights-ca-flyer-flyer",
     "showId": "2026-09-12-citrus-heights-ca",
     "show": {
       "id": "2026-09-12-citrus-heights-ca",
-      "showName": "Oathbound with Lucrecia at Smash — Sacramento, CA",
+      "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
       "date": "2026-09-12",
-      "doorsTime": "6:00",
+      "doorsTime": "6:00 PM",
       "venue": "Smashed Live",
       "city": "Citrus Heights",
       "region": "CA",
@@ -620,18 +605,20 @@
       "ticketLabel": "Tickets",
       "confirmationStatus": "confirmed"
     },
+    "assetsKey": "ca/citrus-heights",
+    "assetsPath": "/street-team/kits/ca/citrus-heights/",
     "assetType": "flyer",
-    "assetTitle": "Oathbound with Lucrecia at Smash — Sacramento, CA - Flyer",
+    "assetTitle": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA - Flyer",
     "platform": "all",
     "status": "needed",
     "promoNeed": "flyer",
     "usage": "Main show flyer",
-    "downloadTitle": "Oathbound with Lucrecia at Smash — Sacramento, CA - Flyer",
+    "downloadTitle": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA - Flyer",
     "downloadType": "Flyer",
     "includeInStreetTeamDownloads": false
   },
   {
-    "assetId": "new-show-1783848680573-flyer-flyer",
+    "assetId": "2026-09-13-crockett-ca-flyer-flyer",
     "showId": "2026-09-13-crockett-ca",
     "show": {
       "id": "2026-09-13-crockett-ca",
@@ -646,6 +633,8 @@
       "ticketLabel": "Ticket link needed",
       "confirmationStatus": "announced"
     },
+    "assetsKey": "ca/crockett",
+    "assetsPath": "/street-team/kits/ca/crockett/",
     "assetType": "flyer",
     "assetTitle": "Dark Origins Tour - Toots Tavern - Flyer",
     "platform": "all",
@@ -657,11 +646,11 @@
     "includeInStreetTeamDownloads": false
   },
   {
-    "assetId": "new-show-1783849609201-flyer-flyer",
+    "assetId": "2026-09-15-pacifica-ca-flyer-flyer",
     "showId": "2026-09-15-pacifica-ca",
     "show": {
       "id": "2026-09-15-pacifica-ca",
-      "showName": "Oathbound at Pacifica",
+      "showName": "Dark Origins Tour - Oathbound at Longboard Margarita Bar",
       "date": "2026-09-15",
       "doorsTime": "8:00 PM",
       "venue": "Longbard Margarita Bar",
@@ -672,22 +661,24 @@
       "ticketLabel": "Free show",
       "confirmationStatus": "verified"
     },
+    "assetsKey": "ca/pacifica",
+    "assetsPath": "/street-team/kits/ca/pacifica/",
     "assetType": "flyer",
-    "assetTitle": "Oathbound at Pacifica - Flyer",
+    "assetTitle": "Dark Origins Tour - Oathbound at Pacifica - Flyer",
     "platform": "all",
     "status": "needed",
     "promoNeed": "flyer",
     "usage": "Main show flyer",
-    "downloadTitle": "Oathbound at Pacifica - Flyer",
+    "downloadTitle": "Dark Origins Tour - Oathbound at Pacifica - Flyer",
     "downloadType": "Flyer",
     "includeInStreetTeamDownloads": false
   },
   {
-    "assetId": "new-show-1783850544512-flyer-flyer",
+    "assetId": "2026-09-16-modesto-ca-flyer-flyer",
     "showId": "2026-09-16-modesto-ca",
     "show": {
       "id": "2026-09-16-modesto-ca",
-      "showName": "Oathbound at 18 Seventy Brewing",
+      "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
       "date": "2026-09-16",
       "doorsTime": "4:30 PM",
       "venue": "18 Seventy Brewing",
@@ -699,13 +690,15 @@
       "ticketLabel": "Tickets",
       "confirmationStatus": "verified"
     },
+    "assetsKey": "ca/modesto",
+    "assetsPath": "/street-team/kits/ca/modesto/",
     "assetType": "flyer",
-    "assetTitle": "Oathbound at 18 Seventy Brewing - Flyer",
+    "assetTitle": "Dark Origins Tour - Oathbound at 18 Seventy Brewing - Flyer",
     "platform": "all",
     "status": "needed",
     "promoNeed": "flyer",
     "usage": "Main show flyer",
-    "downloadTitle": "Oathbound at 18 Seventy Brewing - Flyer",
+    "downloadTitle": "Dark Origins Tour - Oathbound at 18 Seventy Brewing - Flyer",
     "downloadType": "Flyer",
     "includeInStreetTeamDownloads": false
   },
@@ -725,6 +718,8 @@
       "ticketLabel": "Free show",
       "confirmationStatus": "verified"
     },
+    "assetsKey": "ca/palmdale",
+    "assetsPath": "/street-team/kits/ca/palmdale/",
     "assetType": "flyer",
     "assetTitle": "Dark Origins Tour - Oathbound at transplants - Flyer",
     "platform": "all",
@@ -751,6 +746,8 @@
       "ticketLabel": "Ticket link needed",
       "confirmationStatus": "confirmed"
     },
+    "assetsKey": "ca/bakersfield",
+    "assetsPath": "/street-team/kits/ca/bakersfield/",
     "assetType": "flyer",
     "assetTitle": "Dark Origins Tour - Oathbound at Jerry's Pizza - Flyer",
     "platform": "all",
@@ -778,6 +775,8 @@
       "ticketLabel": "Tickets",
       "confirmationStatus": "confirmed"
     },
+    "assetsKey": "ca/fresno",
+    "assetsPath": "/street-team/kits/ca/fresno/",
     "assetType": "flyer",
     "assetTitle": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower - Flyer",
     "platform": "all",
@@ -804,6 +803,8 @@
       "ticketLabel": "Ticket link needed",
       "confirmationStatus": "confirmed"
     },
+    "assetsKey": "nv/reno",
+    "assetsPath": "/street-team/kits/nv/reno/",
     "assetType": "flyer",
     "assetTitle": "Dark Origins Tour - Oathbound at Cellar Stage - Flyer",
     "platform": "all",
