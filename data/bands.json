@@ -1,20 +1,76 @@
 [
   {
-    "bandId": "r",
+    "bandId": "red-keep",
     "bandName": "Red Keep",
     "displayName": "Red Keep",
-    "status": "active",
+    "status": "touring-artist",
     "socials": {
       "instagram": "https://www.instagram.com/redkeepofficial",
       "facebook": "http://facebook.com/redkeepofficial",
       "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
       "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
       "website": "https://redkeepband.com/home"
-    }
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-16-modesto-ca",
+        "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
+        "date": "2026-09-16",
+        "doorsTime": "4:30 PM",
+        "venue": "18 Seventy Brewing",
+        "city": "Modesto",
+        "region": "CA",
+        "market": "Central Valley",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "verified"
+      },
+      {
+        "id": "2026-09-17-palmdale-ca",
+        "showName": "Dark Origins Tour - Oathbound at transplants",
+        "date": "2026-09-17",
+        "doorsTime": "6:30 PM",
+        "venue": "Transplants Brewing Company",
+        "city": "Palmdale",
+        "region": "CA",
+        "market": "Los Angeles Area / Antelope Valley",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketLabel": "Free show",
+        "confirmationStatus": "verified"
+      },
+      {
+        "id": "2026-09-18-bakersfield-ca",
+        "showName": "Dark Origins Tour - Oathbound at Jerry's Pizza",
+        "date": "2026-09-18",
+        "doorsTime": "7:00 PM",
+        "venue": "Jerry’s Pizza & Pub",
+        "city": "Bakersfield",
+        "region": "CA",
+        "market": "Bakersfield Area",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "confirmed"
+      },
+      {
+        "id": "2026-09-19-fresno-ca",
+        "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
+        "date": "2026-09-19",
+        "doorsTime": "6:30 PM",
+        "venue": "Summer Fox Tower",
+        "city": "Fresno",
+        "region": "CA",
+        "market": "Fresno Area",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ]
   },
   {
-    "bandId": "b",
-    "bandName": "New Band",
+    "bandId": "beauty-is-betrayal",
+    "bandName": "Beauty Is Betrayal",
     "displayName": "Beauty Is Betrayal",
     "status": "touring-artist",
     "socials": {
@@ -23,18 +79,129 @@
       "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
       "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
       "website": "https://linktr.ee/beautyisbetrayal"
-    }
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-15-pacifica-ca",
+        "showName": "Dark Origins Tour - Oathbound at Longboard Margarita Bar",
+        "date": "2026-09-15",
+        "doorsTime": "8:00 PM",
+        "venue": "Longbard Margarita Bar",
+        "city": "Pacifica",
+        "region": "CA",
+        "market": "Bay Area",
+        "lineup": "Oathbound; Beauty Is Betrayal",
+        "ticketLabel": "Free show",
+        "confirmationStatus": "verified"
+      },
+      {
+        "id": "2026-09-16-modesto-ca",
+        "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
+        "date": "2026-09-16",
+        "doorsTime": "4:30 PM",
+        "venue": "18 Seventy Brewing",
+        "city": "Modesto",
+        "region": "CA",
+        "market": "Central Valley",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "verified"
+      },
+      {
+        "id": "2026-09-17-palmdale-ca",
+        "showName": "Dark Origins Tour - Oathbound at transplants",
+        "date": "2026-09-17",
+        "doorsTime": "6:30 PM",
+        "venue": "Transplants Brewing Company",
+        "city": "Palmdale",
+        "region": "CA",
+        "market": "Los Angeles Area / Antelope Valley",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketLabel": "Free show",
+        "confirmationStatus": "verified"
+      },
+      {
+        "id": "2026-09-18-bakersfield-ca",
+        "showName": "Dark Origins Tour - Oathbound at Jerry's Pizza",
+        "date": "2026-09-18",
+        "doorsTime": "7:00 PM",
+        "venue": "Jerry’s Pizza & Pub",
+        "city": "Bakersfield",
+        "region": "CA",
+        "market": "Bakersfield Area",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "confirmed"
+      },
+      {
+        "id": "2026-09-19-fresno-ca",
+        "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
+        "date": "2026-09-19",
+        "doorsTime": "6:30 PM",
+        "venue": "Summer Fox Tower",
+        "city": "Fresno",
+        "region": "CA",
+        "market": "Fresno Area",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ]
   },
   {
-    "bandId": "L",
+    "bandId": "lucrecia",
     "bandName": "Lucrecia",
     "displayName": "Lucrecia",
-    "status": "local-support",
+    "status": "touring-artist",
     "socials": {
       "instagram": "https://www.instagram.com/lucreciaband",
       "facebook": "https://www.facebook.com/lucreciaband",
       "website": "https://lucrecia.bigcartel.com/"
-    }
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-10-seattle-wa",
+        "showName": "Oathbound at Substation 9.10.26",
+        "date": "2026-09-10",
+        "doorsTime": "7:00 PM",
+        "venue": "Substation",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "Oathbound; Lucrecia",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      },
+      {
+        "id": "2026-09-11-medford-or",
+        "showName": "Dark Origins Tour - Too Sweet Tour at Rockafairy",
+        "date": "2026-09-11",
+        "doorsTime": "7:30 PM",
+        "venue": "Rockafairy Hall",
+        "city": "Medford",
+        "region": "OR",
+        "market": "Southern Oregon",
+        "lineup": "Oathbound; Lucrecia",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "confirmed"
+      },
+      {
+        "id": "2026-09-12-citrus-heights-ca",
+        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
+        "date": "2026-09-12",
+        "doorsTime": "6:00 PM",
+        "venue": "Smashed Live",
+        "city": "Citrus Heights",
+        "region": "CA",
+        "market": "Sacramento Area",
+        "lineup": "Oathbound; Lucrecia",
+        "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ]
   },
   {
     "bandId": "atelectasis",
@@ -160,7 +327,7 @@
       },
       {
         "id": "2026-09-11-medford-or",
-        "showName": "Too Sweet Tour at Rockafairy",
+        "showName": "Dark Origins Tour - Too Sweet Tour at Rockafairy",
         "date": "2026-09-11",
         "doorsTime": "7:30 PM",
         "venue": "Rockafairy Hall",
@@ -173,9 +340,9 @@
       },
       {
         "id": "2026-09-12-citrus-heights-ca",
-        "showName": "Oathbound with Lucrecia at Smash — Sacramento, CA",
+        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
         "date": "2026-09-12",
-        "doorsTime": "6:00",
+        "doorsTime": "6:00 PM",
         "venue": "Smashed Live",
         "city": "Citrus Heights",
         "region": "CA",
@@ -200,7 +367,7 @@
       },
       {
         "id": "2026-09-15-pacifica-ca",
-        "showName": "Oathbound at Pacifica",
+        "showName": "Dark Origins Tour - Oathbound at Longboard Margarita Bar",
         "date": "2026-09-15",
         "doorsTime": "8:00 PM",
         "venue": "Longbard Margarita Bar",
@@ -213,7 +380,7 @@
       },
       {
         "id": "2026-09-16-modesto-ca",
-        "showName": "Oathbound at 18 Seventy Brewing",
+        "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
         "date": "2026-09-16",
         "doorsTime": "4:30 PM",
         "venue": "18 Seventy Brewing",
