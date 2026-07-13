@@ -549,6 +549,83 @@ body[data-page="admin"] .intro {
   margin-top: 6px;
 }
 
+.show-lineup-list {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px 7px;
+  vertical-align: middle;
+}
+
+.show-lineup-artist {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 5px;
+}
+
+.show-lineup-separator {
+  margin-left: -2px;
+}
+
+.show-lineup-play {
+  appearance: none;
+  display: inline-flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color-mix(in srgb, #1ed760 72%, transparent);
+  border-radius: 999px;
+  color: transparent;
+  font-size: 0;
+  line-height: 1;
+  text-decoration: none;
+  background: color-mix(in srgb, #1ed760 18%, rgba(255, 255, 255, 0.08));
+  box-shadow: 0 0 14px rgba(30, 215, 96, 0.18);
+  cursor: pointer;
+}
+
+.show-lineup-play::before {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid #f6fff9;
+  content: "";
+}
+
+.show-lineup-play:hover,
+.show-lineup-play:focus-visible,
+.show-lineup-play[aria-expanded="true"] {
+  border-color: #1ed760;
+  background: #1ed760;
+  box-shadow: 0 0 20px rgba(30, 215, 96, 0.35);
+}
+
+.show-lineup-play:hover::before,
+.show-lineup-play:focus-visible::before,
+.show-lineup-play[aria-expanded="true"]::before {
+  border-left-color: #050505;
+}
+
+.show-lineup-player {
+  display: block;
+  width: min(100%, 520px);
+  margin-top: 10px;
+}
+
+.show-lineup-embed {
+  display: block;
+  width: 100%;
+  height: 82px;
+  border: 0;
+  border-radius: 8px;
+  background: #121212;
+}
+
 .show-notes {
   margin-top: 6px;
   color: var(--soft);
@@ -919,7 +996,7 @@ body[data-page="admin"] .intro {
 }
 
 .street-team-hero .eyebrow {
-  color: var(--accent);
+  color: var(--tour-kicker-color);
 }
 
 .street-team-hero h1 {
@@ -972,7 +1049,7 @@ body[data-page="admin"] .intro {
   inset: 0 auto 0 0;
   width: 5px;
   content: "";
-  background: var(--accent);
+  background: var(--tour-accent);
   opacity: 0.8;
 }
 
@@ -1058,7 +1135,7 @@ body[data-page="admin"] .intro {
   inset: 0 auto 0 0;
   width: 5px;
   content: "";
-  background: var(--accent);
+  background: var(--tour-accent);
 }
 
 .street-team-perks h2 {
@@ -1238,14 +1315,14 @@ body.has-artwork-modal {
 
 .state-button:hover,
 .state-button[aria-pressed="true"] {
-  border-color: var(--line-strong);
+  border-color: color-mix(in srgb, var(--tour-accent) 58%, var(--line-strong));
   color: var(--text);
   background:
-    radial-gradient(circle at 50% 42%, rgba(255, 255, 255, 0.16), transparent 48%),
+    radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--tour-accent) 18%, transparent), transparent 48%),
     rgba(255, 255, 255, 0.09);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.08),
-    0 0 32px rgba(255, 255, 255, 0.08),
+    0 0 32px var(--tour-glow),
     0 22px 62px rgba(0, 0, 0, 0.3);
 }
 
@@ -1254,7 +1331,7 @@ body.has-artwork-modal {
   inset: auto 14px 10px;
   height: 3px;
   content: "";
-  background: var(--accent);
+  background: var(--tour-accent);
 }
 
 .street-team-shows {
@@ -1317,8 +1394,9 @@ body.has-artwork-modal {
 
 .market-toggle:hover,
 .market-toggle[aria-expanded="true"] {
-  border-color: var(--line-strong);
-  background: rgba(255, 255, 255, 0.08);
+  border-color: color-mix(in srgb, var(--tour-accent) 58%, var(--line-strong));
+  background: color-mix(in srgb, var(--tour-accent) 14%, rgba(255, 255, 255, 0.08));
+  box-shadow: 0 0 22px var(--tour-glow);
 }
 
 .market-toggle strong,
@@ -1414,13 +1492,13 @@ body.has-artwork-modal {
 
 .street-show-card--target {
   position: relative;
-  border-color: rgba(80, 224, 188, 0.92);
+  border-color: color-mix(in srgb, var(--tour-accent) 82%, white);
   background:
-    linear-gradient(90deg, rgba(80, 224, 188, 0.18), rgba(255, 255, 255, 0.05)),
+    linear-gradient(90deg, color-mix(in srgb, var(--tour-accent) 18%, transparent), rgba(255, 255, 255, 0.05)),
     rgba(255, 255, 255, 0.06);
   box-shadow:
-    0 0 0 1px rgba(80, 224, 188, 0.42),
-    0 0 28px rgba(80, 224, 188, 0.18);
+    0 0 0 1px color-mix(in srgb, var(--tour-accent) 42%, transparent),
+    0 0 28px var(--tour-glow);
 }
 
 .street-show-card--target::after {
@@ -1428,18 +1506,18 @@ body.has-artwork-modal {
   top: 8px;
   right: 8px;
   padding: 5px 8px;
-  border: 1px solid rgba(80, 224, 188, 0.68);
+  border: 1px solid color-mix(in srgb, var(--tour-accent) 68%, transparent);
   color: #ebfffb;
   content: "Matched Show";
   font-size: 0.64rem;
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
-  background: rgba(5, 34, 29, 0.9);
+  background: color-mix(in srgb, var(--tour-accent) 34%, rgba(5, 5, 5, 0.9));
 }
 
 .street-show-card--target:focus {
-  outline: 2px solid rgba(80, 224, 188, 0.92);
+  outline: 2px solid color-mix(in srgb, var(--tour-accent) 82%, white);
   outline-offset: 4px;
 }
 
@@ -1692,7 +1770,8 @@ body.has-artwork-modal {
 }
 
 .download-card:hover {
-  border-color: var(--line-strong);
+  border-color: color-mix(in srgb, var(--tour-accent) 58%, var(--line-strong));
+  box-shadow: 0 0 20px var(--tour-glow);
 }
 
 .download-card img {
@@ -1958,7 +2037,7 @@ body.has-artwork-modal {
 .site-nav a:focus-visible,
 .state-button:focus-visible,
 .footer-nav a:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--tour-accent);
   outline-offset: 3px;
 }
 

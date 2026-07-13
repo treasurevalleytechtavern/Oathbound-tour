@@ -517,9 +517,10 @@ function createMyspaceShowCard(show, index) {
     details.appendChild(venueLine);
   }
 
-  if (show.lineup) {
+  if (getLineupArtistNames(show).length) {
     const lineup = document.createElement("p");
-    lineup.innerHTML = `<strong>Lineup:</strong> ${escapeHtml(formatLineup(show.lineup))}`;
+    lineup.className = "myspace-lineup";
+    renderLineup(lineup, show, index);
     details.appendChild(lineup);
   }
 
@@ -669,14 +670,14 @@ function createShowCard(show, index) {
   setText(card, ".show-location", location);
   setText(card, ".show-venue", show.venue || "Venue TBA");
   setText(card, ".show-time", [formatLongDate(showDate), timeText].filter(Boolean).join(" / "));
-  setText(card, ".show-lineup", show.lineup || "");
+  renderLineup(card.querySelector(".show-lineup"), show, index);
   setText(card, ".show-notes", show.notes || "");
   appendDistanceBadge(card.querySelector(".show-location"), show);
 
   renderShowStatus(card, showDate, index);
   renderShowFlags(card.querySelector(".show-flags"), show);
   renderIconBadges(card.querySelector(".show-age"), show);
-  toggleElement(card.querySelector(".show-lineup"), Boolean(show.lineup && show.lineup.trim()));
+  toggleElement(card.querySelector(".show-lineup"), Boolean(getLineupArtistNames(show).length));
   toggleElement(card.querySelector(".show-notes"), Boolean(show.notes && show.notes.trim()));
 
   const actions = card.querySelector(".show-actions");
@@ -751,6 +752,106 @@ function createButton(url, label, isPrimary = false, actionType = "details", sho
 
   window.oathboundAnalytics?.decorateShowLink(button, show, actionType, index);
   return button;
+}
+
+function renderLineup(container, show, index = 0) {
+  if (!container) {
+    return;
+  }
+
+  container.innerHTML = "";
+
+  const artists = getLineupArtists(show);
+  if (!artists.length) {
+    return;
+  }
+
+  const label = document.createElement("strong");
+  label.textContent = "Lineup:";
+  container.appendChild(label);
+
+  const list = document.createElement("span");
+  list.className = "show-lineup-list";
+
+  artists.forEach((artist, artistIndex) => {
+    if (artistIndex) {
+      const separator = document.createElement("span");
+      separator.className = "show-lineup-separator";
+      separator.textContent = ",";
+      list.appendChild(separator);
+    }
+
+    const item = document.createElement("span");
+    item.className = "show-lineup-artist";
+
+    const name = document.createElement("span");
+    name.className = "show-lineup-name";
+    name.textContent = artist.name;
+    item.appendChild(name);
+
+    const spotifyTrackUrl = getArtistSpotifyTrackUrl(artist);
+    if (spotifyTrackUrl) {
+      const play = document.createElement("button");
+      play.className = "show-lineup-play";
+      play.type = "button";
+      play.textContent = "Play";
+      play.setAttribute("aria-label", `Play ${artist.name} on Spotify`);
+      play.setAttribute("aria-expanded", "false");
+      play.title = `Play ${artist.name} on Spotify`;
+      play.addEventListener("click", () => toggleSpotifyTrackPlayer(container, play, artist, spotifyTrackUrl, show, index));
+      item.appendChild(play);
+    }
+
+    list.appendChild(item);
+  });
+
+  container.appendChild(document.createTextNode(" "));
+  container.appendChild(list);
+}
+
+function toggleSpotifyTrackPlayer(container, button, artist, trackUrl, show, index) {
+  const existingPlayer = container.querySelector(".show-lineup-player");
+  const existingTrackUrl = existingPlayer?.dataset.spotifyTrackUrl || "";
+
+  if (existingPlayer && existingTrackUrl === trackUrl) {
+    existingPlayer.remove();
+    button.setAttribute("aria-expanded", "false");
+    return;
+  }
+
+  container.querySelectorAll(".show-lineup-play[aria-expanded=\"true\"]").forEach((playButton) => {
+    playButton.setAttribute("aria-expanded", "false");
+  });
+  existingPlayer?.remove();
+
+  const embedUrl = createSpotifyTrackEmbedUrl(trackUrl);
+  if (!embedUrl) {
+    return;
+  }
+
+  const player = document.createElement("span");
+  player.className = "show-lineup-player";
+  player.dataset.spotifyTrackUrl = trackUrl;
+
+  const frame = document.createElement("iframe");
+  frame.className = "show-lineup-embed";
+  frame.title = `${artist.name} Spotify song player`;
+  frame.src = embedUrl;
+  frame.loading = "lazy";
+  frame.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+
+  player.appendChild(frame);
+  container.appendChild(player);
+  button.setAttribute("aria-expanded", "true");
+
+  window.oathboundAnalytics?.trackEvent?.("spotify_track_embed_open", {
+    artist_name: artist.name,
+    link_url: trackUrl,
+    show_id: show?.id || "",
+    show_venue: show?.venue || "",
+    show_date: show?.date || "",
+    card_index: index,
+  });
 }
 
 function renderIconBadges(container, show, extraClassName = "") {
@@ -1060,6 +1161,89 @@ function formatLineup(lineup = "") {
     .map((item) => item.trim())
     .filter(Boolean)
     .join(", ");
+}
+
+function getLineupArtists(show = {}) {
+  const artistNames = getLineupArtistNames(show);
+  const bandLookup = getShowBandLookup(show);
+
+  return artistNames.map((name) => ({
+    name,
+    band: bandLookup.get(normalizeArtistName(name)) || null,
+  }));
+}
+
+function getLineupArtistNames(show = {}) {
+  if (Array.isArray(show.lineupArtists) && show.lineupArtists.length) {
+    return show.lineupArtists
+      .map((artist) => typeof artist === "string" ? artist : artist?.displayName || artist?.bandName || artist?.name || "")
+      .map((artist) => artist.trim())
+      .filter(Boolean);
+  }
+
+  return String(show.lineup || "")
+    .split(";")
+    .map((artist) => artist.trim())
+    .filter(Boolean);
+}
+
+function getShowBandLookup(show = {}) {
+  const lookup = new Map();
+  const bands = [];
+
+  ["featuredBands", "supportingBands"].forEach((key) => {
+    if (Array.isArray(show[key])) {
+      bands.push(...show[key]);
+    }
+  });
+
+  if (show.supportedBand) {
+    bands.push(show.supportedBand);
+  }
+
+  bands.forEach((band) => {
+    [band.displayName, band.bandName, band.name]
+      .filter(Boolean)
+      .forEach((name) => lookup.set(normalizeArtistName(name), band));
+  });
+
+  return lookup;
+}
+
+function getArtistSpotifyTrackUrl(artist = {}) {
+  const band = artist.band || artist;
+  return [
+    band.featuredSongUrl,
+    band.featuredTrackUrl,
+    band.spotifySongUrl,
+    band.spotifyTrackUrl,
+    band.links?.featuredSongUrl,
+    band.links?.featuredTrackUrl,
+    band.links?.spotifySongUrl,
+    band.links?.spotifyTrackUrl,
+    band.socials?.featuredSongUrl,
+    band.socials?.featuredTrackUrl,
+    band.socials?.spotifySongUrl,
+    band.socials?.spotifyTrackUrl,
+  ].find(isSpotifyTrackUrl) || "";
+}
+
+function createSpotifyTrackEmbedUrl(trackUrl = "") {
+  const match = String(trackUrl).match(/^https:\/\/open\.spotify\.com\/(?:intl-[a-z]{2}\/)?track\/([A-Za-z0-9]+)(?:[/?#].*)?$/i);
+
+  if (!match) {
+    return "";
+  }
+
+  return `https://open.spotify.com/embed/track/${encodeURIComponent(match[1])}?utm_source=generator`;
+}
+
+function isSpotifyTrackUrl(value = "") {
+  return Boolean(createSpotifyTrackEmbedUrl(value));
+}
+
+function normalizeArtistName(value = "") {
+  return String(value).trim().toLowerCase().replace(/[^a-z0-9]+/g, "");
 }
 
 function createFriendInitials(label) {
