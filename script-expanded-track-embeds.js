@@ -769,7 +769,8 @@ function renderLineup(container, show, index = 0) {
     return;
   }
 
-  const hasTrackEmbeds = artists.some((artist) => artist.spotifyTrackUrl);
+  const canShowTrackEmbeds = pageMode === "upcoming" && document.body.dataset.widget !== "compact";
+  const hasTrackEmbeds = canShowTrackEmbeds && artists.some((artist) => artist.spotifyTrackUrl);
 
   const label = document.createElement("strong");
   label.textContent = "Lineup:";
@@ -796,7 +797,7 @@ function renderLineup(container, show, index = 0) {
     name.textContent = artist.name;
     item.appendChild(name);
 
-    if (artist.spotifyTrackUrl) {
+    if (hasTrackEmbeds && artist.spotifyTrackUrl) {
       item.appendChild(createSpotifyTrackPlayer(artist, artist.spotifyTrackUrl));
     }
 
