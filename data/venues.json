@@ -39,22 +39,7 @@
     "country": "US",
     "market": "Bakersfield Area",
     "citySlug": "bakersfield",
-    "regionSlug": "ca",
-    "upcomingShows": [
-      {
-        "id": "2026-09-18-bakersfield-ca",
-        "showName": "Dark Origins Tour - Oathbound at Jerry's Pizza",
-        "date": "2026-09-18",
-        "doorsTime": "7:00 PM",
-        "venue": "Jerry’s Pizza & Pub",
-        "city": "Bakersfield",
-        "region": "CA",
-        "market": "Bakersfield Area",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
-        "ticketLabel": "Ticket link needed",
-        "confirmationStatus": "confirmed"
-      }
-    ]
+    "regionSlug": "ca"
   },
   {
     "venueId": "18-seventy-brewing-modesto-ca",
@@ -71,7 +56,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-16-modesto-ca",
-        "showName": "Oathbound at 18 Seventy Brewing",
+        "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
         "date": "2026-09-16",
         "doorsTime": "4:30 PM",
         "venue": "18 Seventy Brewing",
@@ -100,7 +85,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-15-pacifica-ca",
-        "showName": "Oathbound at Pacifica",
+        "showName": "Dark Origins Tour - Oathbound at Longboard Margarita Bar",
         "date": "2026-09-15",
         "doorsTime": "8:00 PM",
         "venue": "Longbard Margarita Bar",
@@ -124,7 +109,7 @@
     "country": "US",
     "market": "Bay Area",
     "citySlug": "crockett",
-    "regionSlug": "california",
+    "regionSlug": "ca",
     "upcomingShows": [
       {
         "id": "2026-09-13-crockett-ca",
@@ -244,22 +229,7 @@
     "country": "US",
     "market": "Northern Nevada",
     "citySlug": "reno",
-    "regionSlug": "nv",
-    "upcomingShows": [
-      {
-        "id": "2026-09-20-reno-nv",
-        "showName": "Dark Origins Tour - Oathbound at Cellar Stage",
-        "date": "2026-09-20",
-        "doorsTime": "7:00 PM",
-        "venue": "Cellar Stage @ Alturas",
-        "city": "Reno",
-        "region": "NV",
-        "market": "Northern Nevada",
-        "lineup": "Oathbound",
-        "ticketLabel": "Ticket link needed",
-        "confirmationStatus": "confirmed"
-      }
-    ]
+    "regionSlug": "nv"
   },
   {
     "venueId": "campbell-club-eugene-or",
@@ -824,7 +794,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-11-medford-or",
-        "showName": "Too Sweet Tour at Rockafairy",
+        "showName": "Dark Origins Tour - Too Sweet Tour at Rockafairy",
         "date": "2026-09-11",
         "doorsTime": "7:30 PM",
         "venue": "Rockafairy Hall",
@@ -921,9 +891,9 @@
     "upcomingShows": [
       {
         "id": "2026-09-12-citrus-heights-ca",
-        "showName": "Oathbound with Lucrecia at Smash — Sacramento, CA",
+        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
         "date": "2026-09-12",
-        "doorsTime": "6:00",
+        "doorsTime": "6:00 PM",
         "venue": "Smashed Live",
         "city": "Citrus Heights",
         "region": "CA",
@@ -1575,5 +1545,112 @@
     "market": "Bay Area",
     "citySlug": "crockett",
     "regionSlug": "california"
+  },
+  {
+    "venueId": "cellar-stage-alturas-reno-nv",
+    "venue": "Cellar Stage @ Alturas",
+    "venueSlug": "cellar-stage-alturas",
+    "address": "1044 E 4th St",
+    "city": "Reno",
+    "region": "NV",
+    "regionName": "Nevada",
+    "country": "US",
+    "market": "Northern Nevada",
+    "citySlug": "reno",
+    "regionSlug": "nv",
+    "upcomingShows": [
+      {
+        "id": "2026-09-20-reno-nv",
+        "showName": "Dark Origins Tour - Oathbound at Cellar Stage",
+        "date": "2026-09-20",
+        "doorsTime": "7:00 PM",
+        "venue": "Cellar Stage @ Alturas",
+        "city": "Reno",
+        "region": "NV",
+        "market": "Northern Nevada",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "venueId": "summer-fox-tower-fresno-ca",
+    "venue": "Summer Fox Tower",
+    "venueSlug": "summer-fox-tower",
+    "address": "658 E Olive Ave",
+    "city": "Fresno",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Fresno Area",
+    "citySlug": "fresno",
+    "regionSlug": "ca"
+  },
+  {
+    "venueId": "jerrys-pizza-and-pub-bakersfield-ca",
+    "venue": "Jerry’s Pizza & Pub",
+    "venueSlug": "jerrys-pizza-and-pub",
+    "address": "1817 Chester Ave",
+    "city": "Bakersfield",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Bakersfield Area",
+    "citySlug": "bakersfield",
+    "regionSlug": "ca",
+    "upcomingShows": [
+      {
+        "id": "2026-09-18-bakersfield-ca",
+        "showName": "Dark Origins Tour - Oathbound at Jerry's Pizza",
+        "date": "2026-09-18",
+        "doorsTime": "7:00 PM",
+        "venue": "Jerry’s Pizza & Pub",
+        "city": "Bakersfield",
+        "region": "CA",
+        "market": "Bakersfield Area",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "venueId": "calturas-reno-nv",
+    "venue": "CAlturas",
+    "venueSlug": "calturas",
+    "city": "Reno",
+    "region": "NV",
+    "regionName": "Nevada",
+    "country": "US",
+    "market": "Northern Nevada",
+    "citySlug": "reno",
+    "regionSlug": "nv",
+    "pastShows": [
+      {
+        "id": "2026-03-28-reno-nv",
+        "showName": "Alturas in Reno",
+        "date": "2026-03-28",
+        "venue": "CAlturas",
+        "city": "Reno",
+        "region": "NV",
+        "market": "Northern Nevada",
+        "lineup": "Oathbound",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      },
+      {
+        "id": "2025-08-29-reno-nv",
+        "showName": "Alturas in Reno",
+        "date": "2025-08-29",
+        "venue": "CAlturas",
+        "city": "Reno",
+        "region": "NV",
+        "market": "Northern Nevada",
+        "lineup": "Manzanita Death March",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
   }
 ]
