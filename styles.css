@@ -561,6 +561,12 @@ body[data-page="admin"] .intro {
   height: clamp(54px, 6vw, 76px);
 }
 
+.status-image-badge--free-show {
+  width: clamp(78px, 8.8vw, 108px);
+  height: clamp(78px, 8.8vw, 108px);
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.18));
+}
+
 .age-text-badge {
   display: inline-flex;
   min-width: 64px;
@@ -2157,6 +2163,11 @@ body[data-widget="compact"] .widget-all-link {
   .status-image-badge {
     width: 52px;
     height: 52px;
+  }
+
+  .status-image-badge--free-show {
+    width: 62px;
+    height: 62px;
   }
 
   .age-text-badge {
