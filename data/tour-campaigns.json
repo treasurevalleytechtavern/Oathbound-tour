@@ -1,0 +1,37 @@
+[
+  {
+    "id": "dark-origins-2026",
+    "enabled": true,
+    "name": "Dark Origins Tour",
+    "theme": "dark-origins",
+    "startsAt": "2026-07-12",
+    "endsAt": "2026-09-21",
+    "accent": "#b3222d",
+    "accent2": "#f1d7a1",
+    "glow": "rgba(179, 34, 45, 0.34)",
+    "eyebrow": "Dark Origins Tour",
+    "pageTitle": "Dark Origins Tour Dates",
+    "pageSubtitle": "Oathbound on the road",
+    "pageCopy": "Find the next Dark Origins Tour stop, grab tickets, and help bring the room to life.",
+    "showsHeading": "Tour Dates",
+    "headerTitle": "Oathbound // Dark Origins Tour",
+    "documentTitle": "Oathbound - Dark Origins Tour"
+  },
+  {
+    "id": "myspace-tour-2026",
+    "enabled": false,
+    "name": "Myspace Tour",
+    "theme": "myspace",
+    "startsAt": "2026-05-22",
+    "endsAt": "2026-06-29",
+    "accent": "#30f0c0",
+    "accent2": "#ee55c7",
+    "eyebrow": "Myspace Tour 2026",
+    "pageTitle": "Myspace Tour",
+    "pageSubtitle": "Pretty Suspect x Oathbound",
+    "pageCopy": "Pick your city, grab your tickets, and we'll see you in the pit.",
+    "showsHeading": "Upcoming Shows",
+    "headerTitle": "xX PrettySuspect x Oathbound Xx",
+    "documentTitle": "Oathbound - Myspace Tour"
+  }
+]
