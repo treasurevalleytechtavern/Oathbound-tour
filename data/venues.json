@@ -14,6 +14,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-19-fresno-ca",
+        "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
         "date": "2026-09-19",
         "doorsTime": "6:30 PM",
@@ -56,6 +57,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-16-modesto-ca",
+        "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
         "date": "2026-09-16",
         "doorsTime": "4:30 PM",
@@ -85,6 +87,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-15-pacifica-ca",
+        "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound at Longboard Margarita Bar",
         "date": "2026-09-15",
         "doorsTime": "8:00 PM",
@@ -113,6 +116,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-13-crockett-ca",
+        "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Toots Tavern",
         "date": "2026-09-13",
         "doorsTime": "7:00 PM",
@@ -141,6 +145,7 @@
     "pastShows": [
       {
         "id": "2026-06-19-albany-or",
+        "tourId": "myspace-tour-2026",
         "showName": "520 Events Center in Albany",
         "date": "2026-06-19",
         "doorsTime": "6:00 PM",
@@ -246,6 +251,7 @@
     "pastShows": [
       {
         "id": "2026-06-18-eugene-or",
+        "tourId": "myspace-tour-2026",
         "showName": "Campbell Club in Eugene",
         "date": "2026-06-18",
         "doorsTime": "7:00 PM",
@@ -275,6 +281,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-09-portland-or",
+        "tourId": "dark-origins-2026",
         "showName": "Oathbound at Dante’s — Portland, OR",
         "date": "2026-09-09",
         "doorsTime": "7:30 PM",
@@ -292,6 +299,7 @@
     "pastShows": [
       {
         "id": "2026-06-28-portland-or",
+        "tourId": "myspace-tour-2026",
         "showName": "Dante's in Portland",
         "date": "2026-06-28",
         "doorsTime": "5:30 PM",
@@ -451,6 +459,7 @@
     "pastShows": [
       {
         "id": "2026-06-21-san-luis-obispo-ca",
+        "tourId": "myspace-tour-2026",
         "showName": "Humdinger Brewing SLO Taproom in San Luis Obispo",
         "date": "2026-06-21",
         "doorsTime": "6:00 PM",
@@ -571,6 +580,7 @@
     "pastShows": [
       {
         "id": "2026-06-25-san-diego-ca",
+        "tourId": "myspace-tour-2026",
         "showName": "McGuffie's Live in San Diego",
         "date": "2026-06-25",
         "showTime": "8:00 PM",
@@ -794,6 +804,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-11-medford-or",
+        "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Too Sweet Tour at Rockafairy",
         "date": "2026-09-11",
         "doorsTime": "7:30 PM",
@@ -891,6 +902,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-12-citrus-heights-ca",
+        "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
         "date": "2026-09-12",
         "doorsTime": "6:00 PM",
@@ -945,6 +957,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-10-seattle-wa",
+        "tourId": "dark-origins-2026",
         "showName": "Oathbound at Substation 9.10.26",
         "date": "2026-09-10",
         "doorsTime": "7:00 PM",
@@ -1219,6 +1232,7 @@
     "pastShows": [
       {
         "id": "2026-06-26-reno-nv",
+        "tourId": "myspace-tour-2026",
         "showName": "The Empire in Reno",
         "date": "2026-06-26",
         "doorsTime": "6:30 PM",
@@ -1260,6 +1274,7 @@
     "pastShows": [
       {
         "id": "2026-06-23-los-angeles-ca",
+        "tourId": "myspace-tour-2026",
         "showName": "The Escondite in Los Angeles",
         "date": "2026-06-23",
         "showTime": "8:00 PM",
@@ -1402,6 +1417,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-17-palmdale-ca",
+        "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound at transplants",
         "date": "2026-09-17",
         "doorsTime": "6:30 PM",
@@ -1417,6 +1433,7 @@
     "pastShows": [
       {
         "id": "2026-06-22-palmdale-ca",
+        "tourId": "myspace-tour-2026",
         "showName": "Transplants Brewing Company in Palmdale",
         "date": "2026-06-22",
         "doorsTime": "6:30 PM",
@@ -1473,6 +1490,7 @@
     "pastShows": [
       {
         "id": "2026-06-27-medford-or",
+        "tourId": "myspace-tour-2026",
         "showName": "The Rockafairy in Medford",
         "date": "2026-06-27",
         "doorsTime": "7:00 PM",
@@ -1496,6 +1514,7 @@
     "pastShows": [
       {
         "id": "2026-06-20-citrus-heights-ca",
+        "tourId": "myspace-tour-2026",
         "showName": "Smashed Live in Citrus Heights",
         "date": "2026-06-20",
         "doorsTime": "6:30 PM",
@@ -1544,7 +1563,7 @@
     "country": "US",
     "market": "Bay Area",
     "citySlug": "crockett",
-    "regionSlug": "california"
+    "regionSlug": "ca"
   },
   {
     "venueId": "cellar-stage-alturas-reno-nv",
@@ -1561,6 +1580,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-20-reno-nv",
+        "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound at Cellar Stage",
         "date": "2026-09-20",
         "doorsTime": "7:00 PM",
@@ -1602,6 +1622,7 @@
     "upcomingShows": [
       {
         "id": "2026-09-18-bakersfield-ca",
+        "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound at Jerry's Pizza",
         "date": "2026-09-18",
         "doorsTime": "7:00 PM",
