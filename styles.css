@@ -12,6 +12,7 @@
   --tour-accent: var(--accent);
   --tour-accent-text: #050505;
   --tour-accent-2: #ffffff;
+  --tour-kicker-color: #ffffff;
   --tour-glow: rgba(255, 255, 255, 0.12);
   --danger: #d34040;
   --max: 1120px;
@@ -116,6 +117,10 @@ body[data-page="street-team"] .street-team-background-video {
   filter: drop-shadow(0 0 22px rgba(255, 255, 255, 0.2));
 }
 
+.brand--tour-logo img {
+  filter: drop-shadow(0 0 20px var(--tour-glow));
+}
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -172,8 +177,8 @@ body[data-page="street-team"] .street-team-background-video {
 
 .eyebrow {
   margin: 0 0 14px;
-  color: var(--tour-accent);
-  font-size: 0.83rem;
+  color: var(--tour-kicker-color);
+  font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0;
   text-transform: uppercase;

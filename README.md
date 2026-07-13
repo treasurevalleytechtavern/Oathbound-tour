@@ -68,9 +68,12 @@ Use this shape:
   "accent": "#b3222d",
   "accentText": "#ffffff",
   "accent2": "#f1d7a1",
+  "kickerColor": "#f1d7a1",
   "glow": "rgba(179, 34, 45, 0.34)",
-  "eyebrow": "Dark Origins Tour",
-  "pageTitle": "Dark Origins Tour Dates",
+  "logoUrl": "/assets/dark-origins-logo.png",
+  "logoAlt": "Dark Origins Tour",
+  "eyebrow": "Upcoming Shows",
+  "pageTitle": "Dark Origins Tour",
   "pageSubtitle": "Oathbound on the road",
   "pageCopy": "Find the next Dark Origins Tour stop, grab tickets, and help bring the room to life.",
   "showsHeading": "Tour Dates",
@@ -79,7 +82,7 @@ Use this shape:
 }
 ```
 
-The `theme` value becomes `data-tour-theme` on the `<html>` element. The `accent`, `accent2`, and `glow` values become CSS variables used by buttons, active show highlights, target cards, and page headings. If `accentText` is omitted, the site automatically chooses black or white text based on which has better contrast against `accent`.
+The `theme` value becomes `data-tour-theme` on the `<html>` element. The `accent`, `accent2`, `kickerColor`, and `glow` values become CSS variables used by buttons, active show highlights, target cards, and page headings. If `accentText` is omitted, the site automatically chooses black or white text based on which has better contrast against `accent`. If `kickerColor` is omitted, the site chooses the most readable color from `accent2`, `accent`, and white for the small eyebrow label. If `logoUrl` is provided, it replaces the default Oathbound header logo on the upcoming tour page.
 
 ### TVTT Show Manager Export Notes
 
@@ -99,6 +102,9 @@ Campaign-level JSON should contain the temporary tour treatment:
 - `theme`: stable slug for optional CSS treatment.
 - `accent`, `accent2`, `glow`: colors sampled from the tour artwork.
 - `accentText`: optional. Omit this by default so the site can automatically choose black or white text for accessibility.
+- `kickerColor`: optional. Use this only when the small eyebrow label needs a specific readable color.
+- `logoUrl`: optional root-relative or absolute URL for the tour logo. Leave blank or omit to keep the default Oathbound logo.
+- `logoAlt`: optional alt text for the tour logo.
 - `eyebrow`, `pageTitle`, `pageSubtitle`, `pageCopy`, `showsHeading`, `headerTitle`, `documentTitle`: copy used on the upcoming shows page.
 
 When a tour ends, TVTT Show Manager should either set that campaign's `enabled` value to `false` or move the date window into the past. New tour artwork should update the campaign colors at the same time as the new tour poster/flyer assets.

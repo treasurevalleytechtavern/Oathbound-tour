@@ -72,6 +72,11 @@
     setCssVariable("--tour-accent", campaign.accent);
     setCssVariable("--tour-accent-text", campaign.accentText || getReadableTextColor(campaign.accent));
     setCssVariable("--tour-accent-2", campaign.accent2);
+    setCssVariable("--tour-kicker-color", campaign.kickerColor || getReadableDisplayColor([
+      campaign.accent2,
+      campaign.accent,
+      "#ffffff",
+    ]));
     setCssVariable("--tour-glow", campaign.glow);
     setCssVariable("--accent", campaign.accent);
 
@@ -90,6 +95,7 @@
     setText("#page-copy", campaign.pageCopy);
     setText("#shows-heading", campaign.showsHeading);
     setText(".tour-window-title", campaign.headerTitle || campaign.name);
+    applyTourLogo(campaign);
   }
 
   function setCssVariable(name, value) {
@@ -128,6 +134,27 @@
     }
   }
 
+  function applyTourLogo(campaign) {
+    const logoUrl = String(campaign.logoUrl || "").trim();
+    const image = document.querySelector(".brand img");
+
+    if (!logoUrl || !image) {
+      return;
+    }
+
+    image.src = resolveAssetUrl(logoUrl);
+    image.alt = String(campaign.logoAlt || campaign.name || "Tour logo").trim();
+    image.closest(".brand")?.classList.add("brand--tour-logo");
+  }
+
+  function resolveAssetUrl(url) {
+    if (/^(https?:)?\/\//i.test(url) || /^(data|blob):/i.test(url) || url.startsWith("/")) {
+      return url;
+    }
+
+    return `${rootPath}/${url.replace(/^\.?\//, "")}`;
+  }
+
   function getReadableTextColor(backgroundColor) {
     const rgb = parseColor(backgroundColor);
 
@@ -142,6 +169,32 @@
     const whiteContrast = getContrastRatio(backgroundLuminance, white.luminance);
 
     return blackContrast >= whiteContrast ? black.color : white.color;
+  }
+
+  function getReadableDisplayColor(colors) {
+    const pageBackground = parseColor("#030303");
+    const candidates = colors
+      .map((color) => String(color || "").trim())
+      .filter(Boolean)
+      .map((color) => ({
+        color,
+        rgb: parseColor(color),
+      }))
+      .filter((candidate) => candidate.rgb);
+
+    if (!candidates.length) {
+      return "";
+    }
+
+    const backgroundLuminance = getRelativeLuminance(pageBackground);
+    const [best] = candidates
+      .map((candidate) => ({
+        ...candidate,
+        contrast: getContrastRatio(getRelativeLuminance(candidate.rgb), backgroundLuminance),
+      }))
+      .sort((a, b) => b.contrast - a.contrast);
+
+    return best.color;
   }
 
   function parseColor(value) {
