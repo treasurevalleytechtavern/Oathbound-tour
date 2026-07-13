@@ -9,6 +9,10 @@
   --surface: rgba(7, 8, 9, 0.66);
   --surface-strong: rgba(9, 10, 12, 0.86);
   --accent: #ffffff;
+  --tour-accent: var(--accent);
+  --tour-accent-text: #050505;
+  --tour-accent-2: #ffffff;
+  --tour-glow: rgba(255, 255, 255, 0.12);
   --danger: #d34040;
   --max: 1120px;
 }
@@ -168,7 +172,7 @@ body[data-page="street-team"] .street-team-background-video {
 
 .eyebrow {
   margin: 0 0 14px;
-  color: var(--text);
+  color: var(--tour-accent);
   font-size: 0.83rem;
   font-weight: 800;
   letter-spacing: 0;
@@ -188,6 +192,14 @@ h1 {
   line-height: 0.92;
   text-transform: uppercase;
   text-shadow: 0 18px 42px rgba(0, 0, 0, 0.68);
+}
+
+h1 span {
+  display: block;
+  margin-top: 10px;
+  color: var(--tour-accent-2);
+  font-size: clamp(1.05rem, 2.5vw, 1.9rem);
+  line-height: 1;
 }
 
 .intro #page-copy {
@@ -349,22 +361,22 @@ body[data-page="admin"] .intro {
 }
 
 .show-card--next {
-  border-color: rgba(255, 255, 255, 0.52);
+  border-color: color-mix(in srgb, var(--tour-accent) 58%, rgba(255, 255, 255, 0.52));
   background: rgba(13, 14, 16, 0.84);
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.08),
-    0 0 34px rgba(255, 255, 255, 0.1),
+    0 0 34px var(--tour-glow),
     0 24px 78px rgba(0, 0, 0, 0.36);
 }
 
 .show-card--target {
-  border-color: rgba(80, 224, 188, 0.92);
+  border-color: color-mix(in srgb, var(--tour-accent) 82%, white);
   background:
-    linear-gradient(90deg, rgba(80, 224, 188, 0.18), rgba(255, 255, 255, 0.04)),
+    linear-gradient(90deg, color-mix(in srgb, var(--tour-accent) 18%, transparent), rgba(255, 255, 255, 0.04)),
     var(--surface-strong);
   box-shadow:
-    0 0 0 1px rgba(80, 224, 188, 0.42),
-    0 0 34px rgba(80, 224, 188, 0.2),
+    0 0 0 1px color-mix(in srgb, var(--tour-accent) 42%, transparent),
+    0 0 34px var(--tour-glow),
     0 24px 78px rgba(0, 0, 0, 0.36);
 }
 
@@ -373,18 +385,18 @@ body[data-page="admin"] .intro {
   top: 10px;
   right: 12px;
   padding: 5px 9px;
-  border: 1px solid rgba(80, 224, 188, 0.68);
+  border: 1px solid color-mix(in srgb, var(--tour-accent) 68%, transparent);
   color: #ebfffb;
   content: "Matched Show";
   font-size: 0.68rem;
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
-  background: rgba(5, 34, 29, 0.88);
+  background: color-mix(in srgb, var(--tour-accent) 34%, rgba(5, 5, 5, 0.9));
 }
 
 .show-card--target:focus {
-  outline: 2px solid rgba(80, 224, 188, 0.92);
+  outline: 2px solid color-mix(in srgb, var(--tour-accent) 82%, white);
   outline-offset: 4px;
 }
 
@@ -499,14 +511,14 @@ body[data-page="admin"] .intro {
   align-items: center;
   margin-left: 10px;
   padding: 0 9px;
-  border: 1px solid rgba(80, 224, 188, 0.66);
+  border: 1px solid color-mix(in srgb, var(--tour-accent) 66%, transparent);
   color: #ebfffb;
   font-size: 0.68rem;
   font-weight: 900;
   line-height: 1;
   vertical-align: middle;
   text-transform: uppercase;
-  background: rgba(5, 34, 29, 0.84);
+  background: color-mix(in srgb, var(--tour-accent) 30%, rgba(5, 5, 5, 0.88));
 }
 
 .show-venue {
@@ -609,20 +621,22 @@ body[data-page="admin"] .intro {
 }
 
 .button:hover {
-  color: #050505;
-  background: var(--accent);
+  border-color: var(--tour-accent);
+  color: var(--text);
+  background: color-mix(in srgb, var(--tour-accent) 16%, rgba(255, 255, 255, 0.08));
+  box-shadow: 0 0 18px var(--tour-glow);
 }
 
 .button--primary {
-  border-color: var(--accent);
-  color: #050505;
-  background: var(--accent);
-  box-shadow: 0 0 22px rgba(255, 255, 255, 0.12);
+  border-color: var(--tour-accent);
+  color: var(--tour-accent-text);
+  background: var(--tour-accent);
+  box-shadow: 0 0 22px var(--tour-glow);
 }
 
 .button--primary:hover {
-  color: var(--text);
-  background: rgba(255, 255, 255, 0.1);
+  color: var(--tour-accent-text);
+  background: color-mix(in srgb, var(--tour-accent) 86%, white);
 }
 
 .button:disabled,

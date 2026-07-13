@@ -1,7 +1,9 @@
-prepareBackgroundVideo();
-prepareNavigation();
-prepareTourThemeCopy();
-prepareMyspaceTourWall();
+(window.oathboundTourCampaignReady || Promise.resolve()).finally(() => {
+  prepareBackgroundVideo();
+  prepareNavigation();
+  prepareTourThemeCopy();
+  prepareMyspaceTourWall();
+});
 
 function prepareBackgroundVideo() {
   const video = document.querySelector(".background-video");
@@ -30,7 +32,16 @@ function prepareNavigation() {
 }
 
 function prepareTourThemeCopy() {
-  if (document.documentElement.dataset.tourTheme !== "myspace" || document.body.dataset.page !== "upcoming") {
+  if (document.body.dataset.page !== "upcoming") {
+    return;
+  }
+
+  const campaign = window.oathboundActiveTourCampaign;
+  if (campaign) {
+    return;
+  }
+
+  if (document.documentElement.dataset.tourTheme !== "myspace") {
     return;
   }
 

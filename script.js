@@ -25,8 +25,7 @@ let activeTargetVenueSlug = initialTargetVenueSlug;
 let activeTargetSource = initialTargetSlug || initialTargetVenueSlug ? "url" : "";
 let activeTargetDistanceMiles = null;
 let pendingTargetScroll = Boolean(initialTargetSlug || initialTargetVenueSlug);
-const isMyspaceTheme = document.documentElement.classList.contains("myspace-theme")
-  && document.body.dataset.page === "upcoming";
+let isMyspaceTheme = false;
 
 const showCoordinatesBySlug = {
   albany: { latitude: 44.6365, longitude: -123.1059 },
@@ -54,17 +53,25 @@ const copy = {
   },
 };
 
-if (isMyspaceTheme) {
-  renderTourFriends();
-}
-
 if (findNearestButton && pageMode !== "upcoming") {
   tourFinder?.remove();
 }
 
 findNearestButton?.addEventListener("click", findNearestShow);
 
-loadShows();
+startShows();
+
+async function startShows() {
+  await (window.oathboundTourCampaignReady || Promise.resolve());
+  isMyspaceTheme = document.documentElement.classList.contains("myspace-theme")
+    && document.body.dataset.page === "upcoming";
+
+  if (isMyspaceTheme) {
+    renderTourFriends();
+  }
+
+  loadShows();
+}
 
 async function loadShows() {
   try {
