@@ -69,8 +69,8 @@
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "confirmed",
-    "assetsKey": "nv/reno",
-    "assetsPath": "/street-team/kits/nv/reno/"
+    "assetsKey": "ca/reno",
+    "assetsPath": "/street-team/kits/ca/reno"
   },
   {
     "id": "2026-09-19-fresno-ca",
@@ -122,8 +122,8 @@
         }
       },
       {
-        "bandId": "b",
-        "bandName": "New Band",
+        "bandId": "beauty-is-betrayal",
+        "bandName": "Beauty Is Betrayal",
         "displayName": "Beauty Is Betrayal",
         "role": "featured",
         "socials": {
@@ -135,7 +135,7 @@
         }
       },
       {
-        "bandId": "r",
+        "bandId": "red-keep",
         "bandName": "Red Keep",
         "displayName": "Red Keep",
         "role": "featured",
@@ -164,8 +164,8 @@
     },
     "supportingBands": [
       {
-        "bandId": "b",
-        "bandName": "New Band",
+        "bandId": "beauty-is-betrayal",
+        "bandName": "Beauty Is Betrayal",
         "displayName": "Beauty Is Betrayal",
         "role": "featured",
         "socials": {
@@ -177,7 +177,7 @@
         }
       },
       {
-        "bandId": "r",
+        "bandId": "red-keep",
         "bandName": "Red Keep",
         "displayName": "Red Keep",
         "role": "featured",
@@ -200,7 +200,7 @@
     "displayMode": "full",
     "confirmationStatus": "confirmed",
     "assetsKey": "ca/fresno",
-    "assetsPath": "/street-team/kits/ca/fresno/"
+    "assetsPath": "/street-team/kits/ca/fresno"
   },
   {
     "id": "2026-09-18-bakersfield-ca",
@@ -252,8 +252,8 @@
         }
       },
       {
-        "bandId": "b",
-        "bandName": "New Band",
+        "bandId": "beauty-is-betrayal",
+        "bandName": "Beauty Is Betrayal",
         "displayName": "Beauty Is Betrayal",
         "role": "featured",
         "socials": {
@@ -265,7 +265,7 @@
         }
       },
       {
-        "bandId": "r",
+        "bandId": "red-keep",
         "bandName": "Red Keep",
         "displayName": "Red Keep",
         "role": "featured",
@@ -294,8 +294,8 @@
     },
     "supportingBands": [
       {
-        "bandId": "b",
-        "bandName": "New Band",
+        "bandId": "beauty-is-betrayal",
+        "bandName": "Beauty Is Betrayal",
         "displayName": "Beauty Is Betrayal",
         "role": "featured",
         "socials": {
@@ -307,7 +307,7 @@
         }
       },
       {
-        "bandId": "r",
+        "bandId": "red-keep",
         "bandName": "Red Keep",
         "displayName": "Red Keep",
         "role": "featured",
@@ -329,7 +329,7 @@
     "displayMode": "full",
     "confirmationStatus": "confirmed",
     "assetsKey": "ca/bakersfield",
-    "assetsPath": "/street-team/kits/ca/bakersfield/"
+    "assetsPath": "/street-team/kits/ca/bakersfield"
   },
   {
     "id": "2026-09-17-palmdale-ca",
@@ -381,8 +381,8 @@
         }
       },
       {
-        "bandId": "b",
-        "bandName": "New Band",
+        "bandId": "beauty-is-betrayal",
+        "bandName": "Beauty Is Betrayal",
         "displayName": "Beauty Is Betrayal",
         "role": "featured",
         "socials": {
@@ -394,7 +394,7 @@
         }
       },
       {
-        "bandId": "r",
+        "bandId": "red-keep",
         "bandName": "Red Keep",
         "displayName": "Red Keep",
         "role": "featured",
@@ -423,8 +423,8 @@
     },
     "supportingBands": [
       {
-        "bandId": "b",
-        "bandName": "New Band",
+        "bandId": "beauty-is-betrayal",
+        "bandName": "Beauty Is Betrayal",
         "displayName": "Beauty Is Betrayal",
         "role": "featured",
         "socials": {
@@ -436,7 +436,7 @@
         }
       },
       {
-        "bandId": "r",
+        "bandId": "red-keep",
         "bandName": "Red Keep",
         "displayName": "Red Keep",
         "role": "featured",
@@ -458,11 +458,11 @@
     "displayMode": "full",
     "confirmationStatus": "verified",
     "assetsKey": "ca/palmdale",
-    "assetsPath": "/street-team/kits/ca/palmdale/"
+    "assetsPath": "/street-team/kits/ca/palmdale"
   },
   {
     "id": "2026-09-16-modesto-ca",
-    "showName": "Oathbound at 18 Seventy Brewing",
+    "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
     "date": "2026-09-16",
     "doorsTime": "4:30 PM",
     "timeZone": "America/Los_Angeles",
@@ -510,8 +510,8 @@
         }
       },
       {
-        "bandId": "b",
-        "bandName": "New Band",
+        "bandId": "beauty-is-betrayal",
+        "bandName": "Beauty Is Betrayal",
         "displayName": "Beauty Is Betrayal",
         "role": "featured",
         "socials": {
@@ -523,7 +523,7 @@
         }
       },
       {
-        "bandId": "r",
+        "bandId": "red-keep",
         "bandName": "Red Keep",
         "displayName": "Red Keep",
         "role": "featured",
@@ -552,8 +552,8 @@
     },
     "supportingBands": [
       {
-        "bandId": "b",
-        "bandName": "New Band",
+        "bandId": "beauty-is-betrayal",
+        "bandName": "Beauty Is Betrayal",
         "displayName": "Beauty Is Betrayal",
         "role": "featured",
         "socials": {
@@ -565,7 +565,7 @@
         }
       },
       {
-        "bandId": "r",
+        "bandId": "red-keep",
         "bandName": "Red Keep",
         "displayName": "Red Keep",
         "role": "featured",
@@ -583,15 +583,16 @@
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": false,
+    "notes": "Oathbound, Beauty is Betrayal and Red Keep bring the punishing force of metalcore to Modesto, CA on Wednesday, September 16 for The Dark Origins Tour! You don't want to miss this night of heavy music! Doors are at 6:00pm. This is an all-ages event.",
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "verified",
     "assetsKey": "ca/modesto",
-    "assetsPath": "/street-team/kits/ca/modesto/"
+    "assetsPath": "/street-team/kits/ca/modesto"
   },
   {
     "id": "2026-09-15-pacifica-ca",
-    "showName": "Oathbound at Pacifica",
+    "showName": "Dark Origins Tour - Oathbound at Longboard Margarita Bar",
     "date": "2026-09-15",
     "doorsTime": "8:00 PM",
     "timeZone": "America/Los_Angeles",
@@ -638,8 +639,8 @@
         }
       },
       {
-        "bandId": "b",
-        "bandName": "New Band",
+        "bandId": "beauty-is-betrayal",
+        "bandName": "Beauty Is Betrayal",
         "displayName": "Beauty Is Betrayal",
         "role": "featured",
         "socials": {
@@ -667,8 +668,8 @@
     },
     "supportingBands": [
       {
-        "bandId": "b",
-        "bandName": "New Band",
+        "bandId": "beauty-is-betrayal",
+        "bandName": "Beauty Is Betrayal",
         "displayName": "Beauty Is Betrayal",
         "role": "featured",
         "socials": {
@@ -684,11 +685,12 @@
     "ticketLabel": "Free show",
     "isFreeShow": true,
     "doorSalesOnly": false,
+    "notes": "Oathbound and Beauty is Betrayal bring the punishing force of metalcore to Pacifica, CA on Tuesday, September 15 for The Dark Origins Tour! You don't want to miss this night of heavy music! THIS IS A FREE SHOW!!! Doors are at 8:00pm. This is a 21+ event.",
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "verified",
     "assetsKey": "ca/pacifica-ca",
-    "assetsPath": "/street-team/kits/ca/pacifica-ca/"
+    "assetsPath": "/street-team/kits/ca/pacifica-ca"
   },
   {
     "id": "2026-09-13-crockett-ca",
@@ -760,14 +762,14 @@
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "announced",
-    "assetsKey": "california/crockett",
-    "assetsPath": "/street-team/kits/california/crockett/"
+    "assetsKey": "ca/crockett",
+    "assetsPath": "/street-team/kits/ca/crockett/"
   },
   {
     "id": "2026-09-12-citrus-heights-ca",
-    "showName": "Oathbound with Lucrecia at Smash — Sacramento, CA",
+    "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
     "date": "2026-09-12",
-    "doorsTime": "6:00",
+    "doorsTime": "6:00 PM",
     "timeZone": "America/Los_Angeles",
     "venue": "Smashed Live",
     "address": "6412 Tupelo Dr Suite A/B",
@@ -812,7 +814,7 @@
         }
       },
       {
-        "bandId": "L",
+        "bandId": "lucrecia",
         "bandName": "Lucrecia",
         "displayName": "Lucrecia",
         "role": "featured",
@@ -839,7 +841,7 @@
     },
     "supportingBands": [
       {
-        "bandId": "L",
+        "bandId": "lucrecia",
         "bandName": "Lucrecia",
         "displayName": "Lucrecia",
         "role": "featured",
@@ -855,6 +857,7 @@
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": false,
+    "notes": "Oathbound brings the punishing force of melodic metalcore to Citrus Heights, CA on Saturday, September 12 when their Dark Origins Tour links up with Lucrecia's Too Sweet Tour! You don't want to miss this night of heavy music! Doors are at 6:00pm. This is an all-ages event.",
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "confirmed",
@@ -863,7 +866,7 @@
   },
   {
     "id": "2026-09-11-medford-or",
-    "showName": "Too Sweet Tour at Rockafairy",
+    "showName": "Dark Origins Tour - Too Sweet Tour at Rockafairy",
     "date": "2026-09-11",
     "doorsTime": "7:30 PM",
     "timeZone": "America/Los_Angeles",
@@ -910,7 +913,7 @@
         }
       },
       {
-        "bandId": "L",
+        "bandId": "lucrecia",
         "bandName": "Lucrecia",
         "displayName": "Lucrecia",
         "role": "featured",
@@ -937,7 +940,7 @@
     },
     "supportingBands": [
       {
-        "bandId": "L",
+        "bandId": "lucrecia",
         "bandName": "Lucrecia",
         "displayName": "Lucrecia",
         "role": "featured",
@@ -952,6 +955,7 @@
     "ticketLabel": "Ticket link needed",
     "isFreeShow": false,
     "doorSalesOnly": false,
+    "notes": "Oathbound brings the punishing force of melodic metalcore to Medford, OR on Friday, September 11 when their Dark Origins Tour links up with Lucrecia's Too Sweet Tour! You don't want to miss this night of heavy music! Doors are at 7:30pm. This is an all-ages event.",
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "confirmed",
@@ -965,6 +969,7 @@
     "doorsTime": "7:00 PM",
     "timeZone": "America/Los_Angeles",
     "venue": "Substation",
+    "address": "645 NW 45th St",
     "city": "Seattle",
     "region": "WA",
     "regionName": "Washington",
@@ -976,6 +981,7 @@
       "venueId": "substation-seattle-wa",
       "venueSlug": "substation",
       "venue": "Substation",
+      "address": "645 NW 45th St",
       "city": "Seattle",
       "region": "WA",
       "regionName": "Washington",
@@ -1005,7 +1011,7 @@
         }
       },
       {
-        "bandId": "L",
+        "bandId": "lucrecia",
         "bandName": "Lucrecia",
         "displayName": "Lucrecia",
         "role": "featured",
@@ -1032,7 +1038,7 @@
     },
     "supportingBands": [
       {
-        "bandId": "L",
+        "bandId": "lucrecia",
         "bandName": "Lucrecia",
         "displayName": "Lucrecia",
         "role": "featured",
