@@ -1,6 +1,7 @@
 [
   {
     "id": "2026-09-20-reno-nv",
+    "tourId": "dark-origins-2026",
     "showName": "Dark Origins Tour - Oathbound at Cellar Stage",
     "date": "2026-09-20",
     "doorsTime": "7:00 PM",
@@ -74,6 +75,7 @@
   },
   {
     "id": "2026-09-19-fresno-ca",
+    "tourId": "dark-origins-2026",
     "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
     "date": "2026-09-19",
     "doorsTime": "6:30 PM",
@@ -204,6 +206,7 @@
   },
   {
     "id": "2026-09-18-bakersfield-ca",
+    "tourId": "dark-origins-2026",
     "showName": "Dark Origins Tour - Oathbound at Jerry's Pizza",
     "date": "2026-09-18",
     "doorsTime": "7:00 PM",
@@ -333,6 +336,7 @@
   },
   {
     "id": "2026-09-17-palmdale-ca",
+    "tourId": "dark-origins-2026",
     "showName": "Dark Origins Tour - Oathbound at transplants",
     "date": "2026-09-17",
     "doorsTime": "6:30 PM",
@@ -462,6 +466,7 @@
   },
   {
     "id": "2026-09-16-modesto-ca",
+    "tourId": "dark-origins-2026",
     "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
     "date": "2026-09-16",
     "doorsTime": "4:30 PM",
@@ -592,6 +597,7 @@
   },
   {
     "id": "2026-09-15-pacifica-ca",
+    "tourId": "dark-origins-2026",
     "showName": "Dark Origins Tour - Oathbound at Longboard Margarita Bar",
     "date": "2026-09-15",
     "doorsTime": "8:00 PM",
@@ -694,6 +700,7 @@
   },
   {
     "id": "2026-09-13-crockett-ca",
+    "tourId": "dark-origins-2026",
     "showName": "Dark Origins Tour - Toots Tavern",
     "date": "2026-09-13",
     "doorsTime": "7:00 PM",
@@ -767,6 +774,7 @@
   },
   {
     "id": "2026-09-12-citrus-heights-ca",
+    "tourId": "dark-origins-2026",
     "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
     "date": "2026-09-12",
     "doorsTime": "6:00 PM",
@@ -866,6 +874,7 @@
   },
   {
     "id": "2026-09-11-medford-or",
+    "tourId": "dark-origins-2026",
     "showName": "Dark Origins Tour - Too Sweet Tour at Rockafairy",
     "date": "2026-09-11",
     "doorsTime": "7:30 PM",
@@ -964,6 +973,7 @@
   },
   {
     "id": "2026-09-10-seattle-wa",
+    "tourId": "dark-origins-2026",
     "showName": "Oathbound at Substation 9.10.26",
     "date": "2026-09-10",
     "doorsTime": "7:00 PM",
@@ -1049,6 +1059,7 @@
         }
       }
     ],
+    "ageRestriction": "21+",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": false,
@@ -1061,6 +1072,7 @@
   },
   {
     "id": "2026-09-09-portland-or",
+    "tourId": "dark-origins-2026",
     "showName": "Oathbound at Dante’s — Portland, OR",
     "date": "2026-09-09",
     "doorsTime": "7:30 PM",
@@ -1135,39 +1147,41 @@
     "assetsPath": "/street-team/kits/or/portland/"
   },
   {
-    "id": "2026-06-18-eugene-or",
-    "showName": "Campbell Club in Eugene",
-    "date": "2026-06-18",
-    "doorsTime": "7:00 PM",
-    "showTime": "7:30 PM",
+    "id": "2026-06-28-portland-or",
+    "tourId": "myspace-tour-2026",
+    "showName": "Dante's in Portland",
+    "date": "2026-06-28",
+    "doorsTime": "5:30 PM",
+    "showTime": "6:00 PM",
     "timeZone": "America/Los_Angeles",
-    "venue": "Campbell Club",
-    "address": "1670 Alder St",
-    "city": "Eugene",
+    "venue": "Dante's",
+    "address": "350 W Burnside St",
+    "city": "Portland",
     "region": "OR",
     "regionName": "Oregon",
     "country": "US",
-    "market": "Willamette Valley",
-    "citySlug": "eugene",
+    "market": "Portland Metro",
+    "citySlug": "portland",
     "regionSlug": "or",
     "venueRef": {
-      "venueId": "campbell-club-eugene-or",
-      "venueSlug": "campbell-club",
-      "venue": "Campbell Club",
-      "address": "1670 Alder St",
-      "city": "Eugene",
+      "venueId": "dantes-portland-or",
+      "venueSlug": "dantes",
+      "venue": "Dante's",
+      "address": "350 W Burnside St",
+      "city": "Portland",
       "region": "OR",
       "regionName": "Oregon",
       "country": "US",
-      "market": "Willamette Valley",
-      "citySlug": "eugene",
+      "market": "Portland Metro",
+      "citySlug": "portland",
       "regionSlug": "or"
     },
-    "lineup": "Oathbound; Pretty Suspect; Corpse Flip",
+    "lineup": "Oathbound; Pretty Suspect; Hangfire; Foghorn",
     "lineupArtists": [
       "Oathbound",
       "Pretty Suspect",
-      "Corpse Flip"
+      "Hangfire",
+      "Foghorn"
     ],
     "featuredBands": [
       {
@@ -1199,14 +1213,21 @@
         }
       },
       {
-        "bandId": "corpseflip",
-        "bandName": "Corpse Flip",
-        "displayName": "Corpse Flip",
+        "bandId": "hangfire",
+        "bandName": "Hangfire",
+        "displayName": "Hangfire",
+        "role": "featured",
+        "socials": {}
+      },
+      {
+        "bandId": "foghorn",
+        "bandName": "Foghorn",
+        "displayName": "Foghorn",
         "role": "featured",
         "socials": {
-          "instagram": "https://www.instagram.com/corpseflip_eug/",
-          "spotify": "https://open.spotify.com/artist/4PcrYp0j7Fin9mJaOUV6nh",
-          "bandcamp": "https://corpseflop.bandcamp.com/album/i-watched-the-light-leave-your-eyes"
+          "instagram": "https://www.instagram.com/officialfoghorn/",
+          "facebook": "https://www.facebook.com/foghornwa/",
+          "spotify": "https://open.spotify.com/artist/4vr3bAVN2n2KQDb2tWXj5U"
         }
       }
     ],
@@ -1240,14 +1261,312 @@
         }
       },
       {
-        "bandId": "corpseflip",
-        "bandName": "Corpse Flip",
-        "displayName": "Corpse Flip",
+        "bandId": "hangfire",
+        "bandName": "Hangfire",
+        "displayName": "Hangfire",
+        "role": "featured",
+        "socials": {}
+      },
+      {
+        "bandId": "foghorn",
+        "bandName": "Foghorn",
+        "displayName": "Foghorn",
         "role": "featured",
         "socials": {
-          "instagram": "https://www.instagram.com/corpseflip_eug/",
-          "spotify": "https://open.spotify.com/artist/4PcrYp0j7Fin9mJaOUV6nh",
-          "bandcamp": "https://corpseflop.bandcamp.com/album/i-watched-the-light-leave-your-eyes"
+          "instagram": "https://www.instagram.com/officialfoghorn/",
+          "facebook": "https://www.facebook.com/foghornwa/",
+          "spotify": "https://open.spotify.com/artist/4vr3bAVN2n2KQDb2tWXj5U"
+        }
+      }
+    ],
+    "ageRestriction": "21+",
+    "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943",
+    "ticketLabel": "Buy $13 Advance Tickets",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "infoLabel": "$18.03 total with fees",
+    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Portland, OR on Sunday, June 28 at Dante's. The Myspace Tour closes out this run at Dante's with Pretty Suspect, Oathbound, Hangfire, and Foghorn bringing a 21+ night of heavy music, sharp hooks, and end-of-tour fire.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "announced",
+    "assetsKey": "or/portland",
+    "assetsPath": "/street-team/kits/or/portland/"
+  },
+  {
+    "id": "2026-06-27-medford-or",
+    "tourId": "myspace-tour-2026",
+    "showName": "The Rockafairy in Medford",
+    "date": "2026-06-27",
+    "doorsTime": "7:00 PM",
+    "showTime": "8:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "The Rockafairy",
+    "address": "31 W 6th St",
+    "city": "Medford",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Southern Oregon",
+    "citySlug": "medford",
+    "regionSlug": "or",
+    "venueRef": {
+      "venueId": "the-rockafairy-medford-or",
+      "venueSlug": "the-rockafairy",
+      "venue": "The Rockafairy",
+      "address": "31 W 6th St",
+      "city": "Medford",
+      "region": "OR",
+      "regionName": "Oregon",
+      "country": "US",
+      "market": "Southern Oregon",
+      "citySlug": "medford",
+      "regionSlug": "or"
+    },
+    "lineup": "Oathbound; Pretty Suspect; Two Piece Face; Hide Heaven; Atelectasis",
+    "lineupArtists": [
+      "Oathbound",
+      "Pretty Suspect",
+      "Two Piece Face",
+      "Hide Heaven",
+      "Atelectasis"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      },
+      {
+        "bandId": "two-face",
+        "bandName": "Two Piece Face",
+        "displayName": "Two Piece Face",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/two_piece_face_official/",
+          "facebook": "https://www.facebook.com/twopiecefacebook/",
+          "youtube": "https://www.youtube.com/channel/UCGK1XPNwh-XLgdoFRuogJLg/about",
+          "bandcamp": "https://twopieceface.bandcamp.com/track/maze"
+        }
+      },
+      {
+        "bandId": "hide-heaven",
+        "bandName": "Hide Heaven",
+        "displayName": "Hide Heaven",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/hideheaven541/",
+          "facebook": "https://www.facebook.com/profile.php?id=100090334207130"
+        }
+      },
+      {
+        "bandId": "atelectasis",
+        "bandName": "Atelectasis",
+        "displayName": "Atelectasis",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/atelectasisofficial/",
+          "facebook": "https://www.facebook.com/profile.php?id=61575371348236",
+          "tiktok": "https://www.tiktok.com/@atelectasisofficial",
+          "youtube": "https://www.youtube.com/@atelectasisofficial",
+          "spotify": "https://open.spotify.com/artist/1TrDXeDbi6Bohq6f9X94bV",
+          "website": "https://linktr.ee/atelectasis.band"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      },
+      {
+        "bandId": "two-face",
+        "bandName": "Two Piece Face",
+        "displayName": "Two Piece Face",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/two_piece_face_official/",
+          "facebook": "https://www.facebook.com/twopiecefacebook/",
+          "youtube": "https://www.youtube.com/channel/UCGK1XPNwh-XLgdoFRuogJLg/about",
+          "bandcamp": "https://twopieceface.bandcamp.com/track/maze"
+        }
+      },
+      {
+        "bandId": "hide-heaven",
+        "bandName": "Hide Heaven",
+        "displayName": "Hide Heaven",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/hideheaven541/",
+          "facebook": "https://www.facebook.com/profile.php?id=100090334207130"
+        }
+      },
+      {
+        "bandId": "atelectasis",
+        "bandName": "Atelectasis",
+        "displayName": "Atelectasis",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/atelectasisofficial/",
+          "facebook": "https://www.facebook.com/profile.php?id=61575371348236",
+          "tiktok": "https://www.tiktok.com/@atelectasisofficial",
+          "youtube": "https://www.youtube.com/@atelectasisofficial",
+          "spotify": "https://open.spotify.com/artist/1TrDXeDbi6Bohq6f9X94bV",
+          "website": "https://linktr.ee/atelectasis.band"
+        }
+      }
+    ],
+    "ageRestriction": "All Ages",
+    "ticketUrl": "https://rockafairy.betterworld.org/events/oathboundjune27",
+    "ticketLabel": "Buy $10 Advance Tickets",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "infoLabel": "Ticket is $10 before checkout contributions",
+    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Medford, Oregon on Saturday, June 27 at The Rockafairy, with support from Hide Heaven and Two Piece Face. This all-ages stop brings the tour’s blend of heavy riffs, visual spectacle, and early-internet scene energy to Medford for one loud Saturday night. Doors are at 7:30 PM, the show starts at 8:00 PM, and tickets are $10 advance / $15 day of show.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "verified",
+    "assetsKey": "or/medford",
+    "assetsPath": "/street-team/kits/or/medford/"
+  },
+  {
+    "id": "2026-06-26-reno-nv",
+    "tourId": "myspace-tour-2026",
+    "showName": "The Empire in Reno",
+    "date": "2026-06-26",
+    "doorsTime": "6:30 PM",
+    "showTime": "7:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "The Empire",
+    "address": "620 Ryland St",
+    "city": "Reno",
+    "region": "NV",
+    "regionName": "Nevada",
+    "country": "US",
+    "market": "Reno / Northern Nevada",
+    "citySlug": "reno",
+    "regionSlug": "nv",
+    "venueRef": {
+      "venueId": "the-empire-reno-nv",
+      "venueSlug": "the-empire",
+      "venue": "The Empire",
+      "address": "620 Ryland St",
+      "city": "Reno",
+      "region": "NV",
+      "regionName": "Nevada",
+      "country": "US",
+      "market": "Reno / Northern Nevada",
+      "citySlug": "reno",
+      "regionSlug": "nv"
+    },
+    "lineup": "Oathbound; Pretty Suspect",
+    "lineupArtists": [
+      "Oathbound",
+      "Pretty Suspect"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
         }
       }
     ],
@@ -1255,15 +1574,730 @@
     "ticketLabel": "Door sales only",
     "isFreeShow": false,
     "doorSalesOnly": true,
-    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Eugene, OR on Thursday, June 18 at The Campbell Club, with support from Corpseflip. Get ready for a $10 all-ages night of distortion, grit, and full-volume tour chaos as the Myspace Tour rolls into Eugene.",
+    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Reno, NV on Friday, June 26 at The Empire. Get ready for a night of distortion, grit, and full-volume tour chaos as the Myspace Tour rolls into Reno and takes over the room. Doors are at 6:30 PM and the show starts at 7:00 PM. More details coming soon.",
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "verified",
-    "assetsKey": "or/eugene",
-    "assetsPath": "/street-team/kits/or/eugene/"
+    "assetsKey": "nv/reno",
+    "assetsPath": "/street-team/kits/nv/reno/"
+  },
+  {
+    "id": "2026-06-25-san-diego-ca",
+    "tourId": "myspace-tour-2026",
+    "showName": "McGuffie's Live in San Diego",
+    "date": "2026-06-25",
+    "showTime": "8:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "McGuffie's Live",
+    "address": "8515 Navajo Rd",
+    "city": "San Diego",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "San Diego Area",
+    "citySlug": "san-diego",
+    "regionSlug": "ca",
+    "venueRef": {
+      "venueId": "mcguffies-live-san-diego-ca",
+      "venueSlug": "mcguffies-live",
+      "venue": "McGuffie's Live",
+      "address": "8515 Navajo Rd",
+      "city": "San Diego",
+      "region": "CA",
+      "regionName": "California",
+      "country": "US",
+      "market": "San Diego Area",
+      "citySlug": "san-diego",
+      "regionSlug": "ca"
+    },
+    "lineup": "Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus",
+    "lineupArtists": [
+      "Oathbound",
+      "Pretty Suspect",
+      "Lookoutbelow",
+      "Saul of Tarsus"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      },
+      {
+        "bandId": "lookoutbelow",
+        "bandName": "Lookoutbelow",
+        "displayName": "Lookoutbelow",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/lob.music/",
+          "spotify": "https://open.spotify.com/album/3EyenBfoa7jkjcg5aYVDoe?si=Yt3ivHfZQCy9WPm7Fn_7pA"
+        }
+      },
+      {
+        "bandId": "saul-of-tarsus",
+        "bandName": "Saul of Tarsus",
+        "displayName": "Saul of Tarsus",
+        "role": "featured",
+        "socials": {
+          "facebook": "https://www.facebook.com/saulxofxtarsus/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      },
+      {
+        "bandId": "lookoutbelow",
+        "bandName": "Lookoutbelow",
+        "displayName": "Lookoutbelow",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/lob.music/",
+          "spotify": "https://open.spotify.com/album/3EyenBfoa7jkjcg5aYVDoe?si=Yt3ivHfZQCy9WPm7Fn_7pA"
+        }
+      },
+      {
+        "bandId": "saul-of-tarsus",
+        "bandName": "Saul of Tarsus",
+        "displayName": "Saul of Tarsus",
+        "role": "featured",
+        "socials": {
+          "facebook": "https://www.facebook.com/saulxofxtarsus/"
+        }
+      }
+    ],
+    "ageRestriction": "21+",
+    "ticketLabel": "Door sales only",
+    "isFreeShow": false,
+    "doorSalesOnly": true,
+    "notes": "San Diego!!! Oathbound & Pretty Suspect are bringing their MySpace Tour to McGuffie's Live on Thursday, June 25. Don't miss this visceral, adrenaline-fueled lineup also featuring Lookoutbelow and Saul of Tarsus. Tickets are $5 at the door and the show starts at 8:00 for this all-ages event! We'll see you in the pit!!!",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "announced",
+    "assetsKey": "ca/san-diego",
+    "assetsPath": "/street-team/kits/ca/san-diego/"
+  },
+  {
+    "id": "2026-06-23-los-angeles-ca",
+    "tourId": "myspace-tour-2026",
+    "showName": "The Escondite in Los Angeles",
+    "date": "2026-06-23",
+    "showTime": "8:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "The Escondite",
+    "address": "410 Boyd St",
+    "city": "Los Angeles",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Los Angeles Area",
+    "citySlug": "los-angeles",
+    "regionSlug": "ca",
+    "venueRef": {
+      "venueId": "the-escondite-los-angeles-ca",
+      "venueSlug": "the-escondite",
+      "venue": "The Escondite",
+      "address": "410 Boyd St",
+      "city": "Los Angeles",
+      "region": "CA",
+      "regionName": "California",
+      "country": "US",
+      "market": "Los Angeles Area",
+      "citySlug": "los-angeles",
+      "regionSlug": "ca"
+    },
+    "lineup": "Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib",
+    "lineupArtists": [
+      "Oathbound",
+      "Pretty Suspect",
+      "Daybreak Ends",
+      "Dead Habib"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      },
+      {
+        "bandId": "daybreak-ends",
+        "bandName": "Daybreak Ends",
+        "displayName": "Daybreak Ends",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/daybreakends/",
+          "facebook": "https://www.facebook.com/DbEband/",
+          "spotify": "https://open.spotify.com/artist/0LWnm2uibO6dMjgj0EsS4r",
+          "bandcamp": "https://daybreakends.bandcamp.com/",
+          "website": "https://daybreakends.com/"
+        }
+      },
+      {
+        "bandId": "deadhabib",
+        "bandName": "Dead Habib",
+        "displayName": "Dead Habib",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/xdeadhabibx/",
+          "bandcamp": "https://xdead-habibx.bandcamp.com/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      },
+      {
+        "bandId": "daybreak-ends",
+        "bandName": "Daybreak Ends",
+        "displayName": "Daybreak Ends",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/daybreakends/",
+          "facebook": "https://www.facebook.com/DbEband/",
+          "spotify": "https://open.spotify.com/artist/0LWnm2uibO6dMjgj0EsS4r",
+          "bandcamp": "https://daybreakends.bandcamp.com/",
+          "website": "https://daybreakends.com/"
+        }
+      },
+      {
+        "bandId": "deadhabib",
+        "bandName": "Dead Habib",
+        "displayName": "Dead Habib",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/xdeadhabibx/",
+          "bandcamp": "https://xdead-habibx.bandcamp.com/"
+        }
+      }
+    ],
+    "ageRestriction": "21+",
+    "ticketLabel": "Free show",
+    "isFreeShow": true,
+    "doorSalesOnly": false,
+    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Los Angeles, CA on Tuesday, June 23 at The Escondite. This free 21+ show brings the tour into LA for a gritty night of heavy sounds, throwback attitude, and no-room-for-boring energy. Come loud, come ready.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "announced",
+    "assetsKey": "ca/los-angeles",
+    "assetsPath": "/street-team/kits/ca/los-angeles/"
+  },
+  {
+    "id": "2026-06-22-palmdale-ca",
+    "tourId": "myspace-tour-2026",
+    "showName": "Transplants Brewing Company in Palmdale",
+    "date": "2026-06-22",
+    "doorsTime": "6:30 PM",
+    "showTime": "7:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Transplants Brewing Company",
+    "address": "40242 La Quinta Ln Unit 101",
+    "city": "Palmdale",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Antelope Valley",
+    "citySlug": "palmdale",
+    "regionSlug": "ca",
+    "venueRef": {
+      "venueId": "transplants-brewing-company-palmdale-ca",
+      "venueSlug": "transplants-brewing-company",
+      "venue": "Transplants Brewing Company",
+      "address": "40242 La Quinta Ln Unit 101",
+      "city": "Palmdale",
+      "region": "CA",
+      "regionName": "California",
+      "country": "US",
+      "market": "Antelope Valley",
+      "citySlug": "palmdale",
+      "regionSlug": "ca"
+    },
+    "lineup": "Oathbound; Pretty Suspect; Revelry",
+    "lineupArtists": [
+      "Oathbound",
+      "Pretty Suspect",
+      "Revelry"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      },
+      {
+        "bandId": "revelry",
+        "bandName": "Revelry",
+        "displayName": "Revelry",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/revelry_ca/",
+          "facebook": "https://www.facebook.com/revelryca/",
+          "youtube": "https://www.youtube.com/@revelryca",
+          "spotify": "https://open.spotify.com/artist/1WWNC5IGxa2WykWpHwuJtW",
+          "website": "https://www.revelryofficial.com/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      },
+      {
+        "bandId": "revelry",
+        "bandName": "Revelry",
+        "displayName": "Revelry",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/revelry_ca/",
+          "facebook": "https://www.facebook.com/revelryca/",
+          "youtube": "https://www.youtube.com/@revelryca",
+          "spotify": "https://open.spotify.com/artist/1WWNC5IGxa2WykWpHwuJtW",
+          "website": "https://www.revelryofficial.com/"
+        }
+      }
+    ],
+    "ageRestriction": "All Ages",
+    "ticketUrl": "https://www.ticketweb.com/event/free-show-pretty-suspect-transplants-brewing-company-tickets/14928993",
+    "ticketLabel": "RSVP to FREE Show",
+    "isFreeShow": true,
+    "doorSalesOnly": false,
+    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Palmdale, CA on Monday, June 22 at Transplants Brewing. Pretty Suspect, Oathbound, and Revelry are serving up a free all-ages night packed with distortion, movement, and Myspace-core mayhem. Doors open at 6:30 PM and the show starts at 7:00 PM.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "announced",
+    "assetsKey": "ca/palmdale",
+    "assetsPath": "/street-team/kits/ca/palmdale/"
+  },
+  {
+    "id": "2026-06-21-san-luis-obispo-ca",
+    "tourId": "myspace-tour-2026",
+    "showName": "Humdinger Brewing SLO Taproom in San Luis Obispo",
+    "date": "2026-06-21",
+    "doorsTime": "6:00 PM",
+    "showTime": "6:30 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Humdinger Brewing SLO Taproom",
+    "address": "855 Capitolio Way STE 1",
+    "city": "San Luis Obispo",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Central Coast / SLO",
+    "citySlug": "san-luis-obispo",
+    "regionSlug": "ca",
+    "venueRef": {
+      "venueId": "humdinger-brewing-slo-taproom-san-luis-obispo-ca",
+      "venueSlug": "humdinger-brewing-slo-taproom",
+      "venue": "Humdinger Brewing SLO Taproom",
+      "address": "855 Capitolio Way STE 1",
+      "city": "San Luis Obispo",
+      "region": "CA",
+      "regionName": "California",
+      "country": "US",
+      "market": "Central Coast / SLO",
+      "citySlug": "san-luis-obispo",
+      "regionSlug": "ca"
+    },
+    "lineup": "Oathbound; Pretty Suspect; Idol Eyes; Stabbable Offense",
+    "lineupArtists": [
+      "Oathbound",
+      "Pretty Suspect",
+      "Idol Eyes",
+      "Stabbable Offense"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      },
+      {
+        "bandId": "idol-eyes",
+        "bandName": "Idol Eyes",
+        "displayName": "Idol Eyes",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/idoleyes.ca/",
+          "youtube": "https://www.youtube.com/watch?v=0znCwwqm-_Q"
+        }
+      },
+      {
+        "bandId": "stabbable-offense",
+        "bandName": "Stabbable Offense",
+        "displayName": "Stabbable Offense",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/stabbableoffense/",
+          "facebook": "https://www.facebook.com/stabbableoffense/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      },
+      {
+        "bandId": "idol-eyes",
+        "bandName": "Idol Eyes",
+        "displayName": "Idol Eyes",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/idoleyes.ca/",
+          "youtube": "https://www.youtube.com/watch?v=0znCwwqm-_Q"
+        }
+      },
+      {
+        "bandId": "stabbable-offense",
+        "bandName": "Stabbable Offense",
+        "displayName": "Stabbable Offense",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/stabbableoffense/",
+          "facebook": "https://www.facebook.com/stabbableoffense/"
+        }
+      }
+    ],
+    "ageRestriction": "All Ages",
+    "ticketUrl": "https://my805tix.com/e/pretty-suspect",
+    "ticketLabel": "Buy $10 Advance Tickets",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "infoLabel": "$12.96 total with fees",
+    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to San Luis Obispo on Sunday, June 21 at Humdinger Brewing, with support from Idol Eyes and Stabbable Offense. The Myspace Tour rolls into SLO with a loud, high-voltage night of heavy music, sharp hooks, and plenty of chaos for the front row. Doors are at 6:00 PM, the show starts at 6:30 PM, tickets are $10, and this is an all-ages experience.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "announced",
+    "assetsKey": "ca/san-luis-obispo",
+    "assetsPath": "/street-team/kits/ca/san-luis-obispo/"
+  },
+  {
+    "id": "2026-06-20-citrus-heights-ca",
+    "tourId": "myspace-tour-2026",
+    "showName": "Smashed Live in Citrus Heights",
+    "date": "2026-06-20",
+    "doorsTime": "6:30 PM",
+    "showTime": "7:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Smashed Live - Sacremento",
+    "country": "US",
+    "venueRef": {
+      "venueId": "smashed-live-sacremento",
+      "venueSlug": "smashed-live-sacremento",
+      "venue": "Smashed Live - Sacremento",
+      "country": "US"
+    },
+    "lineup": "Oathbound; Pretty Suspect; Salt; Hallway Scenes",
+    "lineupArtists": [
+      "Oathbound",
+      "Pretty Suspect",
+      "Salt",
+      "Hallway Scenes"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      },
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      },
+      {
+        "bandId": "salt",
+        "bandName": "Salt",
+        "displayName": "Salt",
+        "role": "featured",
+        "socials": {}
+      },
+      {
+        "bandId": "hallway-scenes",
+        "bandName": "Hallway Scenes",
+        "displayName": "Hallway Scenes",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/hallwayscenes/",
+          "youtube": "https://www.youtube.com/@hallwayscenes",
+          "spotify": "https://open.spotify.com/artist/6Ol15WCVqAiUdrUrqWRtXu",
+          "website": "https://www.hallwayscenes.com/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "supportingBands": [
+      {
+        "bandId": "pretty-suspect",
+        "bandName": "Pretty Suspect",
+        "displayName": "Pretty Suspect",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/prettysuspect.band/",
+          "facebook": "https://www.facebook.com/PrettySuspect97401/",
+          "tiktok": "https://www.tiktok.com/@prettysuspect",
+          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
+          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
+          "website": "https://www.prettysuspect.com/"
+        }
+      },
+      {
+        "bandId": "salt",
+        "bandName": "Salt",
+        "displayName": "Salt",
+        "role": "featured",
+        "socials": {}
+      },
+      {
+        "bandId": "hallway-scenes",
+        "bandName": "Hallway Scenes",
+        "displayName": "Hallway Scenes",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/hallwayscenes/",
+          "youtube": "https://www.youtube.com/@hallwayscenes",
+          "spotify": "https://open.spotify.com/artist/6Ol15WCVqAiUdrUrqWRtXu",
+          "website": "https://www.hallwayscenes.com/"
+        }
+      }
+    ],
+    "ageRestriction": "All Ages",
+    "ticketLabel": "Tickets",
+    "isFreeShow": false,
+    "doorSalesOnly": true,
+    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Citrus Heights, CA on Saturday, June 20 at Smashed Live. Salt joins the bill for a night built on big riffs, heavy momentum, and the kind of room-shaking energy that makes a small venue feel massive. Tickets are $15 and only available at the door for this all-ages experience.",
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "announced",
+    "assetsKey": "ca/citrus-heights",
+    "assetsPath": "/street-team/kits/ca/citrus-heights/"
   },
   {
     "id": "2026-06-19-albany-or",
+    "tourId": "myspace-tour-2026",
     "showName": "520 Events Center in Albany",
     "date": "2026-06-19",
     "doorsTime": "6:00 PM",
@@ -1472,26 +2506,40 @@
     "assetsPath": "/street-team/kits/or/albany/"
   },
   {
-    "id": "2026-06-20-citrus-heights-ca",
-    "showName": "Smashed Live in Citrus Heights",
-    "date": "2026-06-20",
-    "doorsTime": "6:30 PM",
-    "showTime": "7:00 PM",
+    "id": "2026-06-18-eugene-or",
+    "tourId": "myspace-tour-2026",
+    "showName": "Campbell Club in Eugene",
+    "date": "2026-06-18",
+    "doorsTime": "7:00 PM",
+    "showTime": "7:30 PM",
     "timeZone": "America/Los_Angeles",
-    "venue": "Smashed Live - Sacremento",
+    "venue": "Campbell Club",
+    "address": "1670 Alder St",
+    "city": "Eugene",
+    "region": "OR",
+    "regionName": "Oregon",
     "country": "US",
+    "market": "Willamette Valley",
+    "citySlug": "eugene",
+    "regionSlug": "or",
     "venueRef": {
-      "venueId": "smashed-live-sacremento",
-      "venueSlug": "smashed-live-sacremento",
-      "venue": "Smashed Live - Sacremento",
-      "country": "US"
+      "venueId": "campbell-club-eugene-or",
+      "venueSlug": "campbell-club",
+      "venue": "Campbell Club",
+      "address": "1670 Alder St",
+      "city": "Eugene",
+      "region": "OR",
+      "regionName": "Oregon",
+      "country": "US",
+      "market": "Willamette Valley",
+      "citySlug": "eugene",
+      "regionSlug": "or"
     },
-    "lineup": "Oathbound; Pretty Suspect; Salt; Hallway Scenes",
+    "lineup": "Oathbound; Pretty Suspect; Corpse Flip",
     "lineupArtists": [
       "Oathbound",
       "Pretty Suspect",
-      "Salt",
-      "Hallway Scenes"
+      "Corpse Flip"
     ],
     "featuredBands": [
       {
@@ -1523,22 +2571,14 @@
         }
       },
       {
-        "bandId": "salt",
-        "bandName": "Salt",
-        "displayName": "Salt",
-        "role": "featured",
-        "socials": {}
-      },
-      {
-        "bandId": "hallway-scenes",
-        "bandName": "Hallway Scenes",
-        "displayName": "Hallway Scenes",
+        "bandId": "corpseflip",
+        "bandName": "Corpse Flip",
+        "displayName": "Corpse Flip",
         "role": "featured",
         "socials": {
-          "instagram": "https://www.instagram.com/hallwayscenes/",
-          "youtube": "https://www.youtube.com/@hallwayscenes",
-          "spotify": "https://open.spotify.com/artist/6Ol15WCVqAiUdrUrqWRtXu",
-          "website": "https://www.hallwayscenes.com/"
+          "instagram": "https://www.instagram.com/corpseflip_eug/",
+          "spotify": "https://open.spotify.com/artist/4PcrYp0j7Fin9mJaOUV6nh",
+          "bandcamp": "https://corpseflop.bandcamp.com/album/i-watched-the-light-leave-your-eyes"
         }
       }
     ],
@@ -1572,1072 +2612,54 @@
         }
       },
       {
-        "bandId": "salt",
-        "bandName": "Salt",
-        "displayName": "Salt",
-        "role": "featured",
-        "socials": {}
-      },
-      {
-        "bandId": "hallway-scenes",
-        "bandName": "Hallway Scenes",
-        "displayName": "Hallway Scenes",
+        "bandId": "corpseflip",
+        "bandName": "Corpse Flip",
+        "displayName": "Corpse Flip",
         "role": "featured",
         "socials": {
-          "instagram": "https://www.instagram.com/hallwayscenes/",
-          "youtube": "https://www.youtube.com/@hallwayscenes",
-          "spotify": "https://open.spotify.com/artist/6Ol15WCVqAiUdrUrqWRtXu",
-          "website": "https://www.hallwayscenes.com/"
+          "instagram": "https://www.instagram.com/corpseflip_eug/",
+          "spotify": "https://open.spotify.com/artist/4PcrYp0j7Fin9mJaOUV6nh",
+          "bandcamp": "https://corpseflop.bandcamp.com/album/i-watched-the-light-leave-your-eyes"
         }
       }
     ],
     "ageRestriction": "All Ages",
-    "ticketLabel": "Tickets",
-    "isFreeShow": false,
-    "doorSalesOnly": true,
-    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Citrus Heights, CA on Saturday, June 20 at Smashed Live. Salt joins the bill for a night built on big riffs, heavy momentum, and the kind of room-shaking energy that makes a small venue feel massive. Tickets are $15 and only available at the door for this all-ages experience.",
-    "public": true,
-    "displayMode": "full",
-    "confirmationStatus": "announced",
-    "assetsKey": "ca/citrus-heights",
-    "assetsPath": "/street-team/kits/ca/citrus-heights/"
-  },
-  {
-    "id": "2026-06-21-san-luis-obispo-ca",
-    "showName": "Humdinger Brewing SLO Taproom in San Luis Obispo",
-    "date": "2026-06-21",
-    "doorsTime": "6:00 PM",
-    "showTime": "6:30 PM",
-    "timeZone": "America/Los_Angeles",
-    "venue": "Humdinger Brewing SLO Taproom",
-    "address": "855 Capitolio Way STE 1",
-    "city": "San Luis Obispo",
-    "region": "CA",
-    "regionName": "California",
-    "country": "US",
-    "market": "Central Coast / SLO",
-    "citySlug": "san-luis-obispo",
-    "regionSlug": "ca",
-    "venueRef": {
-      "venueId": "humdinger-brewing-slo-taproom-san-luis-obispo-ca",
-      "venueSlug": "humdinger-brewing-slo-taproom",
-      "venue": "Humdinger Brewing SLO Taproom",
-      "address": "855 Capitolio Way STE 1",
-      "city": "San Luis Obispo",
-      "region": "CA",
-      "regionName": "California",
-      "country": "US",
-      "market": "Central Coast / SLO",
-      "citySlug": "san-luis-obispo",
-      "regionSlug": "ca"
-    },
-    "lineup": "Oathbound; Pretty Suspect; Idol Eyes; Stabbable Offense",
-    "lineupArtists": [
-      "Oathbound",
-      "Pretty Suspect",
-      "Idol Eyes",
-      "Stabbable Offense"
-    ],
-    "featuredBands": [
-      {
-        "bandId": "oathbound",
-        "bandName": "Oathbound",
-        "displayName": "Oathbound",
-        "role": "headline",
-        "socials": {
-          "instagram": "https://www.instagram.com/oathbound_band/",
-          "facebook": "https://www.facebook.com/Oathboundband/",
-          "tiktok": "https://www.tiktok.com/@oathboundofficial",
-          "youtube": "https://www.youtube.com/@oathbound-band",
-          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-          "website": "https://oathboundband.com/"
-        }
-      },
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      },
-      {
-        "bandId": "idol-eyes",
-        "bandName": "Idol Eyes",
-        "displayName": "Idol Eyes",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/idoleyes.ca/",
-          "youtube": "https://www.youtube.com/watch?v=0znCwwqm-_Q"
-        }
-      },
-      {
-        "bandId": "stabbable-offense",
-        "bandName": "Stabbable Offense",
-        "displayName": "Stabbable Offense",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/stabbableoffense/",
-          "facebook": "https://www.facebook.com/stabbableoffense/"
-        }
-      }
-    ],
-    "supportedBand": {
-      "bandId": "oathbound",
-      "bandName": "Oathbound",
-      "displayName": "Oathbound",
-      "role": "headline",
-      "socials": {
-        "instagram": "https://www.instagram.com/oathbound_band/",
-        "facebook": "https://www.facebook.com/Oathboundband/",
-        "tiktok": "https://www.tiktok.com/@oathboundofficial",
-        "youtube": "https://www.youtube.com/@oathbound-band",
-        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-        "website": "https://oathboundband.com/"
-      }
-    },
-    "supportingBands": [
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      },
-      {
-        "bandId": "idol-eyes",
-        "bandName": "Idol Eyes",
-        "displayName": "Idol Eyes",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/idoleyes.ca/",
-          "youtube": "https://www.youtube.com/watch?v=0znCwwqm-_Q"
-        }
-      },
-      {
-        "bandId": "stabbable-offense",
-        "bandName": "Stabbable Offense",
-        "displayName": "Stabbable Offense",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/stabbableoffense/",
-          "facebook": "https://www.facebook.com/stabbableoffense/"
-        }
-      }
-    ],
-    "ageRestriction": "All Ages",
-    "ticketUrl": "https://my805tix.com/e/pretty-suspect",
-    "ticketLabel": "Buy $10 Advance Tickets",
-    "isFreeShow": false,
-    "doorSalesOnly": false,
-    "infoLabel": "$12.96 total with fees",
-    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to San Luis Obispo on Sunday, June 21 at Humdinger Brewing, with support from Idol Eyes and Stabbable Offense. The Myspace Tour rolls into SLO with a loud, high-voltage night of heavy music, sharp hooks, and plenty of chaos for the front row. Doors are at 6:00 PM, the show starts at 6:30 PM, tickets are $10, and this is an all-ages experience.",
-    "public": true,
-    "displayMode": "full",
-    "confirmationStatus": "announced",
-    "assetsKey": "ca/san-luis-obispo",
-    "assetsPath": "/street-team/kits/ca/san-luis-obispo/"
-  },
-  {
-    "id": "2026-06-22-palmdale-ca",
-    "showName": "Transplants Brewing Company in Palmdale",
-    "date": "2026-06-22",
-    "doorsTime": "6:30 PM",
-    "showTime": "7:00 PM",
-    "timeZone": "America/Los_Angeles",
-    "venue": "Transplants Brewing Company",
-    "address": "40242 La Quinta Ln Unit 101",
-    "city": "Palmdale",
-    "region": "CA",
-    "regionName": "California",
-    "country": "US",
-    "market": "Antelope Valley",
-    "citySlug": "palmdale",
-    "regionSlug": "ca",
-    "venueRef": {
-      "venueId": "transplants-brewing-company-palmdale-ca",
-      "venueSlug": "transplants-brewing-company",
-      "venue": "Transplants Brewing Company",
-      "address": "40242 La Quinta Ln Unit 101",
-      "city": "Palmdale",
-      "region": "CA",
-      "regionName": "California",
-      "country": "US",
-      "market": "Antelope Valley",
-      "citySlug": "palmdale",
-      "regionSlug": "ca"
-    },
-    "lineup": "Oathbound; Pretty Suspect; Revelry",
-    "lineupArtists": [
-      "Oathbound",
-      "Pretty Suspect",
-      "Revelry"
-    ],
-    "featuredBands": [
-      {
-        "bandId": "oathbound",
-        "bandName": "Oathbound",
-        "displayName": "Oathbound",
-        "role": "headline",
-        "socials": {
-          "instagram": "https://www.instagram.com/oathbound_band/",
-          "facebook": "https://www.facebook.com/Oathboundband/",
-          "tiktok": "https://www.tiktok.com/@oathboundofficial",
-          "youtube": "https://www.youtube.com/@oathbound-band",
-          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-          "website": "https://oathboundband.com/"
-        }
-      },
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      },
-      {
-        "bandId": "revelry",
-        "bandName": "Revelry",
-        "displayName": "Revelry",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/revelry_ca/",
-          "facebook": "https://www.facebook.com/revelryca/",
-          "youtube": "https://www.youtube.com/@revelryca",
-          "spotify": "https://open.spotify.com/artist/1WWNC5IGxa2WykWpHwuJtW",
-          "website": "https://www.revelryofficial.com/"
-        }
-      }
-    ],
-    "supportedBand": {
-      "bandId": "oathbound",
-      "bandName": "Oathbound",
-      "displayName": "Oathbound",
-      "role": "headline",
-      "socials": {
-        "instagram": "https://www.instagram.com/oathbound_band/",
-        "facebook": "https://www.facebook.com/Oathboundband/",
-        "tiktok": "https://www.tiktok.com/@oathboundofficial",
-        "youtube": "https://www.youtube.com/@oathbound-band",
-        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-        "website": "https://oathboundband.com/"
-      }
-    },
-    "supportingBands": [
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      },
-      {
-        "bandId": "revelry",
-        "bandName": "Revelry",
-        "displayName": "Revelry",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/revelry_ca/",
-          "facebook": "https://www.facebook.com/revelryca/",
-          "youtube": "https://www.youtube.com/@revelryca",
-          "spotify": "https://open.spotify.com/artist/1WWNC5IGxa2WykWpHwuJtW",
-          "website": "https://www.revelryofficial.com/"
-        }
-      }
-    ],
-    "ageRestriction": "All Ages",
-    "ticketUrl": "https://www.ticketweb.com/event/free-show-pretty-suspect-transplants-brewing-company-tickets/14928993",
-    "ticketLabel": "RSVP to FREE Show",
-    "isFreeShow": true,
-    "doorSalesOnly": false,
-    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Palmdale, CA on Monday, June 22 at Transplants Brewing. Pretty Suspect, Oathbound, and Revelry are serving up a free all-ages night packed with distortion, movement, and Myspace-core mayhem. Doors open at 6:30 PM and the show starts at 7:00 PM.",
-    "public": true,
-    "displayMode": "full",
-    "confirmationStatus": "announced",
-    "assetsKey": "ca/palmdale",
-    "assetsPath": "/street-team/kits/ca/palmdale/"
-  },
-  {
-    "id": "2026-06-23-los-angeles-ca",
-    "showName": "The Escondite in Los Angeles",
-    "date": "2026-06-23",
-    "showTime": "8:00 PM",
-    "timeZone": "America/Los_Angeles",
-    "venue": "The Escondite",
-    "address": "410 Boyd St",
-    "city": "Los Angeles",
-    "region": "CA",
-    "regionName": "California",
-    "country": "US",
-    "market": "Los Angeles Area",
-    "citySlug": "los-angeles",
-    "regionSlug": "ca",
-    "venueRef": {
-      "venueId": "the-escondite-los-angeles-ca",
-      "venueSlug": "the-escondite",
-      "venue": "The Escondite",
-      "address": "410 Boyd St",
-      "city": "Los Angeles",
-      "region": "CA",
-      "regionName": "California",
-      "country": "US",
-      "market": "Los Angeles Area",
-      "citySlug": "los-angeles",
-      "regionSlug": "ca"
-    },
-    "lineup": "Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib",
-    "lineupArtists": [
-      "Oathbound",
-      "Pretty Suspect",
-      "Daybreak Ends",
-      "Dead Habib"
-    ],
-    "featuredBands": [
-      {
-        "bandId": "oathbound",
-        "bandName": "Oathbound",
-        "displayName": "Oathbound",
-        "role": "headline",
-        "socials": {
-          "instagram": "https://www.instagram.com/oathbound_band/",
-          "facebook": "https://www.facebook.com/Oathboundband/",
-          "tiktok": "https://www.tiktok.com/@oathboundofficial",
-          "youtube": "https://www.youtube.com/@oathbound-band",
-          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-          "website": "https://oathboundband.com/"
-        }
-      },
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      },
-      {
-        "bandId": "daybreak-ends",
-        "bandName": "Daybreak Ends",
-        "displayName": "Daybreak Ends",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/daybreakends/",
-          "facebook": "https://www.facebook.com/DbEband/",
-          "spotify": "https://open.spotify.com/artist/0LWnm2uibO6dMjgj0EsS4r",
-          "bandcamp": "https://daybreakends.bandcamp.com/",
-          "website": "https://daybreakends.com/"
-        }
-      },
-      {
-        "bandId": "deadhabib",
-        "bandName": "Dead Habib",
-        "displayName": "Dead Habib",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/xdeadhabibx/",
-          "bandcamp": "https://xdead-habibx.bandcamp.com/"
-        }
-      }
-    ],
-    "supportedBand": {
-      "bandId": "oathbound",
-      "bandName": "Oathbound",
-      "displayName": "Oathbound",
-      "role": "headline",
-      "socials": {
-        "instagram": "https://www.instagram.com/oathbound_band/",
-        "facebook": "https://www.facebook.com/Oathboundband/",
-        "tiktok": "https://www.tiktok.com/@oathboundofficial",
-        "youtube": "https://www.youtube.com/@oathbound-band",
-        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-        "website": "https://oathboundband.com/"
-      }
-    },
-    "supportingBands": [
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      },
-      {
-        "bandId": "daybreak-ends",
-        "bandName": "Daybreak Ends",
-        "displayName": "Daybreak Ends",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/daybreakends/",
-          "facebook": "https://www.facebook.com/DbEband/",
-          "spotify": "https://open.spotify.com/artist/0LWnm2uibO6dMjgj0EsS4r",
-          "bandcamp": "https://daybreakends.bandcamp.com/",
-          "website": "https://daybreakends.com/"
-        }
-      },
-      {
-        "bandId": "deadhabib",
-        "bandName": "Dead Habib",
-        "displayName": "Dead Habib",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/xdeadhabibx/",
-          "bandcamp": "https://xdead-habibx.bandcamp.com/"
-        }
-      }
-    ],
-    "ageRestriction": "21+",
-    "ticketLabel": "Free show",
-    "isFreeShow": true,
-    "doorSalesOnly": false,
-    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Los Angeles, CA on Tuesday, June 23 at The Escondite. This free 21+ show brings the tour into LA for a gritty night of heavy sounds, throwback attitude, and no-room-for-boring energy. Come loud, come ready.",
-    "public": true,
-    "displayMode": "full",
-    "confirmationStatus": "announced",
-    "assetsKey": "ca/los-angeles",
-    "assetsPath": "/street-team/kits/ca/los-angeles/"
-  },
-  {
-    "id": "2026-06-25-san-diego-ca",
-    "showName": "McGuffie's Live in San Diego",
-    "date": "2026-06-25",
-    "showTime": "8:00 PM",
-    "timeZone": "America/Los_Angeles",
-    "venue": "McGuffie's Live",
-    "address": "8515 Navajo Rd",
-    "city": "San Diego",
-    "region": "CA",
-    "regionName": "California",
-    "country": "US",
-    "market": "San Diego Area",
-    "citySlug": "san-diego",
-    "regionSlug": "ca",
-    "venueRef": {
-      "venueId": "mcguffies-live-san-diego-ca",
-      "venueSlug": "mcguffies-live",
-      "venue": "McGuffie's Live",
-      "address": "8515 Navajo Rd",
-      "city": "San Diego",
-      "region": "CA",
-      "regionName": "California",
-      "country": "US",
-      "market": "San Diego Area",
-      "citySlug": "san-diego",
-      "regionSlug": "ca"
-    },
-    "lineup": "Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus",
-    "lineupArtists": [
-      "Oathbound",
-      "Pretty Suspect",
-      "Lookoutbelow",
-      "Saul of Tarsus"
-    ],
-    "featuredBands": [
-      {
-        "bandId": "oathbound",
-        "bandName": "Oathbound",
-        "displayName": "Oathbound",
-        "role": "headline",
-        "socials": {
-          "instagram": "https://www.instagram.com/oathbound_band/",
-          "facebook": "https://www.facebook.com/Oathboundband/",
-          "tiktok": "https://www.tiktok.com/@oathboundofficial",
-          "youtube": "https://www.youtube.com/@oathbound-band",
-          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-          "website": "https://oathboundband.com/"
-        }
-      },
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      },
-      {
-        "bandId": "lookoutbelow",
-        "bandName": "Lookoutbelow",
-        "displayName": "Lookoutbelow",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/lob.music/",
-          "spotify": "https://open.spotify.com/album/3EyenBfoa7jkjcg5aYVDoe?si=Yt3ivHfZQCy9WPm7Fn_7pA"
-        }
-      },
-      {
-        "bandId": "saul-of-tarsus",
-        "bandName": "Saul of Tarsus",
-        "displayName": "Saul of Tarsus",
-        "role": "featured",
-        "socials": {
-          "facebook": "https://www.facebook.com/saulxofxtarsus/"
-        }
-      }
-    ],
-    "supportedBand": {
-      "bandId": "oathbound",
-      "bandName": "Oathbound",
-      "displayName": "Oathbound",
-      "role": "headline",
-      "socials": {
-        "instagram": "https://www.instagram.com/oathbound_band/",
-        "facebook": "https://www.facebook.com/Oathboundband/",
-        "tiktok": "https://www.tiktok.com/@oathboundofficial",
-        "youtube": "https://www.youtube.com/@oathbound-band",
-        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-        "website": "https://oathboundband.com/"
-      }
-    },
-    "supportingBands": [
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      },
-      {
-        "bandId": "lookoutbelow",
-        "bandName": "Lookoutbelow",
-        "displayName": "Lookoutbelow",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/lob.music/",
-          "spotify": "https://open.spotify.com/album/3EyenBfoa7jkjcg5aYVDoe?si=Yt3ivHfZQCy9WPm7Fn_7pA"
-        }
-      },
-      {
-        "bandId": "saul-of-tarsus",
-        "bandName": "Saul of Tarsus",
-        "displayName": "Saul of Tarsus",
-        "role": "featured",
-        "socials": {
-          "facebook": "https://www.facebook.com/saulxofxtarsus/"
-        }
-      }
-    ],
-    "ageRestriction": "21+",
     "ticketLabel": "Door sales only",
     "isFreeShow": false,
     "doorSalesOnly": true,
-    "notes": "San Diego!!! Oathbound & Pretty Suspect are bringing their MySpace Tour to McGuffie's Live on Thursday, June 25. Don't miss this visceral, adrenaline-fueled lineup also featuring Lookoutbelow and Saul of Tarsus. Tickets are $5 at the door and the show starts at 8:00 for this all-ages event! We'll see you in the pit!!!",
+    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Eugene, OR on Thursday, June 18 at The Campbell Club, with support from Corpseflip. Get ready for a $10 all-ages night of distortion, grit, and full-volume tour chaos as the Myspace Tour rolls into Eugene.",
     "public": true,
     "displayMode": "full",
-    "confirmationStatus": "announced",
-    "assetsKey": "ca/san-diego",
-    "assetsPath": "/street-team/kits/ca/san-diego/"
+    "confirmationStatus": "verified",
+    "assetsKey": "or/eugene",
+    "assetsPath": "/street-team/kits/or/eugene/"
   },
   {
-    "id": "2026-06-26-reno-nv",
-    "showName": "The Empire in Reno",
-    "date": "2026-06-26",
-    "doorsTime": "6:30 PM",
-    "showTime": "7:00 PM",
+    "id": "2026-05-17-reno-nv",
+    "showName": "The Alpine in Reno",
+    "date": "2026-05-17",
+    "doorsTime": "7:00 PM",
+    "showTime": "8:00 PM",
     "timeZone": "America/Los_Angeles",
-    "venue": "The Empire",
-    "address": "620 Ryland St",
+    "venue": "The Alpine",
     "city": "Reno",
     "region": "NV",
     "regionName": "Nevada",
     "country": "US",
-    "market": "Reno / Northern Nevada",
+    "market": "Northern Nevada",
     "citySlug": "reno",
     "regionSlug": "nv",
     "venueRef": {
-      "venueId": "the-empire-reno-nv",
-      "venueSlug": "the-empire",
-      "venue": "The Empire",
-      "address": "620 Ryland St",
+      "venueId": "the-alpine-reno-nv",
+      "venueSlug": "the-alpine",
+      "venue": "The Alpine",
       "city": "Reno",
       "region": "NV",
       "regionName": "Nevada",
       "country": "US",
-      "market": "Reno / Northern Nevada",
+      "market": "Northern Nevada",
       "citySlug": "reno",
       "regionSlug": "nv"
-    },
-    "lineup": "Oathbound; Pretty Suspect",
-    "lineupArtists": [
-      "Oathbound",
-      "Pretty Suspect"
-    ],
-    "featuredBands": [
-      {
-        "bandId": "oathbound",
-        "bandName": "Oathbound",
-        "displayName": "Oathbound",
-        "role": "headline",
-        "socials": {
-          "instagram": "https://www.instagram.com/oathbound_band/",
-          "facebook": "https://www.facebook.com/Oathboundband/",
-          "tiktok": "https://www.tiktok.com/@oathboundofficial",
-          "youtube": "https://www.youtube.com/@oathbound-band",
-          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-          "website": "https://oathboundband.com/"
-        }
-      },
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      }
-    ],
-    "supportedBand": {
-      "bandId": "oathbound",
-      "bandName": "Oathbound",
-      "displayName": "Oathbound",
-      "role": "headline",
-      "socials": {
-        "instagram": "https://www.instagram.com/oathbound_band/",
-        "facebook": "https://www.facebook.com/Oathboundband/",
-        "tiktok": "https://www.tiktok.com/@oathboundofficial",
-        "youtube": "https://www.youtube.com/@oathbound-band",
-        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-        "website": "https://oathboundband.com/"
-      }
-    },
-    "supportingBands": [
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      }
-    ],
-    "ageRestriction": "All Ages",
-    "ticketLabel": "Door sales only",
-    "isFreeShow": false,
-    "doorSalesOnly": true,
-    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Reno, NV on Friday, June 26 at The Empire. Get ready for a night of distortion, grit, and full-volume tour chaos as the Myspace Tour rolls into Reno and takes over the room. Doors are at 6:30 PM and the show starts at 7:00 PM. More details coming soon.",
-    "public": true,
-    "displayMode": "full",
-    "confirmationStatus": "verified",
-    "assetsKey": "nv/reno",
-    "assetsPath": "/street-team/kits/nv/reno/"
-  },
-  {
-    "id": "2026-06-27-medford-or",
-    "showName": "The Rockafairy in Medford",
-    "date": "2026-06-27",
-    "doorsTime": "7:00 PM",
-    "showTime": "8:00 PM",
-    "timeZone": "America/Los_Angeles",
-    "venue": "The Rockafairy",
-    "address": "31 W 6th St",
-    "city": "Medford",
-    "region": "OR",
-    "regionName": "Oregon",
-    "country": "US",
-    "market": "Southern Oregon",
-    "citySlug": "medford",
-    "regionSlug": "or",
-    "venueRef": {
-      "venueId": "the-rockafairy-medford-or",
-      "venueSlug": "the-rockafairy",
-      "venue": "The Rockafairy",
-      "address": "31 W 6th St",
-      "city": "Medford",
-      "region": "OR",
-      "regionName": "Oregon",
-      "country": "US",
-      "market": "Southern Oregon",
-      "citySlug": "medford",
-      "regionSlug": "or"
-    },
-    "lineup": "Oathbound; Pretty Suspect; Two Piece Face; Hide Heaven; Atelectasis",
-    "lineupArtists": [
-      "Oathbound",
-      "Pretty Suspect",
-      "Two Piece Face",
-      "Hide Heaven",
-      "Atelectasis"
-    ],
-    "featuredBands": [
-      {
-        "bandId": "oathbound",
-        "bandName": "Oathbound",
-        "displayName": "Oathbound",
-        "role": "headline",
-        "socials": {
-          "instagram": "https://www.instagram.com/oathbound_band/",
-          "facebook": "https://www.facebook.com/Oathboundband/",
-          "tiktok": "https://www.tiktok.com/@oathboundofficial",
-          "youtube": "https://www.youtube.com/@oathbound-band",
-          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-          "website": "https://oathboundband.com/"
-        }
-      },
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      },
-      {
-        "bandId": "two-face",
-        "bandName": "Two Piece Face",
-        "displayName": "Two Piece Face",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/two_piece_face_official/",
-          "facebook": "https://www.facebook.com/twopiecefacebook/",
-          "youtube": "https://www.youtube.com/channel/UCGK1XPNwh-XLgdoFRuogJLg/about",
-          "bandcamp": "https://twopieceface.bandcamp.com/track/maze"
-        }
-      },
-      {
-        "bandId": "hide-heaven",
-        "bandName": "Hide Heaven",
-        "displayName": "Hide Heaven",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/hideheaven541/",
-          "facebook": "https://www.facebook.com/profile.php?id=100090334207130"
-        }
-      },
-      {
-        "bandId": "atelectasis",
-        "bandName": "Atelectasis",
-        "displayName": "Atelectasis",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/atelectasisofficial/",
-          "facebook": "https://www.facebook.com/profile.php?id=61575371348236",
-          "tiktok": "https://www.tiktok.com/@atelectasisofficial",
-          "youtube": "https://www.youtube.com/@atelectasisofficial",
-          "spotify": "https://open.spotify.com/artist/1TrDXeDbi6Bohq6f9X94bV",
-          "website": "https://linktr.ee/atelectasis.band"
-        }
-      }
-    ],
-    "supportedBand": {
-      "bandId": "oathbound",
-      "bandName": "Oathbound",
-      "displayName": "Oathbound",
-      "role": "headline",
-      "socials": {
-        "instagram": "https://www.instagram.com/oathbound_band/",
-        "facebook": "https://www.facebook.com/Oathboundband/",
-        "tiktok": "https://www.tiktok.com/@oathboundofficial",
-        "youtube": "https://www.youtube.com/@oathbound-band",
-        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-        "website": "https://oathboundband.com/"
-      }
-    },
-    "supportingBands": [
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      },
-      {
-        "bandId": "two-face",
-        "bandName": "Two Piece Face",
-        "displayName": "Two Piece Face",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/two_piece_face_official/",
-          "facebook": "https://www.facebook.com/twopiecefacebook/",
-          "youtube": "https://www.youtube.com/channel/UCGK1XPNwh-XLgdoFRuogJLg/about",
-          "bandcamp": "https://twopieceface.bandcamp.com/track/maze"
-        }
-      },
-      {
-        "bandId": "hide-heaven",
-        "bandName": "Hide Heaven",
-        "displayName": "Hide Heaven",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/hideheaven541/",
-          "facebook": "https://www.facebook.com/profile.php?id=100090334207130"
-        }
-      },
-      {
-        "bandId": "atelectasis",
-        "bandName": "Atelectasis",
-        "displayName": "Atelectasis",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/atelectasisofficial/",
-          "facebook": "https://www.facebook.com/profile.php?id=61575371348236",
-          "tiktok": "https://www.tiktok.com/@atelectasisofficial",
-          "youtube": "https://www.youtube.com/@atelectasisofficial",
-          "spotify": "https://open.spotify.com/artist/1TrDXeDbi6Bohq6f9X94bV",
-          "website": "https://linktr.ee/atelectasis.band"
-        }
-      }
-    ],
-    "ageRestriction": "All Ages",
-    "ticketUrl": "https://rockafairy.betterworld.org/events/oathboundjune27",
-    "ticketLabel": "Buy $10 Advance Tickets",
-    "isFreeShow": false,
-    "doorSalesOnly": false,
-    "infoLabel": "Ticket is $10 before checkout contributions",
-    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Medford, Oregon on Saturday, June 27 at The Rockafairy, with support from Hide Heaven and Two Piece Face. This all-ages stop brings the tour’s blend of heavy riffs, visual spectacle, and early-internet scene energy to Medford for one loud Saturday night. Doors are at 7:30 PM, the show starts at 8:00 PM, and tickets are $10 advance / $15 day of show.",
-    "public": true,
-    "displayMode": "full",
-    "confirmationStatus": "verified",
-    "assetsKey": "or/medford",
-    "assetsPath": "/street-team/kits/or/medford/"
-  },
-  {
-    "id": "2026-06-28-portland-or",
-    "showName": "Dante's in Portland",
-    "date": "2026-06-28",
-    "doorsTime": "5:30 PM",
-    "showTime": "6:00 PM",
-    "timeZone": "America/Los_Angeles",
-    "venue": "Dante's",
-    "address": "350 W Burnside St",
-    "city": "Portland",
-    "region": "OR",
-    "regionName": "Oregon",
-    "country": "US",
-    "market": "Portland Metro",
-    "citySlug": "portland",
-    "regionSlug": "or",
-    "venueRef": {
-      "venueId": "dantes-portland-or",
-      "venueSlug": "dantes",
-      "venue": "Dante's",
-      "address": "350 W Burnside St",
-      "city": "Portland",
-      "region": "OR",
-      "regionName": "Oregon",
-      "country": "US",
-      "market": "Portland Metro",
-      "citySlug": "portland",
-      "regionSlug": "or"
-    },
-    "lineup": "Oathbound; Pretty Suspect; Hangfire; Foghorn",
-    "lineupArtists": [
-      "Oathbound",
-      "Pretty Suspect",
-      "Hangfire",
-      "Foghorn"
-    ],
-    "featuredBands": [
-      {
-        "bandId": "oathbound",
-        "bandName": "Oathbound",
-        "displayName": "Oathbound",
-        "role": "headline",
-        "socials": {
-          "instagram": "https://www.instagram.com/oathbound_band/",
-          "facebook": "https://www.facebook.com/Oathboundband/",
-          "tiktok": "https://www.tiktok.com/@oathboundofficial",
-          "youtube": "https://www.youtube.com/@oathbound-band",
-          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-          "website": "https://oathboundband.com/"
-        }
-      },
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      },
-      {
-        "bandId": "hangfire",
-        "bandName": "Hangfire",
-        "displayName": "Hangfire",
-        "role": "featured",
-        "socials": {}
-      },
-      {
-        "bandId": "foghorn",
-        "bandName": "Foghorn",
-        "displayName": "Foghorn",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/officialfoghorn/",
-          "facebook": "https://www.facebook.com/foghornwa/",
-          "spotify": "https://open.spotify.com/artist/4vr3bAVN2n2KQDb2tWXj5U"
-        }
-      }
-    ],
-    "supportedBand": {
-      "bandId": "oathbound",
-      "bandName": "Oathbound",
-      "displayName": "Oathbound",
-      "role": "headline",
-      "socials": {
-        "instagram": "https://www.instagram.com/oathbound_band/",
-        "facebook": "https://www.facebook.com/Oathboundband/",
-        "tiktok": "https://www.tiktok.com/@oathboundofficial",
-        "youtube": "https://www.youtube.com/@oathbound-band",
-        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-        "website": "https://oathboundband.com/"
-      }
-    },
-    "supportingBands": [
-      {
-        "bandId": "pretty-suspect",
-        "bandName": "Pretty Suspect",
-        "displayName": "Pretty Suspect",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/prettysuspect.band/",
-          "facebook": "https://www.facebook.com/PrettySuspect97401/",
-          "tiktok": "https://www.tiktok.com/@prettysuspect",
-          "youtube": "https://www.youtube.com/channel/UCORnYaCkOs2gH8-juVilIsg",
-          "spotify": "https://open.spotify.com/artist/0ssvQU443YviUpQPkQDWj2",
-          "website": "https://www.prettysuspect.com/"
-        }
-      },
-      {
-        "bandId": "hangfire",
-        "bandName": "Hangfire",
-        "displayName": "Hangfire",
-        "role": "featured",
-        "socials": {}
-      },
-      {
-        "bandId": "foghorn",
-        "bandName": "Foghorn",
-        "displayName": "Foghorn",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/officialfoghorn/",
-          "facebook": "https://www.facebook.com/foghornwa/",
-          "spotify": "https://open.spotify.com/artist/4vr3bAVN2n2KQDb2tWXj5U"
-        }
-      }
-    ],
-    "ageRestriction": "21+",
-    "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943",
-    "ticketLabel": "Buy $13 Advance Tickets",
-    "isFreeShow": false,
-    "doorSalesOnly": false,
-    "infoLabel": "$18.03 total with fees",
-    "notes": "Pretty Suspect and Oathbound are bringing their Myspace Tour to Portland, OR on Sunday, June 28 at Dante's. The Myspace Tour closes out this run at Dante's with Pretty Suspect, Oathbound, Hangfire, and Foghorn bringing a 21+ night of heavy music, sharp hooks, and end-of-tour fire.",
-    "public": true,
-    "displayMode": "full",
-    "confirmationStatus": "announced",
-    "assetsKey": "or/portland",
-    "assetsPath": "/street-team/kits/or/portland/"
-  },
-  {
-    "id": "2026-04-30-portland-or",
-    "showName": "Dante's in Portland",
-    "date": "2026-04-30",
-    "doorsTime": "6:30 PM",
-    "showTime": "7:30 PM",
-    "timeZone": "America/Los_Angeles",
-    "venue": "Dante's",
-    "city": "Portland",
-    "region": "OR",
-    "regionName": "Oregon",
-    "country": "US",
-    "market": "Portland Metro",
-    "citySlug": "portland",
-    "regionSlug": "or",
-    "venueRef": {
-      "venueId": "dantes-portland-or",
-      "venueSlug": "dantes",
-      "venue": "Dante's",
-      "city": "Portland",
-      "region": "OR",
-      "regionName": "Oregon",
-      "country": "US",
-      "market": "Portland Metro",
-      "citySlug": "portland",
-      "regionSlug": "or"
     },
     "lineup": "Oathbound",
     "lineupArtists": [
@@ -2673,16 +2695,87 @@
         "website": "https://oathboundband.com/"
       }
     },
-    "ageRestriction": "21+",
-    "ticketUrl": "https://www.ticketweb.com/event/vampires-everywhere-kiss-the-sun-dantes-tickets/14142904",
+    "ageRestriction": "All Ages",
+    "ticketUrl": "https://www.ticketweb.com/event/titvn-oathbound-emberwake-and-sun-the-alpine-tickets/14154994",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": false,
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "past",
-    "assetsKey": "or/portland",
-    "assetsPath": "/street-team/kits/or/portland/"
+    "assetsKey": "nv/reno",
+    "assetsPath": "/street-team/kits/nv/reno/"
+  },
+  {
+    "id": "2026-05-16-chico-ca",
+    "showName": "Mulberry Station Brewing Company in Chico",
+    "date": "2026-05-16",
+    "showTime": "7:00 PM",
+    "timeZone": "America/Los_Angeles",
+    "venue": "Mulberry Station Brewing Company",
+    "city": "Chico",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Northern California",
+    "citySlug": "chico",
+    "regionSlug": "ca",
+    "venueRef": {
+      "venueId": "mulberry-station-brewing-company-chico-ca",
+      "venueSlug": "mulberry-station-brewing-company",
+      "venue": "Mulberry Station Brewing Company",
+      "city": "Chico",
+      "region": "CA",
+      "regionName": "California",
+      "country": "US",
+      "market": "Northern California",
+      "citySlug": "chico",
+      "regionSlug": "ca"
+    },
+    "lineup": "Oathbound",
+    "lineupArtists": [
+      "Oathbound"
+    ],
+    "featuredBands": [
+      {
+        "bandId": "oathbound",
+        "bandName": "Oathbound",
+        "displayName": "Oathbound",
+        "role": "headline",
+        "socials": {
+          "instagram": "https://www.instagram.com/oathbound_band/",
+          "facebook": "https://www.facebook.com/Oathboundband/",
+          "tiktok": "https://www.tiktok.com/@oathboundofficial",
+          "youtube": "https://www.youtube.com/@oathbound-band",
+          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+          "website": "https://oathboundband.com/"
+        }
+      }
+    ],
+    "supportedBand": {
+      "bandId": "oathbound",
+      "bandName": "Oathbound",
+      "displayName": "Oathbound",
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/oathbound_band/",
+        "facebook": "https://www.facebook.com/Oathboundband/",
+        "tiktok": "https://www.tiktok.com/@oathboundofficial",
+        "youtube": "https://www.youtube.com/@oathbound-band",
+        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+        "website": "https://oathboundband.com/"
+      }
+    },
+    "ageRestriction": "All Ages",
+    "ticketUrl": "https://www.eventbrite.com/e/titvn-x-oathbound-tickets-1986355278108?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=aff0bandsintown&bit_userid=104036509&comeFrom=2570&artist_event_id=1038593213",
+    "ticketLabel": "Tickets",
+    "isFreeShow": false,
+    "doorSalesOnly": false,
+    "public": true,
+    "displayMode": "full",
+    "confirmationStatus": "past",
+    "assetsKey": "ca/chico",
+    "assetsPath": "/street-team/kits/ca/chico/"
   },
   {
     "id": "2026-05-15-medford-or",
@@ -2760,30 +2853,31 @@
     "assetsPath": "/street-team/kits/or/medford/"
   },
   {
-    "id": "2026-05-16-chico-ca",
-    "showName": "Mulberry Station Brewing Company in Chico",
-    "date": "2026-05-16",
-    "showTime": "7:00 PM",
+    "id": "2026-04-30-portland-or",
+    "showName": "Dante's in Portland",
+    "date": "2026-04-30",
+    "doorsTime": "6:30 PM",
+    "showTime": "7:30 PM",
     "timeZone": "America/Los_Angeles",
-    "venue": "Mulberry Station Brewing Company",
-    "city": "Chico",
-    "region": "CA",
-    "regionName": "California",
+    "venue": "Dante's",
+    "city": "Portland",
+    "region": "OR",
+    "regionName": "Oregon",
     "country": "US",
-    "market": "Northern California",
-    "citySlug": "chico",
-    "regionSlug": "ca",
+    "market": "Portland Metro",
+    "citySlug": "portland",
+    "regionSlug": "or",
     "venueRef": {
-      "venueId": "mulberry-station-brewing-company-chico-ca",
-      "venueSlug": "mulberry-station-brewing-company",
-      "venue": "Mulberry Station Brewing Company",
-      "city": "Chico",
-      "region": "CA",
-      "regionName": "California",
+      "venueId": "dantes-portland-or",
+      "venueSlug": "dantes",
+      "venue": "Dante's",
+      "city": "Portland",
+      "region": "OR",
+      "regionName": "Oregon",
       "country": "US",
-      "market": "Northern California",
-      "citySlug": "chico",
-      "regionSlug": "ca"
+      "market": "Portland Metro",
+      "citySlug": "portland",
+      "regionSlug": "or"
     },
     "lineup": "Oathbound",
     "lineupArtists": [
@@ -2819,88 +2913,16 @@
         "website": "https://oathboundband.com/"
       }
     },
-    "ageRestriction": "All Ages",
-    "ticketUrl": "https://www.eventbrite.com/e/titvn-x-oathbound-tickets-1986355278108?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=aff0bandsintown&bit_userid=104036509&comeFrom=2570&artist_event_id=1038593213",
+    "ageRestriction": "21+",
+    "ticketUrl": "https://www.ticketweb.com/event/vampires-everywhere-kiss-the-sun-dantes-tickets/14142904",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": false,
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "past",
-    "assetsKey": "ca/chico",
-    "assetsPath": "/street-team/kits/ca/chico/"
-  },
-  {
-    "id": "2026-05-17-reno-nv",
-    "showName": "The Alpine in Reno",
-    "date": "2026-05-17",
-    "doorsTime": "7:00 PM",
-    "showTime": "8:00 PM",
-    "timeZone": "America/Los_Angeles",
-    "venue": "The Alpine",
-    "city": "Reno",
-    "region": "NV",
-    "regionName": "Nevada",
-    "country": "US",
-    "market": "Northern Nevada",
-    "citySlug": "reno",
-    "regionSlug": "nv",
-    "venueRef": {
-      "venueId": "the-alpine-reno-nv",
-      "venueSlug": "the-alpine",
-      "venue": "The Alpine",
-      "city": "Reno",
-      "region": "NV",
-      "regionName": "Nevada",
-      "country": "US",
-      "market": "Northern Nevada",
-      "citySlug": "reno",
-      "regionSlug": "nv"
-    },
-    "lineup": "Oathbound",
-    "lineupArtists": [
-      "Oathbound"
-    ],
-    "featuredBands": [
-      {
-        "bandId": "oathbound",
-        "bandName": "Oathbound",
-        "displayName": "Oathbound",
-        "role": "headline",
-        "socials": {
-          "instagram": "https://www.instagram.com/oathbound_band/",
-          "facebook": "https://www.facebook.com/Oathboundband/",
-          "tiktok": "https://www.tiktok.com/@oathboundofficial",
-          "youtube": "https://www.youtube.com/@oathbound-band",
-          "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-          "website": "https://oathboundband.com/"
-        }
-      }
-    ],
-    "supportedBand": {
-      "bandId": "oathbound",
-      "bandName": "Oathbound",
-      "displayName": "Oathbound",
-      "role": "headline",
-      "socials": {
-        "instagram": "https://www.instagram.com/oathbound_band/",
-        "facebook": "https://www.facebook.com/Oathboundband/",
-        "tiktok": "https://www.tiktok.com/@oathboundofficial",
-        "youtube": "https://www.youtube.com/@oathbound-band",
-        "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
-        "website": "https://oathboundband.com/"
-      }
-    },
-    "ageRestriction": "All Ages",
-    "ticketUrl": "https://www.ticketweb.com/event/titvn-oathbound-emberwake-and-sun-the-alpine-tickets/14154994",
-    "ticketLabel": "Tickets",
-    "isFreeShow": false,
-    "doorSalesOnly": false,
-    "public": true,
-    "displayMode": "full",
-    "confirmationStatus": "past",
-    "assetsKey": "nv/reno",
-    "assetsPath": "/street-team/kits/nv/reno/"
+    "assetsKey": "or/portland",
+    "assetsPath": "/street-team/kits/or/portland/"
   },
   {
     "id": "2026-03-29-eugene-or",
