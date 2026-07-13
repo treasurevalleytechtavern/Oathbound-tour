@@ -1,74 +1,33 @@
 [
   {
-    "bandId": "red-keep",
-    "bandName": "Red Keep",
-    "displayName": "Red Keep",
-    "status": "touring-artist",
+    "bandId": "atelectasis",
+    "bandName": "Atelectasis",
+    "displayName": "Atelectasis",
+    "status": "local-support",
     "socials": {
-      "instagram": "https://www.instagram.com/redkeepofficial",
-      "facebook": "http://facebook.com/redkeepofficial",
-      "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
-      "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
-      "website": "https://redkeepband.com/home"
+      "instagram": "https://www.instagram.com/atelectasisofficial/",
+      "facebook": "https://www.facebook.com/profile.php?id=61575371348236",
+      "tiktok": "https://www.tiktok.com/@atelectasisofficial",
+      "youtube": "https://www.youtube.com/@atelectasisofficial",
+      "spotify": "https://open.spotify.com/artist/1TrDXeDbi6Bohq6f9X94bV",
+      "website": "https://linktr.ee/atelectasis.band"
     },
-    "upcomingShows": [
+    "pastShows": [
       {
-        "id": "2026-09-16-modesto-ca",
-        "tourId": "dark-origins-2026",
-        "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
-        "date": "2026-09-16",
-        "doorsTime": "4:30 PM",
-        "venue": "18 Seventy Brewing",
-        "city": "Modesto",
-        "region": "CA",
-        "market": "Central Valley",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
-        "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
-        "ticketLabel": "Tickets",
-        "confirmationStatus": "verified"
-      },
-      {
-        "id": "2026-09-17-palmdale-ca",
-        "tourId": "dark-origins-2026",
-        "showName": "Dark Origins Tour - Oathbound at transplants",
-        "date": "2026-09-17",
-        "doorsTime": "6:30 PM",
-        "venue": "Transplants Brewing Company",
-        "city": "Palmdale",
-        "region": "CA",
-        "market": "Los Angeles Area / Antelope Valley",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
-        "ticketLabel": "Free show",
-        "confirmationStatus": "verified"
-      },
-      {
-        "id": "2026-09-18-bakersfield-ca",
-        "tourId": "dark-origins-2026",
-        "showName": "Dark Origins Tour - Oathbound at Jerry's Pizza",
-        "date": "2026-09-18",
+        "id": "2026-06-27-medford-or",
+        "tourId": "myspace-tour-2026",
+        "showName": "The Rockafairy in Medford",
+        "date": "2026-06-27",
         "doorsTime": "7:00 PM",
-        "venue": "Jerry’s Pizza & Pub",
-        "city": "Bakersfield",
-        "region": "CA",
-        "market": "Bakersfield Area",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
-        "ticketLabel": "Ticket link needed",
-        "confirmationStatus": "confirmed"
-      },
-      {
-        "id": "2026-09-19-fresno-ca",
-        "tourId": "dark-origins-2026",
-        "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
-        "date": "2026-09-19",
-        "doorsTime": "6:30 PM",
-        "venue": "Summer Fox Tower",
-        "city": "Fresno",
-        "region": "CA",
-        "market": "Fresno Area",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
-        "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
-        "ticketLabel": "Tickets",
-        "confirmationStatus": "confirmed"
+        "showTime": "8:00 PM",
+        "venue": "The Rockafairy",
+        "city": "Medford",
+        "region": "OR",
+        "market": "Southern Oregon",
+        "lineup": "Oathbound; Pretty Suspect; Two Piece Face; Hide Heaven; Atelectasis",
+        "ticketUrl": "https://rockafairy.betterworld.org/events/oathboundjune27",
+        "ticketLabel": "Buy $10 Advance Tickets",
+        "confirmationStatus": "verified"
       }
     ]
   },
@@ -82,6 +41,7 @@
       "tiktok": "https://www.tiktok.com/@beautyisbetrayal",
       "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
       "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
+      "spotifyTrackUrl": "https://open.spotify.com/track/4xaV9dUqZZVOf40sVfMqwI",
       "website": "https://linktr.ee/beautyisbetrayal"
     },
     "upcomingShows": [
@@ -160,6 +120,341 @@
     ]
   },
   {
+    "bandId": "corpseflip",
+    "bandName": "Corpse Flip",
+    "displayName": "Corpse Flip",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/corpseflip_eug/",
+      "spotify": "https://open.spotify.com/artist/4PcrYp0j7Fin9mJaOUV6nh",
+      "bandcamp": "https://corpseflop.bandcamp.com/album/i-watched-the-light-leave-your-eyes"
+    },
+    "pastShows": [
+      {
+        "id": "2026-06-18-eugene-or",
+        "tourId": "myspace-tour-2026",
+        "showName": "Campbell Club in Eugene",
+        "date": "2026-06-18",
+        "doorsTime": "7:00 PM",
+        "showTime": "7:30 PM",
+        "venue": "Campbell Club",
+        "city": "Eugene",
+        "region": "OR",
+        "market": "Willamette Valley",
+        "lineup": "Oathbound; Pretty Suspect; Corpse Flip",
+        "ticketLabel": "Door sales only",
+        "confirmationStatus": "verified"
+      }
+    ]
+  },
+  {
+    "bandId": "cosmic-waste",
+    "bandName": "Cosmic Waste",
+    "displayName": "Cosmic Waste",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/cosmicwastecrew/",
+      "facebook": "https://www.facebook.com/CosmicWaste/",
+      "youtube": "https://www.youtube.com/@CosmicWaste",
+      "spotify": "https://open.spotify.com/artist/50robUSSoL4cDA1bbSbPUC",
+      "bandcamp": "https://officialcosmicwaste.bandcamp.com/",
+      "website": "https://www.cosmicwaste.net/"
+    },
+    "pastShows": [
+      {
+        "id": "2026-06-19-albany-or",
+        "tourId": "myspace-tour-2026",
+        "showName": "520 Events Center in Albany",
+        "date": "2026-06-19",
+        "doorsTime": "6:00 PM",
+        "showTime": "6:30 PM",
+        "venue": "520 Events Center",
+        "city": "Albany",
+        "region": "OR",
+        "market": "Willamette Valley",
+        "lineup": "Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste",
+        "ticketUrl": "https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/",
+        "ticketLabel": "Buy $10 Advance Tickets",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "daybreak-ends",
+    "bandName": "Daybreak Ends",
+    "displayName": "Daybreak Ends",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/daybreakends/",
+      "facebook": "https://www.facebook.com/DbEband/",
+      "spotify": "https://open.spotify.com/artist/0LWnm2uibO6dMjgj0EsS4r",
+      "bandcamp": "https://daybreakends.bandcamp.com/",
+      "website": "https://daybreakends.com/"
+    },
+    "pastShows": [
+      {
+        "id": "2026-06-23-los-angeles-ca",
+        "tourId": "myspace-tour-2026",
+        "showName": "The Escondite in Los Angeles",
+        "date": "2026-06-23",
+        "showTime": "8:00 PM",
+        "venue": "The Escondite",
+        "city": "Los Angeles",
+        "region": "CA",
+        "market": "Los Angeles Area",
+        "lineup": "Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib",
+        "ticketLabel": "Free show",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "deadhabib",
+    "bandName": "Dead Habib",
+    "displayName": "Dead Habib",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/xdeadhabibx/",
+      "bandcamp": "https://xdead-habibx.bandcamp.com/"
+    },
+    "pastShows": [
+      {
+        "id": "2026-06-23-los-angeles-ca",
+        "tourId": "myspace-tour-2026",
+        "showName": "The Escondite in Los Angeles",
+        "date": "2026-06-23",
+        "showTime": "8:00 PM",
+        "venue": "The Escondite",
+        "city": "Los Angeles",
+        "region": "CA",
+        "market": "Los Angeles Area",
+        "lineup": "Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib",
+        "ticketLabel": "Free show",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "dead-nexus",
+    "bandName": "Dead Nexus",
+    "displayName": "Dead Nexus",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/dead_nexus/",
+      "facebook": "https://www.facebook.com/deadnexus/",
+      "spotify": "https://open.spotify.com/artist/4kbx39XaQ3FN5YiL0Y2nib",
+      "bandcamp": "https://deadnexus.bandcamp.com/"
+    },
+    "pastShows": [
+      {
+        "id": "2026-06-19-albany-or",
+        "tourId": "myspace-tour-2026",
+        "showName": "520 Events Center in Albany",
+        "date": "2026-06-19",
+        "doorsTime": "6:00 PM",
+        "showTime": "6:30 PM",
+        "venue": "520 Events Center",
+        "city": "Albany",
+        "region": "OR",
+        "market": "Willamette Valley",
+        "lineup": "Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste",
+        "ticketUrl": "https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/",
+        "ticketLabel": "Buy $10 Advance Tickets",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "drawn-knives",
+    "bandName": "Drawn by Knives",
+    "displayName": "Drawn by Knives",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/drawnbyknives/",
+      "facebook": "https://www.facebook.com/drawnbyknives/",
+      "spotify": "https://open.spotify.com/artist/04M9gQFqPnhRedKGU1fwCF",
+      "bandcamp": "https://drawnbyknives.bandcamp.com/",
+      "website": "https://drawnbyknives.com/"
+    }
+  },
+  {
+    "bandId": "foghorn",
+    "bandName": "Foghorn",
+    "displayName": "Foghorn",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/officialfoghorn/",
+      "facebook": "https://www.facebook.com/foghornwa/",
+      "spotify": "https://open.spotify.com/artist/4vr3bAVN2n2KQDb2tWXj5U"
+    },
+    "pastShows": [
+      {
+        "id": "2026-06-28-portland-or",
+        "tourId": "myspace-tour-2026",
+        "showName": "Dante's in Portland",
+        "date": "2026-06-28",
+        "doorsTime": "5:30 PM",
+        "showTime": "6:00 PM",
+        "venue": "Dante's",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Metro",
+        "lineup": "Oathbound; Pretty Suspect; Hangfire; Foghorn",
+        "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943",
+        "ticketLabel": "Buy $13 Advance Tickets",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "hallway-scenes",
+    "bandName": "Hallway Scenes",
+    "displayName": "Hallway Scenes",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/hallwayscenes/",
+      "youtube": "https://www.youtube.com/@hallwayscenes",
+      "spotify": "https://open.spotify.com/artist/6Ol15WCVqAiUdrUrqWRtXu",
+      "website": "https://www.hallwayscenes.com/"
+    },
+    "pastShows": [
+      {
+        "id": "2026-06-20-citrus-heights-ca",
+        "tourId": "myspace-tour-2026",
+        "showName": "Smashed Live in Citrus Heights",
+        "date": "2026-06-20",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:00 PM",
+        "venue": "Smashed Live - Sacremento",
+        "lineup": "Oathbound; Pretty Suspect; Salt; Hallway Scenes",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "hangfire",
+    "bandName": "Hangfire",
+    "displayName": "Hangfire",
+    "status": "local-support",
+    "pastShows": [
+      {
+        "id": "2026-06-28-portland-or",
+        "tourId": "myspace-tour-2026",
+        "showName": "Dante's in Portland",
+        "date": "2026-06-28",
+        "doorsTime": "5:30 PM",
+        "showTime": "6:00 PM",
+        "venue": "Dante's",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Metro",
+        "lineup": "Oathbound; Pretty Suspect; Hangfire; Foghorn",
+        "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943",
+        "ticketLabel": "Buy $13 Advance Tickets",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "hide-heaven",
+    "bandName": "Hide Heaven",
+    "displayName": "Hide Heaven",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/hideheaven541/",
+      "facebook": "https://www.facebook.com/profile.php?id=100090334207130"
+    },
+    "pastShows": [
+      {
+        "id": "2026-06-27-medford-or",
+        "tourId": "myspace-tour-2026",
+        "showName": "The Rockafairy in Medford",
+        "date": "2026-06-27",
+        "doorsTime": "7:00 PM",
+        "showTime": "8:00 PM",
+        "venue": "The Rockafairy",
+        "city": "Medford",
+        "region": "OR",
+        "market": "Southern Oregon",
+        "lineup": "Oathbound; Pretty Suspect; Two Piece Face; Hide Heaven; Atelectasis",
+        "ticketUrl": "https://rockafairy.betterworld.org/events/oathboundjune27",
+        "ticketLabel": "Buy $10 Advance Tickets",
+        "confirmationStatus": "verified"
+      },
+      {
+        "id": "2026-06-19-albany-or",
+        "tourId": "myspace-tour-2026",
+        "showName": "520 Events Center in Albany",
+        "date": "2026-06-19",
+        "doorsTime": "6:00 PM",
+        "showTime": "6:30 PM",
+        "venue": "520 Events Center",
+        "city": "Albany",
+        "region": "OR",
+        "market": "Willamette Valley",
+        "lineup": "Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste",
+        "ticketUrl": "https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/",
+        "ticketLabel": "Buy $10 Advance Tickets",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "idol-eyes",
+    "bandName": "Idol Eyes",
+    "displayName": "Idol Eyes",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/idoleyes.ca/",
+      "youtube": "https://www.youtube.com/watch?v=0znCwwqm-_Q"
+    },
+    "pastShows": [
+      {
+        "id": "2026-06-21-san-luis-obispo-ca",
+        "tourId": "myspace-tour-2026",
+        "showName": "Humdinger Brewing SLO Taproom in San Luis Obispo",
+        "date": "2026-06-21",
+        "doorsTime": "6:00 PM",
+        "showTime": "6:30 PM",
+        "venue": "Humdinger Brewing SLO Taproom",
+        "city": "San Luis Obispo",
+        "region": "CA",
+        "market": "Central Coast / SLO",
+        "lineup": "Oathbound; Pretty Suspect; Idol Eyes; Stabbable Offense",
+        "ticketUrl": "https://my805tix.com/e/pretty-suspect",
+        "ticketLabel": "Buy $10 Advance Tickets",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "lookoutbelow",
+    "bandName": "Lookoutbelow",
+    "displayName": "Lookoutbelow",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/lob.music/",
+      "spotify": "https://open.spotify.com/album/3EyenBfoa7jkjcg5aYVDoe?si=Yt3ivHfZQCy9WPm7Fn_7pA"
+    },
+    "pastShows": [
+      {
+        "id": "2026-06-25-san-diego-ca",
+        "tourId": "myspace-tour-2026",
+        "showName": "McGuffie's Live in San Diego",
+        "date": "2026-06-25",
+        "showTime": "8:00 PM",
+        "venue": "McGuffie's Live",
+        "city": "San Diego",
+        "region": "CA",
+        "market": "San Diego Area",
+        "lineup": "Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus",
+        "ticketLabel": "Door sales only",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
     "bandId": "lucrecia",
     "bandName": "Lucrecia",
     "displayName": "Lucrecia",
@@ -167,6 +462,8 @@
     "socials": {
       "instagram": "https://www.instagram.com/lucreciaband",
       "facebook": "https://www.facebook.com/lucreciaband",
+      "spotify": "http://open.spotify.com/artist/63MmxZVbkrXRTyOZm3BCZe",
+      "spotifyTrackUrl": "https://open.spotify.com/track/75RvwveMzKdrNrYRzMHqd4?si=a00bb8bc7fc64821",
       "website": "https://lucrecia.bigcartel.com/"
     },
     "upcomingShows": [
@@ -216,89 +513,6 @@
     ]
   },
   {
-    "bandId": "atelectasis",
-    "bandName": "Atelectasis",
-    "displayName": "Atelectasis",
-    "status": "local-support",
-    "socials": {
-      "instagram": "https://www.instagram.com/atelectasisofficial/",
-      "facebook": "https://www.facebook.com/profile.php?id=61575371348236",
-      "tiktok": "https://www.tiktok.com/@atelectasisofficial",
-      "youtube": "https://www.youtube.com/@atelectasisofficial",
-      "spotify": "https://open.spotify.com/artist/1TrDXeDbi6Bohq6f9X94bV",
-      "website": "https://linktr.ee/atelectasis.band"
-    },
-    "pastShows": [
-      {
-        "id": "2026-06-27-medford-or",
-        "tourId": "myspace-tour-2026",
-        "showName": "The Rockafairy in Medford",
-        "date": "2026-06-27",
-        "doorsTime": "7:00 PM",
-        "showTime": "8:00 PM",
-        "venue": "The Rockafairy",
-        "city": "Medford",
-        "region": "OR",
-        "market": "Southern Oregon",
-        "lineup": "Oathbound; Pretty Suspect; Two Piece Face; Hide Heaven; Atelectasis",
-        "ticketUrl": "https://rockafairy.betterworld.org/events/oathboundjune27",
-        "ticketLabel": "Buy $10 Advance Tickets",
-        "confirmationStatus": "verified"
-      }
-    ]
-  },
-  {
-    "bandId": "saul-of-tarsus",
-    "bandName": "Saul of Tarsus",
-    "displayName": "Saul of Tarsus",
-    "status": "local-support",
-    "socials": {
-      "facebook": "https://www.facebook.com/saulxofxtarsus/"
-    },
-    "pastShows": [
-      {
-        "id": "2026-06-25-san-diego-ca",
-        "tourId": "myspace-tour-2026",
-        "showName": "McGuffie's Live in San Diego",
-        "date": "2026-06-25",
-        "showTime": "8:00 PM",
-        "venue": "McGuffie's Live",
-        "city": "San Diego",
-        "region": "CA",
-        "market": "San Diego Area",
-        "lineup": "Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus",
-        "ticketLabel": "Door sales only",
-        "confirmationStatus": "announced"
-      }
-    ]
-  },
-  {
-    "bandId": "lookoutbelow",
-    "bandName": "Lookoutbelow",
-    "displayName": "Lookoutbelow",
-    "status": "local-support",
-    "socials": {
-      "instagram": "https://www.instagram.com/lob.music/",
-      "spotify": "https://open.spotify.com/album/3EyenBfoa7jkjcg5aYVDoe?si=Yt3ivHfZQCy9WPm7Fn_7pA"
-    },
-    "pastShows": [
-      {
-        "id": "2026-06-25-san-diego-ca",
-        "tourId": "myspace-tour-2026",
-        "showName": "McGuffie's Live in San Diego",
-        "date": "2026-06-25",
-        "showTime": "8:00 PM",
-        "venue": "McGuffie's Live",
-        "city": "San Diego",
-        "region": "CA",
-        "market": "San Diego Area",
-        "lineup": "Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus",
-        "ticketLabel": "Door sales only",
-        "confirmationStatus": "announced"
-      }
-    ]
-  },
-  {
     "bandId": "oathbound",
     "bandName": "Oathbound",
     "displayName": "Oathbound",
@@ -309,6 +523,7 @@
       "tiktok": "https://www.tiktok.com/@oathboundofficial",
       "youtube": "https://www.youtube.com/@oathbound-band",
       "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
+      "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
       "website": "https://oathboundband.com/"
     },
     "upcomingShows": [
@@ -995,90 +1210,76 @@
     ]
   },
   {
-    "bandId": "corpseflip",
-    "bandName": "Corpse Flip",
-    "displayName": "Corpse Flip",
-    "status": "local-support",
+    "bandId": "red-keep",
+    "bandName": "Red Keep",
+    "displayName": "Red Keep",
+    "status": "touring-artist",
     "socials": {
-      "instagram": "https://www.instagram.com/corpseflip_eug/",
-      "spotify": "https://open.spotify.com/artist/4PcrYp0j7Fin9mJaOUV6nh",
-      "bandcamp": "https://corpseflop.bandcamp.com/album/i-watched-the-light-leave-your-eyes"
+      "instagram": "https://www.instagram.com/redkeepofficial",
+      "facebook": "http://facebook.com/redkeepofficial",
+      "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
+      "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
+      "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
+      "website": "https://redkeepband.com/home"
     },
-    "pastShows": [
+    "upcomingShows": [
       {
-        "id": "2026-06-18-eugene-or",
-        "tourId": "myspace-tour-2026",
-        "showName": "Campbell Club in Eugene",
-        "date": "2026-06-18",
-        "doorsTime": "7:00 PM",
-        "showTime": "7:30 PM",
-        "venue": "Campbell Club",
-        "city": "Eugene",
-        "region": "OR",
-        "market": "Willamette Valley",
-        "lineup": "Oathbound; Pretty Suspect; Corpse Flip",
-        "ticketLabel": "Door sales only",
-        "confirmationStatus": "verified"
-      }
-    ]
-  },
-  {
-    "bandId": "cosmic-waste",
-    "bandName": "Cosmic Waste",
-    "displayName": "Cosmic Waste",
-    "status": "local-support",
-    "socials": {
-      "instagram": "https://www.instagram.com/cosmicwastecrew/",
-      "facebook": "https://www.facebook.com/CosmicWaste/",
-      "youtube": "https://www.youtube.com/@CosmicWaste",
-      "spotify": "https://open.spotify.com/artist/50robUSSoL4cDA1bbSbPUC",
-      "bandcamp": "https://officialcosmicwaste.bandcamp.com/",
-      "website": "https://www.cosmicwaste.net/"
-    },
-    "pastShows": [
-      {
-        "id": "2026-06-19-albany-or",
-        "tourId": "myspace-tour-2026",
-        "showName": "520 Events Center in Albany",
-        "date": "2026-06-19",
-        "doorsTime": "6:00 PM",
-        "showTime": "6:30 PM",
-        "venue": "520 Events Center",
-        "city": "Albany",
-        "region": "OR",
-        "market": "Willamette Valley",
-        "lineup": "Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste",
-        "ticketUrl": "https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/",
-        "ticketLabel": "Buy $10 Advance Tickets",
-        "confirmationStatus": "announced"
-      }
-    ]
-  },
-  {
-    "bandId": "idol-eyes",
-    "bandName": "Idol Eyes",
-    "displayName": "Idol Eyes",
-    "status": "local-support",
-    "socials": {
-      "instagram": "https://www.instagram.com/idoleyes.ca/",
-      "youtube": "https://www.youtube.com/watch?v=0znCwwqm-_Q"
-    },
-    "pastShows": [
-      {
-        "id": "2026-06-21-san-luis-obispo-ca",
-        "tourId": "myspace-tour-2026",
-        "showName": "Humdinger Brewing SLO Taproom in San Luis Obispo",
-        "date": "2026-06-21",
-        "doorsTime": "6:00 PM",
-        "showTime": "6:30 PM",
-        "venue": "Humdinger Brewing SLO Taproom",
-        "city": "San Luis Obispo",
+        "id": "2026-09-16-modesto-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
+        "date": "2026-09-16",
+        "doorsTime": "4:30 PM",
+        "venue": "18 Seventy Brewing",
+        "city": "Modesto",
         "region": "CA",
-        "market": "Central Coast / SLO",
-        "lineup": "Oathbound; Pretty Suspect; Idol Eyes; Stabbable Offense",
-        "ticketUrl": "https://my805tix.com/e/pretty-suspect",
-        "ticketLabel": "Buy $10 Advance Tickets",
-        "confirmationStatus": "announced"
+        "market": "Central Valley",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "verified"
+      },
+      {
+        "id": "2026-09-17-palmdale-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at transplants",
+        "date": "2026-09-17",
+        "doorsTime": "6:30 PM",
+        "venue": "Transplants Brewing Company",
+        "city": "Palmdale",
+        "region": "CA",
+        "market": "Los Angeles Area / Antelope Valley",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketLabel": "Free show",
+        "confirmationStatus": "verified"
+      },
+      {
+        "id": "2026-09-18-bakersfield-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at Jerry's Pizza",
+        "date": "2026-09-18",
+        "doorsTime": "7:00 PM",
+        "venue": "Jerry’s Pizza & Pub",
+        "city": "Bakersfield",
+        "region": "CA",
+        "market": "Bakersfield Area",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "confirmed"
+      },
+      {
+        "id": "2026-09-19-fresno-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
+        "date": "2026-09-19",
+        "doorsTime": "6:30 PM",
+        "venue": "Summer Fox Tower",
+        "city": "Fresno",
+        "region": "CA",
+        "market": "Fresno Area",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
       }
     ]
   },
@@ -1114,219 +1315,6 @@
     ]
   },
   {
-    "bandId": "daybreak-ends",
-    "bandName": "Daybreak Ends",
-    "displayName": "Daybreak Ends",
-    "status": "local-support",
-    "socials": {
-      "instagram": "https://www.instagram.com/daybreakends/",
-      "facebook": "https://www.facebook.com/DbEband/",
-      "spotify": "https://open.spotify.com/artist/0LWnm2uibO6dMjgj0EsS4r",
-      "bandcamp": "https://daybreakends.bandcamp.com/",
-      "website": "https://daybreakends.com/"
-    },
-    "pastShows": [
-      {
-        "id": "2026-06-23-los-angeles-ca",
-        "tourId": "myspace-tour-2026",
-        "showName": "The Escondite in Los Angeles",
-        "date": "2026-06-23",
-        "showTime": "8:00 PM",
-        "venue": "The Escondite",
-        "city": "Los Angeles",
-        "region": "CA",
-        "market": "Los Angeles Area",
-        "lineup": "Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib",
-        "ticketLabel": "Free show",
-        "confirmationStatus": "announced"
-      }
-    ]
-  },
-  {
-    "bandId": "hide-heaven",
-    "bandName": "Hide Heaven",
-    "displayName": "Hide Heaven",
-    "status": "local-support",
-    "socials": {
-      "instagram": "https://www.instagram.com/hideheaven541/",
-      "facebook": "https://www.facebook.com/profile.php?id=100090334207130"
-    },
-    "pastShows": [
-      {
-        "id": "2026-06-27-medford-or",
-        "tourId": "myspace-tour-2026",
-        "showName": "The Rockafairy in Medford",
-        "date": "2026-06-27",
-        "doorsTime": "7:00 PM",
-        "showTime": "8:00 PM",
-        "venue": "The Rockafairy",
-        "city": "Medford",
-        "region": "OR",
-        "market": "Southern Oregon",
-        "lineup": "Oathbound; Pretty Suspect; Two Piece Face; Hide Heaven; Atelectasis",
-        "ticketUrl": "https://rockafairy.betterworld.org/events/oathboundjune27",
-        "ticketLabel": "Buy $10 Advance Tickets",
-        "confirmationStatus": "verified"
-      },
-      {
-        "id": "2026-06-19-albany-or",
-        "tourId": "myspace-tour-2026",
-        "showName": "520 Events Center in Albany",
-        "date": "2026-06-19",
-        "doorsTime": "6:00 PM",
-        "showTime": "6:30 PM",
-        "venue": "520 Events Center",
-        "city": "Albany",
-        "region": "OR",
-        "market": "Willamette Valley",
-        "lineup": "Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste",
-        "ticketUrl": "https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/",
-        "ticketLabel": "Buy $10 Advance Tickets",
-        "confirmationStatus": "announced"
-      }
-    ]
-  },
-  {
-    "bandId": "hangfire",
-    "bandName": "Hangfire",
-    "displayName": "Hangfire",
-    "status": "local-support",
-    "pastShows": [
-      {
-        "id": "2026-06-28-portland-or",
-        "tourId": "myspace-tour-2026",
-        "showName": "Dante's in Portland",
-        "date": "2026-06-28",
-        "doorsTime": "5:30 PM",
-        "showTime": "6:00 PM",
-        "venue": "Dante's",
-        "city": "Portland",
-        "region": "OR",
-        "market": "Portland Metro",
-        "lineup": "Oathbound; Pretty Suspect; Hangfire; Foghorn",
-        "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943",
-        "ticketLabel": "Buy $13 Advance Tickets",
-        "confirmationStatus": "announced"
-      }
-    ]
-  },
-  {
-    "bandId": "hallway-scenes",
-    "bandName": "Hallway Scenes",
-    "displayName": "Hallway Scenes",
-    "status": "local-support",
-    "socials": {
-      "instagram": "https://www.instagram.com/hallwayscenes/",
-      "youtube": "https://www.youtube.com/@hallwayscenes",
-      "spotify": "https://open.spotify.com/artist/6Ol15WCVqAiUdrUrqWRtXu",
-      "website": "https://www.hallwayscenes.com/"
-    },
-    "pastShows": [
-      {
-        "id": "2026-06-20-citrus-heights-ca",
-        "tourId": "myspace-tour-2026",
-        "showName": "Smashed Live in Citrus Heights",
-        "date": "2026-06-20",
-        "doorsTime": "6:30 PM",
-        "showTime": "7:00 PM",
-        "venue": "Smashed Live - Sacremento",
-        "lineup": "Oathbound; Pretty Suspect; Salt; Hallway Scenes",
-        "ticketLabel": "Tickets",
-        "confirmationStatus": "announced"
-      }
-    ]
-  },
-  {
-    "bandId": "sickbella-call-me",
-    "bandName": "Sickbella Callme",
-    "displayName": "Sickbella Callme",
-    "status": "local-support"
-  },
-  {
-    "bandId": "two-face",
-    "bandName": "Two Piece Face",
-    "displayName": "Two Piece Face",
-    "status": "local-support",
-    "socials": {
-      "instagram": "https://www.instagram.com/two_piece_face_official/",
-      "facebook": "https://www.facebook.com/twopiecefacebook/",
-      "youtube": "https://www.youtube.com/channel/UCGK1XPNwh-XLgdoFRuogJLg/about",
-      "bandcamp": "https://twopieceface.bandcamp.com/track/maze"
-    }
-  },
-  {
-    "bandId": "foghorn",
-    "bandName": "Foghorn",
-    "displayName": "Foghorn",
-    "status": "local-support",
-    "socials": {
-      "instagram": "https://www.instagram.com/officialfoghorn/",
-      "facebook": "https://www.facebook.com/foghornwa/",
-      "spotify": "https://open.spotify.com/artist/4vr3bAVN2n2KQDb2tWXj5U"
-    },
-    "pastShows": [
-      {
-        "id": "2026-06-28-portland-or",
-        "tourId": "myspace-tour-2026",
-        "showName": "Dante's in Portland",
-        "date": "2026-06-28",
-        "doorsTime": "5:30 PM",
-        "showTime": "6:00 PM",
-        "venue": "Dante's",
-        "city": "Portland",
-        "region": "OR",
-        "market": "Portland Metro",
-        "lineup": "Oathbound; Pretty Suspect; Hangfire; Foghorn",
-        "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-hangfire-foghorn-dantes-tickets/14931943",
-        "ticketLabel": "Buy $13 Advance Tickets",
-        "confirmationStatus": "announced"
-      }
-    ]
-  },
-  {
-    "bandId": "drawn-knives",
-    "bandName": "Drawn by Knives",
-    "displayName": "Drawn by Knives",
-    "status": "local-support",
-    "socials": {
-      "instagram": "https://www.instagram.com/drawnbyknives/",
-      "facebook": "https://www.facebook.com/drawnbyknives/",
-      "spotify": "https://open.spotify.com/artist/04M9gQFqPnhRedKGU1fwCF",
-      "bandcamp": "https://drawnbyknives.bandcamp.com/",
-      "website": "https://drawnbyknives.com/"
-    }
-  },
-  {
-    "bandId": "dead-nexus",
-    "bandName": "Dead Nexus",
-    "displayName": "Dead Nexus",
-    "status": "local-support",
-    "socials": {
-      "instagram": "https://www.instagram.com/dead_nexus/",
-      "facebook": "https://www.facebook.com/deadnexus/",
-      "spotify": "https://open.spotify.com/artist/4kbx39XaQ3FN5YiL0Y2nib",
-      "bandcamp": "https://deadnexus.bandcamp.com/"
-    },
-    "pastShows": [
-      {
-        "id": "2026-06-19-albany-or",
-        "tourId": "myspace-tour-2026",
-        "showName": "520 Events Center in Albany",
-        "date": "2026-06-19",
-        "doorsTime": "6:00 PM",
-        "showTime": "6:30 PM",
-        "venue": "520 Events Center",
-        "city": "Albany",
-        "region": "OR",
-        "market": "Willamette Valley",
-        "lineup": "Oathbound; Pretty Suspect; Hide Heaven; Drawn by Knives; Dead Nexus; Cosmic Waste",
-        "ticketUrl": "https://pnwdynamic.com/event/oathbound-cosmic-waste-hide-heaven-drawn-by-knives-dead-nexus-pretty-suspect/",
-        "ticketLabel": "Buy $10 Advance Tickets",
-        "confirmationStatus": "announced"
-      }
-    ]
-  },
-  {
     "bandId": "salt",
     "bandName": "Salt",
     "displayName": "Salt",
@@ -1345,6 +1333,37 @@
         "confirmationStatus": "announced"
       }
     ]
+  },
+  {
+    "bandId": "saul-of-tarsus",
+    "bandName": "Saul of Tarsus",
+    "displayName": "Saul of Tarsus",
+    "status": "local-support",
+    "socials": {
+      "facebook": "https://www.facebook.com/saulxofxtarsus/"
+    },
+    "pastShows": [
+      {
+        "id": "2026-06-25-san-diego-ca",
+        "tourId": "myspace-tour-2026",
+        "showName": "McGuffie's Live in San Diego",
+        "date": "2026-06-25",
+        "showTime": "8:00 PM",
+        "venue": "McGuffie's Live",
+        "city": "San Diego",
+        "region": "CA",
+        "market": "San Diego Area",
+        "lineup": "Oathbound; Pretty Suspect; Lookoutbelow; Saul of Tarsus",
+        "ticketLabel": "Door sales only",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "sickbella-call-me",
+    "bandName": "Sickbella Callme",
+    "displayName": "Sickbella Callme",
+    "status": "local-support"
   },
   {
     "bandId": "stabbable-offense",
@@ -1375,29 +1394,15 @@
     ]
   },
   {
-    "bandId": "deadhabib",
-    "bandName": "Dead Habib",
-    "displayName": "Dead Habib",
+    "bandId": "two-face",
+    "bandName": "Two Piece Face",
+    "displayName": "Two Piece Face",
     "status": "local-support",
     "socials": {
-      "instagram": "https://www.instagram.com/xdeadhabibx/",
-      "bandcamp": "https://xdead-habibx.bandcamp.com/"
-    },
-    "pastShows": [
-      {
-        "id": "2026-06-23-los-angeles-ca",
-        "tourId": "myspace-tour-2026",
-        "showName": "The Escondite in Los Angeles",
-        "date": "2026-06-23",
-        "showTime": "8:00 PM",
-        "venue": "The Escondite",
-        "city": "Los Angeles",
-        "region": "CA",
-        "market": "Los Angeles Area",
-        "lineup": "Oathbound; Pretty Suspect; Daybreak Ends; Dead Habib",
-        "ticketLabel": "Free show",
-        "confirmationStatus": "announced"
-      }
-    ]
+      "instagram": "https://www.instagram.com/two_piece_face_official/",
+      "facebook": "https://www.facebook.com/twopiecefacebook/",
+      "youtube": "https://www.youtube.com/channel/UCGK1XPNwh-XLgdoFRuogJLg/about",
+      "bandcamp": "https://twopieceface.bandcamp.com/track/maze"
+    }
   }
 ]
