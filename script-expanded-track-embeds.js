@@ -26,6 +26,7 @@ let activeTargetSource = initialTargetSlug || initialTargetVenueSlug ? "url" : "
 let activeTargetDistanceMiles = null;
 let pendingTargetScroll = Boolean(initialTargetSlug || initialTargetVenueSlug);
 let isMyspaceTheme = false;
+let spotifyTrackEmbedObserver = null;
 
 const showCoordinatesBySlug = {
   albany: { latitude: 44.6365, longitude: -123.1059 },
@@ -818,12 +819,50 @@ function createSpotifyTrackPlayer(artist, trackUrl) {
   const frame = document.createElement("iframe");
   frame.className = "show-lineup-embed";
   frame.title = `${artist.name} Spotify song player`;
-  frame.src = embedUrl;
+  frame.dataset.src = embedUrl;
   frame.loading = "lazy";
   frame.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
 
   player.appendChild(frame);
+  queueSpotifyTrackEmbed(frame);
   return player;
+}
+
+function queueSpotifyTrackEmbed(frame) {
+  if (!frame) {
+    return;
+  }
+
+  if (!("IntersectionObserver" in window)) {
+    loadSpotifyTrackEmbed(frame);
+    return;
+  }
+
+  if (!spotifyTrackEmbedObserver) {
+    spotifyTrackEmbedObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        loadSpotifyTrackEmbed(entry.target);
+        spotifyTrackEmbedObserver.unobserve(entry.target);
+      });
+    }, { rootMargin: "720px 0px" });
+  }
+
+  spotifyTrackEmbedObserver.observe(frame);
+}
+
+function loadSpotifyTrackEmbed(frame) {
+  const src = frame?.dataset?.src || "";
+
+  if (!src || frame.src) {
+    return;
+  }
+
+  frame.src = src;
+  frame.removeAttribute("data-src");
 }
 
 function renderIconBadges(container, show, extraClassName = "") {
