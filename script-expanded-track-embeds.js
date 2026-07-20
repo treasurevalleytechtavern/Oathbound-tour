@@ -684,21 +684,8 @@ function createShowCard(show, index) {
   renderPrimaryShowActions(card.querySelector(".show-primary-actions"), show, index);
 
   const actions = card.querySelector(".show-actions");
-  if (!actions) {
-    return card;
-  }
-
-  if (pageMode !== "past" && show.ticketUrl) {
-    actions.appendChild(createButton(show.ticketUrl, show.ticketLabel || "Tickets", true, "ticket", show, index));
-  }
-
-  if (show.infoUrl) {
-    actions.appendChild(createButton(show.infoUrl, show.infoLabel || "Details", false, "details", show, index));
-  }
-
-  const directionsUrl = pageMode === "past" || !showDirections ? "" : createDirectionsUrl(show);
-  if (directionsUrl) {
-    actions.appendChild(createButton(directionsUrl, "Directions", false, "directions", show, index));
+  if (actions) {
+    actions.remove();
   }
 
   window.oathboundAnalytics?.decorateShowCard(card, show, index);
