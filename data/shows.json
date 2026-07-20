@@ -46,7 +46,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -62,7 +63,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ageRestriction": "21+",
@@ -82,7 +84,7 @@
     "tourId": "dark-origins-2026",
     "showName": "Oathbound at Substation 9.10.26",
     "date": "2026-09-10",
-    "doorsTime": "7:00 PM",
+    "doorsTime": "6:30 PM",
     "timeZone": "America/Los_Angeles",
     "venue": "Substation",
     "address": "645 NW 45th St",
@@ -106,10 +108,12 @@
       "citySlug": "seattle",
       "regionSlug": "wa"
     },
-    "lineup": "Oathbound; Lucrecia",
+    "lineup": "Oathbound; Lucrecia; What's Wrong; Ocean Ghost",
     "lineupArtists": [
       "Oathbound",
-      "Lucrecia"
+      "Lucrecia",
+      "What's Wrong",
+      "Ocean Ghost"
     ],
     "featuredBands": [
       {
@@ -124,7 +128,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -137,7 +142,33 @@
           "facebook": "https://www.facebook.com/lucreciaband",
           "spotify": "http://open.spotify.com/artist/63MmxZVbkrXRTyOZm3BCZe",
           "spotifyTrackUrl": "https://open.spotify.com/track/75RvwveMzKdrNrYRzMHqd4?si=a00bb8bc7fc64821",
-          "website": "https://lucrecia.bigcartel.com/"
+          "website": "https://lucrecia.bigcartel.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/75RvwveMzKdrNrYRzMHqd4?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "whats-wrong",
+        "bandName": "What's Wrong",
+        "displayName": "What's Wrong",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/whatswrongband/",
+          "facebook": "https://www.facebook.com/whatswrongband/",
+          "youtube": "https://www.youtube.com/@whatswrongband",
+          "spotify": "https://open.spotify.com/artist/3xE3rSnswJRiFSAsXhxxsN",
+          "spotifyTrackUrl": "https://open.spotify.com/track/6c8mqeTCcKSjf15LtceVlo",
+          "website": "https://solo.to/whatswrongband",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/6c8mqeTCcKSjf15LtceVlo?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "ocean-ghost",
+        "bandName": "Ocean Ghost",
+        "displayName": "Ocean Ghost",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/ocean.ghost.band/",
+          "spotify": "https://open.spotify.com/artist/3s6dLZ7Ad4R5tKNrESk2k9"
         }
       }
     ],
@@ -153,7 +184,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -167,7 +199,33 @@
           "facebook": "https://www.facebook.com/lucreciaband",
           "spotify": "http://open.spotify.com/artist/63MmxZVbkrXRTyOZm3BCZe",
           "spotifyTrackUrl": "https://open.spotify.com/track/75RvwveMzKdrNrYRzMHqd4?si=a00bb8bc7fc64821",
-          "website": "https://lucrecia.bigcartel.com/"
+          "website": "https://lucrecia.bigcartel.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/75RvwveMzKdrNrYRzMHqd4?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "whats-wrong",
+        "bandName": "What's Wrong",
+        "displayName": "What's Wrong",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/whatswrongband/",
+          "facebook": "https://www.facebook.com/whatswrongband/",
+          "youtube": "https://www.youtube.com/@whatswrongband",
+          "spotify": "https://open.spotify.com/artist/3xE3rSnswJRiFSAsXhxxsN",
+          "spotifyTrackUrl": "https://open.spotify.com/track/6c8mqeTCcKSjf15LtceVlo",
+          "website": "https://solo.to/whatswrongband",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/6c8mqeTCcKSjf15LtceVlo?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "ocean-ghost",
+        "bandName": "Ocean Ghost",
+        "displayName": "Ocean Ghost",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/ocean.ghost.band/",
+          "spotify": "https://open.spotify.com/artist/3s6dLZ7Ad4R5tKNrESk2k9"
         }
       }
     ],
@@ -189,8 +247,8 @@
     "date": "2026-09-11",
     "doorsTime": "7:30 PM",
     "timeZone": "America/Los_Angeles",
-    "venue": "Rockafairy Hall",
-    "address": "31 W 6th St",
+    "venue": "Rockafairy",
+    "address": "1600 N Riverside Ave",
     "city": "Medford",
     "region": "OR",
     "regionName": "Oregon",
@@ -200,9 +258,9 @@
     "regionSlug": "or",
     "venueRef": {
       "venueId": "rockafairy-hall-medford-or",
-      "venueSlug": "rockafairy-hall",
-      "venue": "Rockafairy Hall",
-      "address": "31 W 6th St",
+      "venueSlug": "rockafairy",
+      "venue": "Rockafairy",
+      "address": "1600 N Riverside Ave",
       "city": "Medford",
       "region": "OR",
       "regionName": "Oregon",
@@ -229,7 +287,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -242,7 +301,8 @@
           "facebook": "https://www.facebook.com/lucreciaband",
           "spotify": "http://open.spotify.com/artist/63MmxZVbkrXRTyOZm3BCZe",
           "spotifyTrackUrl": "https://open.spotify.com/track/75RvwveMzKdrNrYRzMHqd4?si=a00bb8bc7fc64821",
-          "website": "https://lucrecia.bigcartel.com/"
+          "website": "https://lucrecia.bigcartel.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/75RvwveMzKdrNrYRzMHqd4?utm_source=generator"
         }
       }
     ],
@@ -258,7 +318,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -272,15 +333,17 @@
           "facebook": "https://www.facebook.com/lucreciaband",
           "spotify": "http://open.spotify.com/artist/63MmxZVbkrXRTyOZm3BCZe",
           "spotifyTrackUrl": "https://open.spotify.com/track/75RvwveMzKdrNrYRzMHqd4?si=a00bb8bc7fc64821",
-          "website": "https://lucrecia.bigcartel.com/"
+          "website": "https://lucrecia.bigcartel.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/75RvwveMzKdrNrYRzMHqd4?utm_source=generator"
         }
       }
     ],
     "ageRestriction": "All Ages",
-    "ticketLabel": "Ticket link needed",
+    "ticketUrl": "https://rockafairy.betterworld.org/events/sept11",
+    "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": false,
-    "notes": "Oathbound brings the punishing force of melodic metalcore to Medford, OR on Friday, September 11 when their Dark Origins Tour links up with Lucrecia's Too Sweet Tour! You don't want to miss this night of heavy music! Doors are at 7:30pm. This is an all-ages event.",
+    "notes": "Oathbound and Lucrecia at Rockafairy, ground floor of Rogue Valley Mall. Doors 7:30 PM. All ages.",
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "confirmed",
@@ -292,7 +355,8 @@
     "tourId": "dark-origins-2026",
     "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
     "date": "2026-09-12",
-    "doorsTime": "6:00 PM",
+    "doorsTime": "6:30 PM",
+    "showTime": "7:00 PM",
     "timeZone": "America/Los_Angeles",
     "venue": "Smashed Live",
     "address": "6412 Tupelo Dr Suite A/B",
@@ -316,10 +380,13 @@
       "citySlug": "citrus-heights",
       "regionSlug": "ca"
     },
-    "lineup": "Oathbound; Lucrecia",
+    "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
     "lineupArtists": [
       "Oathbound",
-      "Lucrecia"
+      "Lucrecia",
+      "The Beauty in Death",
+      "ARPH",
+      "Infernal Autopsy"
     ],
     "featuredBands": [
       {
@@ -334,7 +401,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -347,8 +415,42 @@
           "facebook": "https://www.facebook.com/lucreciaband",
           "spotify": "http://open.spotify.com/artist/63MmxZVbkrXRTyOZm3BCZe",
           "spotifyTrackUrl": "https://open.spotify.com/track/75RvwveMzKdrNrYRzMHqd4?si=a00bb8bc7fc64821",
-          "website": "https://lucrecia.bigcartel.com/"
+          "website": "https://lucrecia.bigcartel.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/75RvwveMzKdrNrYRzMHqd4?utm_source=generator"
         }
+      },
+      {
+        "bandId": "the-beauty-in-death",
+        "bandName": "The Beauty in Death",
+        "displayName": "The Beauty in Death",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/thebeautyindeathca/",
+          "facebook": "https://www.facebook.com/Thebeautyindeath/",
+          "spotify": "https://open.spotify.com/artist/6FFNrT35e3o3tgOlDanACj",
+          "spotifyTrackUrl": "https://open.spotify.com/track/5JYgaJSleFoceMOqnRwrJ6",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5JYgaJSleFoceMOqnRwrJ6?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "arph",
+        "bandName": "ARPH",
+        "displayName": "ARPH",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/arph_band/",
+          "spotify": "https://open.spotify.com/artist/464iirF1NrVjkLgsi2O9GD",
+          "spotifyTrackUrl": "https://open.spotify.com/track/3NvfwTShYiAnUbJT0OOmCn",
+          "website": "https://linktr.ee/arphband",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3NvfwTShYiAnUbJT0OOmCn?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "infernal-autopsy",
+        "bandName": "Infernal Autopsy",
+        "displayName": "Infernal Autopsy",
+        "role": "featured",
+        "socials": {}
       }
     ],
     "supportedBand": {
@@ -363,7 +465,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -377,8 +480,42 @@
           "facebook": "https://www.facebook.com/lucreciaband",
           "spotify": "http://open.spotify.com/artist/63MmxZVbkrXRTyOZm3BCZe",
           "spotifyTrackUrl": "https://open.spotify.com/track/75RvwveMzKdrNrYRzMHqd4?si=a00bb8bc7fc64821",
-          "website": "https://lucrecia.bigcartel.com/"
+          "website": "https://lucrecia.bigcartel.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/75RvwveMzKdrNrYRzMHqd4?utm_source=generator"
         }
+      },
+      {
+        "bandId": "the-beauty-in-death",
+        "bandName": "The Beauty in Death",
+        "displayName": "The Beauty in Death",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/thebeautyindeathca/",
+          "facebook": "https://www.facebook.com/Thebeautyindeath/",
+          "spotify": "https://open.spotify.com/artist/6FFNrT35e3o3tgOlDanACj",
+          "spotifyTrackUrl": "https://open.spotify.com/track/5JYgaJSleFoceMOqnRwrJ6",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5JYgaJSleFoceMOqnRwrJ6?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "arph",
+        "bandName": "ARPH",
+        "displayName": "ARPH",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/arph_band/",
+          "spotify": "https://open.spotify.com/artist/464iirF1NrVjkLgsi2O9GD",
+          "spotifyTrackUrl": "https://open.spotify.com/track/3NvfwTShYiAnUbJT0OOmCn",
+          "website": "https://linktr.ee/arphband",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3NvfwTShYiAnUbJT0OOmCn?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "infernal-autopsy",
+        "bandName": "Infernal Autopsy",
+        "displayName": "Infernal Autopsy",
+        "role": "featured",
+        "socials": {}
       }
     ],
     "ageRestriction": "All Ages",
@@ -386,7 +523,7 @@
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": false,
-    "notes": "Oathbound brings the punishing force of melodic metalcore to Citrus Heights, CA on Saturday, September 12 when their Dark Origins Tour links up with Lucrecia's Too Sweet Tour! You don't want to miss this night of heavy music! Doors are at 6:00pm. This is an all-ages event.",
+    "notes": "Oathbound with Lucrecia, The Beauty in Death, ARPH and Infernal Autopsy. Doors 6:30 PM; show 7:00 PM. All ages.",
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "confirmed",
@@ -439,7 +576,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -455,7 +593,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ageRestriction": "21+",
@@ -483,7 +622,7 @@
     "regionName": "California",
     "country": "US",
     "market": "Bay Area",
-    "citySlug": "pacifica-ca",
+    "citySlug": "pacifica",
     "regionSlug": "ca",
     "venueRef": {
       "venueId": "longboard-margarita-bar-pacifica-ca",
@@ -495,7 +634,7 @@
       "regionName": "California",
       "country": "US",
       "market": "Bay Area",
-      "citySlug": "pacifica-ca",
+      "citySlug": "pacifica",
       "regionSlug": "ca"
     },
     "lineup": "Oathbound; Beauty Is Betrayal",
@@ -516,7 +655,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -530,7 +670,8 @@
           "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
           "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
           "spotifyTrackUrl": "https://open.spotify.com/track/4xaV9dUqZZVOf40sVfMqwI",
-          "website": "https://linktr.ee/beautyisbetrayal"
+          "website": "https://linktr.ee/beautyisbetrayal",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/4xaV9dUqZZVOf40sVfMqwI?utm_source=generator"
         }
       }
     ],
@@ -546,7 +687,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -561,7 +703,8 @@
           "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
           "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
           "spotifyTrackUrl": "https://open.spotify.com/track/4xaV9dUqZZVOf40sVfMqwI",
-          "website": "https://linktr.ee/beautyisbetrayal"
+          "website": "https://linktr.ee/beautyisbetrayal",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/4xaV9dUqZZVOf40sVfMqwI?utm_source=generator"
         }
       }
     ],
@@ -573,15 +716,15 @@
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "verified",
-    "assetsKey": "ca/pacifica-ca",
-    "assetsPath": "/street-team/kits/ca/pacifica-ca"
+    "assetsKey": "ca/pacifica",
+    "assetsPath": "/street-team/kits/ca/pacifica"
   },
   {
     "id": "2026-09-16-modesto-ca",
     "tourId": "dark-origins-2026",
     "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
     "date": "2026-09-16",
-    "doorsTime": "4:30 PM",
+    "doorsTime": "6:00 PM",
     "timeZone": "America/Los_Angeles",
     "venue": "18 Seventy Brewing",
     "address": "911 J Street",
@@ -624,7 +767,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -638,7 +782,8 @@
           "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
           "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
           "spotifyTrackUrl": "https://open.spotify.com/track/4xaV9dUqZZVOf40sVfMqwI",
-          "website": "https://linktr.ee/beautyisbetrayal"
+          "website": "https://linktr.ee/beautyisbetrayal",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/4xaV9dUqZZVOf40sVfMqwI?utm_source=generator"
         }
       },
       {
@@ -652,7 +797,8 @@
           "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
           "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
-          "website": "https://redkeepband.com/home"
+          "website": "https://redkeepband.com/home",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
         }
       }
     ],
@@ -668,7 +814,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -683,7 +830,8 @@
           "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
           "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
           "spotifyTrackUrl": "https://open.spotify.com/track/4xaV9dUqZZVOf40sVfMqwI",
-          "website": "https://linktr.ee/beautyisbetrayal"
+          "website": "https://linktr.ee/beautyisbetrayal",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/4xaV9dUqZZVOf40sVfMqwI?utm_source=generator"
         }
       },
       {
@@ -697,16 +845,17 @@
           "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
           "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
-          "website": "https://redkeepband.com/home"
+          "website": "https://redkeepband.com/home",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
         }
       }
     ],
-    "ageRestriction": "21+",
+    "ageRestriction": "All Ages",
     "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": false,
-    "notes": "Oathbound, Beauty is Betrayal and Red Keep bring the punishing force of metalcore to Modesto, CA on Wednesday, September 16 for The Dark Origins Tour! You don't want to miss this night of heavy music! Doors are at 6:00pm. This is an all-ages event.",
+    "notes": "The Dark Origins Tour at The Seasons Event Center. Doors/start 6 PM. All ages.",
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "verified",
@@ -761,7 +910,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -775,7 +925,8 @@
           "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
           "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
           "spotifyTrackUrl": "https://open.spotify.com/track/4xaV9dUqZZVOf40sVfMqwI",
-          "website": "https://linktr.ee/beautyisbetrayal"
+          "website": "https://linktr.ee/beautyisbetrayal",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/4xaV9dUqZZVOf40sVfMqwI?utm_source=generator"
         }
       },
       {
@@ -789,7 +940,8 @@
           "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
           "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
-          "website": "https://redkeepband.com/home"
+          "website": "https://redkeepband.com/home",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
         }
       }
     ],
@@ -805,7 +957,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -820,7 +973,8 @@
           "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
           "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
           "spotifyTrackUrl": "https://open.spotify.com/track/4xaV9dUqZZVOf40sVfMqwI",
-          "website": "https://linktr.ee/beautyisbetrayal"
+          "website": "https://linktr.ee/beautyisbetrayal",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/4xaV9dUqZZVOf40sVfMqwI?utm_source=generator"
         }
       },
       {
@@ -834,7 +988,8 @@
           "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
           "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
-          "website": "https://redkeepband.com/home"
+          "website": "https://redkeepband.com/home",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
         }
       }
     ],
@@ -897,7 +1052,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -911,7 +1067,8 @@
           "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
           "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
           "spotifyTrackUrl": "https://open.spotify.com/track/4xaV9dUqZZVOf40sVfMqwI",
-          "website": "https://linktr.ee/beautyisbetrayal"
+          "website": "https://linktr.ee/beautyisbetrayal",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/4xaV9dUqZZVOf40sVfMqwI?utm_source=generator"
         }
       },
       {
@@ -925,7 +1082,8 @@
           "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
           "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
-          "website": "https://redkeepband.com/home"
+          "website": "https://redkeepband.com/home",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
         }
       }
     ],
@@ -941,7 +1099,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -956,7 +1115,8 @@
           "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
           "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
           "spotifyTrackUrl": "https://open.spotify.com/track/4xaV9dUqZZVOf40sVfMqwI",
-          "website": "https://linktr.ee/beautyisbetrayal"
+          "website": "https://linktr.ee/beautyisbetrayal",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/4xaV9dUqZZVOf40sVfMqwI?utm_source=generator"
         }
       },
       {
@@ -970,7 +1130,8 @@
           "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
           "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
-          "website": "https://redkeepband.com/home"
+          "website": "https://redkeepband.com/home",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
         }
       }
     ],
@@ -992,8 +1153,8 @@
     "date": "2026-09-19",
     "doorsTime": "6:30 PM",
     "timeZone": "America/Los_Angeles",
-    "venue": "Summer Fox Tower",
-    "address": "658 E Olive Ave",
+    "venue": "Summer Fox Brewing - Tower",
+    "address": "1426 N Van Ness Ave",
     "city": "Fresno",
     "region": "CA",
     "regionName": "California",
@@ -1003,9 +1164,9 @@
     "regionSlug": "ca",
     "venueRef": {
       "venueId": "summer-fox-tower",
-      "venueSlug": "summer-fox-tower",
-      "venue": "Summer Fox Tower",
-      "address": "658 E Olive Ave",
+      "venueSlug": "summer-fox-brewing-tower",
+      "venue": "Summer Fox Brewing - Tower",
+      "address": "1426 N Van Ness Ave",
       "city": "Fresno",
       "region": "CA",
       "regionName": "California",
@@ -1033,7 +1194,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -1047,7 +1209,8 @@
           "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
           "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
           "spotifyTrackUrl": "https://open.spotify.com/track/4xaV9dUqZZVOf40sVfMqwI",
-          "website": "https://linktr.ee/beautyisbetrayal"
+          "website": "https://linktr.ee/beautyisbetrayal",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/4xaV9dUqZZVOf40sVfMqwI?utm_source=generator"
         }
       },
       {
@@ -1061,7 +1224,8 @@
           "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
           "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
-          "website": "https://redkeepband.com/home"
+          "website": "https://redkeepband.com/home",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
         }
       }
     ],
@@ -1077,7 +1241,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -1092,7 +1257,8 @@
           "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
           "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
           "spotifyTrackUrl": "https://open.spotify.com/track/4xaV9dUqZZVOf40sVfMqwI",
-          "website": "https://linktr.ee/beautyisbetrayal"
+          "website": "https://linktr.ee/beautyisbetrayal",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/4xaV9dUqZZVOf40sVfMqwI?utm_source=generator"
         }
       },
       {
@@ -1106,7 +1272,8 @@
           "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
           "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
-          "website": "https://redkeepband.com/home"
+          "website": "https://redkeepband.com/home",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
         }
       }
     ],
@@ -1168,7 +1335,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -1184,7 +1352,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ageRestriction": "21+",
@@ -1248,7 +1417,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -1296,7 +1466,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -1364,8 +1535,6 @@
     "citySlug": "medford",
     "regionSlug": "or",
     "venueRef": {
-      "venueId": "the-rockafairy-medford-or",
-      "venueSlug": "the-rockafairy",
       "venue": "The Rockafairy",
       "address": "31 W 6th St",
       "city": "Medford",
@@ -1397,7 +1566,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -1463,7 +1633,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -1579,7 +1750,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -1609,7 +1781,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -1688,7 +1861,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -1737,7 +1911,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -1835,7 +2010,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -1888,7 +2064,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -1990,7 +2167,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -2033,7 +2211,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -2127,7 +2306,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -2177,7 +2357,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -2265,7 +2446,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -2314,7 +2496,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -2415,7 +2598,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -2494,7 +2678,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -2624,7 +2809,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       },
       {
@@ -2665,7 +2851,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "supportingBands": [
@@ -2750,7 +2937,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -2766,7 +2954,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ageRestriction": "All Ages",
@@ -2823,7 +3012,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -2839,7 +3029,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ageRestriction": "All Ages",
@@ -2870,8 +3061,6 @@
     "citySlug": "medford",
     "regionSlug": "or",
     "venueRef": {
-      "venueId": "rockafairy-hall-medford-or",
-      "venueSlug": "rockafairy-hall",
       "venue": "Rockafairy Hall",
       "address": "31 W 6th St",
       "city": "Medford",
@@ -2899,7 +3088,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -2915,7 +3105,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ageRestriction": "All Ages",
@@ -2974,7 +3165,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -2990,7 +3182,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ageRestriction": "21+",
@@ -3097,7 +3290,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -3113,7 +3307,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ticketLabel": "Ticket link needed",
@@ -3258,16 +3453,31 @@
     ],
     "featuredBands": [
       {
+        "bandId": "the-beauty-in-death",
         "bandName": "The Beauty in Death",
         "displayName": "The Beauty in Death",
         "role": "headline",
-        "socials": {}
+        "socials": {
+          "instagram": "https://www.instagram.com/thebeautyindeathca/",
+          "facebook": "https://www.facebook.com/Thebeautyindeath/",
+          "spotify": "https://open.spotify.com/artist/6FFNrT35e3o3tgOlDanACj",
+          "spotifyTrackUrl": "https://open.spotify.com/track/5JYgaJSleFoceMOqnRwrJ6",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5JYgaJSleFoceMOqnRwrJ6?utm_source=generator"
+        }
       }
     ],
     "supportedBand": {
+      "bandId": "the-beauty-in-death",
       "bandName": "The Beauty in Death",
       "displayName": "The Beauty in Death",
-      "role": "headline"
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/thebeautyindeathca/",
+        "facebook": "https://www.facebook.com/Thebeautyindeath/",
+        "spotify": "https://open.spotify.com/artist/6FFNrT35e3o3tgOlDanACj",
+        "spotifyTrackUrl": "https://open.spotify.com/track/5JYgaJSleFoceMOqnRwrJ6",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5JYgaJSleFoceMOqnRwrJ6?utm_source=generator"
+      }
     },
     "ticketLabel": "Ticket link needed",
     "isFreeShow": false,
@@ -3320,7 +3530,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -3336,7 +3547,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ticketLabel": "Ticket link needed",
@@ -3390,7 +3602,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -3406,7 +3619,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ticketLabel": "Ticket link needed",
@@ -3460,7 +3674,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -3476,7 +3691,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ticketLabel": "Ticket link needed",
@@ -3632,7 +3848,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -3648,7 +3865,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ticketLabel": "Ticket link needed",
@@ -3793,16 +4011,35 @@
     ],
     "featuredBands": [
       {
+        "bandId": "whats-wrong",
         "bandName": "What's Wrong",
         "displayName": "What's Wrong",
         "role": "headline",
-        "socials": {}
+        "socials": {
+          "instagram": "https://www.instagram.com/whatswrongband/",
+          "facebook": "https://www.facebook.com/whatswrongband/",
+          "youtube": "https://www.youtube.com/@whatswrongband",
+          "spotify": "https://open.spotify.com/artist/3xE3rSnswJRiFSAsXhxxsN",
+          "spotifyTrackUrl": "https://open.spotify.com/track/6c8mqeTCcKSjf15LtceVlo",
+          "website": "https://solo.to/whatswrongband",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/6c8mqeTCcKSjf15LtceVlo?utm_source=generator"
+        }
       }
     ],
     "supportedBand": {
+      "bandId": "whats-wrong",
       "bandName": "What's Wrong",
       "displayName": "What's Wrong",
-      "role": "headline"
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/whatswrongband/",
+        "facebook": "https://www.facebook.com/whatswrongband/",
+        "youtube": "https://www.youtube.com/@whatswrongband",
+        "spotify": "https://open.spotify.com/artist/3xE3rSnswJRiFSAsXhxxsN",
+        "spotifyTrackUrl": "https://open.spotify.com/track/6c8mqeTCcKSjf15LtceVlo",
+        "website": "https://solo.to/whatswrongband",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/6c8mqeTCcKSjf15LtceVlo?utm_source=generator"
+      }
     },
     "ticketLabel": "Ticket link needed",
     "isFreeShow": false,
@@ -4110,7 +4347,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -4126,7 +4364,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ticketLabel": "Ticket link needed",
@@ -4384,7 +4623,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -4400,7 +4640,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ticketLabel": "Ticket link needed",
@@ -4607,7 +4848,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -4623,7 +4865,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ticketLabel": "Ticket link needed",
@@ -4728,7 +4971,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -4744,7 +4988,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ticketLabel": "Ticket link needed",
@@ -5053,7 +5298,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -5069,7 +5315,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ticketLabel": "Ticket link needed",
@@ -5174,7 +5421,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -5190,7 +5438,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ticketLabel": "Ticket link needed",
@@ -5244,7 +5493,8 @@
           "youtube": "https://www.youtube.com/@oathbound-band",
           "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-          "website": "https://oathboundband.com/"
+          "website": "https://oathboundband.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
       }
     ],
@@ -5260,7 +5510,8 @@
         "youtube": "https://www.youtube.com/@oathbound-band",
         "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
         "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-        "website": "https://oathboundband.com/"
+        "website": "https://oathboundband.com/",
+        "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
     "ticketLabel": "Ticket link needed",
