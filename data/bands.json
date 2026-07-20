@@ -42,7 +42,8 @@
       "youtube": "https://www.youtube.com/channel/UCDrWlFPvdvvjVnixk_krolA",
       "spotify": "https://open.spotify.com/artist/0VnAX3vxZGML94qSD7s5wl",
       "spotifyTrackUrl": "https://open.spotify.com/track/4xaV9dUqZZVOf40sVfMqwI",
-      "website": "https://linktr.ee/beautyisbetrayal"
+      "website": "https://linktr.ee/beautyisbetrayal",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/4xaV9dUqZZVOf40sVfMqwI?utm_source=generator"
     },
     "upcomingShows": [
       {
@@ -51,7 +52,7 @@
         "showName": "Dark Origins Tour - Oathbound at Longboard Margarita Bar",
         "date": "2026-09-15",
         "doorsTime": "8:00 PM",
-        "venue": "Longbard Margarita Bar",
+        "venue": "Longboard Margarita Bar",
         "city": "Pacifica",
         "region": "CA",
         "market": "Bay Area",
@@ -64,7 +65,7 @@
         "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
         "date": "2026-09-16",
-        "doorsTime": "4:30 PM",
+        "doorsTime": "6:00 PM",
         "venue": "18 Seventy Brewing",
         "city": "Modesto",
         "region": "CA",
@@ -108,7 +109,7 @@
         "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
         "date": "2026-09-19",
         "doorsTime": "6:30 PM",
-        "venue": "Summer Fox Tower",
+        "venue": "Summer Fox Brewing - Tower",
         "city": "Fresno",
         "region": "CA",
         "market": "Fresno Area",
@@ -464,7 +465,8 @@
       "facebook": "https://www.facebook.com/lucreciaband",
       "spotify": "http://open.spotify.com/artist/63MmxZVbkrXRTyOZm3BCZe",
       "spotifyTrackUrl": "https://open.spotify.com/track/75RvwveMzKdrNrYRzMHqd4?si=a00bb8bc7fc64821",
-      "website": "https://lucrecia.bigcartel.com/"
+      "website": "https://lucrecia.bigcartel.com/",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/75RvwveMzKdrNrYRzMHqd4?utm_source=generator"
     },
     "upcomingShows": [
       {
@@ -472,12 +474,12 @@
         "tourId": "dark-origins-2026",
         "showName": "Oathbound at Substation 9.10.26",
         "date": "2026-09-10",
-        "doorsTime": "7:00 PM",
+        "doorsTime": "6:30 PM",
         "venue": "Substation",
         "city": "Seattle",
         "region": "WA",
         "market": "Seattle Area",
-        "lineup": "Oathbound; Lucrecia",
+        "lineup": "Oathbound; Lucrecia; What's Wrong; Ocean Ghost",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       },
@@ -487,12 +489,13 @@
         "showName": "Dark Origins Tour - Too Sweet Tour at Rockafairy",
         "date": "2026-09-11",
         "doorsTime": "7:30 PM",
-        "venue": "Rockafairy Hall",
+        "venue": "Rockafairy",
         "city": "Medford",
         "region": "OR",
         "market": "Southern Oregon",
         "lineup": "Oathbound; Lucrecia",
-        "ticketLabel": "Ticket link needed",
+        "ticketUrl": "https://rockafairy.betterworld.org/events/sept11",
+        "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       },
       {
@@ -500,12 +503,13 @@
         "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
         "date": "2026-09-12",
-        "doorsTime": "6:00 PM",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:00 PM",
         "venue": "Smashed Live",
         "city": "Citrus Heights",
         "region": "CA",
         "market": "Sacramento Area",
-        "lineup": "Oathbound; Lucrecia",
+        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
         "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
@@ -524,7 +528,8 @@
       "youtube": "https://www.youtube.com/@oathbound-band",
       "spotify": "https://open.spotify.com/artist/4NClWLg0H7Hq76KHTI2yKI",
       "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
-      "website": "https://oathboundband.com/"
+      "website": "https://oathboundband.com/",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
     },
     "upcomingShows": [
       {
@@ -548,12 +553,12 @@
         "tourId": "dark-origins-2026",
         "showName": "Oathbound at Substation 9.10.26",
         "date": "2026-09-10",
-        "doorsTime": "7:00 PM",
+        "doorsTime": "6:30 PM",
         "venue": "Substation",
         "city": "Seattle",
         "region": "WA",
         "market": "Seattle Area",
-        "lineup": "Oathbound; Lucrecia",
+        "lineup": "Oathbound; Lucrecia; What's Wrong; Ocean Ghost",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       },
@@ -563,12 +568,13 @@
         "showName": "Dark Origins Tour - Too Sweet Tour at Rockafairy",
         "date": "2026-09-11",
         "doorsTime": "7:30 PM",
-        "venue": "Rockafairy Hall",
+        "venue": "Rockafairy",
         "city": "Medford",
         "region": "OR",
         "market": "Southern Oregon",
         "lineup": "Oathbound; Lucrecia",
-        "ticketLabel": "Ticket link needed",
+        "ticketUrl": "https://rockafairy.betterworld.org/events/sept11",
+        "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       },
       {
@@ -576,12 +582,13 @@
         "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
         "date": "2026-09-12",
-        "doorsTime": "6:00 PM",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:00 PM",
         "venue": "Smashed Live",
         "city": "Citrus Heights",
         "region": "CA",
         "market": "Sacramento Area",
-        "lineup": "Oathbound; Lucrecia",
+        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
         "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
@@ -606,7 +613,7 @@
         "showName": "Dark Origins Tour - Oathbound at Longboard Margarita Bar",
         "date": "2026-09-15",
         "doorsTime": "8:00 PM",
-        "venue": "Longbard Margarita Bar",
+        "venue": "Longboard Margarita Bar",
         "city": "Pacifica",
         "region": "CA",
         "market": "Bay Area",
@@ -619,7 +626,7 @@
         "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
         "date": "2026-09-16",
-        "doorsTime": "4:30 PM",
+        "doorsTime": "6:00 PM",
         "venue": "18 Seventy Brewing",
         "city": "Modesto",
         "region": "CA",
@@ -663,7 +670,7 @@
         "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
         "date": "2026-09-19",
         "doorsTime": "6:30 PM",
-        "venue": "Summer Fox Tower",
+        "venue": "Summer Fox Brewing - Tower",
         "city": "Fresno",
         "region": "CA",
         "market": "Fresno Area",
@@ -1220,7 +1227,8 @@
       "youtube": "http://youtube.com/channel/UCl4VaNcdDO0nk37o2D7qUvQ",
       "spotify": "https://open.spotify.com/artist/1725duX98HxfXbWaJ1c4Gc?si=zx3ywHxNTI6sCXU-smPhMQ",
       "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
-      "website": "https://redkeepband.com/home"
+      "website": "https://redkeepband.com/home",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
     },
     "upcomingShows": [
       {
@@ -1228,7 +1236,7 @@
         "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
         "date": "2026-09-16",
-        "doorsTime": "4:30 PM",
+        "doorsTime": "6:00 PM",
         "venue": "18 Seventy Brewing",
         "city": "Modesto",
         "region": "CA",
@@ -1272,7 +1280,7 @@
         "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
         "date": "2026-09-19",
         "doorsTime": "6:30 PM",
-        "venue": "Summer Fox Tower",
+        "venue": "Summer Fox Brewing - Tower",
         "city": "Fresno",
         "region": "CA",
         "market": "Fresno Area",
@@ -1404,5 +1412,176 @@
       "youtube": "https://www.youtube.com/channel/UCGK1XPNwh-XLgdoFRuogJLg/about",
       "bandcamp": "https://twopieceface.bandcamp.com/track/maze"
     }
+  },
+  {
+    "bandId": "whats-wrong",
+    "bandName": "What's Wrong",
+    "displayName": "What's Wrong",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/whatswrongband/",
+      "facebook": "https://www.facebook.com/whatswrongband/",
+      "youtube": "https://www.youtube.com/@whatswrongband",
+      "spotify": "https://open.spotify.com/artist/3xE3rSnswJRiFSAsXhxxsN",
+      "spotifyTrackUrl": "https://open.spotify.com/track/6c8mqeTCcKSjf15LtceVlo",
+      "website": "https://solo.to/whatswrongband",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/6c8mqeTCcKSjf15LtceVlo?utm_source=generator"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-10-seattle-wa",
+        "tourId": "dark-origins-2026",
+        "showName": "Oathbound at Substation 9.10.26",
+        "date": "2026-09-10",
+        "doorsTime": "6:30 PM",
+        "venue": "Substation",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "Oathbound; Lucrecia; What's Wrong; Ocean Ghost",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ],
+    "pastShows": [
+      {
+        "id": "2025-09-12-seattle-wa",
+        "showName": "The Funhouse in Seattle",
+        "date": "2025-09-12",
+        "venue": "The Funhouse",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "What's Wrong",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "bandId": "ocean-ghost",
+    "bandName": "Ocean Ghost",
+    "displayName": "Ocean Ghost",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/ocean.ghost.band/",
+      "spotify": "https://open.spotify.com/artist/3s6dLZ7Ad4R5tKNrESk2k9"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-10-seattle-wa",
+        "tourId": "dark-origins-2026",
+        "showName": "Oathbound at Substation 9.10.26",
+        "date": "2026-09-10",
+        "doorsTime": "6:30 PM",
+        "venue": "Substation",
+        "city": "Seattle",
+        "region": "WA",
+        "market": "Seattle Area",
+        "lineup": "Oathbound; Lucrecia; What's Wrong; Ocean Ghost",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "bandId": "the-beauty-in-death",
+    "bandName": "The Beauty in Death",
+    "displayName": "The Beauty in Death",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/thebeautyindeathca/",
+      "facebook": "https://www.facebook.com/Thebeautyindeath/",
+      "spotify": "https://open.spotify.com/artist/6FFNrT35e3o3tgOlDanACj",
+      "spotifyTrackUrl": "https://open.spotify.com/track/5JYgaJSleFoceMOqnRwrJ6",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5JYgaJSleFoceMOqnRwrJ6?utm_source=generator"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-12-citrus-heights-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
+        "date": "2026-09-12",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:00 PM",
+        "venue": "Smashed Live",
+        "city": "Citrus Heights",
+        "region": "CA",
+        "market": "Sacramento Area",
+        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
+        "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ],
+    "pastShows": [
+      {
+        "id": "2026-03-23-albany-ca",
+        "showName": "Ivy Room in Albany",
+        "date": "2026-03-23",
+        "venue": "Ivy Room",
+        "city": "Albany",
+        "region": "CA",
+        "market": "Bay Area",
+        "lineup": "The Beauty in Death",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
+    "bandId": "arph",
+    "bandName": "ARPH",
+    "displayName": "ARPH",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/arph_band/",
+      "spotify": "https://open.spotify.com/artist/464iirF1NrVjkLgsi2O9GD",
+      "spotifyTrackUrl": "https://open.spotify.com/track/3NvfwTShYiAnUbJT0OOmCn",
+      "website": "https://linktr.ee/arphband",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3NvfwTShYiAnUbJT0OOmCn?utm_source=generator"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-12-citrus-heights-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
+        "date": "2026-09-12",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:00 PM",
+        "venue": "Smashed Live",
+        "city": "Citrus Heights",
+        "region": "CA",
+        "market": "Sacramento Area",
+        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
+        "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "bandId": "infernal-autopsy",
+    "bandName": "Infernal Autopsy",
+    "displayName": "Infernal Autopsy",
+    "status": "local-support",
+    "upcomingShows": [
+      {
+        "id": "2026-09-12-citrus-heights-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
+        "date": "2026-09-12",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:00 PM",
+        "venue": "Smashed Live",
+        "city": "Citrus Heights",
+        "region": "CA",
+        "market": "Sacramento Area",
+        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
+        "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ]
   }
 ]
