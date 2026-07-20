@@ -179,6 +179,7 @@ let streetTeamState = {
   shows: [],
   downloads: { general: [], cities: {}, shows: {} },
   streetAssets: [],
+  captions: {},
   selectedRegion: "",
 };
 
@@ -188,10 +189,11 @@ wireArtworkModal();
 nearestShowButton?.addEventListener("click", findNearestStreetTeamShow);
 
 async function loadStreetTeamPage() {
-  const [showsResult, downloadsResult, streetAssetsResult] = await Promise.allSettled([
+  const [showsResult, downloadsResult, streetAssetsResult, captionsResult] = await Promise.allSettled([
     fetchJson(`${siteRoot}/data/shows.json`),
     fetchJson(`${siteRoot}/street-team/street-team-downloads.json`),
     fetchJson(`${siteRoot}/data/street-team-assets.json`),
+    fetchJson(`${siteRoot}/data/captions.json`),
   ]);
 
   if (downloadsResult.status === "fulfilled") {
@@ -201,6 +203,10 @@ async function loadStreetTeamPage() {
   if (streetAssetsResult.status === "fulfilled") {
     streetTeamState.streetAssets = Array.isArray(streetAssetsResult.value) ? streetAssetsResult.value.map(normalizeStreetAsset) : [];
     mergeStreetAssetsIntoDownloads(streetTeamState.streetAssets);
+  }
+
+  if (captionsResult.status === "fulfilled") {
+    streetTeamState.captions = normalizeCaptions(captionsResult.value);
   }
 
   if (showsResult.status !== "fulfilled") {
@@ -450,6 +456,36 @@ function normalizeDownloads(downloads) {
     cities: downloads.cities || {},
     shows: downloads.shows || {},
   };
+}
+
+function normalizeCaptions(captions) {
+  const byShowId = {};
+
+  if (Array.isArray(captions)) {
+    captions.forEach((entry) => {
+      const showId = String(entry?.id || entry?.showId || "").trim();
+      if (showId && entry?.captions && typeof entry.captions === "object") {
+        byShowId[showId] = entry.captions;
+      }
+    });
+    return byShowId;
+  }
+
+  if (captions?.shows && typeof captions.shows === "object") {
+    Object.entries(captions.shows).forEach(([showId, entry]) => {
+      if (entry?.captions && typeof entry.captions === "object") {
+        byShowId[showId] = entry.captions;
+        return;
+      }
+
+      if (entry && typeof entry === "object") {
+        byShowId[showId] = entry;
+      }
+    });
+    return byShowId;
+  }
+
+  return {};
 }
 
 function normalizeStreetAsset(asset) {
@@ -1104,6 +1140,11 @@ function streetAssetToDownload(asset) {
 }
 
 function generateCaption(show, platform = "general") {
+  const savedCaption = getSavedCaption(show, platform);
+  if (savedCaption) {
+    return savedCaption;
+  }
+
   const template = CAPTION_TEMPLATES[Math.floor(Math.random() * CAPTION_TEMPLATES.length)];
   const values = getCaptionValues(show, platform);
   let caption = Object.entries(values).reduce((text, [key, value]) => text.replaceAll(`[${key}]`, value), template);
@@ -1124,6 +1165,42 @@ function generateCaption(show, platform = "general") {
   }
 
   return cleanupCaption(caption);
+}
+
+function getSavedCaption(show, platform = "general") {
+  const showCaptions = streetTeamState.captions?.[show.id];
+  if (!showCaptions || typeof showCaptions !== "object") {
+    return "";
+  }
+
+  const preferredPlatforms = platform === "general"
+    ? ["general", "instagram", "facebook", "tiktok"]
+    : [platform, "general"];
+
+  for (const candidatePlatform of preferredPlatforms) {
+    const caption = normalizeCaptionText(showCaptions[candidatePlatform]);
+    if (caption) {
+      return cleanupCaption(caption);
+    }
+  }
+
+  return "";
+}
+
+function normalizeCaptionText(caption) {
+  if (typeof caption === "string") {
+    return caption;
+  }
+
+  if (Array.isArray(caption)) {
+    return caption.map(normalizeCaptionText).filter(Boolean).join("\n\n");
+  }
+
+  if (caption && typeof caption === "object") {
+    return String(caption.text || caption.copy || caption.caption || "").trim();
+  }
+
+  return "";
 }
 
 function getCaptionValues(show, platform) {
