@@ -549,6 +549,22 @@ body[data-page="admin"] .intro {
   margin-top: 6px;
 }
 
+.show-primary-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 12px;
+}
+
+.show-primary-actions .button {
+  min-height: 46px;
+  padding-inline: 18px;
+}
+
+.show-primary-actions .button--primary {
+  min-width: 154px;
+}
+
 .show-lineup-list {
   display: inline-flex;
   align-items: center;

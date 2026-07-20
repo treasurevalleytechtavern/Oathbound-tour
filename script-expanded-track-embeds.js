@@ -681,6 +681,8 @@ function createShowCard(show, index) {
   toggleElement(card.querySelector(".show-lineup"), Boolean(getLineupArtistNames(show).length));
   toggleElement(card.querySelector(".show-notes"), Boolean(show.notes && show.notes.trim()));
 
+  renderPrimaryShowActions(card.querySelector(".show-primary-actions"), show, index);
+
   const actions = card.querySelector(".show-actions");
   if (!actions) {
     return card;
@@ -701,6 +703,36 @@ function createShowCard(show, index) {
 
   window.oathboundAnalytics?.decorateShowCard(card, show, index);
   return card;
+}
+
+function renderPrimaryShowActions(container, show, index) {
+  if (!container) {
+    return;
+  }
+
+  container.innerHTML = "";
+
+  if (pageMode === "past") {
+    container.remove();
+    return;
+  }
+
+  let hasActions = false;
+
+  if (show.ticketUrl) {
+    container.appendChild(createButton(show.ticketUrl, show.ticketLabel || "Tickets", true, "ticket", show, index));
+    hasActions = true;
+  }
+
+  const directionsUrl = showDirections ? createDirectionsUrl(show) : "";
+  if (directionsUrl) {
+    container.appendChild(createButton(directionsUrl, "Directions", !hasActions, "directions", show, index));
+    hasActions = true;
+  }
+
+  if (!hasActions) {
+    container.remove();
+  }
 }
 
 function renderShowStatus(card, showDate, index) {
