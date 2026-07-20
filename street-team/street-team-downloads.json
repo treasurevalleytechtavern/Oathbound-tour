@@ -1,6 +1,748 @@
 {
   "general": [],
-  "tours": {},
-  "cities": {},
-  "shows": {}
+  "tours": {
+    "dark-origins-2026": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Dante’s — Portland, OR - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/or/portland/2026-09-09-portland-or-qr-code.png",
+        "preview": "/street-team/kits/or/portland/2026-09-09-portland-or-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Oathbound at Dante’s — Portland, OR - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/or/portland/2026-09-09-portland-or-square.png",
+        "preview": "/street-team/kits/or/portland/2026-09-09-portland-or-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Oathbound at Dante’s — Portland, OR - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/or/portland/2026-09-09-portland-or-9x16.png",
+        "preview": "/street-team/kits/or/portland/2026-09-09-portland-or-9x16.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Substation - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-qr-code.png",
+        "preview": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Oathbound at Substation 9.10.26 - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-square.png",
+        "preview": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Oathbound at Substation 9.10.26 - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-9x16.png",
+        "preview": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-9x16.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Too Sweet Tour at Substation - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/or/medford/2026-09-11-medford-or-qr-code.png",
+        "preview": "/street-team/kits/or/medford/2026-09-11-medford-or-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Too Sweet Tour at Rockafairy - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/or/medford/2026-09-11-medford-or-square.png",
+        "preview": "/street-team/kits/or/medford/2026-09-11-medford-or-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Too Sweet Tour at Rockafairy - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/or/medford/2026-09-11-medford-or-9x16.png",
+        "preview": "/street-team/kits/or/medford/2026-09-11-medford-or-9x16.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-square.png",
+        "preview": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-9x16.png",
+        "preview": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-9x16.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Toots Tavern - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Toots Tavern - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-square.png",
+        "preview": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Toots Tavern - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-9x16.png",
+        "preview": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-9x16.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Pacifica - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Longboard Margarita Bar - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-square.png",
+        "preview": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Longboard Margarita Bar - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-9x16.png",
+        "preview": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-9x16.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at 18 Seventy Brewing - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at 18 Seventy Brewing - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-square.png",
+        "preview": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at 18 Seventy Brewing - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-9x16.png",
+        "preview": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-9x16.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at transplants - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at transplants - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-square.png",
+        "preview": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at transplants - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-9x16.png",
+        "preview": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-9x16.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Jerry's Pizza - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Jerry's Pizza - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-square.png",
+        "preview": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Jerry's Pizza - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-9x16.png",
+        "preview": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-9x16.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-square.png",
+        "preview": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-9x16.png",
+        "preview": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-9x16.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Cellar Stage - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/nv/reno/2026-09-20-reno-nv-qr-code.png",
+        "preview": "/street-team/kits/nv/reno/2026-09-20-reno-nv-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Cellar Stage - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/nv/reno/2026-09-20-reno-nv-square.png",
+        "preview": "/street-team/kits/nv/reno/2026-09-20-reno-nv-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Cellar Stage - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/nv/reno/2026-09-20-reno-nv-9x16.png",
+        "preview": "/street-team/kits/nv/reno/2026-09-20-reno-nv-9x16.png",
+        "fileType": "PNG"
+      }
+    ]
+  },
+  "cities": {
+    "or/portland": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Dante’s — Portland, OR - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/or/portland/2026-09-09-portland-or-qr-code.png",
+        "preview": "/street-team/kits/or/portland/2026-09-09-portland-or-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Oathbound at Dante’s — Portland, OR - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/or/portland/2026-09-09-portland-or-square.png",
+        "preview": "/street-team/kits/or/portland/2026-09-09-portland-or-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Oathbound at Dante’s — Portland, OR - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/or/portland/2026-09-09-portland-or-9x16.png",
+        "preview": "/street-team/kits/or/portland/2026-09-09-portland-or-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "wa/seattle": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Substation - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-qr-code.png",
+        "preview": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Oathbound at Substation 9.10.26 - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-square.png",
+        "preview": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Oathbound at Substation 9.10.26 - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-9x16.png",
+        "preview": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "or/medford": [
+      {
+        "title": "Dark Origins Tour - Too Sweet Tour at Substation - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/or/medford/2026-09-11-medford-or-qr-code.png",
+        "preview": "/street-team/kits/or/medford/2026-09-11-medford-or-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Too Sweet Tour at Rockafairy - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/or/medford/2026-09-11-medford-or-square.png",
+        "preview": "/street-team/kits/or/medford/2026-09-11-medford-or-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Too Sweet Tour at Rockafairy - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/or/medford/2026-09-11-medford-or-9x16.png",
+        "preview": "/street-team/kits/or/medford/2026-09-11-medford-or-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "ca/citrus-heights": [
+      {
+        "title": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-square.png",
+        "preview": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-9x16.png",
+        "preview": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "ca/crockett": [
+      {
+        "title": "Dark Origins Tour - Toots Tavern - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Toots Tavern - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-square.png",
+        "preview": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Toots Tavern - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-9x16.png",
+        "preview": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "ca/pacifica": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Pacifica - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Longboard Margarita Bar - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-square.png",
+        "preview": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Longboard Margarita Bar - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-9x16.png",
+        "preview": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "ca/modesto": [
+      {
+        "title": "Dark Origins Tour - Oathbound at 18 Seventy Brewing - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at 18 Seventy Brewing - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-square.png",
+        "preview": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at 18 Seventy Brewing - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-9x16.png",
+        "preview": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "ca/palmdale": [
+      {
+        "title": "Dark Origins Tour - Oathbound at transplants - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at transplants - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-square.png",
+        "preview": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at transplants - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-9x16.png",
+        "preview": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "ca/bakersfield": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Jerry's Pizza - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Jerry's Pizza - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-square.png",
+        "preview": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Jerry's Pizza - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-9x16.png",
+        "preview": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "ca/fresno": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-square.png",
+        "preview": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-9x16.png",
+        "preview": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "nv/reno": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Cellar Stage - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/nv/reno/2026-09-20-reno-nv-qr-code.png",
+        "preview": "/street-team/kits/nv/reno/2026-09-20-reno-nv-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Cellar Stage - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/nv/reno/2026-09-20-reno-nv-square.png",
+        "preview": "/street-team/kits/nv/reno/2026-09-20-reno-nv-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Cellar Stage - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/nv/reno/2026-09-20-reno-nv-9x16.png",
+        "preview": "/street-team/kits/nv/reno/2026-09-20-reno-nv-9x16.png",
+        "fileType": "PNG"
+      }
+    ]
+  },
+  "shows": {
+    "2026-09-09-portland-or": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Dante’s — Portland, OR - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/or/portland/2026-09-09-portland-or-qr-code.png",
+        "preview": "/street-team/kits/or/portland/2026-09-09-portland-or-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Oathbound at Dante’s — Portland, OR - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/or/portland/2026-09-09-portland-or-square.png",
+        "preview": "/street-team/kits/or/portland/2026-09-09-portland-or-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Oathbound at Dante’s — Portland, OR - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/or/portland/2026-09-09-portland-or-9x16.png",
+        "preview": "/street-team/kits/or/portland/2026-09-09-portland-or-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "2026-09-10-seattle-wa": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Substation - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-qr-code.png",
+        "preview": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Oathbound at Substation 9.10.26 - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-square.png",
+        "preview": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Oathbound at Substation 9.10.26 - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-9x16.png",
+        "preview": "/street-team/kits/wa/seattle/2026-09-10-seattle-wa-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "2026-09-11-medford-or": [
+      {
+        "title": "Dark Origins Tour - Too Sweet Tour at Substation - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/or/medford/2026-09-11-medford-or-qr-code.png",
+        "preview": "/street-team/kits/or/medford/2026-09-11-medford-or-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Too Sweet Tour at Rockafairy - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/or/medford/2026-09-11-medford-or-square.png",
+        "preview": "/street-team/kits/or/medford/2026-09-11-medford-or-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Too Sweet Tour at Rockafairy - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/or/medford/2026-09-11-medford-or-9x16.png",
+        "preview": "/street-team/kits/or/medford/2026-09-11-medford-or-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "2026-09-12-citrus-heights-ca": [
+      {
+        "title": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-square.png",
+        "preview": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-9x16.png",
+        "preview": "/street-team/kits/ca/citrus-heights/2026-09-12-citrus-heights-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "2026-09-13-crockett-ca": [
+      {
+        "title": "Dark Origins Tour - Toots Tavern - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Toots Tavern - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-square.png",
+        "preview": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Toots Tavern - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-9x16.png",
+        "preview": "/street-team/kits/ca/crockett/2026-09-13-crockett-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "2026-09-15-pacifica-ca": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Pacifica - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Longboard Margarita Bar - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-square.png",
+        "preview": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Longboard Margarita Bar - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-9x16.png",
+        "preview": "/street-team/kits/ca/pacifica/2026-09-15-pacifica-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "2026-09-16-modesto-ca": [
+      {
+        "title": "Dark Origins Tour - Oathbound at 18 Seventy Brewing - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at 18 Seventy Brewing - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-square.png",
+        "preview": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at 18 Seventy Brewing - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-9x16.png",
+        "preview": "/street-team/kits/ca/modesto2026-09-16-modesto-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "2026-09-17-palmdale-ca": [
+      {
+        "title": "Dark Origins Tour - Oathbound at transplants - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at transplants - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-square.png",
+        "preview": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at transplants - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-9x16.png",
+        "preview": "/street-team/kits/ca/palmdale2026-09-17-palmdale-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "2026-09-18-bakersfield-ca": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Jerry's Pizza - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Jerry's Pizza - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-square.png",
+        "preview": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Jerry's Pizza - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-9x16.png",
+        "preview": "/street-team/kits/ca/bakersfield2026-09-18-bakersfield-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "2026-09-19-fresno-ca": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-qr-code.png",
+        "preview": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-square.png",
+        "preview": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-9x16.png",
+        "preview": "/street-team/kits/ca/fresno2026-09-19-fresno-ca-9x16.png",
+        "fileType": "PNG"
+      }
+    ],
+    "2026-09-20-reno-nv": [
+      {
+        "title": "Dark Origins Tour - Oathbound at Cellar Stage - Flyer",
+        "type": "Flyer",
+        "url": "/street-team/kits/nv/reno/2026-09-20-reno-nv-qr-code.png",
+        "preview": "/street-team/kits/nv/reno/2026-09-20-reno-nv-QR-code.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Cellar Stage - Square Graphic",
+        "type": "Square",
+        "url": "/street-team/kits/nv/reno/2026-09-20-reno-nv-square.png",
+        "preview": "/street-team/kits/nv/reno/2026-09-20-reno-nv-square.png",
+        "fileType": "PNG"
+      },
+      {
+        "title": "Dark Origins Tour - Oathbound at Cellar Stage - Story Graphic",
+        "type": "Story",
+        "url": "/street-team/kits/nv/reno/2026-09-20-reno-nv-9x16.png",
+        "preview": "/street-team/kits/nv/reno/2026-09-20-reno-nv-9x16.png",
+        "fileType": "PNG"
+      }
+    ]
+  }
 }
