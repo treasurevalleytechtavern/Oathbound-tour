@@ -1,9 +1,9 @@
 [
   {
     "venueId": "summer-fox-tower",
-    "venue": "Summer Fox Tower",
-    "venueSlug": "summer-fox-tower",
-    "address": "658 E Olive Ave",
+    "venue": "Summer Fox Brewing - Tower",
+    "venueSlug": "summer-fox-brewing-tower",
+    "address": "1426 N Van Ness Ave",
     "city": "Fresno",
     "region": "CA",
     "regionName": "California",
@@ -18,7 +18,7 @@
         "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
         "date": "2026-09-19",
         "doorsTime": "6:30 PM",
-        "venue": "Summer Fox Tower",
+        "venue": "Summer Fox Brewing - Tower",
         "city": "Fresno",
         "region": "CA",
         "market": "Fresno Area",
@@ -60,7 +60,7 @@
         "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
         "date": "2026-09-16",
-        "doorsTime": "4:30 PM",
+        "doorsTime": "6:00 PM",
         "venue": "18 Seventy Brewing",
         "city": "Modesto",
         "region": "CA",
@@ -73,16 +73,16 @@
     ]
   },
   {
-    "venueId": "longbard-margarita-bar-pacifica-ca",
-    "venue": "Longbard Margarita Bar",
-    "venueSlug": "longbard-margarita-bar",
+    "venueId": "longboard-margarita-bar-pacifica-ca",
+    "venue": "Longboard Margarita Bar",
+    "venueSlug": "longboard-margarita-bar",
     "address": "180 Eureka Sq",
     "city": "Pacifica",
     "region": "CA",
     "regionName": "California",
     "country": "US",
     "market": "Bay Area",
-    "citySlug": "pacifica-ca",
+    "citySlug": "pacifica",
     "regionSlug": "ca",
     "upcomingShows": [
       {
@@ -91,7 +91,7 @@
         "showName": "Dark Origins Tour - Oathbound at Longboard Margarita Bar",
         "date": "2026-09-15",
         "doorsTime": "8:00 PM",
-        "venue": "Longbard Margarita Bar",
+        "venue": "Longboard Margarita Bar",
         "city": "Pacifica",
         "region": "CA",
         "market": "Bay Area",
@@ -791,9 +791,9 @@
   },
   {
     "venueId": "rockafairy-hall-medford-or",
-    "venue": "Rockafairy Hall",
-    "venueSlug": "rockafairy-hall",
-    "address": "31 W 6th St",
+    "venue": "Rockafairy",
+    "venueSlug": "rockafairy",
+    "address": "1600 N Riverside Ave",
     "city": "Medford",
     "region": "OR",
     "regionName": "Oregon",
@@ -808,30 +808,14 @@
         "showName": "Dark Origins Tour - Too Sweet Tour at Rockafairy",
         "date": "2026-09-11",
         "doorsTime": "7:30 PM",
-        "venue": "Rockafairy Hall",
+        "venue": "Rockafairy",
         "city": "Medford",
         "region": "OR",
         "market": "Southern Oregon",
         "lineup": "Oathbound; Lucrecia",
-        "ticketLabel": "Ticket link needed",
-        "confirmationStatus": "confirmed"
-      }
-    ],
-    "pastShows": [
-      {
-        "id": "2026-05-15-medford-or",
-        "showName": "Rockafairy Hall in Medford",
-        "date": "2026-05-15",
-        "doorsTime": "7:30 PM",
-        "showTime": "7:30 PM",
-        "venue": "Rockafairy Hall",
-        "city": "Medford",
-        "region": "OR",
-        "market": "Southern Oregon",
-        "lineup": "Oathbound",
-        "ticketUrl": "https://rockafairy.betterworld.org/events/oathbound",
+        "ticketUrl": "https://rockafairy.betterworld.org/events/sept11",
         "ticketLabel": "Tickets",
-        "confirmationStatus": "past"
+        "confirmationStatus": "confirmed"
       }
     ]
   },
@@ -905,12 +889,13 @@
         "tourId": "dark-origins-2026",
         "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
         "date": "2026-09-12",
-        "doorsTime": "6:00 PM",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:00 PM",
         "venue": "Smashed Live",
         "city": "Citrus Heights",
         "region": "CA",
         "market": "Sacramento Area",
-        "lineup": "Oathbound; Lucrecia",
+        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
         "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
@@ -960,12 +945,12 @@
         "tourId": "dark-origins-2026",
         "showName": "Oathbound at Substation 9.10.26",
         "date": "2026-09-10",
-        "doorsTime": "7:00 PM",
+        "doorsTime": "6:30 PM",
         "venue": "Substation",
         "city": "Seattle",
         "region": "WA",
         "market": "Seattle Area",
-        "lineup": "Oathbound; Lucrecia",
+        "lineup": "Oathbound; Lucrecia; What's Wrong; Ocean Ghost",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       }
@@ -1477,34 +1462,16 @@
   },
   {
     "venueId": "the-rockafairy-medford-or",
-    "venue": "The Rockafairy",
-    "venueSlug": "the-rockafairy",
-    "address": "31 W 6th St",
+    "venue": "Rockafairy",
+    "venueSlug": "rockafairy",
+    "address": "1600 N Riverside Ave",
     "city": "Medford",
     "region": "OR",
     "regionName": "Oregon",
     "country": "US",
     "market": "Southern Oregon",
     "citySlug": "medford",
-    "regionSlug": "or",
-    "pastShows": [
-      {
-        "id": "2026-06-27-medford-or",
-        "tourId": "myspace-tour-2026",
-        "showName": "The Rockafairy in Medford",
-        "date": "2026-06-27",
-        "doorsTime": "7:00 PM",
-        "showTime": "8:00 PM",
-        "venue": "The Rockafairy",
-        "city": "Medford",
-        "region": "OR",
-        "market": "Southern Oregon",
-        "lineup": "Oathbound; Pretty Suspect; Two Piece Face; Hide Heaven; Atelectasis",
-        "ticketUrl": "https://rockafairy.betterworld.org/events/oathboundjune27",
-        "ticketLabel": "Buy $10 Advance Tickets",
-        "confirmationStatus": "verified"
-      }
-    ]
+    "regionSlug": "or"
   },
   {
     "venueId": "smashed-live-sacremento",
@@ -1525,45 +1492,6 @@
         "confirmationStatus": "announced"
       }
     ]
-  },
-  {
-    "venueId": "18-seventy-brewing-modesto-ca",
-    "venue": "18 Seventy Brewing",
-    "venueSlug": "18-seventy-brewing",
-    "address": "911 J Street",
-    "city": "Modesto",
-    "region": "CA",
-    "regionName": "California",
-    "country": "US",
-    "market": "Central Valley",
-    "citySlug": "modesto",
-    "regionSlug": "ca"
-  },
-  {
-    "venueId": "longbard-margarita-bar-pacifica-ca",
-    "venue": "Longbard Margarita Bar",
-    "venueSlug": "longbard-margarita-bar",
-    "address": "180 Eureka Sq",
-    "city": "Pacifica",
-    "region": "CA",
-    "regionName": "California",
-    "country": "US",
-    "market": "Bay Area",
-    "citySlug": "pacifica-ca",
-    "regionSlug": "ca"
-  },
-  {
-    "venueId": "toots-tavern-crockett-ca",
-    "venue": "Toot's Tavern",
-    "venueSlug": "toots-tavern",
-    "address": "627 2nd Ave",
-    "city": "Crockett",
-    "region": "CA",
-    "regionName": "California",
-    "country": "US",
-    "market": "Bay Area",
-    "citySlug": "crockett",
-    "regionSlug": "ca"
   },
   {
     "venueId": "cellar-stage-alturas-reno-nv",
@@ -1596,9 +1524,9 @@
   },
   {
     "venueId": "summer-fox-tower-fresno-ca",
-    "venue": "Summer Fox Tower",
-    "venueSlug": "summer-fox-tower",
-    "address": "658 E Olive Ave",
+    "venue": "Summer Fox Brewing - Tower",
+    "venueSlug": "summer-fox-brewing-tower",
+    "address": "1426 N Van Ness Ave",
     "city": "Fresno",
     "region": "CA",
     "regionName": "California",
@@ -1673,5 +1601,31 @@
         "confirmationStatus": "past"
       }
     ]
+  },
+  {
+    "venueId": "rockafairy-medford-or",
+    "venue": "Rockafairy",
+    "venueSlug": "rockafairy",
+    "address": "1600 N Riverside Ave",
+    "city": "Medford",
+    "region": "OR",
+    "regionName": "Oregon",
+    "country": "US",
+    "market": "Southern Oregon",
+    "citySlug": "medford",
+    "regionSlug": "or"
+  },
+  {
+    "venueId": "summer-fox-brewing-tower-fresno-ca",
+    "venue": "Summer Fox Brewing - Tower",
+    "venueSlug": "summer-fox-brewing-tower",
+    "address": "1426 N Van Ness Ave",
+    "city": "Fresno",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Fresno Area",
+    "citySlug": "fresno",
+    "regionSlug": "ca"
   }
 ]
