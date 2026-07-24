@@ -47,7 +47,7 @@ Bring a friend and come early for the whole bill.
 
 [BandTags]
 
-#Oathbound #PrettySuspect #MyspaceTour #LiveMusic #Metalcore #PostHardcore #[CityHashtag]`,
+#Oathbound #DarkOriginsTour #LiveMusic #Metalcore #PostHardcore #[CityHashtag]`,
   `Heavy music friends in [City], this one is for you.
 
 [Date] at [Venue].
@@ -61,7 +61,7 @@ Come hang, support the locals, and help make the room feel alive.
 
 [BandTags]
 
-#Oathbound #MyspaceTour #LiveMusic #LocalShows #HeavyMusic #Hardcore #[CityHashtag]`,
+#Oathbound #DarkOriginsTour #LiveMusic #LocalShows #HeavyMusic #Hardcore #[CityHashtag]`,
   `[City] show reminder.
 
 Oathbound and friends are at [Venue] on [Date].
@@ -73,7 +73,7 @@ Lineup: [Lineup]
 
 [BandTags]
 
-#Oathbound #PrettySuspect #StreetTeam #MyspaceTour #LiveMusic #SupportLocalMusic #[CityHashtag]`,
+#Oathbound #DarkOriginsTour #StreetTeam #LiveMusic #SupportLocalMusic #[CityHashtag]`,
   `[City] friends, don't miss this one.
 
 Oathbound plays [Venue] on [Date].
@@ -86,7 +86,7 @@ Come out, bring someone with you, and stay for the whole lineup.
 
 [BandTags]
 
-#Oathbound #MyspaceTour #MetalShow #HardcoreShow #LiveMusic #SceneSupport #[CityHashtag]`,
+#Oathbound #DarkOriginsTour #MetalShow #HardcoreShow #LiveMusic #SceneSupport #[CityHashtag]`,
   `Put this one on your calendar.
 
 Oathbound at [Venue]
@@ -101,10 +101,10 @@ Save it, share it, and bring a friend who needs a loud night out.
 
 [BandTags]
 
-#Oathbound #PrettySuspect #LiveMusic #Metalcore #PostHardcore #LocalMusic #[CityHashtag]`,
+#Oathbound #DarkOriginsTour #LiveMusic #Metalcore #PostHardcore #LocalMusic #[CityHashtag]`,
   `[City], come make some noise.
 
-Oathbound brings the Myspace Tour to [Venue] on [Date].
+Oathbound brings the Dark Origins Tour to [Venue] on [Date].
 Show time: [Time]
 
 [Lineup]
@@ -114,7 +114,7 @@ Share this with someone who loves loud bands in small rooms.
 
 [BandTags]
 
-#Oathbound #MyspaceTour #LiveShows #Metalcore #Hardcore #PunkShows #[CityHashtag]`,
+#Oathbound #DarkOriginsTour #LiveShows #Metalcore #Hardcore #PunkShows #[CityHashtag]`,
   `Here is your friendly go-to-the-show nudge.
 
 [City]
@@ -131,7 +131,7 @@ Screenshot it, send it to the group chat, and come hang.
 
 [BandTags]
 
-#Oathbound #PrettySuspect #LiveMusic #StreetTeam #HeavyShows #LocalScene #[CityHashtag]`,
+#Oathbound #DarkOriginsTour #LiveMusic #StreetTeam #HeavyShows #LocalScene #[CityHashtag]`,
   `The flyer helps, but people in the room matter more.
 
 Oathbound plays [Venue] in [City] on [Date].
@@ -145,7 +145,7 @@ Help spread the word and bring the people who would love this.
 
 [BandTags]
 
-#Oathbound #MyspaceTour #Metalcore #HardcoreMusic #SupportTheScene #LocalShows #[CityHashtag]`,
+#Oathbound #DarkOriginsTour #Metalcore #HardcoreMusic #SupportTheScene #LocalShows #[CityHashtag]`,
   `[City] show alert.
 
 Oathbound at [Venue]
@@ -158,7 +158,7 @@ If you like loud guitars and shows that feel better in person, come through.
 
 [BandTags]
 
-#Oathbound #PrettySuspect #LiveMusic #MetalShow #HardcoreShow #SceneKidsNeverDie #[CityHashtag]`,
+#Oathbound #DarkOriginsTour #LiveMusic #MetalShow #HardcoreShow #SceneKidsNeverDie #[CityHashtag]`,
   `Help pack the room for Oathbound in [City].
 
 Where: [Venue]
@@ -172,7 +172,7 @@ Post it, share it, and text the friend who always says "I didn't know about it."
 
 [BandTags]
 
-#Oathbound #MyspaceTour #StreetTeam #LiveMusic #Metalcore #PostHardcore #SupportLocalMusic #[CityHashtag]`,
+#Oathbound #DarkOriginsTour #StreetTeam #LiveMusic #Metalcore #PostHardcore #SupportLocalMusic #[CityHashtag]`,
 ];
 
 let streetTeamState = {
@@ -1153,15 +1153,15 @@ function generateCaption(show, platform = "general") {
 
   if (platform === "tiktok") {
     caption = shortenCaption(caption, 460);
-    caption = limitHashtags(caption, ["#Oathbound", "#MyspaceTour", `#${values.CityHashtag}`, "#LiveMusic", "#Metalcore"]);
+    caption = limitHashtags(caption, ["#Oathbound", "#DarkOriginsTour", `#${values.CityHashtag}`, "#LiveMusic", "#Metalcore"]);
   }
 
   if (platform === "facebook") {
-    caption = limitHashtags(caption, ["#Oathbound", "#MyspaceTour", "#LiveMusic"]);
+    caption = limitHashtags(caption, ["#Oathbound", "#DarkOriginsTour", "#LiveMusic"]);
   }
 
   if (platform === "instagram") {
-    caption = limitHashtags(caption, ["#Oathbound", "#MyspaceTour", `#${values.CityHashtag}`, "#LiveMusic", "#Metalcore"]);
+    caption = limitHashtags(caption, ["#Oathbound", "#DarkOriginsTour", `#${values.CityHashtag}`, "#LiveMusic", "#Metalcore"]);
   }
 
   return cleanupCaption(caption);
@@ -1377,7 +1377,7 @@ function getCaptionHashtags(values, extraCount = 5) {
   const extras = ["Metalcore", "PostHardcore", "Hardcore", "HeavyMusic", "LocalShows", "SupportLocalMusic", "StreetTeam", values.CityHashtag, values.RegionHashtag]
     .filter(Boolean)
     .map((tag) => `#${tag.replace(/^#/, "")}`);
-  return Array.from(new Set(["#Oathbound", "#MyspaceTour", "#LiveMusic", ...extras])).slice(0, 3 + extraCount);
+  return Array.from(new Set(["#Oathbound", "#DarkOriginsTour", "#LiveMusic", ...extras])).slice(0, 3 + extraCount);
 }
 
 function ensureHashtags(caption, hashtags) {
