@@ -222,55 +222,37 @@
       "headerTitle": "Oathbound // Dark Origins Tour",
       "documentTitle": "Oathbound - Dark Origins Tour"
     },
-    "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
+    "showName": "Dark Origins Tour - Oathbound at Logoff Brewing — Rancho Cordova, CA",
     "date": "2026-09-12",
-    "doorsTime": "6:30 PM",
-    "showTime": "7:00 PM",
+    "doorsTime": "5:30 PM",
+    "showTime": "6:30 PM",
     "venue": "Logoff Brewing",
     "city": "Rancho Cordova",
     "region": "CA",
-    "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
+    "lineup": "Oathbound",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": true,
     "captions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 7:00 PM show / 6:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy\nTickets/info: Door sales only\nBands: @oathbound_band @lucreciaband @thebeautyindeathca @arph_band\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 6:30 PM show / 5:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound\nTickets/info: Door sales only\nBands: @oathbound_band\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@oathbound_band",
-          "@lucreciaband",
-          "@thebeautyindeathca",
-          "@arph_band"
-        ],
-        "missingHandles": [
-          "Infernal Autopsy"
+          "@oathbound_band"
         ]
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 7:00 PM show / 6:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy\nTickets/info: Door sales only\nBands: @Oathboundband @lucreciaband @Thebeautyindeath\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 6:30 PM show / 5:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound\nTickets/info: Door sales only\nBands: @Oathboundband\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@Oathboundband",
-          "@lucreciaband",
-          "@Thebeautyindeath"
-        ],
-        "missingHandles": [
-          "ARPH",
-          "Infernal Autopsy"
+          "@Oathboundband"
         ]
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 7:00 PM show / 6:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy\nTickets/info: Door sales only\nBands: @oathboundofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 6:30 PM show / 5:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound\nTickets/info: Door sales only\nBands: @oathboundofficial\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathboundofficial"
-        ],
-        "missingHandles": [
-          "Lucrecia",
-          "The Beauty in Death",
-          "ARPH",
-          "Infernal Autopsy"
         ]
       }
     }

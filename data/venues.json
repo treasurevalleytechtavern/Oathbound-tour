@@ -15,15 +15,15 @@
       {
         "id": "2026-09-12-citrus-heights-ca",
         "tourId": "dark-origins-2026",
-        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
+        "showName": "Dark Origins Tour - Oathbound at Logoff Brewing — Rancho Cordova, CA",
         "date": "2026-09-12",
-        "doorsTime": "6:30 PM",
-        "showTime": "7:00 PM",
+        "doorsTime": "5:30 PM",
+        "showTime": "6:30 PM",
         "venue": "Logoff Brewing",
         "city": "Rancho Cordova",
         "region": "CA",
         "market": "Sacramento Area",
-        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
+        "lineup": "Oathbound",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       }
@@ -944,6 +944,7 @@
     "venueId": "substation-seattle-wa",
     "venue": "Substation",
     "venueSlug": "substation",
+    "address": "645 NW 45th St",
     "city": "Seattle",
     "region": "WA",
     "regionName": "Washington",

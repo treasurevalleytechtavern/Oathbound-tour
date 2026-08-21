@@ -638,21 +638,6 @@
         "ticketUrl": "https://rockafairy.betterworld.org/events/sept11",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
-      },
-      {
-        "id": "2026-09-12-citrus-heights-ca",
-        "tourId": "dark-origins-2026",
-        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
-        "date": "2026-09-12",
-        "doorsTime": "6:30 PM",
-        "showTime": "7:00 PM",
-        "venue": "Logoff Brewing",
-        "city": "Rancho Cordova",
-        "region": "CA",
-        "market": "Sacramento Area",
-        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
-        "ticketLabel": "Tickets",
-        "confirmationStatus": "confirmed"
       }
     ]
   },
@@ -721,15 +706,15 @@
       {
         "id": "2026-09-12-citrus-heights-ca",
         "tourId": "dark-origins-2026",
-        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
+        "showName": "Dark Origins Tour - Oathbound at Logoff Brewing — Rancho Cordova, CA",
         "date": "2026-09-12",
-        "doorsTime": "6:30 PM",
-        "showTime": "7:00 PM",
+        "doorsTime": "5:30 PM",
+        "showTime": "6:30 PM",
         "venue": "Logoff Brewing",
         "city": "Rancho Cordova",
         "region": "CA",
         "market": "Sacramento Area",
-        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
+        "lineup": "Oathbound",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       },
@@ -1654,23 +1639,6 @@
       "spotifyTrackUrl": "https://open.spotify.com/track/5JYgaJSleFoceMOqnRwrJ6",
       "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5JYgaJSleFoceMOqnRwrJ6?utm_source=generator"
     },
-    "upcomingShows": [
-      {
-        "id": "2026-09-12-citrus-heights-ca",
-        "tourId": "dark-origins-2026",
-        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
-        "date": "2026-09-12",
-        "doorsTime": "6:30 PM",
-        "showTime": "7:00 PM",
-        "venue": "Logoff Brewing",
-        "city": "Rancho Cordova",
-        "region": "CA",
-        "market": "Sacramento Area",
-        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
-        "ticketLabel": "Tickets",
-        "confirmationStatus": "confirmed"
-      }
-    ],
     "pastShows": [
       {
         "id": "2026-03-23-albany-ca",
@@ -1697,46 +1665,12 @@
       "spotifyTrackUrl": "https://open.spotify.com/track/3NvfwTShYiAnUbJT0OOmCn",
       "website": "https://linktr.ee/arphband",
       "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3NvfwTShYiAnUbJT0OOmCn?utm_source=generator"
-    },
-    "upcomingShows": [
-      {
-        "id": "2026-09-12-citrus-heights-ca",
-        "tourId": "dark-origins-2026",
-        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
-        "date": "2026-09-12",
-        "doorsTime": "6:30 PM",
-        "showTime": "7:00 PM",
-        "venue": "Logoff Brewing",
-        "city": "Rancho Cordova",
-        "region": "CA",
-        "market": "Sacramento Area",
-        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
-        "ticketLabel": "Tickets",
-        "confirmationStatus": "confirmed"
-      }
-    ]
+    }
   },
   {
     "bandId": "infernal-autopsy",
     "bandName": "Infernal Autopsy",
     "displayName": "Infernal Autopsy",
-    "status": "local-support",
-    "upcomingShows": [
-      {
-        "id": "2026-09-12-citrus-heights-ca",
-        "tourId": "dark-origins-2026",
-        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
-        "date": "2026-09-12",
-        "doorsTime": "6:30 PM",
-        "showTime": "7:00 PM",
-        "venue": "Logoff Brewing",
-        "city": "Rancho Cordova",
-        "region": "CA",
-        "market": "Sacramento Area",
-        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
-        "ticketLabel": "Tickets",
-        "confirmationStatus": "confirmed"
-      }
-    ]
+    "status": "local-support"
   }
 ]

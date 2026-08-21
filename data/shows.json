@@ -447,10 +447,10 @@
   {
     "id": "2026-09-12-citrus-heights-ca",
     "tourId": "dark-origins-2026",
-    "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
+    "showName": "Dark Origins Tour - Oathbound at Logoff Brewing — Rancho Cordova, CA",
     "date": "2026-09-12",
-    "doorsTime": "6:30 PM",
-    "showTime": "7:00 PM",
+    "doorsTime": "5:30 PM",
+    "showTime": "6:30 PM",
     "timeZone": "America/Los_Angeles",
     "venue": "Logoff Brewing",
     "address": "3054 Sunrise Blvd J",
@@ -474,13 +474,9 @@
       "citySlug": "rancho-cordova",
       "regionSlug": "ca"
     },
-    "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
+    "lineup": "Oathbound",
     "lineupArtists": [
-      "Oathbound",
-      "Lucrecia",
-      "The Beauty in Death",
-      "ARPH",
-      "Infernal Autopsy"
+      "Oathbound"
     ],
     "featuredBands": [
       {
@@ -498,53 +494,6 @@
           "website": "https://oathboundband.com/",
           "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
         }
-      },
-      {
-        "bandId": "lucrecia",
-        "bandName": "Lucrecia",
-        "displayName": "Lucrecia",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/lucreciaband",
-          "facebook": "https://www.facebook.com/lucreciaband",
-          "spotify": "http://open.spotify.com/artist/63MmxZVbkrXRTyOZm3BCZe",
-          "spotifyTrackUrl": "https://open.spotify.com/track/75RvwveMzKdrNrYRzMHqd4?si=a00bb8bc7fc64821",
-          "website": "https://lucrecia.bigcartel.com/",
-          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/75RvwveMzKdrNrYRzMHqd4?utm_source=generator"
-        }
-      },
-      {
-        "bandId": "the-beauty-in-death",
-        "bandName": "The Beauty in Death",
-        "displayName": "The Beauty in Death",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/thebeautyindeathca/",
-          "facebook": "https://www.facebook.com/Thebeautyindeath/",
-          "spotify": "https://open.spotify.com/artist/6FFNrT35e3o3tgOlDanACj",
-          "spotifyTrackUrl": "https://open.spotify.com/track/5JYgaJSleFoceMOqnRwrJ6",
-          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5JYgaJSleFoceMOqnRwrJ6?utm_source=generator"
-        }
-      },
-      {
-        "bandId": "arph",
-        "bandName": "ARPH",
-        "displayName": "ARPH",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/arph_band/",
-          "spotify": "https://open.spotify.com/artist/464iirF1NrVjkLgsi2O9GD",
-          "spotifyTrackUrl": "https://open.spotify.com/track/3NvfwTShYiAnUbJT0OOmCn",
-          "website": "https://linktr.ee/arphband",
-          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3NvfwTShYiAnUbJT0OOmCn?utm_source=generator"
-        }
-      },
-      {
-        "bandId": "infernal-autopsy",
-        "bandName": "Infernal Autopsy",
-        "displayName": "Infernal Autopsy",
-        "role": "featured",
-        "socials": {}
       }
     ],
     "supportedBand": {
@@ -563,60 +512,11 @@
         "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
-    "supportingBands": [
-      {
-        "bandId": "lucrecia",
-        "bandName": "Lucrecia",
-        "displayName": "Lucrecia",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/lucreciaband",
-          "facebook": "https://www.facebook.com/lucreciaband",
-          "spotify": "http://open.spotify.com/artist/63MmxZVbkrXRTyOZm3BCZe",
-          "spotifyTrackUrl": "https://open.spotify.com/track/75RvwveMzKdrNrYRzMHqd4?si=a00bb8bc7fc64821",
-          "website": "https://lucrecia.bigcartel.com/",
-          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/75RvwveMzKdrNrYRzMHqd4?utm_source=generator"
-        }
-      },
-      {
-        "bandId": "the-beauty-in-death",
-        "bandName": "The Beauty in Death",
-        "displayName": "The Beauty in Death",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/thebeautyindeathca/",
-          "facebook": "https://www.facebook.com/Thebeautyindeath/",
-          "spotify": "https://open.spotify.com/artist/6FFNrT35e3o3tgOlDanACj",
-          "spotifyTrackUrl": "https://open.spotify.com/track/5JYgaJSleFoceMOqnRwrJ6",
-          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5JYgaJSleFoceMOqnRwrJ6?utm_source=generator"
-        }
-      },
-      {
-        "bandId": "arph",
-        "bandName": "ARPH",
-        "displayName": "ARPH",
-        "role": "featured",
-        "socials": {
-          "instagram": "https://www.instagram.com/arph_band/",
-          "spotify": "https://open.spotify.com/artist/464iirF1NrVjkLgsi2O9GD",
-          "spotifyTrackUrl": "https://open.spotify.com/track/3NvfwTShYiAnUbJT0OOmCn",
-          "website": "https://linktr.ee/arphband",
-          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3NvfwTShYiAnUbJT0OOmCn?utm_source=generator"
-        }
-      },
-      {
-        "bandId": "infernal-autopsy",
-        "bandName": "Infernal Autopsy",
-        "displayName": "Infernal Autopsy",
-        "role": "featured",
-        "socials": {}
-      }
-    ],
     "ageRestriction": "All Ages",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": true,
-    "notes": "Oathbound with Lucrecia, The Beauty in Death, ARPH and Infernal Autopsy. Doors 5:30 PM; show 6:30 PM. All ages.",
+    "notes": "Venue changed to Logoff Brewing in Rancho Cordova. Doors 5:30 PM; show 6:30 PM. All ages. Door sales only. Supporting lineup needs reconfirmation after the venue change.",
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "confirmed",
@@ -810,7 +710,7 @@
     "displayMode": "full",
     "confirmationStatus": "verified",
     "assetsKey": "ca/pacifica",
-    "assetsPath": "/street-team/kits/ca/pacifica"
+    "assetsPath": "/street-team/kits/ca/pacifica/"
   },
   {
     "id": "2026-09-16-modesto-ca",
@@ -953,7 +853,7 @@
     "displayMode": "full",
     "confirmationStatus": "verified",
     "assetsKey": "ca/modesto",
-    "assetsPath": "/street-team/kits/ca/modesto"
+    "assetsPath": "/street-team/kits/ca/modesto/"
   },
   {
     "id": "2026-09-17-palmdale-ca",
@@ -1122,7 +1022,7 @@
     "displayMode": "full",
     "confirmationStatus": "verified",
     "assetsKey": "ca/palmdale",
-    "assetsPath": "/street-team/kits/ca/palmdale"
+    "assetsPath": "/street-team/kits/ca/palmdale/"
   },
   {
     "id": "2026-09-18-bakersfield-ca",
@@ -1264,7 +1164,7 @@
     "displayMode": "full",
     "confirmationStatus": "confirmed",
     "assetsKey": "ca/bakersfield",
-    "assetsPath": "/street-team/kits/ca/bakersfield"
+    "assetsPath": "/street-team/kits/ca/bakersfield/"
   },
   {
     "id": "2026-09-19-fresno-ca",
@@ -1430,7 +1330,7 @@
     "displayMode": "full",
     "confirmationStatus": "confirmed",
     "assetsKey": "ca/fresno",
-    "assetsPath": "/street-team/kits/ca/fresno"
+    "assetsPath": "/street-team/kits/ca/fresno/"
   },
   {
     "id": "2026-09-20-reno-nv",
