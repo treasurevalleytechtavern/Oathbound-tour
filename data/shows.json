@@ -29,9 +29,12 @@
       "citySlug": "portland",
       "regionSlug": "or"
     },
-    "lineup": "Oathbound",
+    "lineup": "Oathbound; Spirits; Gorestorm Massacre; Kid Solus",
     "lineupArtists": [
-      "Oathbound"
+      "Oathbound",
+      "Spirits",
+      "Gorestorm Massacre",
+      "Kid Solus"
     ],
     "featuredBands": [
       {
@@ -48,6 +51,50 @@
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
           "website": "https://oathboundband.com/",
           "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "spirits",
+        "bandName": "Spirits",
+        "displayName": "Spirits",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/spiritsbandofficial/?hl=en",
+          "facebook": "https://www.facebook.com/spiritsmusicwa/",
+          "tiktok": "https://www.tiktok.com/@emodaddies",
+          "youtube": "https://www.youtube.com/@Spiritsmusicwa",
+          "spotify": "https://open.spotify.com/artist/0ZbNZWzQ2FXCBLawMGEObq",
+          "bandcamp": "https://spiritsmusicwa.bandcamp.com/"
+        }
+      },
+      {
+        "bandId": "gorestorm-massacre",
+        "bandName": "Gorestorm Massacre",
+        "displayName": "Gorestorm Massacre",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/gorestormmassacre",
+          "facebook": "https://www.facebook.com/people/Gorestorm-Massacre/61582025494300",
+          "tiktok": "https://www.tiktok.com/@gorestormmassacre",
+          "youtube": "https://www.youtube.com/@gorestormmassacre",
+          "spotify": "https://open.spotify.com/artist/7gpK6MlEVxEYBWkODebxHY",
+          "spotifyTrackUrl": "https://open.spotify.com/track/6Je72JwKt8kO545FZesSht",
+          "bandcamp": "https://gorestormmassacre0.bandcamp.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/6Je72JwKt8kO545FZesSht?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "kid-solus",
+        "bandName": "Kid Solus",
+        "displayName": "Kid Solus",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/kid_solus_band/",
+          "facebook": "https://www.facebook.com/kidsolus/",
+          "spotify": "https://open.spotify.com/artist/76oBqVbkX7bXKLppdxQGvS",
+          "spotifyTrackUrl": "https://open.spotify.com/track/32h9xod2DWmpv7x2a2zkBo",
+          "bandcamp": "https://kidsolus.bandcamp.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/32h9xod2DWmpv7x2a2zkBo?utm_source=generator"
         }
       }
     ],
@@ -67,6 +114,52 @@
         "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
+    "supportingBands": [
+      {
+        "bandId": "spirits",
+        "bandName": "Spirits",
+        "displayName": "Spirits",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/spiritsbandofficial/?hl=en",
+          "facebook": "https://www.facebook.com/spiritsmusicwa/",
+          "tiktok": "https://www.tiktok.com/@emodaddies",
+          "youtube": "https://www.youtube.com/@Spiritsmusicwa",
+          "spotify": "https://open.spotify.com/artist/0ZbNZWzQ2FXCBLawMGEObq",
+          "bandcamp": "https://spiritsmusicwa.bandcamp.com/"
+        }
+      },
+      {
+        "bandId": "gorestorm-massacre",
+        "bandName": "Gorestorm Massacre",
+        "displayName": "Gorestorm Massacre",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/gorestormmassacre",
+          "facebook": "https://www.facebook.com/people/Gorestorm-Massacre/61582025494300",
+          "tiktok": "https://www.tiktok.com/@gorestormmassacre",
+          "youtube": "https://www.youtube.com/@gorestormmassacre",
+          "spotify": "https://open.spotify.com/artist/7gpK6MlEVxEYBWkODebxHY",
+          "spotifyTrackUrl": "https://open.spotify.com/track/6Je72JwKt8kO545FZesSht",
+          "bandcamp": "https://gorestormmassacre0.bandcamp.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/6Je72JwKt8kO545FZesSht?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "kid-solus",
+        "bandName": "Kid Solus",
+        "displayName": "Kid Solus",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/kid_solus_band/",
+          "facebook": "https://www.facebook.com/kidsolus/",
+          "spotify": "https://open.spotify.com/artist/76oBqVbkX7bXKLppdxQGvS",
+          "spotifyTrackUrl": "https://open.spotify.com/track/32h9xod2DWmpv7x2a2zkBo",
+          "bandcamp": "https://kidsolus.bandcamp.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/32h9xod2DWmpv7x2a2zkBo?utm_source=generator"
+        }
+      }
+    ],
     "ageRestriction": "21+",
     "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets",
     "ticketLabel": "Tickets",
@@ -230,7 +323,7 @@
       }
     ],
     "ageRestriction": "21+",
-    "ticketUrl": "https://www.eventbrite.com/e/lucrecia-oathbound-tickets-1993717459591",
+    "ticketUrl": "https://www.eventbrite.com/e/lucrecia-oathbound-tickets-1993717459591?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=seattle_tickets",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": false,
@@ -359,26 +452,26 @@
     "doorsTime": "6:30 PM",
     "showTime": "7:00 PM",
     "timeZone": "America/Los_Angeles",
-    "venue": "Smashed Live",
-    "address": "6412 Tupelo Dr Suite A/B",
-    "city": "Citrus Heights",
+    "venue": "Logoff Brewing",
+    "address": "3054 Sunrise Blvd J",
+    "city": "Rancho Cordova",
     "region": "CA",
     "regionName": "California",
     "country": "US",
     "market": "Sacramento Area",
-    "citySlug": "citrus-heights",
+    "citySlug": "rancho-cordova",
     "regionSlug": "ca",
     "venueRef": {
-      "venueId": "smashed-live-citrus-heights-ca",
-      "venueSlug": "smashed-live",
-      "venue": "Smashed Live",
-      "address": "6412 Tupelo Dr Suite A/B",
-      "city": "Citrus Heights",
+      "venueId": "logoff-brewing-rancho-cordova-ca",
+      "venueSlug": "logoff-brewing",
+      "venue": "Logoff Brewing",
+      "address": "3054 Sunrise Blvd J",
+      "city": "Rancho Cordova",
       "region": "CA",
       "regionName": "California",
       "country": "US",
       "market": "Sacramento Area",
-      "citySlug": "citrus-heights",
+      "citySlug": "rancho-cordova",
       "regionSlug": "ca"
     },
     "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
@@ -520,11 +613,10 @@
       }
     ],
     "ageRestriction": "All Ages",
-    "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
-    "doorSalesOnly": false,
-    "notes": "Oathbound with Lucrecia, The Beauty in Death, ARPH and Infernal Autopsy. Doors 6:30 PM; show 7:00 PM. All ages.",
+    "doorSalesOnly": true,
+    "notes": "Oathbound with Lucrecia, The Beauty in Death, ARPH and Infernal Autopsy. Doors 5:30 PM; show 6:30 PM. All ages.",
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "confirmed",
@@ -599,9 +691,9 @@
       }
     },
     "ageRestriction": "21+",
-    "ticketLabel": "Ticket link needed",
+    "ticketLabel": "Door sales only",
     "isFreeShow": false,
-    "doorSalesOnly": false,
+    "doorSalesOnly": true,
     "notes": "Oathbound brings the punishing force of melodic metalcore to Crockett, CA on Sunday, September 13 for The Dark Origins Tour! You don't want to miss this night of heavy music! Doors are at 7:00pm. This is a 21+ event.",
     "public": true,
     "displayMode": "full",
@@ -892,11 +984,12 @@
       "citySlug": "palmdale",
       "regionSlug": "ca"
     },
-    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Revelry",
     "lineupArtists": [
       "Oathbound",
       "Beauty Is Betrayal",
-      "Red Keep"
+      "Red Keep",
+      "Revelry"
     ],
     "featuredBands": [
       {
@@ -943,6 +1036,19 @@
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
           "website": "https://redkeepband.com/home",
           "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "revelry",
+        "bandName": "Revelry",
+        "displayName": "Revelry",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/revelry_ca/",
+          "facebook": "https://www.facebook.com/revelryca/",
+          "youtube": "https://www.youtube.com/@revelryca",
+          "spotify": "https://open.spotify.com/artist/1WWNC5IGxa2WykWpHwuJtW",
+          "website": "https://www.revelryofficial.com/"
         }
       }
     ],
@@ -991,6 +1097,19 @@
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
           "website": "https://redkeepband.com/home",
           "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "revelry",
+        "bandName": "Revelry",
+        "displayName": "Revelry",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/revelry_ca/",
+          "facebook": "https://www.facebook.com/revelryca/",
+          "youtube": "https://www.youtube.com/@revelryca",
+          "spotify": "https://open.spotify.com/artist/1WWNC5IGxa2WykWpHwuJtW",
+          "website": "https://www.revelryofficial.com/"
         }
       }
     ],
@@ -1176,11 +1295,12 @@
       "citySlug": "fresno",
       "regionSlug": "ca"
     },
-    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Vicious",
     "lineupArtists": [
       "Oathbound",
       "Beauty Is Betrayal",
-      "Red Keep"
+      "Red Keep",
+      "Vicious"
     ],
     "featuredBands": [
       {
@@ -1227,6 +1347,17 @@
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
           "website": "https://redkeepband.com/home",
           "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "vicious",
+        "bandName": "Vicious",
+        "displayName": "Vicious",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/viciousca559/",
+          "youtube": "https://www.youtube.com/@vicious559ca",
+          "spotify": "https://open.spotify.com/artist/49IdoDZK8ot4mWHUc4Clrz"
         }
       }
     ],
@@ -1275,6 +1406,17 @@
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
           "website": "https://redkeepband.com/home",
           "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "vicious",
+        "bandName": "Vicious",
+        "displayName": "Vicious",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/viciousca559/",
+          "youtube": "https://www.youtube.com/@vicious559ca",
+          "spotify": "https://open.spotify.com/artist/49IdoDZK8ot4mWHUc4Clrz"
         }
       }
     ],
@@ -4910,16 +5052,33 @@
     ],
     "featuredBands": [
       {
+        "bandId": "spirits",
         "bandName": "Spirits",
         "displayName": "Spirits",
         "role": "headline",
-        "socials": {}
+        "socials": {
+          "instagram": "https://www.instagram.com/spiritsbandofficial/?hl=en",
+          "facebook": "https://www.facebook.com/spiritsmusicwa/",
+          "tiktok": "https://www.tiktok.com/@emodaddies",
+          "youtube": "https://www.youtube.com/@Spiritsmusicwa",
+          "spotify": "https://open.spotify.com/artist/0ZbNZWzQ2FXCBLawMGEObq",
+          "bandcamp": "https://spiritsmusicwa.bandcamp.com/"
+        }
       }
     ],
     "supportedBand": {
+      "bandId": "spirits",
       "bandName": "Spirits",
       "displayName": "Spirits",
-      "role": "headline"
+      "role": "headline",
+      "socials": {
+        "instagram": "https://www.instagram.com/spiritsbandofficial/?hl=en",
+        "facebook": "https://www.facebook.com/spiritsmusicwa/",
+        "tiktok": "https://www.tiktok.com/@emodaddies",
+        "youtube": "https://www.youtube.com/@Spiritsmusicwa",
+        "spotify": "https://open.spotify.com/artist/0ZbNZWzQ2FXCBLawMGEObq",
+        "bandcamp": "https://spiritsmusicwa.bandcamp.com/"
+      }
     },
     "ticketLabel": "Ticket link needed",
     "isFreeShow": false,

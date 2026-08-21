@@ -1,5 +1,145 @@
 [
   {
+    "bandId": "vicious",
+    "bandName": "Vicious",
+    "displayName": "Vicious",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/viciousca559/",
+      "youtube": "https://www.youtube.com/@vicious559ca",
+      "spotify": "https://open.spotify.com/artist/49IdoDZK8ot4mWHUc4Clrz"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-19-fresno-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at Summer Fox Brewing - Tower",
+        "date": "2026-09-19",
+        "doorsTime": "6:30 PM",
+        "venue": "Summer Fox Brewing - Tower",
+        "city": "Fresno",
+        "region": "CA",
+        "market": "Fresno Area",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Vicious",
+        "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "bandId": "kid-solus",
+    "bandName": "Kid Solus",
+    "displayName": "Kid Solus",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/kid_solus_band/",
+      "facebook": "https://www.facebook.com/kidsolus/",
+      "spotify": "https://open.spotify.com/artist/76oBqVbkX7bXKLppdxQGvS",
+      "spotifyTrackUrl": "https://open.spotify.com/track/32h9xod2DWmpv7x2a2zkBo",
+      "bandcamp": "https://kidsolus.bandcamp.com/",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/32h9xod2DWmpv7x2a2zkBo?utm_source=generator"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-09-portland-or",
+        "tourId": "dark-origins-2026",
+        "showName": "Oathbound at Dante’s — Portland, OR",
+        "date": "2026-09-09",
+        "doorsTime": "7:30 PM",
+        "showTime": "8:00 PM",
+        "venue": "Dante's",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Area",
+        "lineup": "Oathbound; Spirits; Gorestorm Massacre; Kid Solus",
+        "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "bandId": "gorestorm-massacre",
+    "bandName": "Gorestorm Massacre",
+    "displayName": "Gorestorm Massacre",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/gorestormmassacre",
+      "facebook": "https://www.facebook.com/people/Gorestorm-Massacre/61582025494300",
+      "tiktok": "https://www.tiktok.com/@gorestormmassacre",
+      "youtube": "https://www.youtube.com/@gorestormmassacre",
+      "spotify": "https://open.spotify.com/artist/7gpK6MlEVxEYBWkODebxHY",
+      "spotifyTrackUrl": "https://open.spotify.com/track/6Je72JwKt8kO545FZesSht",
+      "bandcamp": "https://gorestormmassacre0.bandcamp.com/",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/6Je72JwKt8kO545FZesSht?utm_source=generator"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-09-portland-or",
+        "tourId": "dark-origins-2026",
+        "showName": "Oathbound at Dante’s — Portland, OR",
+        "date": "2026-09-09",
+        "doorsTime": "7:30 PM",
+        "showTime": "8:00 PM",
+        "venue": "Dante's",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Area",
+        "lineup": "Oathbound; Spirits; Gorestorm Massacre; Kid Solus",
+        "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "bandId": "spirits",
+    "bandName": "Spirits",
+    "displayName": "Spirits",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/spiritsbandofficial/?hl=en",
+      "facebook": "https://www.facebook.com/spiritsmusicwa/",
+      "tiktok": "https://www.tiktok.com/@emodaddies",
+      "youtube": "https://www.youtube.com/@Spiritsmusicwa",
+      "spotify": "https://open.spotify.com/artist/0ZbNZWzQ2FXCBLawMGEObq",
+      "bandcamp": "https://spiritsmusicwa.bandcamp.com/"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-09-portland-or",
+        "tourId": "dark-origins-2026",
+        "showName": "Oathbound at Dante’s — Portland, OR",
+        "date": "2026-09-09",
+        "doorsTime": "7:30 PM",
+        "showTime": "8:00 PM",
+        "venue": "Dante's",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Area",
+        "lineup": "Oathbound; Spirits; Gorestorm Massacre; Kid Solus",
+        "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ],
+    "pastShows": [
+      {
+        "id": "2025-05-03-portland-or",
+        "showName": "Dante's in Portland",
+        "date": "2025-05-03",
+        "venue": "Dante's",
+        "city": "Portland",
+        "region": "OR",
+        "market": "Portland Metro",
+        "lineup": "Spirits",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "past"
+      }
+    ]
+  },
+  {
     "bandId": "atelectasis",
     "bandName": "Atelectasis",
     "displayName": "Atelectasis",
@@ -85,7 +225,7 @@
         "city": "Palmdale",
         "region": "CA",
         "market": "Los Angeles Area / Antelope Valley",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Revelry",
         "ticketLabel": "Free show",
         "confirmationStatus": "verified"
       },
@@ -113,7 +253,7 @@
         "city": "Fresno",
         "region": "CA",
         "market": "Fresno Area",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Vicious",
         "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
@@ -480,6 +620,7 @@
         "region": "WA",
         "market": "Seattle Area",
         "lineup": "Oathbound; Lucrecia; What's Wrong; Ocean Ghost",
+        "ticketUrl": "https://www.eventbrite.com/e/lucrecia-oathbound-tickets-1993717459591?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=seattle_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       },
@@ -505,12 +646,11 @@
         "date": "2026-09-12",
         "doorsTime": "6:30 PM",
         "showTime": "7:00 PM",
-        "venue": "Smashed Live",
-        "city": "Citrus Heights",
+        "venue": "Logoff Brewing",
+        "city": "Rancho Cordova",
         "region": "CA",
         "market": "Sacramento Area",
         "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
-        "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       }
@@ -543,7 +683,7 @@
         "city": "Portland",
         "region": "OR",
         "market": "Portland Area",
-        "lineup": "Oathbound",
+        "lineup": "Oathbound; Spirits; Gorestorm Massacre; Kid Solus",
         "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
@@ -559,6 +699,7 @@
         "region": "WA",
         "market": "Seattle Area",
         "lineup": "Oathbound; Lucrecia; What's Wrong; Ocean Ghost",
+        "ticketUrl": "https://www.eventbrite.com/e/lucrecia-oathbound-tickets-1993717459591?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=seattle_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       },
@@ -584,12 +725,11 @@
         "date": "2026-09-12",
         "doorsTime": "6:30 PM",
         "showTime": "7:00 PM",
-        "venue": "Smashed Live",
-        "city": "Citrus Heights",
+        "venue": "Logoff Brewing",
+        "city": "Rancho Cordova",
         "region": "CA",
         "market": "Sacramento Area",
         "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
-        "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       },
@@ -604,7 +744,7 @@
         "region": "CA",
         "market": "Bay Area",
         "lineup": "Oathbound",
-        "ticketLabel": "Ticket link needed",
+        "ticketLabel": "Door sales only",
         "confirmationStatus": "announced"
       },
       {
@@ -646,7 +786,7 @@
         "city": "Palmdale",
         "region": "CA",
         "market": "Los Angeles Area / Antelope Valley",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Revelry",
         "ticketLabel": "Free show",
         "confirmationStatus": "verified"
       },
@@ -674,7 +814,7 @@
         "city": "Fresno",
         "region": "CA",
         "market": "Fresno Area",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Vicious",
         "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
@@ -1256,7 +1396,7 @@
         "city": "Palmdale",
         "region": "CA",
         "market": "Los Angeles Area / Antelope Valley",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Revelry",
         "ticketLabel": "Free show",
         "confirmationStatus": "verified"
       },
@@ -1284,7 +1424,7 @@
         "city": "Fresno",
         "region": "CA",
         "market": "Fresno Area",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Vicious",
         "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
@@ -1303,6 +1443,22 @@
       "spotify": "https://open.spotify.com/artist/1WWNC5IGxa2WykWpHwuJtW",
       "website": "https://www.revelryofficial.com/"
     },
+    "upcomingShows": [
+      {
+        "id": "2026-09-17-palmdale-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at transplants",
+        "date": "2026-09-17",
+        "doorsTime": "6:30 PM",
+        "venue": "Transplants Brewing Company",
+        "city": "Palmdale",
+        "region": "CA",
+        "market": "Los Angeles Area / Antelope Valley",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Revelry",
+        "ticketLabel": "Free show",
+        "confirmationStatus": "verified"
+      }
+    ],
     "pastShows": [
       {
         "id": "2026-06-22-palmdale-ca",
@@ -1439,6 +1595,7 @@
         "region": "WA",
         "market": "Seattle Area",
         "lineup": "Oathbound; Lucrecia; What's Wrong; Ocean Ghost",
+        "ticketUrl": "https://www.eventbrite.com/e/lucrecia-oathbound-tickets-1993717459591?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=seattle_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       }
@@ -1479,6 +1636,7 @@
         "region": "WA",
         "market": "Seattle Area",
         "lineup": "Oathbound; Lucrecia; What's Wrong; Ocean Ghost",
+        "ticketUrl": "https://www.eventbrite.com/e/lucrecia-oathbound-tickets-1993717459591?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=seattle_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       }
@@ -1504,12 +1662,11 @@
         "date": "2026-09-12",
         "doorsTime": "6:30 PM",
         "showTime": "7:00 PM",
-        "venue": "Smashed Live",
-        "city": "Citrus Heights",
+        "venue": "Logoff Brewing",
+        "city": "Rancho Cordova",
         "region": "CA",
         "market": "Sacramento Area",
         "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
-        "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       }
@@ -1549,12 +1706,11 @@
         "date": "2026-09-12",
         "doorsTime": "6:30 PM",
         "showTime": "7:00 PM",
-        "venue": "Smashed Live",
-        "city": "Citrus Heights",
+        "venue": "Logoff Brewing",
+        "city": "Rancho Cordova",
         "region": "CA",
         "market": "Sacramento Area",
         "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
-        "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       }
@@ -1573,12 +1729,11 @@
         "date": "2026-09-12",
         "doorsTime": "6:30 PM",
         "showTime": "7:00 PM",
-        "venue": "Smashed Live",
-        "city": "Citrus Heights",
+        "venue": "Logoff Brewing",
+        "city": "Rancho Cordova",
         "region": "CA",
         "market": "Sacramento Area",
         "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
-        "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       }

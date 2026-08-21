@@ -28,7 +28,7 @@
     "venue": "Dante's",
     "city": "Portland",
     "region": "OR",
-    "lineup": "Oathbound",
+    "lineup": "Oathbound; Spirits; Gorestorm Massacre; Kid Solus",
     "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
@@ -36,23 +36,34 @@
     "captions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dark Origins Tour - at Dante's - Portland, OR\n\nDark Origins Tour comes to Portland, OR. Bring a friend and help pack the room.\n2026-09-09 / 8:00 PM show / 7:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound\nTickets/info: https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets\nBands: @oathbound_band\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Dante's - Portland, OR\n\nDark Origins Tour comes to Portland, OR. Bring a friend and help pack the room.\n2026-09-09 / 8:00 PM show / 7:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound; Spirits; Gorestorm Massacre; Kid Solus\nTickets/info: https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets\nBands: @oathbound_band @spiritsbandofficial @gorestormmassacre @kid_solus_band\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@oathbound_band"
+          "@oathbound_band",
+          "@spiritsbandofficial",
+          "@gorestormmassacre",
+          "@kid_solus_band"
         ]
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dark Origins Tour - at Dante's - Portland, OR\n\nDark Origins Tour comes to Portland, OR. Bring a friend and help pack the room.\n2026-09-09 / 8:00 PM show / 7:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound\nTickets/info: https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets\nBands: @Oathboundband\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Dante's - Portland, OR\n\nDark Origins Tour comes to Portland, OR. Bring a friend and help pack the room.\n2026-09-09 / 8:00 PM show / 7:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound; Spirits; Gorestorm Massacre; Kid Solus\nTickets/info: https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets\nBands: @Oathboundband @spiritsmusicwa @people @kidsolus\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@Oathboundband"
+          "@Oathboundband",
+          "@spiritsmusicwa",
+          "@people",
+          "@kidsolus"
         ]
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dark Origins Tour - at Dante's - Portland, OR\n\nDark Origins Tour comes to Portland, OR. Bring a friend and help pack the room.\n2026-09-09 / 8:00 PM show / 7:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound\nTickets/info: https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets\nBands: @oathboundofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Dante's - Portland, OR\n\nDark Origins Tour comes to Portland, OR. Bring a friend and help pack the room.\n2026-09-09 / 8:00 PM show / 7:30 PM doors at Dante's - Portland, OR\nLineup: Oathbound; Spirits; Gorestorm Massacre; Kid Solus\nTickets/info: https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets\nBands: @oathboundofficial @emodaddies @gorestormmassacre\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@oathboundofficial"
+          "@oathboundofficial",
+          "@emodaddies",
+          "@gorestormmassacre"
+        ],
+        "missingHandles": [
+          "Kid Solus"
         ]
       }
     }
@@ -86,13 +97,14 @@
     "city": "Seattle",
     "region": "WA",
     "lineup": "Oathbound; Lucrecia; What's Wrong; Ocean Ghost",
+    "ticketUrl": "https://www.eventbrite.com/e/lucrecia-oathbound-tickets-1993717459591?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=seattle_tickets",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": false,
     "captions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dark Origins Tour - at Substation - Seattle, WA\n\nDark Origins Tour comes to Seattle, WA. Bring a friend and help pack the room.\n2026-09-10 / 6:30 PM doors at Substation - Seattle, WA\nLineup: Oathbound; Lucrecia; What's Wrong; Ocean Ghost\n\nBands: @oathbound_band @lucreciaband @whatswrongband @ocean.ghost.band\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Substation - Seattle, WA\n\nDark Origins Tour comes to Seattle, WA. Bring a friend and help pack the room.\n2026-09-10 / 6:30 PM doors at Substation - Seattle, WA\nLineup: Oathbound; Lucrecia; What's Wrong; Ocean Ghost\nTickets/info: https://www.eventbrite.com/e/lucrecia-oathbound-tickets-1993717459591?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=seattle_tickets\nBands: @oathbound_band @lucreciaband @whatswrongband @ocean.ghost.band\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathbound_band",
           "@lucreciaband",
@@ -102,7 +114,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dark Origins Tour - at Substation - Seattle, WA\n\nDark Origins Tour comes to Seattle, WA. Bring a friend and help pack the room.\n2026-09-10 / 6:30 PM doors at Substation - Seattle, WA\nLineup: Oathbound; Lucrecia; What's Wrong; Ocean Ghost\n\nBands: @Oathboundband @lucreciaband @whatswrongband\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Substation - Seattle, WA\n\nDark Origins Tour comes to Seattle, WA. Bring a friend and help pack the room.\n2026-09-10 / 6:30 PM doors at Substation - Seattle, WA\nLineup: Oathbound; Lucrecia; What's Wrong; Ocean Ghost\nTickets/info: https://www.eventbrite.com/e/lucrecia-oathbound-tickets-1993717459591?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=seattle_tickets\nBands: @Oathboundband @lucreciaband @whatswrongband\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@Oathboundband",
           "@lucreciaband",
@@ -114,7 +126,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dark Origins Tour - at Substation - Seattle, WA\n\nDark Origins Tour comes to Seattle, WA. Bring a friend and help pack the room.\n2026-09-10 / 6:30 PM doors at Substation - Seattle, WA\nLineup: Oathbound; Lucrecia; What's Wrong; Ocean Ghost\n\nBands: @oathboundofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Substation - Seattle, WA\n\nDark Origins Tour comes to Seattle, WA. Bring a friend and help pack the room.\n2026-09-10 / 6:30 PM doors at Substation - Seattle, WA\nLineup: Oathbound; Lucrecia; What's Wrong; Ocean Ghost\nTickets/info: https://www.eventbrite.com/e/lucrecia-oathbound-tickets-1993717459591?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=seattle_tickets\nBands: @oathboundofficial\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathboundofficial"
         ],
@@ -214,18 +226,17 @@
     "date": "2026-09-12",
     "doorsTime": "6:30 PM",
     "showTime": "7:00 PM",
-    "venue": "Smashed Live",
-    "city": "Citrus Heights",
+    "venue": "Logoff Brewing",
+    "city": "Rancho Cordova",
     "region": "CA",
     "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
-    "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
-    "doorSalesOnly": false,
+    "doorSalesOnly": true,
     "captions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dark Origins Tour - at Smashed Live - Citrus Heights, CA\n\nDark Origins Tour comes to Citrus Heights, CA. Bring a friend and help pack the room.\n2026-09-12 / 7:00 PM show / 6:30 PM doors at Smashed Live - Citrus Heights, CA\nLineup: Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy\nTickets/info: https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes\nBands: @oathbound_band @lucreciaband @thebeautyindeathca @arph_band\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 7:00 PM show / 6:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy\nTickets/info: Door sales only\nBands: @oathbound_band @lucreciaband @thebeautyindeathca @arph_band\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathbound_band",
           "@lucreciaband",
@@ -238,7 +249,7 @@
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dark Origins Tour - at Smashed Live - Citrus Heights, CA\n\nDark Origins Tour comes to Citrus Heights, CA. Bring a friend and help pack the room.\n2026-09-12 / 7:00 PM show / 6:30 PM doors at Smashed Live - Citrus Heights, CA\nLineup: Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy\nTickets/info: https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes\nBands: @Oathboundband @lucreciaband @Thebeautyindeath\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 7:00 PM show / 6:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy\nTickets/info: Door sales only\nBands: @Oathboundband @lucreciaband @Thebeautyindeath\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@Oathboundband",
           "@lucreciaband",
@@ -251,7 +262,7 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dark Origins Tour - at Smashed Live - Citrus Heights, CA\n\nDark Origins Tour comes to Citrus Heights, CA. Bring a friend and help pack the room.\n2026-09-12 / 7:00 PM show / 6:30 PM doors at Smashed Live - Citrus Heights, CA\nLineup: Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy\nTickets/info: https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes\nBands: @oathboundofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 7:00 PM show / 6:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy\nTickets/info: Door sales only\nBands: @oathboundofficial\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathboundofficial"
         ],
@@ -293,27 +304,27 @@
     "city": "Crockett",
     "region": "CA",
     "lineup": "Oathbound",
-    "ticketLabel": "Ticket link needed",
+    "ticketLabel": "Door sales only",
     "isFreeShow": false,
-    "doorSalesOnly": false,
+    "doorSalesOnly": true,
     "captions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dark Origins Tour - at Toot's Tavern - Crockett, CA\n\nDark Origins Tour comes to Crockett, CA. Bring a friend and help pack the room.\n2026-09-13 / 7:00 PM doors at Toot's Tavern - Crockett, CA\nLineup: Oathbound\n\nBands: @oathbound_band\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Toot's Tavern - Crockett, CA\n\nDark Origins Tour comes to Crockett, CA. Bring a friend and help pack the room.\n2026-09-13 / 7:00 PM doors at Toot's Tavern - Crockett, CA\nLineup: Oathbound\nTickets/info: Door sales only\nBands: @oathbound_band\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathbound_band"
         ]
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dark Origins Tour - at Toot's Tavern - Crockett, CA\n\nDark Origins Tour comes to Crockett, CA. Bring a friend and help pack the room.\n2026-09-13 / 7:00 PM doors at Toot's Tavern - Crockett, CA\nLineup: Oathbound\n\nBands: @Oathboundband\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Toot's Tavern - Crockett, CA\n\nDark Origins Tour comes to Crockett, CA. Bring a friend and help pack the room.\n2026-09-13 / 7:00 PM doors at Toot's Tavern - Crockett, CA\nLineup: Oathbound\nTickets/info: Door sales only\nBands: @Oathboundband\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@Oathboundband"
         ]
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dark Origins Tour - at Toot's Tavern - Crockett, CA\n\nDark Origins Tour comes to Crockett, CA. Bring a friend and help pack the room.\n2026-09-13 / 7:00 PM doors at Toot's Tavern - Crockett, CA\nLineup: Oathbound\n\nBands: @oathboundofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Toot's Tavern - Crockett, CA\n\nDark Origins Tour comes to Crockett, CA. Bring a friend and help pack the room.\n2026-09-13 / 7:00 PM doors at Toot's Tavern - Crockett, CA\nLineup: Oathbound\nTickets/info: Door sales only\nBands: @oathboundofficial\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathboundofficial"
         ]
@@ -476,26 +487,28 @@
     "venue": "Transplants Brewing Company",
     "city": "Palmdale",
     "region": "CA",
-    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Revelry",
     "ticketLabel": "Free show",
     "isFreeShow": true,
     "doorSalesOnly": false,
     "captions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dark Origins Tour - at Transplants Brewing Company - Palmdale, CA\n\nDark Origins Tour comes to Palmdale, CA. Bring a friend and help pack the room.\n2026-09-17 / 6:30 PM doors at Transplants Brewing Company - Palmdale, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep\nTickets/info: Free show\nBands: @oathbound_band @beautyisbetrayal @redkeepofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Transplants Brewing Company - Palmdale, CA\n\nDark Origins Tour comes to Palmdale, CA. Bring a friend and help pack the room.\n2026-09-17 / 6:30 PM doors at Transplants Brewing Company - Palmdale, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep; Revelry\nTickets/info: Free show\nBands: @oathbound_band @beautyisbetrayal @redkeepofficial @revelry_ca\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathbound_band",
           "@beautyisbetrayal",
-          "@redkeepofficial"
+          "@redkeepofficial",
+          "@revelry_ca"
         ]
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dark Origins Tour - at Transplants Brewing Company - Palmdale, CA\n\nDark Origins Tour comes to Palmdale, CA. Bring a friend and help pack the room.\n2026-09-17 / 6:30 PM doors at Transplants Brewing Company - Palmdale, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep\nTickets/info: Free show\nBands: @Oathboundband @redkeepofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Transplants Brewing Company - Palmdale, CA\n\nDark Origins Tour comes to Palmdale, CA. Bring a friend and help pack the room.\n2026-09-17 / 6:30 PM doors at Transplants Brewing Company - Palmdale, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep; Revelry\nTickets/info: Free show\nBands: @Oathboundband @redkeepofficial @revelryca\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@Oathboundband",
-          "@redkeepofficial"
+          "@redkeepofficial",
+          "@revelryca"
         ],
         "missingHandles": [
           "Beauty Is Betrayal"
@@ -503,13 +516,14 @@
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dark Origins Tour - at Transplants Brewing Company - Palmdale, CA\n\nDark Origins Tour comes to Palmdale, CA. Bring a friend and help pack the room.\n2026-09-17 / 6:30 PM doors at Transplants Brewing Company - Palmdale, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep\nTickets/info: Free show\nBands: @oathboundofficial @beautyisbetrayal\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Transplants Brewing Company - Palmdale, CA\n\nDark Origins Tour comes to Palmdale, CA. Bring a friend and help pack the room.\n2026-09-17 / 6:30 PM doors at Transplants Brewing Company - Palmdale, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep; Revelry\nTickets/info: Free show\nBands: @oathboundofficial @beautyisbetrayal\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathboundofficial",
           "@beautyisbetrayal"
         ],
         "missingHandles": [
-          "Red Keep"
+          "Red Keep",
+          "Revelry"
         ]
       }
     }
@@ -608,7 +622,7 @@
     "venue": "Summer Fox Brewing - Tower",
     "city": "Fresno",
     "region": "CA",
-    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Vicious",
     "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
@@ -616,33 +630,36 @@
     "captions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dark Origins Tour - at Summer Fox Brewing - Tower - Fresno, CA\n\nDark Origins Tour comes to Fresno, CA. Bring a friend and help pack the room.\n2026-09-19 / 6:30 PM doors at Summer Fox Brewing - Tower - Fresno, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep\nTickets/info: https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets\nBands: @oathbound_band @beautyisbetrayal @redkeepofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Summer Fox Brewing - Tower - Fresno, CA\n\nDark Origins Tour comes to Fresno, CA. Bring a friend and help pack the room.\n2026-09-19 / 6:30 PM doors at Summer Fox Brewing - Tower - Fresno, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep; Vicious\nTickets/info: https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets\nBands: @oathbound_band @beautyisbetrayal @redkeepofficial @viciousca559\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathbound_band",
           "@beautyisbetrayal",
-          "@redkeepofficial"
+          "@redkeepofficial",
+          "@viciousca559"
         ]
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dark Origins Tour - at Summer Fox Brewing - Tower - Fresno, CA\n\nDark Origins Tour comes to Fresno, CA. Bring a friend and help pack the room.\n2026-09-19 / 6:30 PM doors at Summer Fox Brewing - Tower - Fresno, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep\nTickets/info: https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets\nBands: @Oathboundband @redkeepofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Summer Fox Brewing - Tower - Fresno, CA\n\nDark Origins Tour comes to Fresno, CA. Bring a friend and help pack the room.\n2026-09-19 / 6:30 PM doors at Summer Fox Brewing - Tower - Fresno, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep; Vicious\nTickets/info: https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets\nBands: @Oathboundband @redkeepofficial\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@Oathboundband",
           "@redkeepofficial"
         ],
         "missingHandles": [
-          "Beauty Is Betrayal"
+          "Beauty Is Betrayal",
+          "Vicious"
         ]
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dark Origins Tour - at Summer Fox Brewing - Tower - Fresno, CA\n\nDark Origins Tour comes to Fresno, CA. Bring a friend and help pack the room.\n2026-09-19 / 6:30 PM doors at Summer Fox Brewing - Tower - Fresno, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep\nTickets/info: https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets\nBands: @oathboundofficial @beautyisbetrayal\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Summer Fox Brewing - Tower - Fresno, CA\n\nDark Origins Tour comes to Fresno, CA. Bring a friend and help pack the room.\n2026-09-19 / 6:30 PM doors at Summer Fox Brewing - Tower - Fresno, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep; Vicious\nTickets/info: https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets\nBands: @oathboundofficial @beautyisbetrayal\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathboundofficial",
           "@beautyisbetrayal"
         ],
         "missingHandles": [
-          "Red Keep"
+          "Red Keep",
+          "Vicious"
         ]
       }
     }

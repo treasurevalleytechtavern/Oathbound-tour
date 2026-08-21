@@ -1,5 +1,35 @@
 [
   {
+    "venueId": "logoff-brewing-rancho-cordova-ca",
+    "venue": "Logoff Brewing",
+    "venueSlug": "logoff-brewing",
+    "address": "3054 Sunrise Blvd J",
+    "city": "Rancho Cordova",
+    "region": "CA",
+    "regionName": "California",
+    "country": "US",
+    "market": "Sacramento Area",
+    "citySlug": "rancho-cordova",
+    "regionSlug": "ca",
+    "upcomingShows": [
+      {
+        "id": "2026-09-12-citrus-heights-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
+        "date": "2026-09-12",
+        "doorsTime": "6:30 PM",
+        "showTime": "7:00 PM",
+        "venue": "Logoff Brewing",
+        "city": "Rancho Cordova",
+        "region": "CA",
+        "market": "Sacramento Area",
+        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
     "venueId": "summer-fox-tower",
     "venue": "Summer Fox Brewing - Tower",
     "venueSlug": "summer-fox-brewing-tower",
@@ -22,7 +52,7 @@
         "city": "Fresno",
         "region": "CA",
         "market": "Fresno Area",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Vicious",
         "ticketUrl": "https://www.eventbrite.com/e/red-keep-oathbound-beauty-is-betrayal-tickets-1993708310225?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=fresno_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
@@ -125,7 +155,7 @@
         "region": "CA",
         "market": "Bay Area",
         "lineup": "Oathbound",
-        "ticketLabel": "Ticket link needed",
+        "ticketLabel": "Door sales only",
         "confirmationStatus": "announced"
       }
     ]
@@ -290,7 +320,7 @@
         "city": "Portland",
         "region": "OR",
         "market": "Portland Area",
-        "lineup": "Oathbound",
+        "lineup": "Oathbound; Spirits; Gorestorm Massacre; Kid Solus",
         "ticketUrl": "https://www.ticketweb.com/event/oathbound-with-guests-dantes-tickets/14250964?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=portland_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
@@ -882,25 +912,7 @@
     "country": "US",
     "market": "Sacramento Area",
     "citySlug": "citrus-heights",
-    "regionSlug": "ca",
-    "upcomingShows": [
-      {
-        "id": "2026-09-12-citrus-heights-ca",
-        "tourId": "dark-origins-2026",
-        "showName": "Dark Origins Tour - Oathbound with Lucrecia at Smash — Sacramento, CA",
-        "date": "2026-09-12",
-        "doorsTime": "6:30 PM",
-        "showTime": "7:00 PM",
-        "venue": "Smashed Live",
-        "city": "Citrus Heights",
-        "region": "CA",
-        "market": "Sacramento Area",
-        "lineup": "Oathbound; Lucrecia; The Beauty in Death; ARPH; Infernal Autopsy",
-        "ticketUrl": "https://fareharbor.com/embeds/book/smashsacramento_citrusheights/items/740605/availability/2124638288/book/?flow=no&full-items=yes&g4=yes",
-        "ticketLabel": "Tickets",
-        "confirmationStatus": "confirmed"
-      }
-    ]
+    "regionSlug": "ca"
   },
   {
     "venueId": "stuft-pizza-san-clemente-ca",
@@ -951,6 +963,7 @@
         "region": "WA",
         "market": "Seattle Area",
         "lineup": "Oathbound; Lucrecia; What's Wrong; Ocean Ghost",
+        "ticketUrl": "https://www.eventbrite.com/e/lucrecia-oathbound-tickets-1993717459591?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=seattle_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       }
@@ -1410,7 +1423,7 @@
         "city": "Palmdale",
         "region": "CA",
         "market": "Los Angeles Area / Antelope Valley",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Revelry",
         "ticketLabel": "Free show",
         "confirmationStatus": "verified"
       }
