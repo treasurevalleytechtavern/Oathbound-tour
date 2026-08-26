@@ -1,5 +1,323 @@
 [
   {
+    "bandId": "a-cryptic-ending",
+    "bandName": "A Cryptic Ending",
+    "displayName": "A Cryptic Ending",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/acrypticending/",
+      "tiktok": "https://www.tiktok.com/@acrypticending",
+      "youtube": "https://www.youtube.com/@acrypticending",
+      "spotify": "https://open.spotify.com/artist/4j2Xp3EG89hwCaRSwHl8mt",
+      "spotifyTrackUrl": "https://open.spotify.com/track/5FL9HKPg1z4UzwLkhuyLHg",
+      "website": "https://linktr.ee/acrypticending",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5FL9HKPg1z4UzwLkhuyLHg?utm_source=generator"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-20-reno-nv",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at Cellar Stage",
+        "date": "2026-09-20",
+        "doorsTime": "7:00 PM",
+        "venue": "Cellar Stage @ Alturas",
+        "city": "Reno",
+        "region": "NV",
+        "market": "Northern Nevada",
+        "lineup": "Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "bandId": "mercy-for-thine-enemies",
+    "bandName": "Mercy For Thine Enemies",
+    "displayName": "Mercy For Thine Enemies",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/mercyforthineenemies_official/",
+      "facebook": "https://www.facebook.com/profile.php?id=61575291441644",
+      "tiktok": "https://www.tiktok.com/@mfte777",
+      "youtube": "https://www.youtube.com/@MercyForThineEnemies",
+      "spotify": "https://open.spotify.com/artist/4enCIqg7fYbNaL9K0aMSDT?",
+      "spotifyTrackUrl": "https://open.spotify.com/track/0hcPc0xcyWj5gb1QXpmJHK",
+      "website": "https://linktr.ee/MercyForThineEnemies",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/0hcPc0xcyWj5gb1QXpmJHK?utm_source=generator"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-20-reno-nv",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at Cellar Stage",
+        "date": "2026-09-20",
+        "doorsTime": "7:00 PM",
+        "venue": "Cellar Stage @ Alturas",
+        "city": "Reno",
+        "region": "NV",
+        "market": "Northern Nevada",
+        "lineup": "Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "bandId": "rotten-monolith",
+    "bandName": "Rotten Monolith",
+    "displayName": "Rotten Monolith",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/rotten_monolith/",
+      "facebook": "https://www.facebook.com/rottenmonolith/",
+      "bandcamp": "https://rottenmonolith.bandcamp.com/"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-20-reno-nv",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at Cellar Stage",
+        "date": "2026-09-20",
+        "doorsTime": "7:00 PM",
+        "venue": "Cellar Stage @ Alturas",
+        "city": "Reno",
+        "region": "NV",
+        "market": "Northern Nevada",
+        "lineup": "Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending",
+        "ticketLabel": "Ticket link needed",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "bandId": "iin-arcs",
+    "bandName": "iin arcs",
+    "displayName": "iin arcs",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/iinarcs/",
+      "bandcamp": "https://iinarcs.bandcamp.com/"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-13-crockett-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Toots Tavern",
+        "date": "2026-09-13",
+        "doorsTime": "7:00 PM",
+        "venue": "Toot's Tavern",
+        "city": "Crockett",
+        "region": "CA",
+        "market": "Bay Area",
+        "lineup": "Oathbound; Titan Rage; Diablura; iin arcs",
+        "ticketLabel": "Door sales only",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "diablura",
+    "bandName": "Diablura",
+    "displayName": "Diablura",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/diabluraofficial",
+      "tiktok": "https://tiktok.com/@diabluraofficial",
+      "spotify": "https://open.spotify.com/artist/6xpEJMKE1qQw0UKTFGxrSs",
+      "spotifyTrackUrl": "https://open.spotify.com/track/0jQuw2XiXqCKCSuCFu1CMw",
+      "website": "https://diabluraofficial.com",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/0jQuw2XiXqCKCSuCFu1CMw?utm_source=generator"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-13-crockett-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Toots Tavern",
+        "date": "2026-09-13",
+        "doorsTime": "7:00 PM",
+        "venue": "Toot's Tavern",
+        "city": "Crockett",
+        "region": "CA",
+        "market": "Bay Area",
+        "lineup": "Oathbound; Titan Rage; Diablura; iin arcs",
+        "ticketLabel": "Door sales only",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "titan-rage",
+    "bandName": "Titan Rage",
+    "displayName": "Titan Rage",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/titanrageband/",
+      "facebook": "https://www.facebook.com/107057594870898",
+      "tiktok": "https://www.tiktok.com/@titanrageband",
+      "youtube": "https://www.youtube.com/channel/UCMT_45SBY6XYH91AnCD1RKg",
+      "spotify": "https://open.spotify.com/artist/5sYyc6fwAU3jkMtYOKyKz9",
+      "spotifyTrackUrl": "https://open.spotify.com/track/1jsgvlgMRhkpFCvpOew2Im",
+      "website": "https://beacons.ai/titanrage",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/1jsgvlgMRhkpFCvpOew2Im?utm_source=generator"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-13-crockett-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Toots Tavern",
+        "date": "2026-09-13",
+        "doorsTime": "7:00 PM",
+        "venue": "Toot's Tavern",
+        "city": "Crockett",
+        "region": "CA",
+        "market": "Bay Area",
+        "lineup": "Oathbound; Titan Rage; Diablura; iin arcs",
+        "ticketLabel": "Door sales only",
+        "confirmationStatus": "announced"
+      }
+    ]
+  },
+  {
+    "bandId": "seaside-massacre",
+    "bandName": "Seaside Massacre",
+    "displayName": "Seaside Massacre",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/seasidemassacre/",
+      "facebook": "https://www.facebook.com/seasidemassacre/",
+      "tiktok": "https://www.tiktok.com/@seasidemassacre",
+      "youtube": "https://www.youtube.com/@SeasideMassacre",
+      "spotify": "https://open.spotify.com/artist/31KSdOswHyBZfhHf5w7563",
+      "spotifyTrackUrl": "https://open.spotify.com/track/773RxTVT0r5t1ln0zN5FSa",
+      "bandcamp": "https://seasidemassacre.bandcamp.com/",
+      "website": "https://www.seasidemassacreofficial.com/info",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/773RxTVT0r5t1ln0zN5FSa?utm_source=generator"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-12-citrus-heights-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at Logoff Brewing — Rancho Cordova, CA",
+        "date": "2026-09-12",
+        "doorsTime": "5:30 PM",
+        "showTime": "6:30 PM",
+        "venue": "Logoff Brewing",
+        "city": "Rancho Cordova",
+        "region": "CA",
+        "market": "Sacramento Area",
+        "lineup": "Oathbound; Lucrecia; Seaside Massacre; False Covenant",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      }
+    ]
+  },
+  {
+    "bandId": "ourselves-among-others",
+    "bandName": "Ourselves Among Others",
+    "displayName": "Ourselves Among Others",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/ourselvesamongothers",
+      "facebook": "https://www.facebook.com/ourselvesamongothers",
+      "youtube": "https://www.youtube.com/@ourselvesamongothers",
+      "spotify": "https://open.spotify.com/artist/2ZxbSOE3ziuiEp8pBQLIwx",
+      "spotifyTrackUrl": "http://open.spotify.com/track/6WwAl56ypTyoIJOWJIS1RP",
+      "website": "https://linktr.ee/ourselvesamongothers",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/6WwAl56ypTyoIJOWJIS1RP?utm_source=generator"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-16-modesto-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
+        "date": "2026-09-16",
+        "doorsTime": "6:00 PM",
+        "venue": "18 Seventy Brewing",
+        "city": "Modesto",
+        "region": "CA",
+        "market": "Central Valley",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others",
+        "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "verified"
+      }
+    ]
+  },
+  {
+    "bandId": "false-covenant",
+    "bandName": "False Covenant",
+    "displayName": "False Covenant",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/falsecovenantband",
+      "facebook": "https://www.facebook.com/falsecovenantband/",
+      "tiktok": "https://www.tiktok.com/@falsecovenantband",
+      "youtube": "https://www.youtube.com/@FalseCovenantBand",
+      "spotify": "https://open.spotify.com/artist/3U5ZJYii2E3Rqr3NxG4tE0",
+      "spotifyTrackUrl": "https://open.spotify.com/track/5Ot20fqJYd6lxvLaRNBC2u",
+      "website": "https://falsecovenant.com/",
+      "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5Ot20fqJYd6lxvLaRNBC2u?utm_source=generator"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-12-citrus-heights-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at Logoff Brewing — Rancho Cordova, CA",
+        "date": "2026-09-12",
+        "doorsTime": "5:30 PM",
+        "showTime": "6:30 PM",
+        "venue": "Logoff Brewing",
+        "city": "Rancho Cordova",
+        "region": "CA",
+        "market": "Sacramento Area",
+        "lineup": "Oathbound; Lucrecia; Seaside Massacre; False Covenant",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
+      },
+      {
+        "id": "2026-09-16-modesto-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
+        "date": "2026-09-16",
+        "doorsTime": "6:00 PM",
+        "venue": "18 Seventy Brewing",
+        "city": "Modesto",
+        "region": "CA",
+        "market": "Central Valley",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others",
+        "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "verified"
+      }
+    ]
+  },
+  {
+    "bandId": "ativan",
+    "bandName": "Ativan",
+    "displayName": "Ativan",
+    "status": "local-support",
+    "socials": {
+      "instagram": "https://www.instagram.com/ativanofficial"
+    },
+    "upcomingShows": [
+      {
+        "id": "2026-09-16-modesto-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at 18 Seventy Brewing",
+        "date": "2026-09-16",
+        "doorsTime": "6:00 PM",
+        "venue": "18 Seventy Brewing",
+        "city": "Modesto",
+        "region": "CA",
+        "market": "Central Valley",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others",
+        "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "verified"
+      }
+    ]
+  },
+  {
     "bandId": "vicious",
     "bandName": "Vicious",
     "displayName": "Vicious",
@@ -210,7 +528,7 @@
         "city": "Modesto",
         "region": "CA",
         "market": "Central Valley",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others",
         "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "verified"
@@ -638,6 +956,21 @@
         "ticketUrl": "https://rockafairy.betterworld.org/events/sept11",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
+      },
+      {
+        "id": "2026-09-12-citrus-heights-ca",
+        "tourId": "dark-origins-2026",
+        "showName": "Dark Origins Tour - Oathbound at Logoff Brewing — Rancho Cordova, CA",
+        "date": "2026-09-12",
+        "doorsTime": "5:30 PM",
+        "showTime": "6:30 PM",
+        "venue": "Logoff Brewing",
+        "city": "Rancho Cordova",
+        "region": "CA",
+        "market": "Sacramento Area",
+        "lineup": "Oathbound; Lucrecia; Seaside Massacre; False Covenant",
+        "ticketLabel": "Tickets",
+        "confirmationStatus": "confirmed"
       }
     ]
   },
@@ -714,7 +1047,7 @@
         "city": "Rancho Cordova",
         "region": "CA",
         "market": "Sacramento Area",
-        "lineup": "Oathbound",
+        "lineup": "Oathbound; Lucrecia; Seaside Massacre; False Covenant",
         "ticketLabel": "Tickets",
         "confirmationStatus": "confirmed"
       },
@@ -728,7 +1061,7 @@
         "city": "Crockett",
         "region": "CA",
         "market": "Bay Area",
-        "lineup": "Oathbound",
+        "lineup": "Oathbound; Titan Rage; Diablura; iin arcs",
         "ticketLabel": "Door sales only",
         "confirmationStatus": "announced"
       },
@@ -756,7 +1089,7 @@
         "city": "Modesto",
         "region": "CA",
         "market": "Central Valley",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others",
         "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "verified"
@@ -814,7 +1147,7 @@
         "city": "Reno",
         "region": "NV",
         "market": "Northern Nevada",
-        "lineup": "Oathbound",
+        "lineup": "Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending",
         "ticketLabel": "Ticket link needed",
         "confirmationStatus": "confirmed"
       }
@@ -1366,7 +1699,7 @@
         "city": "Modesto",
         "region": "CA",
         "market": "Central Valley",
-        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+        "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others",
         "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
         "ticketLabel": "Tickets",
         "confirmationStatus": "verified"

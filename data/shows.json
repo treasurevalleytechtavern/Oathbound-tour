@@ -474,9 +474,12 @@
       "citySlug": "rancho-cordova",
       "regionSlug": "ca"
     },
-    "lineup": "Oathbound",
+    "lineup": "Oathbound; Lucrecia; Seaside Massacre; False Covenant",
     "lineupArtists": [
-      "Oathbound"
+      "Oathbound",
+      "Lucrecia",
+      "Seaside Massacre",
+      "False Covenant"
     ],
     "featuredBands": [
       {
@@ -493,6 +496,53 @@
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
           "website": "https://oathboundband.com/",
           "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "lucrecia",
+        "bandName": "Lucrecia",
+        "displayName": "Lucrecia",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/lucreciaband",
+          "facebook": "https://www.facebook.com/lucreciaband",
+          "spotify": "http://open.spotify.com/artist/63MmxZVbkrXRTyOZm3BCZe",
+          "spotifyTrackUrl": "https://open.spotify.com/track/75RvwveMzKdrNrYRzMHqd4?si=a00bb8bc7fc64821",
+          "website": "https://lucrecia.bigcartel.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/75RvwveMzKdrNrYRzMHqd4?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "seaside-massacre",
+        "bandName": "Seaside Massacre",
+        "displayName": "Seaside Massacre",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/seasidemassacre/",
+          "facebook": "https://www.facebook.com/seasidemassacre/",
+          "tiktok": "https://www.tiktok.com/@seasidemassacre",
+          "youtube": "https://www.youtube.com/@SeasideMassacre",
+          "spotify": "https://open.spotify.com/artist/31KSdOswHyBZfhHf5w7563",
+          "spotifyTrackUrl": "https://open.spotify.com/track/773RxTVT0r5t1ln0zN5FSa",
+          "bandcamp": "https://seasidemassacre.bandcamp.com/",
+          "website": "https://www.seasidemassacreofficial.com/info",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/773RxTVT0r5t1ln0zN5FSa?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "false-covenant",
+        "bandName": "False Covenant",
+        "displayName": "False Covenant",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/falsecovenantband",
+          "facebook": "https://www.facebook.com/falsecovenantband/",
+          "tiktok": "https://www.tiktok.com/@falsecovenantband",
+          "youtube": "https://www.youtube.com/@FalseCovenantBand",
+          "spotify": "https://open.spotify.com/artist/3U5ZJYii2E3Rqr3NxG4tE0",
+          "spotifyTrackUrl": "https://open.spotify.com/track/5Ot20fqJYd6lxvLaRNBC2u",
+          "website": "https://falsecovenant.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5Ot20fqJYd6lxvLaRNBC2u?utm_source=generator"
         }
       }
     ],
@@ -512,11 +562,60 @@
         "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
+    "supportingBands": [
+      {
+        "bandId": "lucrecia",
+        "bandName": "Lucrecia",
+        "displayName": "Lucrecia",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/lucreciaband",
+          "facebook": "https://www.facebook.com/lucreciaband",
+          "spotify": "http://open.spotify.com/artist/63MmxZVbkrXRTyOZm3BCZe",
+          "spotifyTrackUrl": "https://open.spotify.com/track/75RvwveMzKdrNrYRzMHqd4?si=a00bb8bc7fc64821",
+          "website": "https://lucrecia.bigcartel.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/75RvwveMzKdrNrYRzMHqd4?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "seaside-massacre",
+        "bandName": "Seaside Massacre",
+        "displayName": "Seaside Massacre",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/seasidemassacre/",
+          "facebook": "https://www.facebook.com/seasidemassacre/",
+          "tiktok": "https://www.tiktok.com/@seasidemassacre",
+          "youtube": "https://www.youtube.com/@SeasideMassacre",
+          "spotify": "https://open.spotify.com/artist/31KSdOswHyBZfhHf5w7563",
+          "spotifyTrackUrl": "https://open.spotify.com/track/773RxTVT0r5t1ln0zN5FSa",
+          "bandcamp": "https://seasidemassacre.bandcamp.com/",
+          "website": "https://www.seasidemassacreofficial.com/info",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/773RxTVT0r5t1ln0zN5FSa?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "false-covenant",
+        "bandName": "False Covenant",
+        "displayName": "False Covenant",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/falsecovenantband",
+          "facebook": "https://www.facebook.com/falsecovenantband/",
+          "tiktok": "https://www.tiktok.com/@falsecovenantband",
+          "youtube": "https://www.youtube.com/@FalseCovenantBand",
+          "spotify": "https://open.spotify.com/artist/3U5ZJYii2E3Rqr3NxG4tE0",
+          "spotifyTrackUrl": "https://open.spotify.com/track/5Ot20fqJYd6lxvLaRNBC2u",
+          "website": "https://falsecovenant.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5Ot20fqJYd6lxvLaRNBC2u?utm_source=generator"
+        }
+      }
+    ],
     "ageRestriction": "All Ages",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": true,
-    "notes": "Oathbound brings the punishing force of melodic metalcore to Rancho Cordova, CA on Saturday, September 12 when the Dark Origins Tour takes over LogOff Brewing!",
+    "notes": "Venue changed to Logoff Brewing in Rancho Cordova. Doors 5:30 PM; show 6:30 PM. All ages. Door sales only. Supporting lineup needs reconfirmation after the venue change.",
     "public": true,
     "displayMode": "full",
     "confirmationStatus": "confirmed",
@@ -552,9 +651,12 @@
       "citySlug": "crockett",
       "regionSlug": "ca"
     },
-    "lineup": "Oathbound",
+    "lineup": "Oathbound; Titan Rage; Diablura; iin arcs",
     "lineupArtists": [
-      "Oathbound"
+      "Oathbound",
+      "Titan Rage",
+      "Diablura",
+      "iin arcs"
     ],
     "featuredBands": [
       {
@@ -571,6 +673,46 @@
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
           "website": "https://oathboundband.com/",
           "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "titan-rage",
+        "bandName": "Titan Rage",
+        "displayName": "Titan Rage",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/titanrageband/",
+          "facebook": "https://www.facebook.com/107057594870898",
+          "tiktok": "https://www.tiktok.com/@titanrageband",
+          "youtube": "https://www.youtube.com/channel/UCMT_45SBY6XYH91AnCD1RKg",
+          "spotify": "https://open.spotify.com/artist/5sYyc6fwAU3jkMtYOKyKz9",
+          "spotifyTrackUrl": "https://open.spotify.com/track/1jsgvlgMRhkpFCvpOew2Im",
+          "website": "https://beacons.ai/titanrage",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/1jsgvlgMRhkpFCvpOew2Im?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "diablura",
+        "bandName": "Diablura",
+        "displayName": "Diablura",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/diabluraofficial",
+          "tiktok": "https://tiktok.com/@diabluraofficial",
+          "spotify": "https://open.spotify.com/artist/6xpEJMKE1qQw0UKTFGxrSs",
+          "spotifyTrackUrl": "https://open.spotify.com/track/0jQuw2XiXqCKCSuCFu1CMw",
+          "website": "https://diabluraofficial.com",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/0jQuw2XiXqCKCSuCFu1CMw?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "iin-arcs",
+        "bandName": "iin arcs",
+        "displayName": "iin arcs",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/iinarcs/",
+          "bandcamp": "https://iinarcs.bandcamp.com/"
         }
       }
     ],
@@ -590,6 +732,48 @@
         "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
+    "supportingBands": [
+      {
+        "bandId": "titan-rage",
+        "bandName": "Titan Rage",
+        "displayName": "Titan Rage",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/titanrageband/",
+          "facebook": "https://www.facebook.com/107057594870898",
+          "tiktok": "https://www.tiktok.com/@titanrageband",
+          "youtube": "https://www.youtube.com/channel/UCMT_45SBY6XYH91AnCD1RKg",
+          "spotify": "https://open.spotify.com/artist/5sYyc6fwAU3jkMtYOKyKz9",
+          "spotifyTrackUrl": "https://open.spotify.com/track/1jsgvlgMRhkpFCvpOew2Im",
+          "website": "https://beacons.ai/titanrage",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/1jsgvlgMRhkpFCvpOew2Im?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "diablura",
+        "bandName": "Diablura",
+        "displayName": "Diablura",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/diabluraofficial",
+          "tiktok": "https://tiktok.com/@diabluraofficial",
+          "spotify": "https://open.spotify.com/artist/6xpEJMKE1qQw0UKTFGxrSs",
+          "spotifyTrackUrl": "https://open.spotify.com/track/0jQuw2XiXqCKCSuCFu1CMw",
+          "website": "https://diabluraofficial.com",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/0jQuw2XiXqCKCSuCFu1CMw?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "iin-arcs",
+        "bandName": "iin arcs",
+        "displayName": "iin arcs",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/iinarcs/",
+          "bandcamp": "https://iinarcs.bandcamp.com/"
+        }
+      }
+    ],
     "ageRestriction": "21+",
     "ticketLabel": "Door sales only",
     "isFreeShow": false,
@@ -741,11 +925,14 @@
       "citySlug": "modesto",
       "regionSlug": "ca"
     },
-    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others",
     "lineupArtists": [
       "Oathbound",
       "Beauty Is Betrayal",
-      "Red Keep"
+      "Red Keep",
+      "Ativan",
+      "False Covenant",
+      "Ourselves Among Others"
     ],
     "featuredBands": [
       {
@@ -792,6 +979,46 @@
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
           "website": "https://redkeepband.com/home",
           "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "ativan",
+        "bandName": "Ativan",
+        "displayName": "Ativan",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/ativanofficial"
+        }
+      },
+      {
+        "bandId": "false-covenant",
+        "bandName": "False Covenant",
+        "displayName": "False Covenant",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/falsecovenantband",
+          "facebook": "https://www.facebook.com/falsecovenantband/",
+          "tiktok": "https://www.tiktok.com/@falsecovenantband",
+          "youtube": "https://www.youtube.com/@FalseCovenantBand",
+          "spotify": "https://open.spotify.com/artist/3U5ZJYii2E3Rqr3NxG4tE0",
+          "spotifyTrackUrl": "https://open.spotify.com/track/5Ot20fqJYd6lxvLaRNBC2u",
+          "website": "https://falsecovenant.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5Ot20fqJYd6lxvLaRNBC2u?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "ourselves-among-others",
+        "bandName": "Ourselves Among Others",
+        "displayName": "Ourselves Among Others",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/ourselvesamongothers",
+          "facebook": "https://www.facebook.com/ourselvesamongothers",
+          "youtube": "https://www.youtube.com/@ourselvesamongothers",
+          "spotify": "https://open.spotify.com/artist/2ZxbSOE3ziuiEp8pBQLIwx",
+          "spotifyTrackUrl": "http://open.spotify.com/track/6WwAl56ypTyoIJOWJIS1RP",
+          "website": "https://linktr.ee/ourselvesamongothers",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/6WwAl56ypTyoIJOWJIS1RP?utm_source=generator"
         }
       }
     ],
@@ -840,6 +1067,46 @@
           "spotifyTrackUrl": "https://open.spotify.com/track/7KY9OUoaDwfyvmZMiAe3qR?si=44fbaa643f6f44c6",
           "website": "https://redkeepband.com/home",
           "spotifyEmbedUrl": "https://open.spotify.com/embed/track/7KY9OUoaDwfyvmZMiAe3qR?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "ativan",
+        "bandName": "Ativan",
+        "displayName": "Ativan",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/ativanofficial"
+        }
+      },
+      {
+        "bandId": "false-covenant",
+        "bandName": "False Covenant",
+        "displayName": "False Covenant",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/falsecovenantband",
+          "facebook": "https://www.facebook.com/falsecovenantband/",
+          "tiktok": "https://www.tiktok.com/@falsecovenantband",
+          "youtube": "https://www.youtube.com/@FalseCovenantBand",
+          "spotify": "https://open.spotify.com/artist/3U5ZJYii2E3Rqr3NxG4tE0",
+          "spotifyTrackUrl": "https://open.spotify.com/track/5Ot20fqJYd6lxvLaRNBC2u",
+          "website": "https://falsecovenant.com/",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5Ot20fqJYd6lxvLaRNBC2u?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "ourselves-among-others",
+        "bandName": "Ourselves Among Others",
+        "displayName": "Ourselves Among Others",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/ourselvesamongothers",
+          "facebook": "https://www.facebook.com/ourselvesamongothers",
+          "youtube": "https://www.youtube.com/@ourselvesamongothers",
+          "spotify": "https://open.spotify.com/artist/2ZxbSOE3ziuiEp8pBQLIwx",
+          "spotifyTrackUrl": "http://open.spotify.com/track/6WwAl56ypTyoIJOWJIS1RP",
+          "website": "https://linktr.ee/ourselvesamongothers",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/6WwAl56ypTyoIJOWJIS1RP?utm_source=generator"
         }
       }
     ],
@@ -1361,9 +1628,12 @@
       "citySlug": "reno",
       "regionSlug": "nv"
     },
-    "lineup": "Oathbound",
+    "lineup": "Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending",
     "lineupArtists": [
-      "Oathbound"
+      "Oathbound",
+      "Rotten Monolith",
+      "Mercy For Thine Enemies",
+      "A Cryptic Ending"
     ],
     "featuredBands": [
       {
@@ -1380,6 +1650,48 @@
           "spotifyTrackUrl": "https://open.spotify.com/track/3HV66VgngZfI4wMxvr9uUA?si=f14f7607f3834057",
           "website": "https://oathboundband.com/",
           "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "rotten-monolith",
+        "bandName": "Rotten Monolith",
+        "displayName": "Rotten Monolith",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/rotten_monolith/",
+          "facebook": "https://www.facebook.com/rottenmonolith/",
+          "bandcamp": "https://rottenmonolith.bandcamp.com/"
+        }
+      },
+      {
+        "bandId": "mercy-for-thine-enemies",
+        "bandName": "Mercy For Thine Enemies",
+        "displayName": "Mercy For Thine Enemies",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/mercyforthineenemies_official/",
+          "facebook": "https://www.facebook.com/profile.php?id=61575291441644",
+          "tiktok": "https://www.tiktok.com/@mfte777",
+          "youtube": "https://www.youtube.com/@MercyForThineEnemies",
+          "spotify": "https://open.spotify.com/artist/4enCIqg7fYbNaL9K0aMSDT?",
+          "spotifyTrackUrl": "https://open.spotify.com/track/0hcPc0xcyWj5gb1QXpmJHK",
+          "website": "https://linktr.ee/MercyForThineEnemies",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/0hcPc0xcyWj5gb1QXpmJHK?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "a-cryptic-ending",
+        "bandName": "A Cryptic Ending",
+        "displayName": "A Cryptic Ending",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/acrypticending/",
+          "tiktok": "https://www.tiktok.com/@acrypticending",
+          "youtube": "https://www.youtube.com/@acrypticending",
+          "spotify": "https://open.spotify.com/artist/4j2Xp3EG89hwCaRSwHl8mt",
+          "spotifyTrackUrl": "https://open.spotify.com/track/5FL9HKPg1z4UzwLkhuyLHg",
+          "website": "https://linktr.ee/acrypticending",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5FL9HKPg1z4UzwLkhuyLHg?utm_source=generator"
         }
       }
     ],
@@ -1399,6 +1711,50 @@
         "spotifyEmbedUrl": "https://open.spotify.com/embed/track/3HV66VgngZfI4wMxvr9uUA?utm_source=generator"
       }
     },
+    "supportingBands": [
+      {
+        "bandId": "rotten-monolith",
+        "bandName": "Rotten Monolith",
+        "displayName": "Rotten Monolith",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/rotten_monolith/",
+          "facebook": "https://www.facebook.com/rottenmonolith/",
+          "bandcamp": "https://rottenmonolith.bandcamp.com/"
+        }
+      },
+      {
+        "bandId": "mercy-for-thine-enemies",
+        "bandName": "Mercy For Thine Enemies",
+        "displayName": "Mercy For Thine Enemies",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/mercyforthineenemies_official/",
+          "facebook": "https://www.facebook.com/profile.php?id=61575291441644",
+          "tiktok": "https://www.tiktok.com/@mfte777",
+          "youtube": "https://www.youtube.com/@MercyForThineEnemies",
+          "spotify": "https://open.spotify.com/artist/4enCIqg7fYbNaL9K0aMSDT?",
+          "spotifyTrackUrl": "https://open.spotify.com/track/0hcPc0xcyWj5gb1QXpmJHK",
+          "website": "https://linktr.ee/MercyForThineEnemies",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/0hcPc0xcyWj5gb1QXpmJHK?utm_source=generator"
+        }
+      },
+      {
+        "bandId": "a-cryptic-ending",
+        "bandName": "A Cryptic Ending",
+        "displayName": "A Cryptic Ending",
+        "role": "featured",
+        "socials": {
+          "instagram": "https://www.instagram.com/acrypticending/",
+          "tiktok": "https://www.tiktok.com/@acrypticending",
+          "youtube": "https://www.youtube.com/@acrypticending",
+          "spotify": "https://open.spotify.com/artist/4j2Xp3EG89hwCaRSwHl8mt",
+          "spotifyTrackUrl": "https://open.spotify.com/track/5FL9HKPg1z4UzwLkhuyLHg",
+          "website": "https://linktr.ee/acrypticending",
+          "spotifyEmbedUrl": "https://open.spotify.com/embed/track/5FL9HKPg1z4UzwLkhuyLHg?utm_source=generator"
+        }
+      }
+    ],
     "ageRestriction": "21+",
     "ticketLabel": "Ticket link needed",
     "isFreeShow": false,

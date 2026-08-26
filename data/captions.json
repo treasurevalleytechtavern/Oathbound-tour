@@ -229,30 +229,41 @@
     "venue": "Logoff Brewing",
     "city": "Rancho Cordova",
     "region": "CA",
-    "lineup": "Oathbound",
+    "lineup": "Oathbound; Lucrecia; Seaside Massacre; False Covenant",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
     "doorSalesOnly": true,
     "captions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 6:30 PM show / 5:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound\nTickets/info: Door sales only\nBands: @oathbound_band\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 6:30 PM show / 5:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound; Lucrecia; Seaside Massacre; False Covenant\nTickets/info: Door sales only\nBands: @oathbound_band @lucreciaband @seasidemassacre @falsecovenantband\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@oathbound_band"
+          "@oathbound_band",
+          "@lucreciaband",
+          "@seasidemassacre",
+          "@falsecovenantband"
         ]
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 6:30 PM show / 5:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound\nTickets/info: Door sales only\nBands: @Oathboundband\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 6:30 PM show / 5:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound; Lucrecia; Seaside Massacre; False Covenant\nTickets/info: Door sales only\nBands: @Oathboundband @lucreciaband @seasidemassacre @falsecovenantband\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@Oathboundband"
+          "@Oathboundband",
+          "@lucreciaband",
+          "@seasidemassacre",
+          "@falsecovenantband"
         ]
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 6:30 PM show / 5:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound\nTickets/info: Door sales only\nBands: @oathboundofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Logoff Brewing - Rancho Cordova, CA\n\nDark Origins Tour comes to Rancho Cordova, CA. Bring a friend and help pack the room.\n2026-09-12 / 6:30 PM show / 5:30 PM doors at Logoff Brewing - Rancho Cordova, CA\nLineup: Oathbound; Lucrecia; Seaside Massacre; False Covenant\nTickets/info: Door sales only\nBands: @oathboundofficial @seasidemassacre @falsecovenantband\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@oathboundofficial"
+          "@oathboundofficial",
+          "@seasidemassacre",
+          "@falsecovenantband"
+        ],
+        "missingHandles": [
+          "Lucrecia"
         ]
       }
     }
@@ -285,30 +296,43 @@
     "venue": "Toot's Tavern",
     "city": "Crockett",
     "region": "CA",
-    "lineup": "Oathbound",
+    "lineup": "Oathbound; Titan Rage; Diablura; iin arcs",
     "ticketLabel": "Door sales only",
     "isFreeShow": false,
     "doorSalesOnly": true,
     "captions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dark Origins Tour - at Toot's Tavern - Crockett, CA\n\nDark Origins Tour comes to Crockett, CA. Bring a friend and help pack the room.\n2026-09-13 / 7:00 PM doors at Toot's Tavern - Crockett, CA\nLineup: Oathbound\nTickets/info: Door sales only\nBands: @oathbound_band\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Toot's Tavern - Crockett, CA\n\nDark Origins Tour comes to Crockett, CA. Bring a friend and help pack the room.\n2026-09-13 / 7:00 PM doors at Toot's Tavern - Crockett, CA\nLineup: Oathbound; Titan Rage; Diablura; iin arcs\nTickets/info: Door sales only\nBands: @oathbound_band @titanrageband @diabluraofficial @iinarcs\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@oathbound_band"
+          "@oathbound_band",
+          "@titanrageband",
+          "@diabluraofficial",
+          "@iinarcs"
         ]
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dark Origins Tour - at Toot's Tavern - Crockett, CA\n\nDark Origins Tour comes to Crockett, CA. Bring a friend and help pack the room.\n2026-09-13 / 7:00 PM doors at Toot's Tavern - Crockett, CA\nLineup: Oathbound\nTickets/info: Door sales only\nBands: @Oathboundband\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Toot's Tavern - Crockett, CA\n\nDark Origins Tour comes to Crockett, CA. Bring a friend and help pack the room.\n2026-09-13 / 7:00 PM doors at Toot's Tavern - Crockett, CA\nLineup: Oathbound; Titan Rage; Diablura; iin arcs\nTickets/info: Door sales only\nBands: @Oathboundband @107057594870898\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@Oathboundband"
+          "@Oathboundband",
+          "@107057594870898"
+        ],
+        "missingHandles": [
+          "Diablura",
+          "iin arcs"
         ]
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dark Origins Tour - at Toot's Tavern - Crockett, CA\n\nDark Origins Tour comes to Crockett, CA. Bring a friend and help pack the room.\n2026-09-13 / 7:00 PM doors at Toot's Tavern - Crockett, CA\nLineup: Oathbound\nTickets/info: Door sales only\nBands: @oathboundofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Toot's Tavern - Crockett, CA\n\nDark Origins Tour comes to Crockett, CA. Bring a friend and help pack the room.\n2026-09-13 / 7:00 PM doors at Toot's Tavern - Crockett, CA\nLineup: Oathbound; Titan Rage; Diablura; iin arcs\nTickets/info: Door sales only\nBands: @oathboundofficial @titanrageband @diabluraofficial\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@oathboundofficial"
+          "@oathboundofficial",
+          "@titanrageband",
+          "@diabluraofficial"
+        ],
+        "missingHandles": [
+          "iin arcs"
         ]
       }
     }
@@ -402,7 +426,7 @@
     "venue": "18 Seventy Brewing",
     "city": "Modesto",
     "region": "CA",
-    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+    "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others",
     "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
     "ticketLabel": "Tickets",
     "isFreeShow": false,
@@ -410,33 +434,42 @@
     "captions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dark Origins Tour - at 18 Seventy Brewing - Modesto, CA\n\nDark Origins Tour comes to Modesto, CA. Bring a friend and help pack the room.\n2026-09-16 / 6:00 PM doors at 18 Seventy Brewing - Modesto, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep\nTickets/info: https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets\nBands: @oathbound_band @beautyisbetrayal @redkeepofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at 18 Seventy Brewing - Modesto, CA\n\nDark Origins Tour comes to Modesto, CA. Bring a friend and help pack the room.\n2026-09-16 / 6:00 PM doors at 18 Seventy Brewing - Modesto, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others\nTickets/info: https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets\nBands: @oathbound_band @beautyisbetrayal @redkeepofficial @ativanofficial @falsecovenantband @ourselvesamongothers\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathbound_band",
           "@beautyisbetrayal",
-          "@redkeepofficial"
+          "@redkeepofficial",
+          "@ativanofficial",
+          "@falsecovenantband",
+          "@ourselvesamongothers"
         ]
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dark Origins Tour - at 18 Seventy Brewing - Modesto, CA\n\nDark Origins Tour comes to Modesto, CA. Bring a friend and help pack the room.\n2026-09-16 / 6:00 PM doors at 18 Seventy Brewing - Modesto, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep\nTickets/info: https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets\nBands: @Oathboundband @redkeepofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at 18 Seventy Brewing - Modesto, CA\n\nDark Origins Tour comes to Modesto, CA. Bring a friend and help pack the room.\n2026-09-16 / 6:00 PM doors at 18 Seventy Brewing - Modesto, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others\nTickets/info: https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets\nBands: @Oathboundband @redkeepofficial @falsecovenantband @ourselvesamongothers\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@Oathboundband",
-          "@redkeepofficial"
+          "@redkeepofficial",
+          "@falsecovenantband",
+          "@ourselvesamongothers"
         ],
         "missingHandles": [
-          "Beauty Is Betrayal"
+          "Beauty Is Betrayal",
+          "Ativan"
         ]
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dark Origins Tour - at 18 Seventy Brewing - Modesto, CA\n\nDark Origins Tour comes to Modesto, CA. Bring a friend and help pack the room.\n2026-09-16 / 6:00 PM doors at 18 Seventy Brewing - Modesto, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep\nTickets/info: https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets\nBands: @oathboundofficial @beautyisbetrayal\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at 18 Seventy Brewing - Modesto, CA\n\nDark Origins Tour comes to Modesto, CA. Bring a friend and help pack the room.\n2026-09-16 / 6:00 PM doors at 18 Seventy Brewing - Modesto, CA\nLineup: Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others\nTickets/info: https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets\nBands: @oathboundofficial @beautyisbetrayal @falsecovenantband\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
           "@oathboundofficial",
-          "@beautyisbetrayal"
+          "@beautyisbetrayal",
+          "@falsecovenantband"
         ],
         "missingHandles": [
-          "Red Keep"
+          "Red Keep",
+          "Ativan",
+          "Ourselves Among Others"
         ]
       }
     }
@@ -674,30 +707,43 @@
     "venue": "Cellar Stage @ Alturas",
     "city": "Reno",
     "region": "NV",
-    "lineup": "Oathbound",
+    "lineup": "Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending",
     "ticketLabel": "Ticket link needed",
     "isFreeShow": false,
     "doorSalesOnly": false,
     "captions": {
       "instagram": {
         "label": "Instagram caption",
-        "text": "Dark Origins Tour - at Cellar Stage @ Alturas - Reno, NV\n\nDark Origins Tour comes to Reno, NV. Bring a friend and help pack the room.\n2026-09-20 / 7:00 PM doors at Cellar Stage @ Alturas - Reno, NV\nLineup: Oathbound\n\nBands: @oathbound_band\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Cellar Stage @ Alturas - Reno, NV\n\nDark Origins Tour comes to Reno, NV. Bring a friend and help pack the room.\n2026-09-20 / 7:00 PM doors at Cellar Stage @ Alturas - Reno, NV\nLineup: Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending\n\nBands: @oathbound_band @rotten_monolith @mercyforthineenemies_official @acrypticending\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@oathbound_band"
+          "@oathbound_band",
+          "@rotten_monolith",
+          "@mercyforthineenemies_official",
+          "@acrypticending"
         ]
       },
       "facebook": {
         "label": "Facebook caption",
-        "text": "Dark Origins Tour - at Cellar Stage @ Alturas - Reno, NV\n\nDark Origins Tour comes to Reno, NV. Bring a friend and help pack the room.\n2026-09-20 / 7:00 PM doors at Cellar Stage @ Alturas - Reno, NV\nLineup: Oathbound\n\nBands: @Oathboundband\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Cellar Stage @ Alturas - Reno, NV\n\nDark Origins Tour comes to Reno, NV. Bring a friend and help pack the room.\n2026-09-20 / 7:00 PM doors at Cellar Stage @ Alturas - Reno, NV\nLineup: Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending\n\nBands: @Oathboundband @rottenmonolith @profile.php\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@Oathboundband"
+          "@Oathboundband",
+          "@rottenmonolith",
+          "@profile.php"
+        ],
+        "missingHandles": [
+          "A Cryptic Ending"
         ]
       },
       "tiktok": {
         "label": "TikTok caption",
-        "text": "Dark Origins Tour - at Cellar Stage @ Alturas - Reno, NV\n\nDark Origins Tour comes to Reno, NV. Bring a friend and help pack the room.\n2026-09-20 / 7:00 PM doors at Cellar Stage @ Alturas - Reno, NV\nLineup: Oathbound\n\nBands: @oathboundofficial\n#darkoriginstour #Oathbound #livemusic",
+        "text": "Dark Origins Tour - at Cellar Stage @ Alturas - Reno, NV\n\nDark Origins Tour comes to Reno, NV. Bring a friend and help pack the room.\n2026-09-20 / 7:00 PM doors at Cellar Stage @ Alturas - Reno, NV\nLineup: Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending\n\nBands: @oathboundofficial @mfte777 @acrypticending\n#darkoriginstour #Oathbound #livemusic",
         "handles": [
-          "@oathboundofficial"
+          "@oathboundofficial",
+          "@mfte777",
+          "@acrypticending"
+        ],
+        "missingHandles": [
+          "Rotten Monolith"
         ]
       }
     }

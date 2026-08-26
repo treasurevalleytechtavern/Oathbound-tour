@@ -556,7 +556,7 @@
       "city": "Rancho Cordova",
       "region": "CA",
       "market": "Sacramento Area",
-      "lineup": "Oathbound",
+      "lineup": "Oathbound; Lucrecia; Seaside Massacre; False Covenant",
       "ticketLabel": "Tickets",
       "confirmationStatus": "confirmed"
     },
@@ -606,7 +606,7 @@
       "city": "Rancho Cordova",
       "region": "CA",
       "market": "Sacramento Area",
-      "lineup": "Oathbound",
+      "lineup": "Oathbound; Lucrecia; Seaside Massacre; False Covenant",
       "ticketLabel": "Tickets",
       "confirmationStatus": "confirmed"
     },
@@ -656,7 +656,7 @@
       "city": "Rancho Cordova",
       "region": "CA",
       "market": "Sacramento Area",
-      "lineup": "Oathbound",
+      "lineup": "Oathbound; Lucrecia; Seaside Massacre; False Covenant",
       "ticketLabel": "Tickets",
       "confirmationStatus": "confirmed"
     },
@@ -705,7 +705,7 @@
       "city": "Crockett",
       "region": "CA",
       "market": "Bay Area",
-      "lineup": "Oathbound",
+      "lineup": "Oathbound; Titan Rage; Diablura; iin arcs",
       "ticketLabel": "Door sales only",
       "confirmationStatus": "announced"
     },
@@ -760,7 +760,7 @@
       "city": "Crockett",
       "region": "CA",
       "market": "Bay Area",
-      "lineup": "Oathbound",
+      "lineup": "Oathbound; Titan Rage; Diablura; iin arcs",
       "ticketLabel": "Door sales only",
       "confirmationStatus": "announced"
     },
@@ -815,7 +815,7 @@
       "city": "Crockett",
       "region": "CA",
       "market": "Bay Area",
-      "lineup": "Oathbound",
+      "lineup": "Oathbound; Titan Rage; Diablura; iin arcs",
       "ticketLabel": "Door sales only",
       "confirmationStatus": "announced"
     },
@@ -1035,7 +1035,7 @@
       "city": "Modesto",
       "region": "CA",
       "market": "Central Valley",
-      "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+      "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others",
       "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
       "ticketLabel": "Tickets",
       "confirmationStatus": "verified"
@@ -1091,7 +1091,7 @@
       "city": "Modesto",
       "region": "CA",
       "market": "Central Valley",
-      "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+      "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others",
       "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
       "ticketLabel": "Tickets",
       "confirmationStatus": "verified"
@@ -1147,7 +1147,7 @@
       "city": "Modesto",
       "region": "CA",
       "market": "Central Valley",
-      "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+      "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others",
       "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
       "ticketLabel": "Tickets",
       "confirmationStatus": "verified"
@@ -1701,7 +1701,7 @@
       "city": "Reno",
       "region": "NV",
       "market": "Northern Nevada",
-      "lineup": "Oathbound",
+      "lineup": "Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending",
       "ticketLabel": "Ticket link needed",
       "confirmationStatus": "confirmed"
     },
@@ -1756,7 +1756,7 @@
       "city": "Reno",
       "region": "NV",
       "market": "Northern Nevada",
-      "lineup": "Oathbound",
+      "lineup": "Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending",
       "ticketLabel": "Ticket link needed",
       "confirmationStatus": "confirmed"
     },
@@ -1811,7 +1811,7 @@
       "city": "Reno",
       "region": "NV",
       "market": "Northern Nevada",
-      "lineup": "Oathbound",
+      "lineup": "Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending",
       "ticketLabel": "Ticket link needed",
       "confirmationStatus": "confirmed"
     },
@@ -2030,7 +2030,7 @@
       "city": "Rancho Cordova",
       "region": "CA",
       "market": "Sacramento Area",
-      "lineup": "Oathbound",
+      "lineup": "Oathbound; Lucrecia; Seaside Massacre; False Covenant",
       "ticketLabel": "Tickets",
       "confirmationStatus": "confirmed"
     },
@@ -2079,7 +2079,7 @@
       "city": "Crockett",
       "region": "CA",
       "market": "Bay Area",
-      "lineup": "Oathbound",
+      "lineup": "Oathbound; Titan Rage; Diablura; iin arcs",
       "ticketLabel": "Door sales only",
       "confirmationStatus": "announced"
     },
@@ -2183,7 +2183,7 @@
       "city": "Modesto",
       "region": "CA",
       "market": "Central Valley",
-      "lineup": "Oathbound; Beauty Is Betrayal; Red Keep",
+      "lineup": "Oathbound; Beauty Is Betrayal; Red Keep; Ativan; False Covenant; Ourselves Among Others",
       "ticketUrl": "https://www.purplepass.com/events/381663-oathbound-dark-origins-tour-sep-16th-2026?utm_source=oathbound&utm_medium=website&utm_campaign=dark_origins_tour&utm_content=modesto_tickets",
       "ticketLabel": "Tickets",
       "confirmationStatus": "verified"
@@ -2393,7 +2393,7 @@
       "city": "Reno",
       "region": "NV",
       "market": "Northern Nevada",
-      "lineup": "Oathbound",
+      "lineup": "Oathbound; Rotten Monolith; Mercy For Thine Enemies; A Cryptic Ending",
       "ticketLabel": "Ticket link needed",
       "confirmationStatus": "confirmed"
     },
