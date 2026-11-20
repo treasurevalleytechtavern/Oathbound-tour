@@ -427,10 +427,44 @@ function renderShows(shows) {
     return;
   }
 
-  const fragment = document.createDocumentFragment();
-  displayedShows.forEach((show, index) => fragment.appendChild(createShowCard(show, index)));
-  showsList.appendChild(fragment);
+  appendShowCards(showsList, displayedShows, createShowCard);
   finishTargetRender(displayedShows);
+}
+
+function appendShowCards(container, shows, createCard) {
+  const fragment = document.createDocumentFragment();
+  const canShowSpotify = document.body.dataset.widget !== "compact";
+  let previousMusicKey = "";
+  let musicId = "";
+
+  shows.forEach((show, index) => {
+    const artists = getLineupArtists(show);
+    const musicKey = canShowSpotify ? getLineupMusicKey(artists) : "";
+    const sharedMusicId = musicKey && musicKey === previousMusicKey ? musicId : "";
+    const card = createCard(show, pageMode === "past" ? -1 : index, artists, sharedMusicId);
+
+    if (musicKey && !sharedMusicId) {
+      musicId = `lineup-music-${show.date}-${index}`;
+      card.querySelector(".show-lineup-list--spotify").id = musicId;
+    }
+
+    previousMusicKey = musicKey;
+    fragment.appendChild(card);
+  });
+
+  container.appendChild(fragment);
+}
+
+function getLineupMusicKey(artists) {
+  if (!artists.some(({ spotifyArtistUrl, spotifyTrackUrl }) => spotifyArtistUrl || spotifyTrackUrl)) {
+    return "";
+  }
+
+  return artists.map(({ name, spotifyArtistUrl, spotifyTrackUrl }) => JSON.stringify([
+    name.toLowerCase(),
+    spotifyArtistUrl.split(/[?#]/, 1)[0].replace(/\/$/, ""),
+    createSpotifyTrackEmbedUrl(spotifyTrackUrl),
+  ])).sort().join("\n");
 }
 
 function renderUnavailableState() {
@@ -454,12 +488,10 @@ function renderUnavailableState() {
 }
 
 function renderMyspaceUpcomingShows(shows) {
-  const fragment = document.createDocumentFragment();
-  shows.forEach((show, index) => fragment.appendChild(createMyspaceShowCard(show, index)));
-  showsList.appendChild(fragment);
+  appendShowCards(showsList, shows, createMyspaceShowCard);
 }
 
-function createMyspaceShowCard(show, index) {
+function createMyspaceShowCard(show, index, artists, sharedMusicId) {
   const card = document.createElement("article");
   const showDate = parseLocalDate(show.date);
   const location = [show.city, show.region].filter(Boolean).join(", ") || show.country || "Location TBA";
@@ -519,10 +551,10 @@ function createMyspaceShowCard(show, index) {
     details.appendChild(venueLine);
   }
 
-  if (getLineupArtistNames(show).length) {
+  if (artists.length) {
     const lineup = document.createElement("p");
     lineup.className = "myspace-lineup";
-    renderLineup(lineup, show, index);
+    renderLineup(lineup, artists, sharedMusicId);
     details.appendChild(lineup);
   }
 
@@ -632,7 +664,7 @@ function renderPastShowsByYear(shows) {
 
     const list = document.createElement("div");
     list.className = "year-shows";
-    yearShows.forEach((show) => list.appendChild(createShowCard(show, -1)));
+    appendShowCards(list, yearShows, createShowCard);
 
     details.append(summary, list);
     fragment.appendChild(details);
@@ -654,7 +686,7 @@ function groupShowsByYear(shows) {
   return Array.from(groups.entries());
 }
 
-function createShowCard(show, index) {
+function createShowCard(show, index, artists, sharedMusicId) {
   const card = template.content.firstElementChild.cloneNode(true);
   const showDate = parseLocalDate(show.date);
   const location = [show.city, show.region].filter(Boolean).join(", ") || show.country || "Location TBA";
@@ -672,14 +704,14 @@ function createShowCard(show, index) {
   setText(card, ".show-location", location);
   setText(card, ".show-venue", show.venue || "Venue TBA");
   setText(card, ".show-time", [formatLongDate(showDate), timeText].filter(Boolean).join(" / "));
-  renderLineup(card.querySelector(".show-lineup"), show, index);
+  renderLineup(card.querySelector(".show-lineup"), artists, sharedMusicId);
   setText(card, ".show-notes", show.notes || "");
   appendDistanceBadge(card.querySelector(".show-location"), show);
 
   renderShowStatus(card, showDate, index);
   renderShowFlags(card.querySelector(".show-flags"), show);
   renderIconBadges(card.querySelector(".show-age"), show);
-  toggleElement(card.querySelector(".show-lineup"), Boolean(getLineupArtistNames(show).length));
+  toggleElement(card.querySelector(".show-lineup"), Boolean(artists.length));
   toggleElement(card.querySelector(".show-notes"), Boolean(show.notes && show.notes.trim()));
 
   renderPrimaryShowActions(card.querySelector(".show-primary-actions"), show, index);
@@ -775,23 +807,18 @@ function createButton(url, label, isPrimary = false, actionType = "details", sho
   return button;
 }
 
-function renderLineup(container, show, index = 0) {
+function renderLineup(container, artists, sharedMusicId) {
   if (!container) {
     return;
   }
 
   container.innerHTML = "";
 
-  const artists = getLineupArtists(show).map((artist) => ({
-    ...artist,
-    spotifyArtistUrl: getArtistSpotifyProfileUrl(artist),
-    spotifyTrackUrl: getArtistSpotifyTrackUrl(artist),
-  }));
   if (!artists.length) {
     return;
   }
 
-  const canShowSpotify = document.body.dataset.widget !== "compact";
+  const canShowSpotify = !sharedMusicId && document.body.dataset.widget !== "compact";
   const hasSpotify = canShowSpotify && artists.some((artist) => artist.spotifyTrackUrl || artist.spotifyArtistUrl);
 
   const label = document.createElement("strong");
@@ -827,8 +854,11 @@ function renderLineup(container, show, index = 0) {
       profileLink.href = artist.spotifyArtistUrl;
       profileLink.target = "_blank";
       profileLink.rel = "noopener noreferrer";
-      profileLink.textContent = "Spotify catalogue";
-      profileLink.setAttribute("aria-label", `Spotify catalogue for ${artist.name} (opens in a new tab)`);
+      const musicNote = document.createElement("span");
+      musicNote.textContent = "♪";
+      musicNote.setAttribute("aria-hidden", "true");
+      profileLink.append(musicNote, " Spotify Artist");
+      profileLink.setAttribute("aria-label", `Spotify Artist page for ${artist.name} (opens in a new tab)`);
       heading.append(name, profileLink);
       item.appendChild(heading);
     } else {
@@ -844,6 +874,14 @@ function renderLineup(container, show, index = 0) {
 
   container.appendChild(document.createTextNode(" "));
   container.appendChild(list);
+
+  if (sharedMusicId) {
+    const listenLink = document.createElement("a");
+    listenLink.className = "show-lineup-spotify-link";
+    listenLink.href = `#${sharedMusicId}`;
+    listenLink.textContent = "Listen to this lineup";
+    container.append(" ", listenLink);
+  }
 }
 
 function createSpotifyTrackPlayer(artist, trackUrl) {
@@ -1215,10 +1253,14 @@ function getLineupArtists(show = {}) {
   const artistNames = getLineupArtistNames(show);
   const bandLookup = getShowBandLookup(show);
 
-  return artistNames.map((name) => ({
-    name,
-    band: bandLookup.get(normalizeArtistName(name)) || null,
-  }));
+  return artistNames.map((name) => {
+    const artist = { name, band: bandLookup.get(normalizeArtistName(name)) };
+    return {
+      name,
+      spotifyArtistUrl: getArtistSpotifyProfileUrl(artist),
+      spotifyTrackUrl: getArtistSpotifyTrackUrl(artist),
+    };
+  });
 }
 
 function getLineupArtistNames(show = {}) {
