@@ -580,21 +580,41 @@ body[data-page="admin"] .intro {
   gap: 5px;
 }
 
-.show-lineup-list--embeds {
+.show-lineup-list--spotify {
   display: grid;
   width: min(100%, 560px);
+  grid-template-columns: minmax(0, 1fr);
   gap: 10px;
   margin-top: 8px;
 }
 
-.show-lineup-list--embeds .show-lineup-artist {
+.show-lineup-list--spotify .show-lineup-artist {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 5px;
 }
 
-.show-lineup-list--embeds .show-lineup-name {
+.show-lineup-list--spotify .show-lineup-name {
   color: var(--soft);
   font-weight: 800;
+}
+
+.show-lineup-artist-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 12px;
+}
+
+.show-lineup-spotify-link {
+  color: var(--soft);
+  font-size: 0.875rem;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.show-lineup-spotify-link:hover {
+  color: var(--text);
 }
 
 .show-lineup-separator {

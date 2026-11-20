@@ -382,6 +382,7 @@ function setTourFinderStatus(message) {
 }
 
 function renderShows(shows) {
+  spotifyTrackEmbedObserver?.disconnect();
   showsList.innerHTML = "";
   const preparedShows = prepareShowsForDisplay(shows);
   const displayedShows = showLimit && pageMode === "upcoming" ? preparedShows.slice(0, showLimit) : preparedShows;
@@ -783,26 +784,27 @@ function renderLineup(container, show, index = 0) {
 
   const artists = getLineupArtists(show).map((artist) => ({
     ...artist,
+    spotifyArtistUrl: getArtistSpotifyProfileUrl(artist),
     spotifyTrackUrl: getArtistSpotifyTrackUrl(artist),
   }));
   if (!artists.length) {
     return;
   }
 
-  const canShowTrackEmbeds = pageMode === "upcoming" && document.body.dataset.widget !== "compact";
-  const hasTrackEmbeds = canShowTrackEmbeds && artists.some((artist) => artist.spotifyTrackUrl);
+  const canShowSpotify = document.body.dataset.widget !== "compact";
+  const hasSpotify = canShowSpotify && artists.some((artist) => artist.spotifyTrackUrl || artist.spotifyArtistUrl);
 
   const label = document.createElement("strong");
   label.textContent = "Lineup:";
   container.appendChild(label);
 
   const list = document.createElement("span");
-  list.className = hasTrackEmbeds
-    ? "show-lineup-list show-lineup-list--embeds"
+  list.className = hasSpotify
+    ? "show-lineup-list show-lineup-list--spotify"
     : "show-lineup-list";
 
   artists.forEach((artist, artistIndex) => {
-    if (!hasTrackEmbeds && artistIndex) {
+    if (!hasSpotify && artistIndex) {
       const separator = document.createElement("span");
       separator.className = "show-lineup-separator";
       separator.textContent = ",";
@@ -815,9 +817,25 @@ function renderLineup(container, show, index = 0) {
     const name = document.createElement("span");
     name.className = "show-lineup-name";
     name.textContent = artist.name;
-    item.appendChild(name);
 
-    if (hasTrackEmbeds && artist.spotifyTrackUrl) {
+    if (canShowSpotify && artist.spotifyArtistUrl) {
+      const heading = document.createElement("span");
+      heading.className = "show-lineup-artist-heading";
+
+      const profileLink = document.createElement("a");
+      profileLink.className = "show-lineup-spotify-link";
+      profileLink.href = artist.spotifyArtistUrl;
+      profileLink.target = "_blank";
+      profileLink.rel = "noopener noreferrer";
+      profileLink.textContent = "Spotify catalogue";
+      profileLink.setAttribute("aria-label", `Spotify catalogue for ${artist.name} (opens in a new tab)`);
+      heading.append(name, profileLink);
+      item.appendChild(heading);
+    } else {
+      item.appendChild(name);
+    }
+
+    if (canShowSpotify && artist.spotifyTrackUrl) {
       item.appendChild(createSpotifyTrackPlayer(artist, artist.spotifyTrackUrl));
     }
 
@@ -1256,6 +1274,18 @@ function getArtistSpotifyTrackUrl(artist = {}) {
     band.socials?.spotifySongUrl,
     band.socials?.spotifyTrackUrl,
   ].find(isSpotifyTrackUrl) || "";
+}
+
+function getArtistSpotifyProfileUrl(artist) {
+  const band = artist.band || artist;
+  return [
+    band.spotifyArtistUrl,
+    band.spotify,
+    band.links?.spotifyArtistUrl,
+    band.links?.spotify,
+    band.socials?.spotifyArtistUrl,
+    band.socials?.spotify,
+  ].find((url) => /^https:\/\/open\.spotify\.com\/(?:intl-[a-z]{2}\/)?artist\/[a-z0-9]+(?:[/?#].*)?$/i.test(url)) || "";
 }
 
 function createSpotifyTrackEmbedUrl(trackUrl = "") {
